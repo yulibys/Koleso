@@ -11,6 +11,7 @@
       name="description"
       content="Анимированный лонгрид о том, почему колесо — это не круг, а целая сборка из оси, дороги, груза, тяги и человека."
     />
+    <link rel="icon" href="images/07 Колесо не едет одно.png" sizes="32x32" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -4452,9 +4453,10 @@
           })
         }
         if (document.readyState === 'complete') initScroll()
-        else addEventListener('load', initScroll)
+        else
+          addEventListener('load', initScroll)
 
-        /* ── 5: собери повозку ── */
+          /* ── 5: собери повозку ── */
         ;(function () {
           const cart = document.getElementById('cart'),
             t = document.getElementById('labTitle'),
