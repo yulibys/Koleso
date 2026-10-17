@@ -1,0 +1,7 @@
+# что Graphify не читает
+index.html
+images/
+.obsidian/
+docs/graphify-out/
+docs/fidbeck from teacher/
+graphify-out/

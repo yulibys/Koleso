@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.inFolder("docs/Сессии")
+    - file.ext == "md"
+properties:
+  тема:
+    displayName: Тема
+  версия:
+    displayName: Версия
+views:
+  - type: table
+    name: Все сессии
+    order:
+      - date
+      - file.name
+      - тема
+      - версия
