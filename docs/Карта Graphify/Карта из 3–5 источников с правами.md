@@ -4,7 +4,7 @@ type: "rationale"
 community: "Сборка, источники, финал"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Сборка_источники_финал
 ---
 
@@ -16,4 +16,4 @@ tags:
 - [[Лекция 1.2. Тема, тезис, редакционный угол]] - `references` [EXTRACTED]
 - [[Фото из Викисклада с авторами и лицензиями в подвале]] - `implements` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Сборка_источники_финал
+#graphify/rationale #graphify/EXTRACTED #community/Сборка_источники_финал

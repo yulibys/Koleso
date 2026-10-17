@@ -5,7 +5,7 @@ community: "Типографика (1.4)"
 location: "L5"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Типографика_14
 ---
 
@@ -23,4 +23,4 @@ tags:
 - [[Прописной набор требует умеренной разрядки]] - `conceptually_related_to` [INFERRED]
 - [[Только настоящая капитель, проверить кириллицу в её комплекте]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Движок сцен и звуки (app.js)"
 location: "L262"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # Детали повозки #parts .part + .lab-say
@@ -21,4 +21,4 @@ tags:
 - [[Без hover и обязательного перетаскивания]] - `rationale_for` [INFERRED]
 - [[Клавиатура Tab, видимый фокус, выход из интерактива]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Интерактив и проверка читателем"
+community: "Движок сцен и звуки (app.js)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # Без hover и обязательного перетаскивания
@@ -14,4 +14,4 @@ tags:
 - [[Детали повозки parts .part + .lab-say]] - `rationale_for` [INFERRED]
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/rationale #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

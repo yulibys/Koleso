@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Журнал решений"
+community: "Раскадровка и двери (1.3)"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Раскадровка_и_двери_13
 ---
 
 # nag — Нагасена и Милинда: «колесо — это колесница?»
@@ -25,4 +25,4 @@ tags:
 - [[Сцена Нагасены перенесена в середину, после сборки (v15)]] - `rationale_for` [EXTRACTED]
 - [[Угол проекта колесо само по себе бесполезно]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13

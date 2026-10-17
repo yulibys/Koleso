@@ -65,18 +65,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
 - 6 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 4 edges to [[_COMMUNITY_Журнал решений]]
-- 3 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 3 edges to [[_COMMUNITY_Журнал решений]]
+- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 2 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
 - 2 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
 
 ## Top bridge nodes
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 3 communities
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 4 communities
 - [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 3 communities
 - [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - degree 7, connects to 2 communities
 - [[prepType()]] - degree 5, connects to 1 community

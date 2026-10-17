@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Интерактив и проверка читателем"
 location: "L474"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # .cut — вырезки, выезд по --k
@@ -16,4 +16,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 - [[Общая судьба совместное движение собирает группу]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

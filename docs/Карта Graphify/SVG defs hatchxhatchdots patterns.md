@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Рисунки повозок"
+community: "Выпуск и предзащита (1.8)"
 location: "L3"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Рисунки_повозок
+  - community/Выпуск_и_предзащита_18
 ---
 
 # SVG defs: hatch/xhatch/dots patterns
@@ -18,4 +18,4 @@ tags:
 - [[tRunner — бегущий человек (template)]] - `shares_data_with` [INFERRED]
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Рисунки_повозок
+#graphify/code #graphify/INFERRED #community/Выпуск_и_предзащита_18

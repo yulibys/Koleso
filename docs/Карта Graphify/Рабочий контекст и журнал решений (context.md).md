@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "document"
-community: "Журнал решений"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Рабочий контекст и журнал решений (context.md)
@@ -44,4 +44,4 @@ tags:
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `references` [EXTRACTED]
 - [[Юлия Бысова (автор)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Журнал_решений
+#graphify/document #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

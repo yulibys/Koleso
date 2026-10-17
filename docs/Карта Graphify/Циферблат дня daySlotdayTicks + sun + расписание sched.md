@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Фото, вырезки, права (1.7)"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Фото_вырезки_права_17
 ---
 
 # Циферблат дня #daySlot/#dayTicks + #sun + расписание #sched
@@ -15,4 +15,4 @@ tags:
 - [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - `references` [EXTRACTED]
 - [[slot()]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

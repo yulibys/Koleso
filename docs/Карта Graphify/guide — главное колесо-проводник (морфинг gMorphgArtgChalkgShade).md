@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Первый экран и внимание (1.6)"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Первый_экран_и_внимание_16
 ---
 
 # #guide — главное колесо-проводник (морфинг gMorph/gArt/gChalk/gShade)
@@ -43,4 +43,4 @@ tags:
 - [[Повтор с изменением задачи]] - `rationale_for` [INFERRED]
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

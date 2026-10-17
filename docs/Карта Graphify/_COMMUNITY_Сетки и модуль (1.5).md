@@ -1,15 +1,16 @@
 ---
 type: community
-cohesion: 0.10
-members: 25
+cohesion: 0.09
+members: 27
 ---
 
 # Сетки и модуль (1.5)
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 25 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 27 nodes
 
 ## Members
+- [[dot-collage + data-shape (circleovalarchblobblob2)]] - code - src/style.css
 - [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - code - src/style.css
 - [[Reflow 320 CSS px без горизонтальной прокрутки]] - rationale - docs/lectures/1.5.txt
 - [[«Так по сетке» — не аргумент]] - rationale - docs/lectures/1.5.txt
@@ -31,6 +32,7 @@ members: 25
 - [[Расчёт 12 колонок 1200  48  24 → 70 px]] - rationale - docs/lectures/1.5.txt
 - [[Смысловой порядок при складывании колонок]] - rationale - docs/lectures/1.5.txt
 - [[Типы сетки колоночная, модульная, коллажная, комбинированная]] - concept - docs/lectures/1.5.txt
+- [[У каждого нарушения коллажа — опора]] - rationale - docs/lectures/1.5.txt
 - [[Увеличение текста до 200 %]] - rationale - docs/lectures/1.5.txt
 - [[Увеличение текста до 200% без потери содержания и функций]] - rationale - docs/lectures/1.7.txt
 - [[Функция пустоты проверяется удалением]] - rationale - docs/lectures/1.5.txt
@@ -44,18 +46,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 7 edges to [[_COMMUNITY_Журнал решений]]
 - 6 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 5 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 4 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 2 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 2 edges to [[_COMMUNITY_Журнал решений]]
+- 5 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 3 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
 - 2 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
 
 ## Top bridge nodes
-- [[Лекция 1.5. Модульные системы и сетки]] - degree 42, connects to 8 communities
+- [[Лекция 1.5. Модульные системы и сетки]] - degree 42, connects to 7 communities
 - [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - degree 8, connects to 2 communities
 - [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - degree 3, connects to 2 communities
 - [[Цвет — не единственный признак]] - degree 2, connects to 1 community

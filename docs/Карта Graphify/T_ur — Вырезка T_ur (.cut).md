@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Фото, вырезки, права (1.7)"
+community: "Интерактив и проверка читателем"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # T_ur — Вырезка T_ur (.cut)
@@ -14,4 +14,4 @@ tags:
 - [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - `references` [EXTRACTED]
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/image #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

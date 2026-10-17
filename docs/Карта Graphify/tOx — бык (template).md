@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Рисунки повозок"
+community: "Выпуск и предзащита (1.8)"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/Выпуск_и_предзащита_18
 ---
 
 # #tOx — бык (template)
@@ -16,4 +16,4 @@ tags:
 - [[SVG defs hatchxhatchdots patterns]] - `shares_data_with` [INFERRED]
 - [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

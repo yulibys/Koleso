@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Сетки и модуль (1.5)"
 location: "L446"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - graphify/EXTRACTED
+  - community/Сетки_и_модуль_15
 ---
 
 # .collage + data-shape (circle/oval/arch/blob/blob2)
@@ -15,4 +15,4 @@ tags:
 - [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - `implements` [EXTRACTED]
 - [[У каждого нарушения коллажа — опора]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

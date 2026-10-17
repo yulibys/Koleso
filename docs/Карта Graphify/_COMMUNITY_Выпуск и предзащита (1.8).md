@@ -1,31 +1,34 @@
 ---
 type: community
 cohesion: 0.18
-members: 16
+members: 19
 ---
 
 # Выпуск и предзащита (1.8)
 
 **Cohesion:** 0.18 - loosely connected
-**Members:** 16 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[Алетейя честный режим сокрытия]] - concept - docs/lectures/1.8.txt
-- [[Архивный комплект и запись прохождения]] - rationale - docs/lectures/1.8.txt
-- [[Версия 1.0 новый номер при смене тезиса, структуры, источников]] - rationale - docs/lectures/1.8.txt
-- [[Доска процесса из четырёх фреймов]] - concept - docs/lectures/1.8.txt
-- [[Карточка выпуска в восемь строк]] - rationale - docs/lectures/1.7.txt
-- [[Критерий готовности рабочей трети (30–40 %)]] - rationale - docs/lectures/1.5.txt
-- [[Лекция 1.8. Предзащита и финальная редактура]] - document - docs/lectures/1.8.txt
-- [[Наблюдение раньше совета]] - rationale - docs/lectures/1.8.txt
-- [[Нигредо распад удобных объяснений]] - concept - docs/lectures/1.8.txt
-- [[Показ по живой ссылке за 230 (20 + 70 + 30 + 30 с)]] - rationale - docs/lectures/1.8.txt
-- [[Правка проверки перед показом и карточка версии 1.0]] - rationale - docs/MAP.md
-- [[Проверка чужими руками чистое окно, телефон, клавиатура, медленная сеть, путь до титров]] - rationale - docs/lectures/1.8.txt
-- [[Публикационный порог версия выдержала названные проверки]] - rationale - docs/lectures/1.7.txt
-- [[Финальный порог публикации]] - concept - docs/lectures/1.8.txt
-- [[Хорошие URI не меняются]] - rationale - docs/lectures/1.8.txt
-- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - rationale - docs/lectures/1.8.txt
+- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
+- [[tHorse — лошадь (template)]] - code - src/body.html
+- [[tOx — бык (template)]] - code - src/body.html
+- [[tRunner — бегущий человек (template)]] - code - src/body.html
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
+- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
+- [[batten()]] - code - art/wheel.py
+- [[f()]] - code - art/wheel.py
+- [[knot()]] - code - art/wheel.py
+- [[math]] - concept
+- [[random]] - concept
+- [[wheel.py]] - code - art/wheel.py
+- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
+- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
+- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
+- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
+- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,16 +38,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Журнал решений]]
-- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 2 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 3 edges to [[_COMMUNITY_Журнал решений]]
+- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 - 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
 - 1 edge to [[_COMMUNITY_Сборка, источники, финал]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
 
 ## Top bridge nodes
-- [[Лекция 1.8. Предзащита и финальная редактура]] - degree 17, connects to 3 communities
-- [[Правка проверки перед показом и карточка версии 1.0]] - degree 6, connects to 1 community
-- [[Архивный комплект и запись прохождения]] - degree 4, connects to 1 community
-- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - degree 4, connects to 1 community
-- [[Финальный порог публикации]] - degree 4, connects to 1 community
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 3 communities
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 2 communities
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - degree 5, connects to 2 communities
+- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - degree 5, connects to 2 communities
+- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - degree 5, connects to 1 community

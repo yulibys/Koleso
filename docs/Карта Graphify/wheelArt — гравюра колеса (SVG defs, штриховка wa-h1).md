@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Выпуск и предзащита (1.8)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Выпуск_и_предзащита_18
 ---
 
 # #wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)
@@ -22,4 +22,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `conceptually_related_to` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/Выпуск_и_предзащита_18

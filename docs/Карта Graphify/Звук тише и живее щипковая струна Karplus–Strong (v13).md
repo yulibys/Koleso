@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Журнал решений"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Звук тише и живее: щипковая струна Karplus–Strong (v13)
@@ -14,4 +14,4 @@ tags:
 - [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - `conceptually_related_to` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений
+#graphify/rationale #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

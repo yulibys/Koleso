@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.5.txt"
 type: "rationale"
-community: "Первый экран и внимание (1.6)"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/Фото_вырезки_права_17
 ---
 
 # Контраст WCAG 2.2 AA: 4.5:1 и 3:1
@@ -16,4 +16,4 @@ tags:
 - [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - `rationale_for` [INFERRED]
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/rationale #graphify/INFERRED #community/Фото_вырезки_права_17

@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Журнал решений"
 location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Раскадровка_и_двери_13
+  - community/Журнал_решений
 ---
 
 # layLater()
@@ -18,4 +18,4 @@ tags:
 - [[layout()]] - `calls` [EXTRACTED]
 - [[scene()]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/INFERRED #community/Журнал_решений

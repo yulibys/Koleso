@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Рисунки повозок"
+community: "Выпуск и предзащита (1.8)"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/Выпуск_и_предзащита_18
 ---
 
 # Уравнение #eqRow .term (колесо+ось+кузов+груз+бык+дорога) и #eqCart
@@ -17,4 +17,4 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[Рабочая память и чанкинг]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

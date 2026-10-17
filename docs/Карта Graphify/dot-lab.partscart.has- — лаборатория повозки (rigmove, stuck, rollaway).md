@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Движок сцен и звуки (app.js)"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # .lab/.parts/#cart.has-* — лаборатория повозки (rigmove, stuck, rollaway)
@@ -15,4 +15,4 @@ tags:
 - [[lab — «Соберите свою повозку» (интерактив)]] - `implements` [EXTRACTED]
 - [[Детали повозки parts .part + .lab-say]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

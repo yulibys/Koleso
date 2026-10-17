@@ -1,51 +1,53 @@
 ---
 type: community
-cohesion: 0.10
-members: 36
+cohesion: 0.09
+members: 38
 ---
 
 # Колесо-проводник и гравюра
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - code - src/body.html
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
-- [[dot-paper — бумажный фон (find, day)]] - code - src/style.css
-- [[batten()]] - code - art/wheel.py
-- [[f()]] - code - art/wheel.py
-- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - code - src/body.html
-- [[knot()]] - code - art/wheel.py
-- [[math]] - concept
-- [[morphD()]] - code - src/app.js
-- [[pairOf()]] - code - src/app.js
-- [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - code - src/body.html
-- [[ps2 — «Колесо есть. Ехать не на чем.» (фотоэкран H2)]] - code - src/body.html
-- [[ps3 — «А потом поехали» (фотоэкран H3)]] - code - src/body.html
-- [[ps4 — «Колесо давно с нами» (фотоэкран H4, flip)]] - code - src/body.html
-- [[random]] - concept
-- [[roll()]] - code - src/app.js
-- [[sampleFig()]] - code - src/app.js
-- [[wheel.py]] - code - art/wheel.py
-- [[Бегущая лента поговорок .tape («Не подмажешь — не поедешь…»)]] - code - src/body.html
-- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
-- [[Крупность от детали до дальнего плана, чередовать «через одну»]] - rationale - docs/lectures/1.3.txt
-- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
-- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
-- [[Повтор с изменением задачи]] - rationale - docs/lectures/1.6.txt
-- [[Повтор с отклонением на третьем (Делёз)]] - concept - docs/lectures/1.5.txt
-- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
-- [[Ритм — возвращение групп со сменой масштаба]] - rationale - docs/MAP.md
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
-- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
-- [[Фото __HI_H2__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фото __HI_H3__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фото __HI_H4__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - code - src/body.html
-- [[Четыре фотоэкрана в духе Kami (v16)]] - rationale - docs/context.md
-- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
+- [[dot-cutflash — вспышка склейки]] - code - src/body.html
+- [[Viewport и скролл пространство превращается в длительность]] - concept - docs/lectures/1.1.txt
+- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - code - src/body.html
+- [[«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)]] - rationale - docs/context.md
+- [[Авторская функция (Фуко) кто говорит первым]] - concept - docs/lectures/1.2.txt
+- [[Без 3D всё на SVG, Three.js убран]] - rationale - docs/context.md
+- [[Без курсива и без прописных в длинных фразах]] - rationale - docs/context.md
+- [[Дрожащая линия рисунка — line boil (по tiagofragoso.com)]] - rationale - docs/context.md
+- [[Заголовок «Далеко собрались» (после «Колесо пока стоит», v17)]] - rationale - docs/context.md
+- [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - rationale - docs/context.md
+- [[Звук тише и живее щипковая струна Karplus–Strong (v13)]] - rationale - docs/context.md
+- [[Кантастория рассказчик перед последовательностью изображений]] - concept - docs/lectures/1.1.txt
+- [[Лекция 1.1. Лонгрид как особый медиум]] - document - docs/lectures/1.1.txt
+- [[Минимализм пейзажи упрощены до холмов, дороги и дерева (v15)]] - rationale - docs/context.md
+- [[Набор задаёт отношение к читателю («дом бытия»)]] - concept - docs/lectures/1.4.txt
+- [[Немое кино → цвет после первого разрыва (v11, отменено)]] - rationale - docs/context.md
+- [[Одно главное и одно поддерживающее свойство браузера]] - rationale - docs/lectures/1.1.txt
+- [[Олег Пащенко (преподаватель)]] - concept - docs/context.md
+- [[Отвергнуто пиксельный мигающий фон и красные экраны (фидбек 2-10)]] - rationale - docs/context.md
+- [[Отвергнуты Ruslan Display, Old Standard TT, Bad Script и две подборки акцидентных шрифтов]] - rationale - docs/context.md
+- [[Открытая петля «что-то заставило человека изобрести колесо»]] - rationale - docs/context.md
+- [[Плёнка shaders.com царапины, зерно, мерцание; VHS при перемотке]] - rationale - docs/context.md
+- [[Правка проверить мерцание и звук по Такеру]] - rationale - docs/MAP.md
+- [[Приёмы удержания внимания из амоБлога холодный старт, открытая петля, слом ожидания]] - rationale - docs/context.md
+- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - concept - docs/lectures/1.1.txt
+- [[Рабочий контекст и журнал решений (context.md)]] - document - docs/context.md
+- [[Рассказчик больше не говорит «я» (v13)]] - rationale - docs/context.md
+- [[Рассказчик — самоуверенный неудачник, голос интертитров]] - rationale - docs/context.md
+- [[Регламент генеративных инструментов]] - rationale - docs/lectures/1.1.txt
+- [[Режим жизни поддерживать  заморозить  обновлять  снять]] - rationale - docs/lectures/1.8.txt
+- [[Свиток последовательность и жест разворачивания]] - concept - docs/lectures/1.1.txt
+- [[Снова чёрно-белое плёнка на всех сценах (v12)]] - rationale - docs/context.md
+- [[Тёмный медиум (Такер) убрать приём, который ничего не преобразует]] - rationale - docs/lectures/1.1.txt
+- [[Фабрика вариантов и дом у реки]] - concept - docs/lectures/1.1.txt
+- [[Хронотоп (Бахтин) участок со случайной длительностью]] - rationale - docs/lectures/1.1.txt
+- [[Шрифты Alegreya SC + Alegreya, одно суперсемейство (v11)]] - rationale - docs/context.md
+- [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - rationale - docs/context.md
+- [[Юлия Бысова (автор)]] - concept - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,21 +57,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 11 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 10 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 10 edges to [[_COMMUNITY_Журнал решений]]
-- 9 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 5 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 5 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 4 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 14 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 12 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 11 edges to [[_COMMUNITY_Журнал решений]]
+- 6 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 4 edges to [[_COMMUNITY_Сборка, источники, финал]]
+- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
 - 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
+- 1 edge to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
 
 ## Top bridge nodes
-- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 8 communities
-- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - degree 13, connects to 5 communities
-- [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - degree 10, connects to 4 communities
-- [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - degree 9, connects to 4 communities
-- [[ps3 — «А потом поехали» (фотоэкран H3)]] - degree 8, connects to 3 communities
+- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - degree 30, connects to 7 communities
+- [[Рабочий контекст и журнал решений (context.md)]] - degree 32, connects to 6 communities
+- [[Олег Пащенко (преподаватель)]] - degree 9, connects to 6 communities
+- [[Лекция 1.1. Лонгрид как особый медиум]] - degree 17, connects to 3 communities
+- [[Правка проверить мерцание и звук по Такеру]] - degree 7, connects to 2 communities

@@ -43,10 +43,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 2 edges to [[_COMMUNITY_Журнал решений]]
-- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 3 edges to [[_COMMUNITY_Журнал решений]]
 - 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
 
 ## Top bridge nodes
 - [[scenery.js]] - degree 25, connects to 2 communities

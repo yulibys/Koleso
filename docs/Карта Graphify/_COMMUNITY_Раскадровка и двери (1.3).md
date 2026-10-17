@@ -1,45 +1,53 @@
 ---
 type: community
-cohesion: 0.12
-members: 30
+cohesion: 0.08
+members: 38
 ---
 
 # Раскадровка и двери (1.3)
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[track — лента изобретений (игла, верёвка, флейта, лодка, гончарный круг)]] - code - src/body.html
-- [[5–9 смысловых зон]] - concept - docs/lectures/1.3.txt
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - code - src/body.html
-- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - code - src/body.html
-- [[layLater()]] - code - src/app.js
-- [[«Маша» Фёдора Сваровского (разбор финала)]] - concept - docs/lectures/1.3.txt
-- [[Авторство как отсечение каждый элемент заново доказывает право остаться]] - rationale - docs/lectures/1.7.txt
-- [[Вертикальный ритм — расстояния во времени скролла]] - concept - docs/lectures/1.5.txt
-- [[Интертитр «Колесо кажется самым первым изобретением человека»]] - code - src/body.html
-- [[Интертитр «Пять тысяч лет колесо пролежало в болоте и ни разу никуда не поехало»]] - code - src/body.html
-- [[Интертитры рвутся по неровному краю (по kamidesgnfaith)]] - rationale - docs/context.md
-- [[Испытание сетки крайними случаями]] - rationale - docs/lectures/1.5.txt
-- [[Карта внимания (партитура страницы)]] - rationale - docs/lectures/1.6.txt
-- [[Карта соседства]] - concept - docs/lectures/1.3.txt
-- [[Лекция 1.3. Архитектура лонгрида структура, раскадровка]] - document - docs/lectures/1.3.txt
-- [[Линейный ствол и боковые двери с содержательным именем]] - rationale - docs/lectures/1.3.txt
-- [[Ма паузу проверяют удалением]] - rationale - docs/lectures/1.3.txt
-- [[Монтаж аттракционов (Эйзенштейн)]] - concept - docs/lectures/1.3.txt
-- [[Пауза должна иметь функцию]] - rationale - docs/lectures/1.6.txt
-- [[Пена (Слотердайк) различимая мембрана между частями]] - rationale - docs/lectures/1.1.txt
-- [[Переход под допросом почему следующий фрагмент здесь]] - rationale - docs/lectures/1.3.txt
-- [[Плотность 1–5 между двумя «пятёрками» — передышка]] - rationale - docs/lectures/1.3.txt
-- [[Правка соседская дверь к отчёту о люблянском колесе и статье о кувшине из Броночице]] - rationale - docs/MAP.md
-- [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - rationale - docs/MAP.md
-- [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - code - src/body.html
-- [[Ритм «акцент → пауза → выход»]] - rationale - docs/MAP.md
-- [[Соседская дверь внешняя ссылка к первоисточнику]] - rationale - docs/lectures/1.1.txt
-- [[Ссылка как обещание не «подробнее», а предмет перехода]] - rationale - docs/lectures/1.8.txt
-- [[Функция зоны глаголом, а не форматом]] - rationale - docs/lectures/1.3.txt
-- [[Эффект Кулешова значение кадра меняется от соседа]] - concept - docs/lectures/1.3.txt
+- [[nagSvg — монах и царь, «колесница», «ось нет  кузов нет»]] - code - src/body.html
+- [[sams — «А вы, кажется, попали в колесо сансары»]] - code - src/body.html
+- [[gong()]] - code - src/app.js
+- [[nag — Нагасена и Милинда «колесо — это колесница»]] - code - src/body.html
+- [[nag()]] - code - src/scenery.js
+- [[Алетейя честный режим сокрытия]] - concept - docs/lectures/1.8.txt
+- [[Апофатический тезис «это не проект о…»]] - rationale - docs/lectures/1.2.txt
+- [[Архивный комплект и запись прохождения]] - rationale - docs/lectures/1.8.txt
+- [[Версия 1.0 новый номер при смене тезиса, структуры, источников]] - rationale - docs/lectures/1.8.txt
+- [[Доска процесса из четырёх фреймов]] - concept - docs/lectures/1.8.txt
+- [[Карта проекта «Далеко собрались» (MAP.md)]] - document - docs/MAP.md
+- [[Карточка выпуска в восемь строк]] - rationale - docs/lectures/1.7.txt
+- [[Карточка необходимости]] - concept - docs/lectures/1.1.txt
+- [[Критерий готовности рабочей трети (30–40 %)]] - rationale - docs/lectures/1.5.txt
+- [[Лекция 1.2. Тема, тезис, редакционный угол]] - document - docs/lectures/1.2.txt
+- [[Лекция 1.8. Предзащита и финальная редактура]] - document - docs/lectures/1.8.txt
+- [[Метод «почему» до материала]] - rationale - docs/lectures/1.2.txt
+- [[Наблюдение раньше совета]] - rationale - docs/lectures/1.8.txt
+- [[Нигредо распад удобных объяснений]] - concept - docs/lectures/1.8.txt
+- [[Обещание — об опыте или знании, не о «красивом визуале»]] - rationale - docs/lectures/1.6.txt
+- [[Остранение (Шкловский) мотивированный локальный сбой]] - concept - docs/lectures/1.6.txt
+- [[Палеонимия (Деррида) что «лонгрид» значит сверх длины]] - concept - docs/lectures/1.2.txt
+- [[Паспорт необходимости]] - concept - docs/lectures/1.2.txt
+- [[Показ по живой ссылке за 230 (20 + 70 + 30 + 30 с)]] - rationale - docs/lectures/1.8.txt
+- [[Правка проверки перед показом и карточка версии 1.0]] - rationale - docs/MAP.md
+- [[Правка тезис одной фразой и «это не проект об истории транспорта вообще»]] - rationale - docs/MAP.md
+- [[Проверка чужими руками чистое окно, телефон, клавиатура, медленная сеть, путь до титров]] - rationale - docs/lectures/1.8.txt
+- [[Публикационный порог версия выдержала названные проверки]] - rationale - docs/lectures/1.7.txt
+- [[Редакционный угол «рассматриваю материал через конфликт, чтобы изменение»]] - rationale - docs/lectures/1.2.txt
+- [[Ситуация чтения вместо аудитории]] - rationale - docs/lectures/1.2.txt
+- [[Сцена Нагасены перенесена в середину, после сборки (v15)]] - rationale - docs/context.md
+- [[Тезис или исследовательский вопрос с достойным возражением]] - rationale - docs/lectures/1.2.txt
+- [[Тема — территория, конструкцию держит тезис]] - concept - docs/lectures/1.2.txt
+- [[Тест необходимости «страница нужна, потому что…», «повод её не делать…»]] - rationale - docs/lectures/1.1.txt
+- [[Угол проекта колесо само по себе бесполезно]] - rationale - docs/MAP.md
+- [[Финальный порог публикации]] - concept - docs/lectures/1.8.txt
+- [[Хорошие URI не меняются]] - rationale - docs/lectures/1.8.txt
+- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - rationale - docs/lectures/1.8.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,22 +57,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 12 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
 - 11 edges to [[_COMMUNITY_Журнал решений]]
-- 11 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 10 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 7 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 5 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 4 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 6 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 5 edges to [[_COMMUNITY_Сборка, источники, финал]]
+- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 3 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
 - 2 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
 - 1 edge to [[_COMMUNITY_Пейзажи (scenery.js)]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Сборка, источники, финал]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
 
 ## Top bridge nodes
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - degree 16, connects to 6 communities
-- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - degree 15, connects to 4 communities
-- [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - degree 11, connects to 4 communities
-- [[Ритм «акцент → пауза → выход»]] - degree 8, connects to 3 communities
-- [[Правка соседская дверь к отчёту о люблянском колесе и статье о кувшине из Броночице]] - degree 8, connects to 3 communities
+- [[Карта проекта «Далеко собрались» (MAP.md)]] - degree 14, connects to 6 communities
+- [[nag — Нагасена и Милинда «колесо — это колесница»]] - degree 12, connects to 4 communities
+- [[Лекция 1.8. Предзащита и финальная редактура]] - degree 17, connects to 3 communities
+- [[Лекция 1.2. Тема, тезис, редакционный угол]] - degree 14, connects to 2 communities
+- [[Правка тезис одной фразой и «это не проект об истории транспорта вообще»]] - degree 7, connects to 2 communities

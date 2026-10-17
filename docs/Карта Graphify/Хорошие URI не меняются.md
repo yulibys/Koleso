@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.8.txt"
 type: "rationale"
-community: "Выпуск и предзащита (1.8)"
+community: "Раскадровка и двери (1.3)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/Раскадровка_и_двери_13
 ---
 
 # Хорошие URI не меняются
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Лекция 1.8. Предзащита и финальная редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/rationale #graphify/EXTRACTED #community/Раскадровка_и_двери_13

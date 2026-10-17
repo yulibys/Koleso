@@ -10,53 +10,53 @@ members: 47
 **Members:** 47 nodes
 
 ## Members
-- [[swAxle — ось, прорисовка]] - code - src/body.html
-- [[dot-collage + data-shape (circleovalarchblobblob2)]] - code - src/style.css
-- [[dot-cut — вырезки, выезд по --k]] - code - src/style.css
-- [[dot-stk — стикеры с бумажной подписью]] - code - src/style.css
-- [[P3 — Беговая машина Карла Драйса, 1817 (.collage)]] - image - src/body.html
-- [[P4 — Омнибус, Париж, 1928 (.collage)]] - image - src/body.html
-- [[Reflow ~320 CSS px без потери содержания и горизонтальной прокрутки]] - rationale - docs/lectures/1.7.txt
-- [[S_benz — Автомобиль Карла Бенца, 1886 (.stk)]] - image - src/body.html
-- [[S_flute — Флейта из пещеры Дивье Бабе (.stk)]] - image - src/body.html
-- [[S_oxcart — Норвегия, около 1900, повозка (.stk)]] - image - src/body.html
-- [[S_pot — Кувшин из Броночице (.stk)]] - image - src/body.html
-- [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - image - src/body.html
-- [[T_ur — Вырезка T_ur (.cut)]] - image - src/body.html
-- [[X1 — Пещера Ласко (.collage)]] - image - src/body.html
-- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
-- [[X6 — Пахота. Палестина, начало XX века (.collage)]] - image - src/body.html
-- [[_sticker()]] - code - cut/gc.py
-- [[bubble()]] - code - src/app.js
-- [[clock()]] - code - src/app.js
-- [[cv2]] - concept
-- [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - code - src/body.html
-- [[gc.py]] - code - cut/gc.py
-- [[json]] - concept
-- [[klaxon()]] - code - src/app.js
-- [[numpy]] - concept
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - code - src/body.html
-- [[pil]] - concept
-- [[soft()]] - code - src/app.js
-- [[squeak()]] - code - src/app.js
-- [[sticker()]] - code - cut/gc.py
-- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - code - src/body.html
-- [[sys]] - concept
-- [[Адаптив меняем расположение, сохраняем смысловые связи]] - rationale - docs/lectures/1.7.txt
-- [[Близость внутреннее меньше внешнего]] - rationale - docs/lectures/1.6.txt
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - rationale - docs/context.md
-- [[Интертитр «Мы думали, что придумали колесо. А колесо придумало, как нам жить»]] - code - src/body.html
-- [[Картинка с подписью — одна группа]] - rationale - docs/MAP.md
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - code - src/body.html
-- [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - concept - docs/lectures/1.6.txt
-- [[Общая судьба совместное движение собирает группу]] - concept - docs/lectures/1.6.txt
-- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - code - src/body.html
-- [[Подпись и изображение — одна группа]] - concept - docs/lectures/1.5.txt
-- [[Разрез земли strata + bubbles (болото)]] - code - src/body.html
-- [[Смысловой узел переезжает целиком]] - rationale - docs/lectures/1.5.txt
-- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - code - src/body.html
-- [[Текстовая альтернатива функция, а не пиксели]] - rationale - docs/lectures/1.5.txt
-- [[У каждого нарушения коллажа — опора]] - rationale - docs/lectures/1.5.txt
+- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
+- [[dot-cn-slot.cn-reel.cn-face — барабан дат]] - code - src/style.css
+- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
+- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
+- [[piano()]] - code - src/app.js
+- [[slot()]] - code - src/app.js
+- [[steps()]] - code - src/app.js
+- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
+- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
+- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
+- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
+- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
+- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
+- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
+- [[Два входа через обещание и через материал]] - rationale - docs/lectures/1.6.txt
+- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
+- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
+- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
+- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
+- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
+- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
+- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
+- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
+- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
+- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
+- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
+- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
+- [[Начинать с конкретной ситуации, а не с определений]] - rationale - docs/lectures/1.7.txt
+- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
+- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
+- [[Первый экран — порог и договор обещание, голос, первый шаг]] - rationale - docs/MAP.md
+- [[Первый экран — порог пять функций]] - rationale - docs/lectures/1.6.txt
+- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
+- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
+- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - code - src/body.html
+- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
+- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
+- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
+- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
+- [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - code - src/body.html
+- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,21 +66,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 14 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 13 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 12 edges to [[_COMMUNITY_Журнал решений]]
 - 10 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 10 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 6 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 6 edges to [[_COMMUNITY_Журнал решений]]
-- 6 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 5 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 3 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
-- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
+- 7 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 4 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 4 edges to [[_COMMUNITY_Сборка, источники, финал]]
+- 3 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 3 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
+- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
 
 ## Top bridge nodes
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - degree 16, connects to 5 communities
-- [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - degree 15, connects to 5 communities
-- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - degree 9, connects to 5 communities
-- [[Картинка с подписью — одна группа]] - degree 7, connects to 3 communities
-- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - degree 11, connects to 2 communities
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 10 communities
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 4 communities
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - degree 8, connects to 4 communities
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - degree 7, connects to 3 communities
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - degree 6, connects to 3 communities

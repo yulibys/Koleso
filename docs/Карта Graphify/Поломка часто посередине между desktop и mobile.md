@@ -4,7 +4,7 @@ type: "rationale"
 community: "Сетки и модуль (1.5)"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Сетки_и_модуль_15
 ---
 
@@ -14,4 +14,4 @@ tags:
 - [[Лекция 1.5. Модульные системы и сетки]] - `references` [EXTRACTED]
 - [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Сетки_и_модуль_15
+#graphify/rationale #graphify/EXTRACTED #community/Сетки_и_модуль_15

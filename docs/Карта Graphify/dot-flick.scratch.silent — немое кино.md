@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Фото, вырезки, права (1.7)"
 location: "L386"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - graphify/EXTRACTED
+  - community/Фото_вырезки_права_17
 ---
 
 # .flick/.scratch/.silent — немое кино
@@ -15,4 +15,4 @@ tags:
 - [[Контроль медиа пауза движения и звука]] - `rationale_for` [INFERRED]
 - [[Немое кино .flick + .scratch (+ .silent рамка)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

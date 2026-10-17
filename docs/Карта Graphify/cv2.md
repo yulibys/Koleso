@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Фото, вырезки, права (1.7)"
+community: "Интерактив и проверка читателем"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # cv2
@@ -14,4 +14,4 @@ tags:
 - [[_sticker()]] - `calls` [EXTRACTED]
 - [[gc.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/concept #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

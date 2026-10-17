@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Колесо-проводник и гравюра"
+community: "Выпуск и предзащита (1.8)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Выпуск_и_предзащита_18
 ---
 
 # random
@@ -14,4 +14,4 @@ tags:
 - [[batten()]] - `calls` [EXTRACTED]
 - [[wheel.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/concept #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

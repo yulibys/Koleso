@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Журнал решений"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Журнал_решений
 ---
 
 # eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)
@@ -29,4 +29,4 @@ tags:
 - [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - `references` [EXTRACTED]
 - [[Эффект Кулешова значение кадра меняется от соседа]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

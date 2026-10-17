@@ -190,6 +190,11 @@
   },
   "active": "1be21f4f050e0191",
   "lastOpenFiles": [
+    "graphify-out/2026-10-17/manifest.json",
+    "graphify-out/2026-10-17/graph.json",
+    "graphify-out/2026-10-17/GRAPH_REPORT.md",
+    "graphify-out/2026-10-17",
+    "graphify-out/cache/ast/v0.9.92-s17-g0fcafffe3c00/41e93853a979c5e2659ee49d9475363a8c2cd5542501b08ccde2b83d673de2c7.json",
     "docs/Карта Graphify/Контраст WCAG 2.2 AA 4.51 и 31.md",
     "docs/Карта Graphify/Мастеринг экрана голоса маскируют друг друга.md",
     "docs/Карта Graphify/Выключка влево и ограниченный набор гарнитур.md",
@@ -214,8 +219,6 @@
     "docs/Карта Graphify/Прописной набор требует умеренной разрядки.md",
     "docs/Карта Graphify/Увеличение текста до 200 %.md",
     "docs/Карта Graphify/Сетка вырастает из строки и материала.md",
-    "docs/Карта Graphify/_COMMUNITY_Фото, вырезки, права (1.7).md",
-    "docs/Карта Graphify/Вес страницы сначала решить, нужен ли тяжёлый медиафайл.md",
     "docs/lectures/1.7.txt",
     "docs/lectures/1.6.txt",
     "docs/lectures/1.5.txt",
@@ -224,9 +227,6 @@
     "docs/Карта Graphify",
     "graphify-out/obsidian-export.zip",
     "docs/Сессии/Журнал сессий.base",
-    "images/icon.png",
-    "docs/Сессии",
-    "graphify-out/graph.html",
-    "graphify-out/cache/stat-index.json"
+    "images/icon.png"
   ]
 }

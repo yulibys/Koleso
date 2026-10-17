@@ -40,14 +40,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Журнал решений]]
-- 5 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 5 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 5 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 5 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 5 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 5 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 4 edges to [[_COMMUNITY_Журнал решений]]
+- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 4 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
 - 2 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 - 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
 
 ## Top bridge nodes
