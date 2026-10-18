@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
+community: "scenery.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/sceneryjs
 ---
 
 # scenery.js
@@ -38,4 +38,4 @@ tags:
 - [[wave()]] - `contains` [EXTRACTED]
 - [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/sceneryjs

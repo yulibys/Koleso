@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Интерактив и проверка читателем"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # nag()
@@ -15,4 +15,4 @@ tags:
 - [[nag — Нагасена и Милинда «колесо — это колесница»]] - `references` [INFERRED]
 - [[scenery.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

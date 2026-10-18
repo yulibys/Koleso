@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Колесо-проводник и гравюра"
+community: "Журнал решений"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Журнал_решений
 ---
 
 # Плёнка shaders.com: царапины, зерно, мерцание; VHS при перемотке
@@ -16,4 +16,4 @@ tags:
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 - [[Снова чёрно-белое плёнка на всех сценах (v12)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений

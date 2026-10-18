@@ -1,11 +1,11 @@
 ---
 source_file: "docs/MAP.md"
 type: "rationale"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Вариант без движения (prefers-reduced-motion)
@@ -15,4 +15,4 @@ tags:
 - [[Лекция 1.6. Управление вниманием первый экран, паузы]] - `references` [EXTRACTED]
 - [[Уменьшение движения и неподвижная версия]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/rationale #graphify/INFERRED #community/Колесо-проводник_и_гравюра

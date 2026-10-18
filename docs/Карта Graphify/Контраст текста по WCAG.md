@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.6.txt"
 type: "rationale"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Контраст текста по WCAG
@@ -15,4 +15,4 @@ tags:
 - [[Мелкий текст — не на пёстрый фон]] - `conceptually_related_to` [INFERRED]
 - [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/rationale #graphify/INFERRED #community/Колесо-проводник_и_гравюра

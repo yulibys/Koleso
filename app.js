@@ -117,7 +117,7 @@
   { const t = (k, x, y, sc, bx, by) => `<g transform="translate(${x} ${y}) scale(${sc}) translate(${-bx} ${-by})">${FIG[k]}</g>`;
     $('s7far').innerHTML = '<g opacity=".5" transform="translate(0 579) scale(1 .42) translate(0 -627)">' + FIG.s1mL + FIG.s1mR + '</g>' + t('treeR', 420, 579, 0.5, 1327, 575) + t('treeL', 1010, 579, 0.45, 128, 586) + A.birds(560, 250, 3, 13) + A.birds(900, 200, 2, 17); }
   $('s7sayg').innerHTML = FIG.s7say;
-  $('s6qg').innerHTML = FIG.s6q; $('s6nog').innerHTML = FIG.s6no;
+  $('s6qg').innerHTML = FIG.s6no; $('s6nog').innerHTML = FIG.s6q;
   $('s8arrowg').innerHTML = FIG.s8arrow;
   const VW = [[0, 940, 880], [1, 860, 700], [2, 560, 420], [3, 940, 830]];
   const vehs = VW.map(([i, w, vw]) => {

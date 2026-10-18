@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Сборка, источники, финал"
+community: "Типографика (1.4)"
 location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Сборка_источники_финал
+  - community/Типографика_14
 ---
 
 # #creditsCard — титры «Конец»
@@ -18,4 +18,4 @@ tags:
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [INFERRED]
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Сборка_источники_финал
+#graphify/code #graphify/INFERRED #community/Типографика_14

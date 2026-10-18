@@ -1,0 +1,33 @@
+---
+source_file: "v20/art.js"
+type: "code"
+community: "Раскадровка и двери (1.3)"
+location: "L11"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Раскадровка_и_двери_13
+---
+
+# line()
+
+## Connections
+- [[bog()_1]] - `calls` [EXTRACTED]
+- [[bubble()_2]] - `calls` [EXTRACTED]
+- [[ferris()_1]] - `calls` [EXTRACTED]
+- [[frame()_1]] - `calls` [EXTRACTED]
+- [[gear()_1]] - `calls` [EXTRACTED]
+- [[man()_1]] - `calls` [EXTRACTED]
+- [[mountains()_1]] - `calls` [EXTRACTED]
+- [[mouse()_1]] - `calls` [EXTRACTED]
+- [[oak()_2]] - `calls` [EXTRACTED]
+- [[ring()_1]] - `calls` [EXTRACTED]
+- [[seg()_1]] - `calls` [EXTRACTED]
+- [[squirrel()_1]] - `calls` [EXTRACTED]
+- [[stick()_1]] - `calls` [EXTRACTED]
+- [[tuft()_1]] - `calls` [EXTRACTED]
+- [[underline()_1]] - `calls` [EXTRACTED]
+- [[v20art.js]] - `contains` [EXTRACTED]
+- [[wheel()_1]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13

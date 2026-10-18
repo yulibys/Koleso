@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Сборка, источники, финал"
+community: "Сетки и модуль (1.5)"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Сетки_и_модуль_15
 ---
 
 # rounds — «Колесо… Это как всё вокруг» / колесо сансары
@@ -29,4 +29,4 @@ tags:
 - [[Финал возвращается к началу]] - `rationale_for` [EXTRACTED]
 - [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

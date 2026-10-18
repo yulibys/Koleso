@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Интерактив и проверка читателем"
+community: "Сетки и модуль (1.5)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сетки_и_модуль_15
 ---
 
 # sys
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gc.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/concept #graphify/EXTRACTED #community/Сетки_и_модуль_15

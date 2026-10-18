@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # #swAxle — ось, прорисовка
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

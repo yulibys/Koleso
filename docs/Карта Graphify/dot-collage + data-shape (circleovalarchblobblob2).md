@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Пейзажи (scenery.js)"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Пейзажи_sceneryjs
 ---
 
 # .collage + data-shape (circle/oval/arch/blob/blob2)
@@ -15,4 +15,4 @@ tags:
 - [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - `implements` [EXTRACTED]
 - [[У каждого нарушения коллажа — опора]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

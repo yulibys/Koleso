@@ -1,19 +1,19 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Фото, вырезки, права (1.7)"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Фото_вырезки_права_17
 ---
 
 # scribble()
 
 ## Connections
 - [[air()]] - `calls` [EXTRACTED]
-- [[app.js]] - `contains` [EXTRACTED]
 - [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - `references` [INFERRED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

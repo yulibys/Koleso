@@ -1,12 +1,12 @@
 ---
 source_file: "cut/gc.py"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Сетки и модуль (1.5)"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сетки_и_модуль_15
 ---
 
 # _sticker()
@@ -17,4 +17,4 @@ tags:
 - [[numpy]] - `calls` [EXTRACTED]
 - [[sticker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

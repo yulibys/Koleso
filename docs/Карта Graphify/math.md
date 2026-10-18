@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "concept"
-community: "Выпуск и предзащита (1.8)"
+community: "Движок сцен и звуки (app.js)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # math
 
 ## Connections
 - [[batten()]] - `calls` [EXTRACTED]
-- [[wheel.py]] - `imports` [EXTRACTED]
+- [[wheel()]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/concept #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

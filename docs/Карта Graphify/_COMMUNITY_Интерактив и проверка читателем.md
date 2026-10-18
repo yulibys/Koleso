@@ -1,55 +1,64 @@
 ---
 type: community
-cohesion: 0.07
-members: 40
+cohesion: 0.06
+members: 49
 ---
 
 # Интерактив и проверка читателем
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 40 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 49 nodes
 
 ## Members
-- [[swAxle — ось, прорисовка]] - code - src/body.html
-- [[dot-cut — вырезки, выезд по --k]] - code - src/style.css
-- [[dot-stk — стикеры с бумажной подписью]] - code - src/style.css
-- [[P3 — Беговая машина Карла Драйса, 1817 (.collage)]] - image - src/body.html
-- [[P4 — Омнибус, Париж, 1928 (.collage)]] - image - src/body.html
+- [[dot-guide — фиксированное колесо-проводник]] - code - src/style.css
+- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
+- [[dot-lab-ground.blade.wind]] - code - src/style.css
+- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
 - [[Reflow ~320 CSS px без потери содержания и горизонтальной прокрутки]] - rationale - docs/lectures/1.7.txt
-- [[S_benz — Автомобиль Карла Бенца, 1886 (.stk)]] - image - src/body.html
-- [[S_flute — Флейта из пещеры Дивье Бабе (.stk)]] - image - src/body.html
-- [[S_oxcart — Норвегия, около 1900, повозка (.stk)]] - image - src/body.html
-- [[S_pot — Кувшин из Броночице (.stk)]] - image - src/body.html
-- [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - image - src/body.html
-- [[T_ur — Вырезка T_ur (.cut)]] - image - src/body.html
-- [[X1 — Пещера Ласко (.collage)]] - image - src/body.html
-- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
-- [[X6 — Пахота. Палестина, начало XX века (.collage)]] - image - src/body.html
-- [[_sticker()]] - code - cut/gc.py
-- [[bubble()]] - code - src/app.js
-- [[cv2]] - concept
-- [[gc.py]] - code - cut/gc.py
-- [[json]] - concept
-- [[klaxon()]] - code - src/app.js
-- [[numpy]] - concept
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - code - src/body.html
-- [[pil]] - concept
-- [[soft()]] - code - src/app.js
-- [[squeak()]] - code - src/app.js
-- [[sticker()]] - code - cut/gc.py
-- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - code - src/body.html
-- [[sys]] - concept
+- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
+- [[nag — Нагасена и Милинда «колесо — это колесница»]] - code - src/body.html
+- [[nag()]] - code - src/scenery.js
+- [[sayL()_2]] - code - src/app.js
+- [[upd()]] - code - src/app.js
+- [[wood()]] - code - src/app.js
 - [[Адаптив меняем расположение, сохраняем смысловые связи]] - rationale - docs/lectures/1.7.txt
-- [[Близость внутреннее меньше внешнего]] - rationale - docs/lectures/1.6.txt
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - rationale - docs/context.md
-- [[Картинка с подписью — одна группа]] - rationale - docs/MAP.md
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - code - src/body.html
-- [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - concept - docs/lectures/1.6.txt
-- [[Общая судьба совместное движение собирает группу]] - concept - docs/lectures/1.6.txt
-- [[Подпись и изображение — одна группа]] - concept - docs/lectures/1.5.txt
-- [[Разрез земли strata + bubbles (болото)]] - code - src/body.html
-- [[Смысловой узел переезжает целиком]] - rationale - docs/lectures/1.5.txt
-- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - code - src/body.html
+- [[Архивный слепок папка проверенной версии]] - rationale - docs/lectures/1.7.txt
+- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
+- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
+- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
+- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
+- [[Диагноз место, устройство, видимое последствие]] - rationale - docs/lectures/1.7.txt
+- [[Журнал решений 5–7 поворотных записей]] - rationale - docs/lectures/1.7.txt
+- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
+- [[Затруднение — наблюдаемыми словами, менять по одному параметру]] - rationale - docs/MAP.md
+- [[ИИ-пайплайн, который можно объяснить]] - rationale - docs/lectures/1.7.txt
+- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
+- [[История ножа как изменился тот, кто выбирает]] - concept - docs/lectures/1.7.txt
+- [[Клавиатура Tab, видимый фокус, выход из интерактива]] - rationale - docs/lectures/1.7.txt
+- [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - code - src/body.html
+- [[Критерий выбора сначала сформулировать сохраняемое отношение, потом стиль]] - rationale - docs/lectures/1.7.txt
+- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - document - docs/MAP.md
+- [[Матрица состояний ✓  △  ×  — для 8–10 сочетаний]] - rationale - docs/lectures/1.7.txt
+- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
+- [[Остранение (Шкловский) мотивированный локальный сбой]] - concept - docs/lectures/1.6.txt
+- [[Открыть ссылки из опубликованной версии, без своего аккаунта]] - rationale - docs/lectures/1.7.txt
+- [[Палимпсест (Женетт) прежний слой объясняет нынешнюю форму]] - concept - docs/lectures/1.7.txt
+- [[Порядок правок поломка → фактыправоссылки → обещание → типографика → украшение]] - rationale - docs/lectures/1.7.txt
+- [[Проба без подсказки чужой читатель проходит эпизод]] - rationale - docs/lectures/1.7.txt
+- [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - rationale - docs/lectures/1.7.txt
+- [[Проверка на медленной сети Network, Disable cache, троттлинг]] - rationale - docs/lectures/1.7.txt
+- [[Проверять публичную ссылку на реальных устройствах, а не редактор]] - rationale - docs/lectures/1.7.txt
+- [[Редактура сократить абзац примерно на треть]] - rationale - docs/lectures/1.7.txt
+- [[Слабый дизайн материал может изменить замысел]] - concept - docs/lectures/1.7.txt
+- [[Следующей версии нужна причина]] - rationale - docs/lectures/1.7.txt
+- [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - concept - docs/lectures/1.7.txt
+- [[Служебная фраза — ясная инструкция к действию]] - rationale - docs/lectures/1.7.txt
+- [[Сравнивать варианты, меняя один параметр]] - rationale - docs/lectures/1.7.txt
+- [[Сцена Нагасены перенесена в середину, после сборки (v15)]] - rationale - docs/context.md
+- [[Угол проекта колесо само по себе бесполезно]] - rationale - docs/MAP.md
+- [[Фактологический проход имена, даты, подписи, цитаты, числа]] - rationale - docs/lectures/1.7.txt
+- [[Фармакон (Платон, Деррида, Стиглер) ИИ — лекарство и яд]] - concept - docs/lectures/1.7.txt
+- [[Читательская проба think aloud → одна правка]] - rationale - docs/lectures/1.6.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,21 +68,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Журнал решений]]
+- 11 edges to [[_COMMUNITY_Журнал решений]]
+- 10 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
 - 9 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 5 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 5 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 1 edge to [[_COMMUNITY_Пейзажи (scenery.js)]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
+- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 6 edges to [[_COMMUNITY_Рисунки повозок]]
+- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 3 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 2 edges to [[_COMMUNITY_scenery.js]]
+- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
 
 ## Top bridge nodes
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - degree 16, connects to 5 communities
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - degree 10, connects to 3 communities
-- [[Картинка с подписью — одна группа]] - degree 7, connects to 3 communities
-- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - degree 11, connects to 2 communities
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - degree 6, connects to 2 communities
+- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - degree 39, connects to 6 communities
+- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 5 communities
+- [[nag — Нагасена и Милинда «колесо — это колесница»]] - degree 12, connects to 4 communities
+- [[Угол проекта колесо само по себе бесполезно]] - degree 7, connects to 3 communities
+- [[Адаптив меняем расположение, сохраняем смысловые связи]] - degree 5, connects to 3 communities

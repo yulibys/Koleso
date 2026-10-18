@@ -1,20 +1,18 @@
 ---
-source_file: "src/app.js"
+source_file: "app.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
-location: "L231"
+community: "Сборка, источники, финал"
+location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Сборка_источники_финал
 ---
 
 # sayL()
 
 ## Connections
 - [[app.js]] - `contains` [EXTRACTED]
-- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
-- [[upd()]] - `calls` [EXTRACTED]
-- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
+- [[labUpd()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

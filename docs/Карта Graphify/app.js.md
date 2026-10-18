@@ -1,65 +1,35 @@
 ---
-source_file: "src/app.js"
+source_file: "app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Сборка, источники, финал"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Сборка_источники_финал
 ---
 
 # app.js
 
 ## Connections
-- [[air()]] - `contains` [EXTRACTED]
-- [[applyK()]] - `contains` [EXTRACTED]
-- [[bubble()]] - `contains` [EXTRACTED]
-- [[click()]] - `contains` [EXTRACTED]
-- [[clock()]] - `contains` [EXTRACTED]
-- [[clop()]] - `contains` [EXTRACTED]
-- [[env()]] - `contains` [EXTRACTED]
-- [[fin()]] - `contains` [EXTRACTED]
-- [[gesture()]] - `indirect_call` [INFERRED]
-- [[gong()]] - `contains` [EXTRACTED]
-- [[guideFrame()]] - `contains` [EXTRACTED]
-- [[init()]] - `contains` [EXTRACTED]
-- [[klaxon()]] - `contains` [EXTRACTED]
-- [[knock()]] - `contains` [EXTRACTED]
-- [[ksPlay()]] - `contains` [EXTRACTED]
-- [[layLater()]] - `contains` [EXTRACTED]
-- [[layScenery()]] - `contains` [EXTRACTED]
-- [[layout()]] - `contains` [EXTRACTED]
-- [[layoutKF()]] - `contains` [EXTRACTED]
-- [[loop()]] - `indirect_call` [INFERRED]
-- [[mallet()]] - `contains` [EXTRACTED]
-- [[moo()]] - `contains` [EXTRACTED]
-- [[morphD()]] - `contains` [EXTRACTED]
-- [[nz()]] - `contains` [EXTRACTED]
-- [[ok()]] - `contains` [EXTRACTED]
-- [[osc()]] - `contains` [EXTRACTED]
-- [[pairOf()]] - `contains` [EXTRACTED]
-- [[parseK()]] - `contains` [EXTRACTED]
-- [[piano()]] - `contains` [EXTRACTED]
-- [[plank()]] - `contains` [EXTRACTED]
-- [[play()]] - `contains` [EXTRACTED]
-- [[prepType()]] - `contains` [EXTRACTED]
-- [[projector()]] - `contains` [EXTRACTED]
-- [[rewind()]] - `contains` [EXTRACTED]
-- [[ripFrame()]] - `contains` [EXTRACTED]
-- [[roll()]] - `contains` [EXTRACTED]
-- [[sampleFig()]] - `contains` [EXTRACTED]
+- [[S]] - `contains` [EXTRACTED]
+- [[cancelEnding()]] - `contains` [EXTRACTED]
+- [[cover()]] - `contains` [EXTRACTED]
+- [[coverSeq()]] - `contains` [EXTRACTED]
+- [[fit()]] - `contains` [EXTRACTED]
+- [[labUpd()]] - `contains` [EXTRACTED]
+- [[loop()_1]] - `contains` [EXTRACTED]
+- [[morph()]] - `contains` [EXTRACTED]
+- [[nextCover()]] - `contains` [EXTRACTED]
+- [[put()]] - `contains` [EXTRACTED]
+- [[restore()]] - `contains` [EXTRACTED]
+- [[rewindToS1()]] - `contains` [EXTRACTED]
+- [[ringAt()]] - `contains` [EXTRACTED]
 - [[sayL()]] - `contains` [EXTRACTED]
-- [[scene()]] - `contains` [EXTRACTED]
-- [[scribble()]] - `contains` [EXTRACTED]
-- [[send()]] - `contains` [EXTRACTED]
-- [[slot()]] - `contains` [EXTRACTED]
-- [[soft()]] - `contains` [EXTRACTED]
-- [[squeak()]] - `contains` [EXTRACTED]
-- [[steps()]] - `contains` [EXTRACTED]
-- [[tear()]] - `contains` [EXTRACTED]
-- [[upd()]] - `contains` [EXTRACTED]
-- [[whoosh()]] - `contains` [EXTRACTED]
-- [[wood()]] - `contains` [EXTRACTED]
+- [[scrollAnim()]] - `contains` [EXTRACTED]
+- [[spin()]] - `contains` [EXTRACTED]
+- [[startEnding()]] - `contains` [EXTRACTED]
+- [[textOut()]] - `contains` [EXTRACTED]
+- [[tick()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

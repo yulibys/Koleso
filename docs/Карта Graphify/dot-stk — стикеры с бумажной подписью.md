@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Сетки и модуль (1.5)"
 location: "L550"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сетки_и_модуль_15
 ---
 
 # .stk — стикеры с бумажной подписью
@@ -16,4 +16,4 @@ tags:
 - [[Смысловой узел переезжает целиком]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Сетки_и_модуль_15

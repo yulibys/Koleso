@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Интерактив и проверка читателем"
+community: "Сетки и модуль (1.5)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сетки_и_модуль_15
 ---
 
 # S_flute — Флейта из пещеры Дивье Бабе (.stk)
@@ -14,4 +14,4 @@ tags:
 - [[later — «Колесо придумали позже флейты» (лента изобретений)]] - `references` [EXTRACTED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/image #graphify/EXTRACTED #community/Сетки_и_модуль_15

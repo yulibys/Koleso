@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L429"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)
@@ -20,4 +20,4 @@ tags:
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `implements` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра

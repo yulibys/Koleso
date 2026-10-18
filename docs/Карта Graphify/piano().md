@@ -1,19 +1,19 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # piano()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
 - [[ksPlay()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

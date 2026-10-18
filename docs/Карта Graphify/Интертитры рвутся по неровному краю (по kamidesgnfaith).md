@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Журнал решений"
+community: "Рисунки повозок"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Рисунки_повозок
 ---
 
 # Интертитры рвутся по неровному краю (по kamidesgn/faith)
@@ -17,4 +17,4 @@ tags:
 - [[Пена (Слотердайк) различимая мембрана между частями]] - `conceptually_related_to` [INFERRED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений
+#graphify/rationale #graphify/EXTRACTED #community/Рисунки_повозок

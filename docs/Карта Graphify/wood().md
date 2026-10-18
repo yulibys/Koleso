@@ -1,19 +1,19 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
+community: "Интерактив и проверка читателем"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # wood()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
 - [[ksPlay()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

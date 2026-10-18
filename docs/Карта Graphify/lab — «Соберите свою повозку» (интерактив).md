@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
+community: "Интерактив и проверка читателем"
 location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # lab — «Соберите свою повозку» (интерактив)
@@ -18,7 +18,7 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[lab()]] - `references` [INFERRED]
 - [[nag — Нагасена и Милинда «колесо — это колесница»]] - `references` [EXTRACTED]
-- [[sayL()]] - `references` [INFERRED]
+- [[sayL()_2]] - `references` [INFERRED]
 - [[Действие читателя меняет состояние страницы]] - `rationale_for` [EXTRACTED]
 - [[Детали повозки parts .part + .lab-say]] - `references` [EXTRACTED]
 - [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - `rationale_for` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `rationale_for` [EXTRACTED]
 - [[Угол проекта колесо само по себе бесполезно]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

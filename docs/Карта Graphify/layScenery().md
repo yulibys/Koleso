@@ -1,19 +1,19 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Фото, вырезки, права (1.7)"
 location: "L126"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/Фото_вырезки_права_17
 ---
 
 # layScenery()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
 - [[layout()]] - `indirect_call` [INFERRED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17

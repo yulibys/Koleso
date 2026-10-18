@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
+community: "scenery.js"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/sceneryjs
 ---
 
 # cloud()
@@ -15,4 +15,4 @@ tags:
 - [[lab()]] - `calls` [EXTRACTED]
 - [[scenery.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/sceneryjs

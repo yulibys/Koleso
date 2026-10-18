@@ -1,19 +1,19 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # steps()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
 - [[ksPlay()]] - `calls` [EXTRACTED]
 - [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - `references` [INFERRED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Выпуск и предзащита (1.8)"
+community: "Сетки и модуль (1.5)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Выпуск_и_предзащита_18
+  - community/Сетки_и_модуль_15
 ---
 
 # Одно колесо-проводник с морфингом (по Shopify Editions)
@@ -17,4 +17,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `implements` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Выпуск_и_предзащита_18
+#graphify/rationale #graphify/INFERRED #community/Сетки_и_модуль_15

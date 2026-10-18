@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Колесо-проводник и гравюра"
+community: "Журнал решений"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Журнал_решений
 ---
 
 # Дрожащая линия рисунка — line boil (по tiagofragoso.com)
@@ -15,4 +15,4 @@ tags:
 - [[Без 3D всё на SVG, Three.js убран]] - `conceptually_related_to` [INFERRED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений

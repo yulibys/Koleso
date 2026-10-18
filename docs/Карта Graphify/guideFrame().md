@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - `references` [INFERRED]
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `references` [INFERRED]
-- [[app.js]] - `contains` [EXTRACTED]
 - [[loop()]] - `calls` [EXTRACTED]
 - [[morphD()]] - `calls` [EXTRACTED]
 - [[play()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

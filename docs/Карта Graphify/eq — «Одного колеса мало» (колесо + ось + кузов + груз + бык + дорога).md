@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Журнал решений"
+community: "Рисунки повозок"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Рисунки_повозок
 ---
 
 # eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)
@@ -29,4 +29,4 @@ tags:
 - [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - `references` [EXTRACTED]
 - [[Эффект Кулешова значение кадра меняется от соседа]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок

@@ -1,18 +1,22 @@
 ---
 type: community
-cohesion: 0.07
-members: 46
+cohesion: 0.06
+members: 50
 ---
 
 # Типографика (1.4)
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 50 nodes
 
 ## Members
+- [[creditsCard — титры «Конец»]] - code - src/body.html
+- [[dot-credits-card.foot — титры и подвал]] - code - src/style.css
 - [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
 - [[root токены (--black, --cream, --paper, --red, --gut)]] - code - src/style.css
-- [[prepType()]] - code - src/app.js
+- [[b10.sh]] - code - b10.sh
+- [[b10.sh script]] - code - b10.sh
+- [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - code - src/body.html
 - [[«Иногда лучше одному» одна семья или суперсемейство]] - rationale - docs/lectures/1.4.txt
 - [[«Иногда лучше одному» одно суперсемейство шрифтов]] - rationale - docs/MAP.md
 - [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
@@ -20,7 +24,6 @@ members: 46
 - [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
 - [[Выключка влево для узкой колонки]] - rationale - docs/lectures/1.4.txt
 - [[Выключка влево и ограниченный набор гарнитур]] - rationale - docs/lectures/1.5.txt
-- [[Гигиена набора «ёлочки»„лапки“, тире, минус, ×]] - rationale - docs/lectures/1.4.txt
 - [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
 - [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
 - [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - rationale - docs/lectures/1.4.txt
@@ -28,15 +31,16 @@ members: 46
 - [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
 - [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
 - [[Комплектность и технический допуск гарнитуры]] - rationale - docs/lectures/1.4.txt
+- [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - rationale - docs/lectures/1.7.txt
 - [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
 - [[Настоящий курсив и полужирное, а не синтетика браузера]] - rationale - docs/lectures/1.4.txt
 - [[Насыщенность «через одного» Light+Bold, Regular+Black]] - rationale - docs/lectures/1.4.txt
-- [[Неразрывные пробелы — только для смысловых пар]] - rationale - docs/lectures/1.4.txt
 - [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
 - [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
 - [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
 - [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
 - [[Постоянство цветового кода и редкий акцент]] - rationale - docs/lectures/1.6.txt
+- [[Право выхода дверь наружу — хороший исход]] - rationale - docs/lectures/1.6.txt
 - [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
 - [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
 - [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
@@ -65,19 +69,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 6 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 3 edges to [[_COMMUNITY_Журнал решений]]
-- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 2 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 2 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 7 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 7 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 5 edges to [[_COMMUNITY_Журнал решений]]
+- 3 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 2 edges to [[_COMMUNITY_Рисунки повозок]]
+- 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
 
 ## Top bridge nodes
 - [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 4 communities
 - [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 3 communities
-- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - degree 7, connects to 2 communities
-- [[prepType()]] - degree 5, connects to 1 community
-- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - degree 4, connects to 1 community
+- [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - degree 7, connects to 2 communities
+- [[creditsCard — титры «Конец»]] - degree 5, connects to 2 communities
+- [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - degree 4, connects to 2 communities

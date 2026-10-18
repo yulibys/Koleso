@@ -1,42 +1,44 @@
 ---
 type: community
-cohesion: 0.09
-members: 27
+cohesion: 0.10
+members: 29
 ---
 
 # Сетки и модуль (1.5)
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[dot-collage + data-shape (circleovalarchblobblob2)]] - code - src/style.css
-- [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - code - src/style.css
-- [[Reflow 320 CSS px без горизонтальной прокрутки]] - rationale - docs/lectures/1.5.txt
-- [[«Так по сетке» — не аргумент]] - rationale - docs/lectures/1.5.txt
-- [[Воздух — не привилегия большого монитора]] - rationale - docs/lectures/1.5.txt
-- [[Где кончается элемент padding, border, margin, box-sizing]] - concept - docs/lectures/1.5.txt
-- [[Жёсткая и мягкая сетка]] - concept - docs/lectures/1.5.txt
-- [[Записывать сетку глаголами 4–6 законов]] - rationale - docs/lectures/1.5.txt
-- [[Исключение с условием, а не манера]] - rationale - docs/lectures/1.5.txt
-- [[Карточки repeat(auto-fit, minmax(min(100%, 15rem), 1fr))]] - code - docs/lectures/1.5.txt
-- [[Лекция 1.5. Модульные системы и сетки]] - document - docs/MAP.md
-- [[Метрическая основа и ритм композиции]] - concept - docs/lectures/1.5.txt
-- [[Микромодуль 8 CSS px (полушаг 4)]] - rationale - docs/lectures/1.5.txt
-- [[Ограничение создаёт возможности (Гибсон)]] - concept - docs/lectures/1.5.txt
-- [[Оптическая поправка — с наблюдаемой причиной]] - rationale - docs/lectures/1.5.txt
-- [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - rationale - docs/MAP.md
-- [[Поломка часто посередине между desktop и mobile]] - rationale - docs/lectures/1.5.txt
-- [[Порядок сборки сетки 6 шагов]] - rationale - docs/lectures/1.5.txt
-- [[Правило вместо координаты (Гуров, «От чертежа к закону»)]] - concept - docs/lectures/1.5.txt
-- [[Расчёт 12 колонок 1200  48  24 → 70 px]] - rationale - docs/lectures/1.5.txt
-- [[Смысловой порядок при складывании колонок]] - rationale - docs/lectures/1.5.txt
-- [[Типы сетки колоночная, модульная, коллажная, комбинированная]] - concept - docs/lectures/1.5.txt
-- [[У каждого нарушения коллажа — опора]] - rationale - docs/lectures/1.5.txt
-- [[Увеличение текста до 200 %]] - rationale - docs/lectures/1.5.txt
-- [[Увеличение текста до 200% без потери содержания и функций]] - rationale - docs/lectures/1.7.txt
-- [[Функция пустоты проверяется удалением]] - rationale - docs/lectures/1.5.txt
-- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
+- [[dot-cut — вырезки, выезд по --k]] - code - src/style.css
+- [[dot-stk — стикеры с бумажной подписью]] - code - src/style.css
+- [[C_dharma — Колесо дхармы (.cut)]] - image - src/body.html
+- [[C_ferris — Колесо обозрения (.cut)]] - image - src/body.html
+- [[C_steer — Руль (.cut)]] - image - src/body.html
+- [[S_benz — Автомобиль Карла Бенца, 1886 (.stk)]] - image - src/body.html
+- [[S_flute — Флейта из пещеры Дивье Бабе (.stk)]] - image - src/body.html
+- [[S_oxcart — Норвегия, около 1900, повозка (.stk)]] - image - src/body.html
+- [[S_pot — Кувшин из Броночице (.stk)]] - image - src/body.html
+- [[_sticker()]] - code - cut/gc.py
+- [[cv2]] - concept
+- [[gc.py]] - code - cut/gc.py
+- [[json]] - concept
+- [[numpy]] - concept
+- [[pil]] - concept
+- [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - code - src/body.html
+- [[sticker()]] - code - cut/gc.py
+- [[sys]] - concept
+- [[Атрибуция TASL название, автор, источник, лицензия]] - rationale - docs/lectures/1.2.txt
+- [[Вырезка .cut (предмет выезжает из-за края)]] - code - src/body.html
+- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
+- [[Карта из 3–5 источников с правами]] - rationale - docs/lectures/1.2.txt
+- [[Монтаж колёс swarm + rCaprText]] - code - src/body.html
+- [[Общая судьба совместное движение собирает группу]] - concept - docs/lectures/1.6.txt
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
+- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
+- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - code - src/body.html
+- [[Фото из Викисклада с авторами и лицензиями в подвале]] - rationale - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,18 +48,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Журнал решений]]
-- 6 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 5 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 3 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 2 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 8 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 6 edges to [[_COMMUNITY_Журнал решений]]
+- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 3 edges to [[_COMMUNITY_Рисунки повозок]]
+- 3 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
 - 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
 
 ## Top bridge nodes
-- [[Лекция 1.5. Модульные системы и сетки]] - degree 42, connects to 7 communities
-- [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - degree 8, connects to 2 communities
-- [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - degree 3, connects to 2 communities
-- [[Цвет — не единственный признак]] - degree 2, connects to 1 community
-- [[Метрическая основа и ритм композиции]] - degree 2, connects to 1 community
+- [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - degree 16, connects to 5 communities
+- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - degree 12, connects to 3 communities
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 3 communities
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - degree 5, connects to 2 communities
+- [[Сквозной предмет деревянное колесо с меловой меткой]] - degree 4, connects to 2 communities

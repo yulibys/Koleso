@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # body::after зерно плёнки + .fx
@@ -15,4 +15,4 @@ tags:
 - [[fx canvas (пыльзерно поверх страницы)]] - `implements` [EXTRACTED]
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

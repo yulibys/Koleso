@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
+community: "scenery.js"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/sceneryjs
 ---
 
 # day()
@@ -18,4 +18,4 @@ tags:
 - [[scenery.js]] - `contains` [EXTRACTED]
 - [[wave()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/sceneryjs

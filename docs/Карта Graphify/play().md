@@ -1,19 +1,18 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Фото, вырезки, права (1.7)"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Фото_вырезки_права_17
 ---
 
 # play()
 
 ## Connections
 - [[sndBtn — кнопка звука]] - `references` [INFERRED]
-- [[app.js]] - `contains` [EXTRACTED]
 - [[applyK()]] - `calls` [EXTRACTED]
 - [[fin()]] - `calls` [EXTRACTED]
 - [[guideFrame()]] - `calls` [EXTRACTED]
@@ -21,5 +20,6 @@ tags:
 - [[rewind()]] - `calls` [EXTRACTED]
 - [[ripFrame()]] - `calls` [EXTRACTED]
 - [[scene()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

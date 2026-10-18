@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Выпуск и предзащита (1.8)"
+community: "Движок сцен и звуки (app.js)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Выпуск_и_предзащита_18
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # #wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)
@@ -17,9 +17,9 @@ tags:
 - [[batten()]] - `references` [INFERRED]
 - [[guideFrame()]] - `references` [INFERRED]
 - [[knot()]] - `references` [INFERRED]
-- [[wheel.py]] - `references` [INFERRED]
+- [[wheel()]] - `references` [INFERRED]
 - [[Колесо перерисовано по люблянской находке (v13, v15)]] - `rationale_for` [EXTRACTED]
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `conceptually_related_to` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Выпуск_и_предзащита_18
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

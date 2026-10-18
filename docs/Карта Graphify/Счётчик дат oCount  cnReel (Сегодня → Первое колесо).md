@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Счётчик дат #oCount / #cnReel (Сегодня → Первое колесо)
@@ -21,4 +21,4 @@ tags:
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 - [[Фактологический проход имена, даты, подписи, цитаты, числа]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра

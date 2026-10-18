@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - `references` [INFERRED]
-- [[app.js]] - `contains` [EXTRACTED]
 - [[guideFrame()]] - `calls` [EXTRACTED]
 - [[pairOf()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

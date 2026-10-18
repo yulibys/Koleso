@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Журнал решений"
+community: "Первый экран и внимание (1.6)"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Первый_экран_и_внимание_16
 ---
 
 # ps4 — «Колесо давно с нами» (фотоэкран H4, flip)
@@ -21,4 +21,4 @@ tags:
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `implements` [EXTRACTED]
 - [[Четыре фотоэкрана в духе Kami (v16)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

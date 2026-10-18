@@ -1,34 +1,43 @@
 ---
 type: community
-cohesion: 0.18
-members: 19
+cohesion: 0.14
+members: 28
 ---
 
 # Выпуск и предзащита (1.8)
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
-- [[tHorse — лошадь (template)]] - code - src/body.html
-- [[tOx — бык (template)]] - code - src/body.html
-- [[tRunner — бегущий человек (template)]] - code - src/body.html
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
-- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
-- [[batten()]] - code - art/wheel.py
-- [[f()]] - code - art/wheel.py
-- [[knot()]] - code - art/wheel.py
-- [[math]] - concept
-- [[random]] - concept
-- [[wheel.py]] - code - art/wheel.py
-- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
-- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
-- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
-- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
-- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
+- [[dot-s1()_1]] - code - v20/app.js
+- [[dot-s2()_1]] - code - v20/app.js
+- [[dot-s3()_1]] - code - v20/app.js
+- [[dot-s4()_1]] - code - v20/app.js
+- [[dot-s5()_1]] - code - v20/app.js
+- [[dot-s6()_1]] - code - v20/app.js
+- [[dot-s7()_1]] - code - v20/app.js
+- [[dot-s8()_1]] - code - v20/app.js
+- [[S_1]] - code - v20/app.js
+- [[cancelEnding()_1]] - code - v20/app.js
+- [[cover()_1]] - code - v20/app.js
+- [[coverSeq()_1]] - code - v20/app.js
+- [[fit()_1]] - code - v20/app.js
+- [[labUpd()_1]] - code - v20/app.js
+- [[loop()_2]] - code - v20/app.js
+- [[morph()_1]] - code - v20/app.js
+- [[nextCover()_1]] - code - v20/app.js
+- [[put()_1]] - code - v20/app.js
+- [[restore()_1]] - code - v20/app.js
+- [[rewindToS1()_1]] - code - v20/app.js
+- [[ringAt()_1]] - code - v20/app.js
+- [[sayL()_1]] - code - v20/app.js
+- [[scrollAnim()_1]] - code - v20/app.js
+- [[spin()_1]] - code - v20/app.js
+- [[startEnding()_1]] - code - v20/app.js
+- [[textOut()_1]] - code - v20/app.js
+- [[tick()_1]] - code - v20/app.js
+- [[v20app.js]] - code - v20/app.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,20 +45,3 @@ members: 19
 TABLE source_file, type FROM #community/Выпуск_и_предзащита_18
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 3 edges to [[_COMMUNITY_Журнал решений]]
-- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 1 edge to [[_COMMUNITY_Сборка, источники, финал]]
-- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-
-## Top bridge nodes
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 3 communities
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 2 communities
-- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - degree 5, connects to 2 communities
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - degree 5, connects to 2 communities
-- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - degree 5, connects to 1 community

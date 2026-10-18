@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Сборка, источники, финал"
+community: "Типографика (1.4)"
 location: "L417"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Сборка_источники_финал
+  - community/Типографика_14
 ---
 
 # footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»
@@ -20,4 +20,4 @@ tags:
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 - [[Право выхода дверь наружу — хороший исход]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Сборка_источники_финал
+#graphify/code #graphify/INFERRED #community/Типографика_14

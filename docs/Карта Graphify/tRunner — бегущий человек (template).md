@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Выпуск и предзащита (1.8)"
+community: "SVG defs: hatch/xhatch/dots patterns"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/SVG_defs_hatch/xhatch/dots_patterns
 ---
 
 # #tRunner — бегущий человек (template)
@@ -16,4 +16,4 @@ tags:
 - [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - `references` [EXTRACTED]
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/code #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns

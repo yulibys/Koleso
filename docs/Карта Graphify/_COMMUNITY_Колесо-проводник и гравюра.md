@@ -1,53 +1,58 @@
 ---
 type: community
-cohesion: 0.09
-members: 38
+cohesion: 0.06
+members: 43
 ---
 
 # Колесо-проводник и гравюра
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 43 nodes
 
 ## Members
-- [[dot-cutflash — вспышка склейки]] - code - src/body.html
-- [[Viewport и скролл пространство превращается в длительность]] - concept - docs/lectures/1.1.txt
-- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - code - src/body.html
-- [[«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)]] - rationale - docs/context.md
-- [[Авторская функция (Фуко) кто говорит первым]] - concept - docs/lectures/1.2.txt
-- [[Без 3D всё на SVG, Three.js убран]] - rationale - docs/context.md
-- [[Без курсива и без прописных в длинных фразах]] - rationale - docs/context.md
-- [[Дрожащая линия рисунка — line boil (по tiagofragoso.com)]] - rationale - docs/context.md
-- [[Заголовок «Далеко собрались» (после «Колесо пока стоит», v17)]] - rationale - docs/context.md
-- [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - rationale - docs/context.md
-- [[Звук тише и живее щипковая струна Karplus–Strong (v13)]] - rationale - docs/context.md
-- [[Кантастория рассказчик перед последовательностью изображений]] - concept - docs/lectures/1.1.txt
-- [[Лекция 1.1. Лонгрид как особый медиум]] - document - docs/lectures/1.1.txt
-- [[Минимализм пейзажи упрощены до холмов, дороги и дерева (v15)]] - rationale - docs/context.md
-- [[Набор задаёт отношение к читателю («дом бытия»)]] - concept - docs/lectures/1.4.txt
-- [[Немое кино → цвет после первого разрыва (v11, отменено)]] - rationale - docs/context.md
-- [[Одно главное и одно поддерживающее свойство браузера]] - rationale - docs/lectures/1.1.txt
-- [[Олег Пащенко (преподаватель)]] - concept - docs/context.md
-- [[Отвергнуто пиксельный мигающий фон и красные экраны (фидбек 2-10)]] - rationale - docs/context.md
-- [[Отвергнуты Ruslan Display, Old Standard TT, Bad Script и две подборки акцидентных шрифтов]] - rationale - docs/context.md
-- [[Открытая петля «что-то заставило человека изобрести колесо»]] - rationale - docs/context.md
-- [[Плёнка shaders.com царапины, зерно, мерцание; VHS при перемотке]] - rationale - docs/context.md
-- [[Правка проверить мерцание и звук по Такеру]] - rationale - docs/MAP.md
-- [[Приёмы удержания внимания из амоБлога холодный старт, открытая петля, слом ожидания]] - rationale - docs/context.md
-- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - concept - docs/lectures/1.1.txt
-- [[Рабочий контекст и журнал решений (context.md)]] - document - docs/context.md
-- [[Рассказчик больше не говорит «я» (v13)]] - rationale - docs/context.md
-- [[Рассказчик — самоуверенный неудачник, голос интертитров]] - rationale - docs/context.md
-- [[Регламент генеративных инструментов]] - rationale - docs/lectures/1.1.txt
-- [[Режим жизни поддерживать  заморозить  обновлять  снять]] - rationale - docs/lectures/1.8.txt
-- [[Свиток последовательность и жест разворачивания]] - concept - docs/lectures/1.1.txt
-- [[Снова чёрно-белое плёнка на всех сценах (v12)]] - rationale - docs/context.md
-- [[Тёмный медиум (Такер) убрать приём, который ничего не преобразует]] - rationale - docs/lectures/1.1.txt
-- [[Фабрика вариантов и дом у реки]] - concept - docs/lectures/1.1.txt
-- [[Хронотоп (Бахтин) участок со случайной длительностью]] - rationale - docs/lectures/1.1.txt
-- [[Шрифты Alegreya SC + Alegreya, одно суперсемейство (v11)]] - rationale - docs/context.md
-- [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - rationale - docs/context.md
-- [[Юлия Бысова (автор)]] - concept - docs/context.md
+- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
+- [[sndBtn — кнопка звука]] - code - src/body.html
+- [[dot-cn-slot.cn-reel.cn-face — барабан дат]] - code - src/style.css
+- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
+- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
+- [[piano()]] - code - src/app.js
+- [[steps()]] - code - src/app.js
+- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
+- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
+- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
+- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
+- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
+- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
+- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
+- [[Два входа через обещание и через материал]] - rationale - docs/lectures/1.6.txt
+- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
+- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
+- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
+- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
+- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
+- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
+- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
+- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
+- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
+- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
+- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
+- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
+- [[Начинать с конкретной ситуации, а не с определений]] - rationale - docs/lectures/1.7.txt
+- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
+- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
+- [[Первый экран — порог и договор обещание, голос, первый шаг]] - rationale - docs/MAP.md
+- [[Первый экран — порог пять функций]] - rationale - docs/lectures/1.6.txt
+- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
+- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - code - src/body.html
+- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
+- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
+- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
+- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
+- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,21 +62,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 15 edges to [[_COMMUNITY_Журнал решений]]
 - 14 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 12 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 11 edges to [[_COMMUNITY_Журнал решений]]
-- 6 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 4 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 12 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 10 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 7 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 4 edges to [[_COMMUNITY_Рисунки повозок]]
+- 4 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
 - 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
 
 ## Top bridge nodes
-- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - degree 30, connects to 7 communities
-- [[Рабочий контекст и журнал решений (context.md)]] - degree 32, connects to 6 communities
-- [[Олег Пащенко (преподаватель)]] - degree 9, connects to 6 communities
-- [[Лекция 1.1. Лонгрид как особый медиум]] - degree 17, connects to 3 communities
-- [[Правка проверить мерцание и звук по Такеру]] - degree 7, connects to 2 communities
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 9 communities
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 5 communities
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - degree 8, connects to 3 communities
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - degree 6, connects to 3 communities
+- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - degree 5, connects to 3 communities

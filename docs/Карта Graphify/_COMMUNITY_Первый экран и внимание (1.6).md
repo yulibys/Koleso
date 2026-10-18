@@ -1,58 +1,64 @@
 ---
 type: community
-cohesion: 0.10
-members: 43
+cohesion: 0.07
+members: 49
 ---
 
 # Первый экран и внимание (1.6)
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 43 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 49 nodes
 
 ## Members
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - code - src/body.html
-- [[sndBtn — кнопка звука]] - code - src/body.html
-- [[dot-guide — фиксированное колесо-проводник]] - code - src/style.css
-- [[dot-sc.stick.frame — высокая секция с липким кадром]] - code - src/style.css
-- [[air()]] - code - src/app.js
-- [[app.js]] - code - src/app.js
-- [[applyK()]] - code - src/app.js
-- [[click()]] - code - src/app.js
-- [[clop()]] - code - src/app.js
-- [[env()]] - code - src/app.js
-- [[fin()]] - code - src/app.js
-- [[gesture()]] - code - src/app.js
+- [[swAxle — ось, прорисовка]] - code - src/body.html
+- [[dot-paper — бумажный фон (find, day)]] - code - src/style.css
+- [[P3 — Беговая машина Карла Драйса, 1817 (.collage)]] - image - src/body.html
+- [[P4 — Омнибус, Париж, 1928 (.collage)]] - image - src/body.html
+- [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - image - src/body.html
+- [[T_ur — Вырезка T_ur (.cut)]] - image - src/body.html
+- [[X1 — Пещера Ласко (.collage)]] - image - src/body.html
+- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
+- [[X6 — Пахота. Палестина, начало XX века (.collage)]] - image - src/body.html
+- [[bubble()]] - code - src/app.js
+- [[clock()]] - code - src/app.js
+- [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - code - src/body.html
+- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - code - src/body.html
 - [[guideFrame()]] - code - src/app.js
-- [[init()]] - code - src/app.js
-- [[knock()]] - code - src/app.js
-- [[ksPlay()]] - code - src/app.js
-- [[layScenery()]] - code - src/app.js
-- [[layout()]] - code - src/app.js
-- [[layoutKF()]] - code - src/app.js
-- [[loop()]] - code - src/app.js
-- [[mallet()]] - code - src/app.js
-- [[moo()]] - code - src/app.js
+- [[klaxon()]] - code - src/app.js
 - [[morphD()]] - code - src/app.js
-- [[nz()]] - code - src/app.js
-- [[ok()]] - code - src/app.js
-- [[osc()]] - code - src/app.js
 - [[pairOf()]] - code - src/app.js
-- [[parseK()]] - code - src/app.js
-- [[plank()]] - code - src/app.js
-- [[play()]] - code - src/app.js
-- [[projector()]] - code - src/app.js
-- [[rewind()]] - code - src/app.js
-- [[ripFrame()]] - code - src/app.js
+- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - code - src/body.html
+- [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - code - src/body.html
+- [[ps2 — «Колесо есть. Ехать не на чем.» (фотоэкран H2)]] - code - src/body.html
+- [[ps3 — «А потом поехали» (фотоэкран H3)]] - code - src/body.html
+- [[ps4 — «Колесо давно с нами» (фотоэкран H4, flip)]] - code - src/body.html
 - [[roll()]] - code - src/app.js
 - [[sampleFig()]] - code - src/app.js
-- [[scene()]] - code - src/app.js
-- [[scribble()]] - code - src/app.js
-- [[send()]] - code - src/app.js
-- [[tear()]] - code - src/app.js
-- [[whoosh()]] - code - src/app.js
-- [[Мобильное преобразование — не общий Scale]] - rationale - docs/lectures/1.5.txt
+- [[slot()]] - code - src/app.js
+- [[soft()]] - code - src/app.js
+- [[squeak()]] - code - src/app.js
+- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - code - src/body.html
+- [[Бегущая лента поговорок .tape («Не подмажешь — не поедешь…»)]] - code - src/body.html
+- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
+- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - code - src/body.html
+- [[Крупность от детали до дальнего плана, чередовать «через одну»]] - rationale - docs/lectures/1.3.txt
+- [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - concept - docs/lectures/1.6.txt
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
+- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - code - src/body.html
 - [[Повтор с изменением задачи]] - rationale - docs/lectures/1.6.txt
-- [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - rationale - docs/lectures/1.7.txt
+- [[Повтор с отклонением на третьем (Делёз)]] - concept - docs/lectures/1.5.txt
+- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
+- [[Разрез земли strata + bubbles (болото)]] - code - src/body.html
+- [[Ритм — возвращение групп со сменой масштаба]] - rationale - docs/MAP.md
+- [[Текстовая альтернатива функция, а не пиксели]] - rationale - docs/lectures/1.5.txt
+- [[Фото __HI_H2__ (фон фотоэкрана)]] - image - src/body.html
+- [[Фото __HI_H3__ (фон фотоэкрана)]] - image - src/body.html
+- [[Фото __HI_H4__ (фон фотоэкрана)]] - image - src/body.html
+- [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - code - src/body.html
+- [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - code - src/body.html
+- [[Четыре фотоэкрана в духе Kami (v16)]] - rationale - docs/context.md
+- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,20 +68,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Журнал решений]]
-- 13 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 23 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 15 edges to [[_COMMUNITY_Рисунки повозок]]
+- 12 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 11 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
 - 9 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 6 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 5 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 4 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 4 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 4 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 4 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
-- 2 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 9 edges to [[_COMMUNITY_Журнал решений]]
+- 8 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
+- 3 edges to [[_COMMUNITY_scenery.js]]
+- 3 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
 
 ## Top bridge nodes
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 8 communities
-- [[app.js]] - degree 49, connects to 6 communities
-- [[ksPlay()]] - degree 11, connects to 3 communities
-- [[dot-sc.stick.frame — высокая секция с липким кадром]] - degree 8, connects to 3 communities
-- [[rewind()]] - degree 8, connects to 2 communities
+- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - degree 16, connects to 6 communities
+- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - degree 9, connects to 6 communities
+- [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - degree 15, connects to 5 communities
+- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - degree 13, connects to 4 communities

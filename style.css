@@ -417,3 +417,9 @@ html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
 #s4h{top:120px}#s4ph{top:330px}#s4p1{top:323px}#s4p2{top:513px}
 #s6q span,#s6no span{font:400 24px/28px var(--serif)}
 #s1oh{left:1300px;top:260px}
+
+/* v32: вопросы задаёт монах (справа), «нет» отвечает царь (слева) */
+#s6q{left:1145px}#s6no{left:61px}
+#s6q span{left:22px;top:6px;width:206px;height:94px}
+#s6no span{left:6px;top:6px;width:206px;height:94px}
+.port #s6q{left:900px}.port #s6no{left:330px}

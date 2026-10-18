@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L90"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # #fx canvas (пыль/зерно поверх страницы)
@@ -16,4 +16,4 @@ tags:
 - [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - `rationale_for` [INFERRED]
 - [[Движение — когда показывает процесс или изменение]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/MAP.md"
 type: "document"
-community: "Раскадровка и двери (1.3)"
+community: "Журнал решений"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Журнал_решений
 ---
 
 # Карта проекта «Далеко собрались?» (MAP.md)
@@ -26,4 +26,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `references` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/document #graphify/EXTRACTED #community/Журнал_решений

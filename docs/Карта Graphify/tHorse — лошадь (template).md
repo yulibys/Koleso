@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Выпуск и предзащита (1.8)"
+community: "SVG defs: hatch/xhatch/dots patterns"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/SVG_defs_hatch/xhatch/dots_patterns
 ---
 
 # #tHorse — лошадь (template)
@@ -15,4 +15,4 @@ tags:
 - [[SVG defs hatchxhatchdots patterns]] - `shares_data_with` [INFERRED]
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/code #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns

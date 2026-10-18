@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # S_wheel — Колесо, Городской музей Любляны (.stk)
@@ -16,4 +16,4 @@ tags:
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/image #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
