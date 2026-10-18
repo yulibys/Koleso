@@ -771,7 +771,7 @@
   "questions": [
     {
       "type": "ambiguous_edge",
-      "question": "What is the exact relationship between `«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)` and `find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки: 72 см, ясень, дуб)`?",
+      "question": "What is the exact relationship between `find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки: 72 см, ясень, дуб)` and `«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)`?",
       "why": "Edge tagged AMBIGUOUS (relation: rationale_for) - confidence is low.",
       "low_confidence": true
     },
@@ -782,7 +782,7 @@
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Слабый дизайн: материал может изменить замысел`, `Фото __HI_H2__ (фон фотоэкрана)`, `Фото __HI_H3__ (фон фотоэкрана)` to the rest of the system?",
+      "question": "What connects `Слабый дизайн: материал может изменить замысел`, `«Маша» Фёдора Сваровского (разбор финала)`, `Фото __HI_H2__ (фон фотоэкрана)` to the rest of the system?",
       "why": "27 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {

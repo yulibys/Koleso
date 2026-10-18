@@ -9,7 +9,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c3e2fc0a`
+- Built from commit: `7fa5d14a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -153,11 +153,11 @@ Cohesion: 0.47
 Nodes (3): Акцидентный (display) и текстовый шрифт — разные назначения, Шрифт Alegreya SC (--display, .disp), .rip — стили рвущегося интертитра
 
 ## Ambiguous Edges - Review These
-- `«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)` → `find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки: 72 см, ясень, дуб)`  [AMBIGUOUS]
+- `find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки: 72 см, ясень, дуб)` → `«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)`  [AMBIGUOUS]
   docs/context.md · relation: rationale_for
 
 ## Knowledge Gaps
-- **27 isolated node(s):** `Слабый дизайн: материал может изменить замысел`, `Фото __HI_H2__ (фон фотоэкрана)`, `Фото __HI_H3__ (фон фотоэкрана)`, `Фото __HI_H4__ (фон фотоэкрана)`, `«Маша» Фёдора Сваровского (разбор финала)` (+22 more)
+- **27 isolated node(s):** `Слабый дизайн: материал может изменить замысел`, `«Маша» Фёдора Сваровского (разбор финала)`, `Фото __HI_H2__ (фон фотоэкрана)`, `Фото __HI_H3__ (фон фотоэкрана)`, `Фото __HI_H4__ (фон фотоэкрана)` (+22 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 76 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -166,7 +166,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `#guide — главное колесо-проводник (морфинг gMorph/gArt/gChalk/gShade)` connect `Типографика (1.4)` to `Журнал решений`, `Фото, вырезки, права (1.7)`, `Первый экран и внимание (1.6)`, `Интерактив и проверка читателем`, `Движок сцен и звуки (app.js)`, `Раскадровка и двери (1.3)`, `scenery.js`, `Лекция 1.8. Предзащита и финальная редактура`?**
   _High betweenness centrality (0.135) - this node is a cross-community bridge._
-- **What connects `Слабый дизайн: материал может изменить замысел`, `Фото __HI_H2__ (фон фотоэкрана)`, `Фото __HI_H3__ (фон фотоэкрана)` to the rest of the system?**
+- **What connects `Слабый дизайн: материал может изменить замысел`, `«Маша» Фёдора Сваровского (разбор финала)`, `Фото __HI_H2__ (фон фотоэкрана)` to the rest of the system?**
   _27 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Журнал решений` be split into smaller, more focused modules?**
   _Cohesion score 0.06384180790960452 - nodes in this community are weakly interconnected._
@@ -180,5 +180,5 @@ _Questions this graph is uniquely positioned to answer:_
 ### Low-confidence Hints
 _AMBIGUOUS edges — the extractor was unsure. Verify before acting on these._
 
-- **What is the exact relationship between `«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)` and `find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки: 72 см, ясень, дуб)`?**
+- **What is the exact relationship between `find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки: 72 см, ясень, дуб)` and `«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)`?**
   _Edge tagged AMBIGUOUS (relation: rationale_for) - confidence is low._

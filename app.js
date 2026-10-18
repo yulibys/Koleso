@@ -25,8 +25,9 @@
     root.classList.toggle('port', PORT); root.classList.toggle('tab', TAB); sizes.clear();
   }
   fit();
-  $$('.sc').forEach((s) => s.style.setProperty('--len', s.dataset.len));
   const COARSE = matchMedia('(pointer: coarse)').matches;
+  // на сенсорных экранах прокрутка «легче» — растягиваем секции, чтобы сцены шли медленнее
+  $$('.sc').forEach((s) => s.style.setProperty('--len', (s.dataset.len * (COARSE ? 1.45 : 1)).toFixed(2)));
   if (COARSE) root.classList.add('coarse');
   // на телефонах и планшетах «дрожание» линий выключено: SVG-фильтр каждые 140 мс перерисовывает весь экран и тормозит прокрутку
   if (!reduce && !COARSE) { let b = 0; setInterval(() => { root.classList.remove('boil0', 'boil1', 'boil2'); root.classList.add('boil' + (b = (b + 1) % 3)); }, 140); }
@@ -569,7 +570,14 @@
       if (r.top > H || r.bottom < 0) continue;
       const stage = sec.firstElementChild;
       
-      const p = cl(-r.top / (r.height - H));
+      const target = cl(-r.top / (r.height - H));
+      // на телефоне и планшете прогресс догоняет прокрутку плавно, без рывков от резкого свайпа
+      let p = target;
+      if (COARSE && !root.classList.contains('rewinding')) {
+        p = sec._p === undefined || Math.abs(target - sec._p) > 0.25 ? target : sec._p + (target - sec._p) * 0.12;
+        if (Math.abs(target - p) < 0.0005) p = target;
+      }
+      sec._p = p;
       S[sec.id] && S[sec.id](p);
     }
   }

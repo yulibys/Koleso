@@ -190,6 +190,7 @@
   },
   "active": "1be21f4f050e0191",
   "lastOpenFiles": [
+    "graphify-out/cache/ast/v0.9.92-s17-g0fcafffe3c00/f52e364a3b8b0244c71e43590338aea62db9089b34bcca4f795b3b80012ccdcd.json",
     "docs/Карта Graphify/splitLines()_1.md",
     "docs/Карта Graphify/ringAt0()_1.md",
     "docs/Карта Graphify/splitLines().md",
@@ -216,7 +217,6 @@
     "docs/Карта Graphify/update.py.md",
     "docs/Карта Graphify/dot-s8()_1.md",
     "docs/Карта Graphify/dot-s7()_1.md",
-    "docs/Карта Graphify/dot-s6()_1.md",
     "graphify-out/2026-10-18/manifest.json",
     "graphify-out/2026-10-18/graph.json",
     "graphify-out/2026-10-18",

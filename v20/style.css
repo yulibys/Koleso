@@ -580,4 +580,4 @@ html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
 .coarse body::after{display:none}
 html.coarse .boil{filter:none!important}
 html.coarse.rewinding .stage{filter:none}
-.coarse .stage{contain:layout paint}
+.rew b{font-family:var(--serif);font-variant-emoji:text}
