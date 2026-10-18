@@ -768,7 +768,7 @@
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Слабый дизайн: материал может изменить замысел`, `Акцент работает относительно окружения`, `Лицо становится главным говорящим` to the rest of the system?",
+      "question": "What connects `Слабый дизайн: материал может изменить замысел`, `.cutflash — вспышка склейки`, `Юлия Бысова (автор)` to the rest of the system?",
       "why": "27 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {

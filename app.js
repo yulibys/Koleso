@@ -582,6 +582,8 @@
   }
   addEventListener('wheel', (e) => { if (endTimer && e.deltaY < 0) cancelEnding(); }, { passive: true });
   addEventListener('keydown', (e) => { if (e.key === 'Escape') cancelEnding(); });
+  // во время перемотки палец не перехватывает прокрутку (body не делаем отдельным скроллером — иначе липкие сцены «отваливаются»)
+  addEventListener('touchmove', (e) => { if (root.classList.contains('locked')) e.preventDefault(); }, { passive: false });
 
   /* ── события ── */
   const zone = $('s1stickzone');

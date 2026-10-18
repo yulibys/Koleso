@@ -9,7 +9,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3578ca83`
+- Built from commit: `eaeaf099`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -140,7 +140,7 @@ Nodes (10): Разборчивость знака ≠ удобство длит�
   docs/context.md · relation: rationale_for
 
 ## Knowledge Gaps
-- **27 isolated node(s):** `Слабый дизайн: материал может изменить замысел`, `Акцент работает относительно окружения`, `Лицо становится главным говорящим`, `Мультистабильность продлевает рассматривание`, `У пустоты есть работа` (+22 more)
+- **27 isolated node(s):** `Слабый дизайн: материал может изменить замысел`, `.cutflash — вспышка склейки`, `Юлия Бысова (автор)`, `Акцент работает относительно окружения`, `Лицо становится главным говорящим` (+22 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 76 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -149,7 +149,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `#guide — главное колесо-проводник (морфинг gMorph/gArt/gChalk/gShade)` connect `Фото, вырезки, права (1.7)` to `Журнал решений`, `Типографика (1.4)`, `Первый экран и внимание (1.6)`, `Движок сцен и звуки (app.js)`, `Колесо-проводник и гравюра`, `Раскадровка и двери (1.3)`, `scenery.js`?**
   _High betweenness centrality (0.134) - this node is a cross-community bridge._
-- **What connects `Слабый дизайн: материал может изменить замысел`, `Акцент работает относительно окружения`, `Лицо становится главным говорящим` to the rest of the system?**
+- **What connects `Слабый дизайн: материал может изменить замысел`, `.cutflash — вспышка склейки`, `Юлия Бысова (автор)` to the rest of the system?**
   _27 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Журнал решений` be split into smaller, more focused modules?**
   _Cohesion score 0.051360842844600525 - nodes in this community are weakly interconnected._
