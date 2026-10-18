@@ -344,16 +344,17 @@
     const show = sg(p, 0.07, 0.12);
     if (chaseT0 !== null) chase = cl((performance.now() - chaseT0) / 2800);
     const c = Math.max(sg(p, 0.1, 0.64), ez(chase));
-    const m0 = PORT ? (TAB ? 480 : 540) : 327, w0 = PORT ? 880 : 744;
-    const mx = lerp(m0, 1750, c), wx = lerp(w0, 1950, Math.pow(c, 0.85));
+    const m0 = PORT ? (TAB ? 480 : 605) : 327, w0 = PORT ? (TAB ? 880 : 850) : 744;
+    const PH0 = PORT && !TAB, mx = lerp(m0, PH0 ? 1113 : 1750, c), wx = lerp(w0, PH0 ? 1187 : 1950, Math.pow(c, 0.85));
     const running = c > 0.001 && c < 0.999;
     const pose = running ? 1 + (Math.floor(performance.now() / 140) % 2) : 0;
     const mg = $('s3mang');
     if (mg.dataset.pose !== String(pose)) { mg.dataset.pose = pose; mg.innerHTML = A.man(pose, 51); }
-    put($('s3man'), mx, 776 - 165, 1, 0, show);
-    put($('s3wh'), wx, 601, 1, (wx - w0) / 80 * 57.3, show);
+    const PH = PORT && !TAB, Z = PH ? 1.35 : 1, zx = (x) => 720 + (x - 720) * Z, zy = (y) => 300 + (y - 300) * Z;
+    put($('s3man'), zx(mx), zy(776 - 165), Z, 0, show);
+    put($('s3wh'), zx(wx), zy(601), Z, (wx - w0) / 80 * 57.3, show);
     op($('s3say'), sg(c, 0.08, 0.14) - sg(c, 0.6, 0.66));
-    put($('s3say'), mx + (PORT ? (TAB ? 90 : 60) : 237), PORT ? 380 : 428, PORT ? 0.85 : 1, 0);
+    put($('s3say'), PH ? zx(mx) + 85 : mx + (PORT ? (TAB ? 90 : 60) : 237), PH ? 400 : PORT ? 380 : 428, PORT ? 0.85 : 1, 0);
     coverSeq($('s3cov'), p, 0.68, 0.76);
   };
 
@@ -467,8 +468,8 @@
     const t = sg(p, WN[cur][0], WN[cur][1]);
     const vis = sg(t, 0.12, 0.25) - sg(t, 0.82, 0.95);
     op(n, vis); ul(n, vis);
-    { const v = vehs[cur], RS = PORT ? (TAB ? 0.85 : 0.6) : 1, h = (v.el.offsetHeight || 200) * RS;
-      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 790) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : 70) : Math.max(612 - h - 70, 300);
+    { const v = vehs[cur], RS = PORT ? (TAB ? 0.85 : 0.74) : 1, h = (v.el.offsetHeight || 200) * RS;
+      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 800) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : -60) : Math.max(612 - h - 70, 300);
       $('s7say').style.transform = `translate(${(bx - 1082).toFixed(0)}px,${(by - 234).toFixed(0)}px)`;
       // реплика гаснет, когда транспорт доезжает до неё
       const front = 720 + ((v.px === null ? 0 : v.px) + v.w - 720) * RS;

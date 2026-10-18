@@ -634,3 +634,32 @@ html.coarse.rewinding .stage{filter:none}
 .port:not(.tab) .credits dd{font-size:26px}.port:not(.tab) .credits dt{font-size:20px}
 .port:not(.tab) #s3h{top:20px}.port:not(.tab) .link{top:240px}.port:not(.tab) #s3ulg{transform:translate(20px,-40px)}
 .port:not(.tab) #s5h{top:-40px}.port:not(.tab) .status{top:160px}
+/* v51 — телефон: крупнее заголовки и рисунки, ровные строки */
+br.ph{display:none}
+.port:not(.tab) #s2sub br{display:none}.port:not(.tab) #s2sub br.ph{display:inline}
+.port:not(.tab) .s2text p{left:-20px;width:560px;font-size:27px;line-height:37px;text-wrap:wrap}
+.port:not(.tab) .era{left:440px;width:560px;white-space:nowrap}
+.port:not(.tab) #s2ul{left:548px;width:344px;top:562px}
+.port:not(.tab) #s3h{top:-10px;font-size:70px;line-height:72px}
+.port:not(.tab) .link{font-size:36px;top:215px;left:590px}
+.port:not(.tab) #s3 .land>path,.port:not(.tab) #s3gr{transform:scale(1.35);transform-origin:720px 300px}
+.port:not(.tab) #s4h,.port:not(.tab) #s4y,.port:not(.tab) #s4ph,.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{left:455px}
+.port:not(.tab) #s4h,.port:not(.tab) #s4ph,.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:530px}
+.port:not(.tab) #s4ph img{width:530px;height:337px}
+.port:not(.tab) .para{text-wrap:pretty;font-size:28px;line-height:38px}
+.port:not(.tab) #s5h,.port:not(.tab) #s7h{font-size:70px;line-height:72px}
+.port:not(.tab) .status,.port:not(.tab) .vname{font-size:34px}
+.port:not(.tab) .parts::after{content:'';flex-basis:100%;order:1}
+.port:not(.tab) .part:nth-child(n+4){order:2}
+.port:not(.tab) .parts{top:880px;row-gap:16px}
+.port:not(.tab) .part{font-size:36px}
+.port:not(.tab) #cart{transform:translateY(110px) scale(.9)}
+.port:not(.tab) #s5land{transform:translateY(110px)}
+.port:not(.tab) #s7h{top:20px}.port:not(.tab) .vname{top:120px}
+.port:not(.tab) #s7road{transform:translateY(130px) scale(.74)}
+.port:not(.tab) #s7 .land{transform:translateY(130px)}
+.port:not(.tab) #s8t1{font-size:66px;line-height:66px}
+.port:not(.tab) #s8t2{font-size:34px}
+.port:not(.tab) #s4p1{top:515px}.port:not(.tab) #s4p2{top:805px}
+.port:not(.tab) #s2ul{top:548px}
+.port:not(.tab) #s8t2{text-wrap:balance;line-height:40px}
