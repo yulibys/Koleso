@@ -606,3 +606,31 @@ html.coarse.rewinding .stage{filter:none}
 .port:not(.tab) #s6fin br{display:inline}
 .port:not(.tab) #s7h{top:40px}.port:not(.tab) .vname{top:130px}
 .port:not(.tab) #s8t2{top:730px}
+
+/* v50: телефон — крупнее текст; движущиеся элементы на отдельных слоях (меньше перерисовки) */
+.coarse #s1wheel,.coarse #s1sq,.coarse #s1big,.coarse #s2wheel,.coarse #s2text,.coarse #s3man,.coarse #s3wh,.coarse #s3say,
+.coarse #s4top,.coarse #s4bog,.coarse #s4wh,.coarse .cover,.coarse .veh,.coarse #cart .rig,.coarse #s8wh,.coarse #s6wheel,.coarse #s6axle,.coarse #s6body{will-change:transform}
+.port:not(.tab) #s3h,.port:not(.tab) #s5h,.port:not(.tab) #s7h{font-size:58px;line-height:62px}
+.port:not(.tab) .s2text h2{font-size:54px;line-height:58px}
+.port:not(.tab) .s2text p{font-size:28px;line-height:37px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{font-size:42px}
+.port:not(.tab) .link,.port:not(.tab) .status,.port:not(.tab) .vname,.port:not(.tab) .cap8{font-size:30px}
+.port:not(.tab) .tick{font-size:30px}.port:not(.tab) .era{font-size:56px}
+.port:not(.tab) #s4h{font-size:86px;line-height:80px}
+.port:not(.tab) #s4y{font-size:30px}
+.port:not(.tab) #s4ph figcaption{font-size:18px}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{font-size:27px;line-height:37px}
+.port:not(.tab) #s4p2{top:790px}
+.port:not(.tab) .tag{font-size:40px}
+.port:not(.tab) .part{font-size:32px}
+.port:not(.tab) #s6h{font-size:50px;line-height:54px}
+.port:not(.tab) #s6q span,.port:not(.tab) #s6no span,.port:not(.tab) #s7say span,.port:not(.tab) #s3say span,.port:not(.tab) #s1oh span{font-size:30px;line-height:32px}
+.port:not(.tab) #s6fin{font-size:38px;line-height:44px}
+.port:not(.tab) .cover .h1{font-size:68px;line-height:70px}
+.port:not(.tab) #s8h{font-size:96px}
+.port:not(.tab) #s8t1{font-size:56px;line-height:58px}
+.port:not(.tab) #s8t2{font-size:30px;top:750px}
+.port:not(.tab) .endsub{font-size:30px;line-height:34px}
+.port:not(.tab) .credits dd{font-size:26px}.port:not(.tab) .credits dt{font-size:20px}
+.port:not(.tab) #s3h{top:20px}.port:not(.tab) .link{top:240px}.port:not(.tab) #s3ulg{transform:translate(20px,-40px)}
+.port:not(.tab) #s5h{top:-40px}.port:not(.tab) .status{top:160px}

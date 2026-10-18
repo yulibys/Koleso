@@ -574,7 +574,8 @@
       // на телефоне и планшете прогресс догоняет прокрутку плавно, без рывков от резкого свайпа
       let p = target;
       if (COARSE && !root.classList.contains('rewinding')) {
-        p = sec._p === undefined || Math.abs(target - sec._p) > 0.25 ? target : sec._p + (target - sec._p) * 0.12;
+        const now = performance.now(), dt = Math.min(64, now - (sec._t || now)); sec._t = now;
+        p = sec._p === undefined || r.top > H || r.bottom < 0 ? target : sec._p + (target - sec._p) * (1 - Math.pow(0.86, dt / 16.7));
         if (Math.abs(target - p) < 0.0005) p = target;
       }
       sec._p = p;
