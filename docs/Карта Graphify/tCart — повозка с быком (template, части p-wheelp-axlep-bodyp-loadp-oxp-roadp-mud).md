@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "SVG defs: hatch/xhatch/dots patterns"
+community: "re"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SVG_defs_hatch/xhatch/dots_patterns
+  - community/re
 ---
 
 # #tCart — повозка с быком (template, части p-wheel/p-axle/p-body/p-load/p-ox/p-road/p-mud)
@@ -18,4 +18,4 @@ tags:
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `references` [EXTRACTED]
 - [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns
+#graphify/code #graphify/EXTRACTED #community/re

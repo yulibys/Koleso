@@ -1,39 +1,31 @@
 ---
 type: community
-cohesion: 0.17
-members: 24
+cohesion: 0.18
+members: 16
 ---
 
 # scenery.js
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[birds()]] - code - src/scenery.js
-- [[bush()]] - code - src/scenery.js
-- [[cloud()]] - code - src/scenery.js
-- [[day()]] - code - src/scenery.js
-- [[fence()]] - code - src/scenery.js
-- [[forest()]] - code - src/scenery.js
-- [[grass()]] - code - src/scenery.js
-- [[hay()]] - code - src/scenery.js
-- [[hero()]] - code - src/scenery.js
-- [[hill()]] - code - src/scenery.js
-- [[house()]] - code - src/scenery.js
-- [[hut()]] - code - src/scenery.js
-- [[lab()]] - code - src/scenery.js
-- [[later()]] - code - src/scenery.js
-- [[milestone()]] - code - src/scenery.js
-- [[mill()]] - code - src/scenery.js
-- [[oak()]] - code - src/scenery.js
-- [[parade()]] - code - src/scenery.js
-- [[poplar()]] - code - src/scenery.js
-- [[road()]] - code - src/scenery.js
-- [[scenery.js]] - code - src/scenery.js
-- [[stone()]] - code - src/scenery.js
-- [[sun()]] - code - src/scenery.js
-- [[wave()]] - code - src/scenery.js
+- [[Алетейя честный режим сокрытия]] - concept - docs/lectures/1.8.txt
+- [[Архивный комплект и запись прохождения]] - rationale - docs/lectures/1.8.txt
+- [[Версия 1.0 новый номер при смене тезиса, структуры, источников]] - rationale - docs/lectures/1.8.txt
+- [[Доска процесса из четырёх фреймов]] - concept - docs/lectures/1.8.txt
+- [[Карточка выпуска в восемь строк]] - rationale - docs/lectures/1.7.txt
+- [[Критерий готовности рабочей трети (30–40 %)]] - rationale - docs/lectures/1.5.txt
+- [[Лекция 1.8. Предзащита и финальная редактура]] - document - docs/lectures/1.8.txt
+- [[Наблюдение раньше совета]] - rationale - docs/lectures/1.8.txt
+- [[Нигредо распад удобных объяснений]] - concept - docs/lectures/1.8.txt
+- [[Показ по живой ссылке за 230 (20 + 70 + 30 + 30 с)]] - rationale - docs/lectures/1.8.txt
+- [[Правка проверки перед показом и карточка версии 1.0]] - rationale - docs/MAP.md
+- [[Проверка чужими руками чистое окно, телефон, клавиатура, медленная сеть, путь до титров]] - rationale - docs/lectures/1.8.txt
+- [[Публикационный порог версия выдержала названные проверки]] - rationale - docs/lectures/1.7.txt
+- [[Финальный порог публикации]] - concept - docs/lectures/1.8.txt
+- [[Хорошие URI не меняются]] - rationale - docs/lectures/1.8.txt
+- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - rationale - docs/lectures/1.8.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,14 +35,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 4 edges to [[_COMMUNITY_Журнал решений]]
+- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
 - 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 1 edge to [[_COMMUNITY_Журнал решений]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
+- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
 
 ## Top bridge nodes
-- [[scenery.js]] - degree 25, connects to 2 communities
-- [[lab()]] - degree 10, connects to 1 community
-- [[hero()]] - degree 7, connects to 1 community
-- [[parade()]] - degree 7, connects to 1 community
-- [[day()]] - degree 5, connects to 1 community
+- [[Лекция 1.8. Предзащита и финальная редактура]] - degree 17, connects to 2 communities
+- [[Правка проверки перед показом и карточка версии 1.0]] - degree 6, connects to 1 community
+- [[Архивный комплект и запись прохождения]] - degree 4, connects to 1 community
+- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - degree 4, connects to 1 community
+- [[Финальный порог публикации]] - degree 4, connects to 1 community

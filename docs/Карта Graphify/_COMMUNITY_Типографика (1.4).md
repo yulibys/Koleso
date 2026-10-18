@@ -1,65 +1,71 @@
 ---
 type: community
-cohesion: 0.06
-members: 50
+cohesion: 0.07
+members: 56
 ---
 
 # Типографика (1.4)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 50 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 56 nodes
 
 ## Members
-- [[creditsCard — титры «Конец»]] - code - src/body.html
-- [[dot-credits-card.foot — титры и подвал]] - code - src/style.css
-- [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
-- [[root токены (--black, --cream, --paper, --red, --gut)]] - code - src/style.css
-- [[b10.sh]] - code - b10.sh
-- [[b10.sh script]] - code - b10.sh
-- [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - code - src/body.html
-- [[«Иногда лучше одному» одна семья или суперсемейство]] - rationale - docs/lectures/1.4.txt
-- [[«Иногда лучше одному» одно суперсемейство шрифтов]] - rationale - docs/MAP.md
-- [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
-- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - concept - docs/lectures/1.4.txt
-- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
-- [[Выключка влево для узкой колонки]] - rationale - docs/lectures/1.4.txt
-- [[Выключка влево и ограниченный набор гарнитур]] - rationale - docs/lectures/1.5.txt
-- [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
-- [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
-- [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - rationale - docs/lectures/1.4.txt
-- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
-- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
-- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
-- [[Комплектность и технический допуск гарнитуры]] - rationale - docs/lectures/1.4.txt
-- [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - rationale - docs/lectures/1.7.txt
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
-- [[Настоящий курсив и полужирное, а не синтетика браузера]] - rationale - docs/lectures/1.4.txt
-- [[Насыщенность «через одного» Light+Bold, Regular+Black]] - rationale - docs/lectures/1.4.txt
-- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
-- [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
-- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
-- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
-- [[Постоянство цветового кода и редкий акцент]] - rationale - docs/lectures/1.6.txt
-- [[Право выхода дверь наружу — хороший исход]] - rationale - docs/lectures/1.6.txt
-- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
-- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
-- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
-- [[Прописной набор требует умеренной разрядки]] - rationale - docs/lectures/1.4.txt
-- [[Роли — только из раскадровки, имена по функции]] - rationale - docs/lectures/1.4.txt
-- [[Сетка вырастает из строки и материала]] - rationale - docs/lectures/1.5.txt
-- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
-- [[Спецификация ролей, воспроизводимая другим человеком]] - rationale - docs/lectures/1.4.txt
-- [[Строка 50–75 знаков (до 80), width min(100%, 68ch)]] - rationale - docs/lectures/1.4.txt
-- [[Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]] - rationale - docs/MAP.md
-- [[Сходство одинаковое оформление — одинаковая роль]] - rationale - docs/lectures/1.6.txt
-- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
-- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
-- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - rationale - docs/lectures/1.4.txt
-- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
-- [[Шкала интервалов из интерлиньяжа 0.75  1.5  3  6 rem]] - rationale - docs/lectures/1.5.txt
-- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - code - src/style.css
-- [[Шрифт Alegreya SC (--display, .disp)]] - code - src/style.css
-- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
+- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - code - src/body.html
+- [[swAxle — ось, прорисовка]] - code - src/body.html
+- [[track — лента изобретений (игла, верёвка, флейта, лодка, гончарный круг)]] - code - src/body.html
+- [[dot-rew-fx — эффект перемотки ◀◀]] - code - src/body.html
+- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
+- [[air()]] - code - src/app.js
+- [[applyK()]] - code - src/app.js
+- [[bubble()]] - code - src/app.js
+- [[click()]] - code - src/app.js
+- [[clop()]] - code - src/app.js
+- [[env()]] - code - src/app.js
+- [[fin()]] - code - src/app.js
+- [[gesture()]] - code - src/app.js
+- [[gong()]] - code - src/app.js
+- [[guideFrame()]] - code - src/app.js
+- [[init()]] - code - src/app.js
+- [[klaxon()]] - code - src/app.js
+- [[knock()]] - code - src/app.js
+- [[ksPlay()]] - code - src/app.js
+- [[layLater()]] - code - src/app.js
+- [[layScenery()]] - code - src/app.js
+- [[layout()]] - code - src/app.js
+- [[layoutKF()]] - code - src/app.js
+- [[loop()]] - code - src/app.js
+- [[mallet()]] - code - src/app.js
+- [[moo()]] - code - src/app.js
+- [[morphD()]] - code - src/app.js
+- [[nz()]] - code - src/app.js
+- [[ok()]] - code - src/app.js
+- [[osc()]] - code - src/app.js
+- [[pairOf()]] - code - src/app.js
+- [[piano()]] - code - src/app.js
+- [[plank()]] - code - src/app.js
+- [[play()]] - code - src/app.js
+- [[rewind()]] - code - src/app.js
+- [[ripFrame()]] - code - src/app.js
+- [[roll()]] - code - src/app.js
+- [[sampleFig()]] - code - src/app.js
+- [[scene()]] - code - src/app.js
+- [[scribble()]] - code - src/app.js
+- [[send()]] - code - src/app.js
+- [[soft()]] - code - src/app.js
+- [[squeak()]] - code - src/app.js
+- [[srcapp.js]] - code - src/app.js
+- [[steps()]] - code - src/app.js
+- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - code - src/body.html
+- [[tear()]] - code - src/app.js
+- [[whoosh()]] - code - src/app.js
+- [[wood()]] - code - src/app.js
+- [[Вопрос на входе — ответ в финале]] - rationale - docs/lectures/1.6.txt
+- [[Мобильное преобразование — не общий Scale]] - rationale - docs/lectures/1.5.txt
+- [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - concept - docs/lectures/1.6.txt
+- [[Память как ответственность (Мец) финал помнит первый экран]] - concept - docs/lectures/1.6.txt
+- [[Разрез земли strata + bubbles (болото)]] - code - src/body.html
+- [[Финал возвращается к началу]] - rationale - docs/MAP.md
+- [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - rationale - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -69,18 +75,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 7 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
-- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 5 edges to [[_COMMUNITY_Журнал решений]]
-- 3 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 2 edges to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
+- 25 edges to [[_COMMUNITY_Журнал решений]]
+- 15 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 6 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 6 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 6 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_scenery.js]]
 
 ## Top bridge nodes
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 4 communities
-- [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 3 communities
-- [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - degree 7, connects to 2 communities
-- [[creditsCard — титры «Конец»]] - degree 5, connects to 2 communities
-- [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - degree 4, connects to 2 communities
+- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 8 communities
+- [[srcapp.js]] - degree 49, connects to 4 communities
+- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - degree 11, connects to 2 communities
+- [[Финал возвращается к началу]] - degree 5, connects to 2 communities
+- [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - degree 3, connects to 2 communities

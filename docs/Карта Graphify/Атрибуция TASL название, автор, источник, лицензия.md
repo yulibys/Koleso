@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.2.txt"
 type: "rationale"
-community: "Сетки и модуль (1.5)"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Фото_вырезки_права_17
 ---
 
 # Атрибуция TASL: название, автор, источник, лицензия
@@ -16,4 +16,4 @@ tags:
 - [[Лекция 1.2. Тема, тезис, редакционный угол]] - `references` [EXTRACTED]
 - [[Фото из Викисклада с авторами и лицензиями в подвале]] - `implements` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17

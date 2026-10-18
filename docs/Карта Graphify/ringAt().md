@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L195"
+community: "Сетки и модуль (1.5)"
+location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Сетки_и_модуль_15
 ---
 
 # ringAt()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[dot-s1()]] - `calls` [EXTRACTED]
 - [[app.js]] - `contains` [EXTRACTED]
+- [[ringAt0()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

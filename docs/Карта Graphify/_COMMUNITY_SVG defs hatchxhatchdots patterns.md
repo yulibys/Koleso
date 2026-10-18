@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.39
+cohesion: 0.25
 members: 8
 ---
 
 # SVG defs: hatch/xhatch/dots patterns
 
-**Cohesion:** 0.39 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
-- [[tHorse — лошадь (template)]] - code - src/body.html
-- [[tOx — бык (template)]] - code - src/body.html
-- [[tRunner — бегущий человек (template)]] - code - src/body.html
-- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
-- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
-- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
+- [[«Иногда лучше одному» одна семья или суперсемейство]] - rationale - docs/lectures/1.4.txt
+- [[«Иногда лучше одному» одно суперсемейство шрифтов]] - rationale - docs/MAP.md
+- [[Выключка влево и ограниченный набор гарнитур]] - rationale - docs/lectures/1.5.txt
+- [[Комплектность и технический допуск гарнитуры]] - rationale - docs/lectures/1.4.txt
+- [[Настоящий курсив и полужирное, а не синтетика браузера]] - rationale - docs/lectures/1.4.txt
+- [[Насыщенность «через одного» Light+Bold, Regular+Black]] - rationale - docs/lectures/1.4.txt
+- [[Сходство одинаковое оформление — одинаковая роль]] - rationale - docs/lectures/1.6.txt
+- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - code - src/style.css
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,15 +27,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 5 edges to [[_COMMUNITY_Рисунки повозок]]
+- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 1 edge to [[_COMMUNITY_fig.js]]
 - 1 edge to [[_COMMUNITY_Первый экран и внимание (1.6)]]
 
 ## Top bridge nodes
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - degree 5, connects to 2 communities
-- [[SVG defs hatchxhatchdots patterns]] - degree 5, connects to 1 community
-- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - degree 5, connects to 1 community
-- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - degree 4, connects to 1 community
-- [[tRunner — бегущий человек (template)]] - degree 3, connects to 1 community
+- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - degree 7, connects to 3 communities
+- [[«Иногда лучше одному» одна семья или суперсемейство]] - degree 5, connects to 2 communities
+- [[«Иногда лучше одному» одно суперсемейство шрифтов]] - degree 4, connects to 2 communities
+- [[Насыщенность «через одного» Light+Bold, Regular+Black]] - degree 2, connects to 1 community
+- [[Комплектность и технический допуск гарнитуры]] - degree 2, connects to 1 community

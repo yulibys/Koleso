@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Раскадровка и двери (1.3)"
 location: "L550"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Сетки_и_модуль_15
+  - community/Раскадровка_и_двери_13
 ---
 
 # .stk — стикеры с бумажной подписью
@@ -16,4 +16,4 @@ tags:
 - [[Смысловой узел переезжает целиком]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Сетки_и_модуль_15
+#graphify/code #graphify/INFERRED #community/Раскадровка_и_двери_13

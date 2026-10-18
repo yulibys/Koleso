@@ -15,7 +15,7 @@ tags:
 - [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - `shares_data_with` [INFERRED]
 - [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - `implements` [EXTRACTED]
 - [[lab — «Соберите свою повозку» (интерактив)]] - `references` [EXTRACTED]
-- [[sayL()_2]] - `references` [INFERRED]
+- [[sayL()]] - `references` [INFERRED]
 - [[wood()]] - `references` [INFERRED]
 - [[Аффордансы показать возможность действия]] - `rationale_for` [INFERRED]
 - [[Без hover и обязательного перетаскивания]] - `rationale_for` [INFERRED]

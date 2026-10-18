@@ -1,41 +1,33 @@
 ---
 type: community
-cohesion: 0.14
-members: 26
+cohesion: 0.16
+members: 18
 ---
 
 # Рисунки повозок
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[track — лента изобретений (игла, верёвка, флейта, лодка, гончарный круг)]] - code - src/body.html
-- [[5–9 смысловых зон]] - concept - docs/lectures/1.3.txt
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - code - src/body.html
-- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - code - src/body.html
-- [[layLater()]] - code - src/app.js
-- [[«Маша» Фёдора Сваровского (разбор финала)]] - concept - docs/lectures/1.3.txt
-- [[Авторство как отсечение каждый элемент заново доказывает право остаться]] - rationale - docs/lectures/1.7.txt
-- [[Вертикальный ритм — расстояния во времени скролла]] - concept - docs/lectures/1.5.txt
-- [[Интертитры рвутся по неровному краю (по kamidesgnfaith)]] - rationale - docs/context.md
-- [[Карта внимания (партитура страницы)]] - rationale - docs/lectures/1.6.txt
-- [[Карта соседства]] - concept - docs/lectures/1.3.txt
-- [[Лекция 1.3. Архитектура лонгрида структура, раскадровка]] - document - docs/lectures/1.3.txt
-- [[Линейный ствол и боковые двери с содержательным именем]] - rationale - docs/lectures/1.3.txt
-- [[Ма паузу проверяют удалением]] - rationale - docs/lectures/1.3.txt
-- [[Монтаж аттракционов (Эйзенштейн)]] - concept - docs/lectures/1.3.txt
-- [[Пауза должна иметь функцию]] - rationale - docs/lectures/1.6.txt
-- [[Пена (Слотердайк) различимая мембрана между частями]] - rationale - docs/lectures/1.1.txt
-- [[Переход под допросом почему следующий фрагмент здесь]] - rationale - docs/lectures/1.3.txt
-- [[Плотность 1–5 между двумя «пятёрками» — передышка]] - rationale - docs/lectures/1.3.txt
-- [[Правка соседская дверь к отчёту о люблянском колесе и статье о кувшине из Броночице]] - rationale - docs/MAP.md
-- [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - rationale - docs/MAP.md
-- [[Ритм «акцент → пауза → выход»]] - rationale - docs/MAP.md
-- [[Соседская дверь внешняя ссылка к первоисточнику]] - rationale - docs/lectures/1.1.txt
-- [[Ссылка как обещание не «подробнее», а предмет перехода]] - rationale - docs/lectures/1.8.txt
-- [[Функция зоны глаголом, а не форматом]] - rationale - docs/lectures/1.3.txt
-- [[Эффект Кулешова значение кадра меняется от соседа]] - concept - docs/lectures/1.3.txt
+- [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
+- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
+- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
+- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
+- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
+- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
+- [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
+- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
+- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
+- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
+- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
+- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
+- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
+- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
+- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
+- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
+- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,21 +37,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 9 edges to [[_COMMUNITY_Журнал решений]]
-- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 6 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 4 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 3 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
-- 3 edges to [[_COMMUNITY_Сетки и модуль (1.5)]]
+- 5 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 4 edges to [[_COMMUNITY_fig.js]]
+- 4 edges to [[_COMMUNITY_v20fig.js]]
+- 3 edges to [[_COMMUNITY_Журнал решений]]
+- 3 edges to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 3 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
 - 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 2 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_scenery.js]]
-- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
 
 ## Top bridge nodes
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - degree 16, connects to 6 communities
-- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - degree 15, connects to 6 communities
-- [[Лекция 1.3. Архитектура лонгрида структура, раскадровка]] - degree 14, connects to 3 communities
-- [[Ритм «акцент → пауза → выход»]] - degree 8, connects to 3 communities
-- [[Правка соседская дверь к отчёту о люблянском колесе и статье о кувшине из Броночице]] - degree 8, connects to 3 communities
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 9 communities
+- [[Калибровочный лист менять один параметр и записывать]] - degree 4, connects to 1 community
+- [[Абзац — монтажная единица, не метроном]] - degree 3, connects to 1 community
+- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - degree 3, connects to 1 community
+- [[Отбивка показывает отношение подпись ближе к изображению]] - degree 3, connects to 1 community

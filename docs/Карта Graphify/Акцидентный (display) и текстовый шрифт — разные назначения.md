@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.4.txt"
 type: "concept"
-community: "Типографика (1.4)"
+community: "fig.js"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Типографика_14
+  - community/figjs
 ---
 
 # Акцидентный (display) и текстовый шрифт — разные назначения
@@ -16,4 +16,4 @@ tags:
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `rationale_for` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Типографика_14
+#graphify/concept #graphify/INFERRED #community/figjs

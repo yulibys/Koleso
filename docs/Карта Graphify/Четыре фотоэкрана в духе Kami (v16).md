@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Первый экран и внимание (1.6)"
+community: "Журнал решений"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Журнал_решений
 ---
 
 # Четыре фотоэкрана в духе Kami (v16)
@@ -18,4 +18,4 @@ tags:
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 - [[Ритм — возвращение групп со сменой масштаба]] - `implements` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений

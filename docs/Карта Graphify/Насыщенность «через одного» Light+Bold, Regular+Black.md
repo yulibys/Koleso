@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.4.txt"
 type: "rationale"
-community: "Типографика (1.4)"
+community: "SVG defs: hatch/xhatch/dots patterns"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/SVG_defs_hatch/xhatch/dots_patterns
 ---
 
 # Насыщенность «через одного»: Light+Bold, Regular+Black
@@ -14,4 +14,4 @@ tags:
 - [[«Иногда лучше одному» одна семья или суперсемейство]] - `conceptually_related_to` [EXTRACTED]
 - [[Лекция 1.4. Экранная типографика и выбор шрифта]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Типографика_14
+#graphify/rationale #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns

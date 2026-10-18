@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Журнал решений"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Журнал_решений
 ---
 
 # ps2 — «Колесо есть. Ехать не на чем.» (фотоэкран H2)
@@ -22,4 +22,4 @@ tags:
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `implements` [EXTRACTED]
 - [[Четыре фотоэкрана в духе Kami (v16)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

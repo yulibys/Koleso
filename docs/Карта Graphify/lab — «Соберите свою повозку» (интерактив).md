@@ -18,7 +18,7 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[lab()]] - `references` [INFERRED]
 - [[nag — Нагасена и Милинда «колесо — это колесница»]] - `references` [EXTRACTED]
-- [[sayL()_2]] - `references` [INFERRED]
+- [[sayL()]] - `references` [INFERRED]
 - [[Действие читателя меняет состояние страницы]] - `rationale_for` [EXTRACTED]
 - [[Детали повозки parts .part + .lab-say]] - `references` [EXTRACTED]
 - [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - `rationale_for` [INFERRED]

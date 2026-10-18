@@ -12,7 +12,7 @@ tags:
 # upd()
 
 ## Connections
-- [[sayL()_2]] - `calls` [EXTRACTED]
+- [[sayL()]] - `calls` [EXTRACTED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

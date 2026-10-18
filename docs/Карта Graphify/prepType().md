@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Лекция 1.8. Предзащита и финальная редактура"
 location: "L134"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Лекция_18_Предзащита_и_финальная_редактура
 ---
 
 # prepType()
@@ -18,4 +18,4 @@ tags:
 - [[Неразрывные пробелы — только для смысловых пар]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Лекция_18_Предзащита_и_финальная_редактура

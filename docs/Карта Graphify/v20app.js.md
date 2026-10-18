@@ -1,12 +1,12 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Выпуск и предзащита (1.8)"
+community: "Пейзажи (scenery.js)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/Пейзажи_sceneryjs
 ---
 
 # v20/app.js
@@ -25,11 +25,13 @@ tags:
 - [[restore()_1]] - `contains` [EXTRACTED]
 - [[rewindToS1()_1]] - `contains` [EXTRACTED]
 - [[ringAt()_1]] - `contains` [EXTRACTED]
-- [[sayL()_1]] - `contains` [EXTRACTED]
+- [[ringAt0()_1]] - `contains` [EXTRACTED]
+- [[sayL()_2]] - `contains` [EXTRACTED]
 - [[scrollAnim()_1]] - `contains` [EXTRACTED]
 - [[spin()_1]] - `contains` [EXTRACTED]
+- [[splitLines()_1]] - `indirect_call` [INFERRED]
 - [[startEnding()_1]] - `contains` [EXTRACTED]
 - [[textOut()_1]] - `contains` [EXTRACTED]
 - [[tick()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

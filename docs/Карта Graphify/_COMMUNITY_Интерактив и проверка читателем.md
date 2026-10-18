@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 0.06
-members: 49
+members: 48
 ---
 
 # Интерактив и проверка читателем
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 49 nodes
+**Members:** 48 nodes
 
 ## Members
-- [[dot-guide — фиксированное колесо-проводник]] - code - src/style.css
+- [[nagSvg — монах и царь, «колесница», «ось нет  кузов нет»]] - code - src/body.html
+- [[sams — «А вы, кажется, попали в колесо сансары»]] - code - src/body.html
 - [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
 - [[dot-lab-ground.blade.wind]] - code - src/style.css
 - [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
@@ -18,9 +19,8 @@ members: 49
 - [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
 - [[nag — Нагасена и Милинда «колесо — это колесница»]] - code - src/body.html
 - [[nag()]] - code - src/scenery.js
-- [[sayL()_2]] - code - src/app.js
+- [[sayL()]] - code - src/app.js
 - [[upd()]] - code - src/app.js
-- [[wood()]] - code - src/app.js
 - [[Адаптив меняем расположение, сохраняем смысловые связи]] - rationale - docs/lectures/1.7.txt
 - [[Архивный слепок папка проверенной версии]] - rationale - docs/lectures/1.7.txt
 - [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
@@ -45,7 +45,6 @@ members: 49
 - [[Палимпсест (Женетт) прежний слой объясняет нынешнюю форму]] - concept - docs/lectures/1.7.txt
 - [[Порядок правок поломка → фактыправоссылки → обещание → типографика → украшение]] - rationale - docs/lectures/1.7.txt
 - [[Проба без подсказки чужой читатель проходит эпизод]] - rationale - docs/lectures/1.7.txt
-- [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - rationale - docs/lectures/1.7.txt
 - [[Проверка на медленной сети Network, Disable cache, троттлинг]] - rationale - docs/lectures/1.7.txt
 - [[Проверять публичную ссылку на реальных устройствах, а не редактор]] - rationale - docs/lectures/1.7.txt
 - [[Редактура сократить абзац примерно на треть]] - rationale - docs/lectures/1.7.txt
@@ -68,21 +67,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Журнал решений]]
-- 10 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 9 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 6 edges to [[_COMMUNITY_Рисунки повозок]]
-- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 3 edges to [[_COMMUNITY_Пейзажи (scenery.js)]]
+- 13 edges to [[_COMMUNITY_Журнал решений]]
+- 11 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 10 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 6 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 3 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 2 edges to [[_COMMUNITY_Сборка, источники, финал]]
+- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
 - 2 edges to [[_COMMUNITY_scenery.js]]
-- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_Сетки и модуль (1.5)]]
+- 2 edges to [[_COMMUNITY_re]]
+- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 1 edge to [[_COMMUNITY_Рисунки повозок]]
 
 ## Top bridge nodes
-- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - degree 39, connects to 6 communities
+- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - degree 39, connects to 7 communities
 - [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 5 communities
-- [[nag — Нагасена и Милинда «колесо — это колесница»]] - degree 12, connects to 4 communities
-- [[Угол проекта колесо само по себе бесполезно]] - degree 7, connects to 3 communities
-- [[Адаптив меняем расположение, сохраняем смысловые связи]] - degree 5, connects to 3 communities
+- [[nag — Нагасена и Милинда «колесо — это колесница»]] - degree 12, connects to 3 communities
+- [[Детали повозки parts .part + .lab-say]] - degree 8, connects to 2 communities
+- [[Угол проекта колесо само по себе бесполезно]] - degree 7, connects to 2 communities

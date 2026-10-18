@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "scenery.js"
+community: "Сборка, источники, финал"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sceneryjs
+  - community/Сборка_источники_финал
 ---
 
 # later()
@@ -17,4 +17,4 @@ tags:
 - [[scenery.js]] - `contains` [EXTRACTED]
 - [[wave()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

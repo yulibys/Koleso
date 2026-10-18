@@ -576,3 +576,8 @@ html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
 /* v44: в адаптиве строки выравниваются по длине — без одного слова в последней строке */
 .port .s2text p,.port .s2text h2,.port .cover .h1,.port #s6h,.port #s8t1,.port .para{text-wrap:balance}
 .tab .s2text p{left:70px;width:680px}
+/* v46: телефоны и планшеты — без тяжёлых эффектов */
+.coarse body::after{display:none}
+html.coarse .boil{filter:none!important}
+html.coarse.rewinding .stage{filter:none}
+.coarse .stage{contain:layout paint}

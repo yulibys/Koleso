@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Типографика (1.4)"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Типографика_14
 ---
 
 # tear()
@@ -16,4 +16,4 @@ tags:
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

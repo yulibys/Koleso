@@ -1,12 +1,12 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Выпуск и предзащита (1.8)"
-location: "L272"
+community: "Пейзажи (scenery.js)"
+location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/Пейзажи_sceneryjs
 ---
 
 # .s2()
@@ -16,4 +16,4 @@ tags:
 - [[put()_1]] - `calls` [EXTRACTED]
 - [[rewindToS1()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

@@ -1,12 +1,12 @@
 ---
 source_file: "cut/gc.py"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Раскадровка и двери (1.3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Раскадровка_и_двери_13
 ---
 
 # gc.py
@@ -22,4 +22,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `references` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13

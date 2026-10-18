@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L31"
+community: "Сетки и модуль (1.5)"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Сетки_и_модуль_15
 ---
 
 # put()
@@ -18,4 +18,4 @@ tags:
 - [[dot-s6()]] - `calls` [EXTRACTED]
 - [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Типографика (1.4)"
+community: "SVG defs: hatch/xhatch/dots patterns"
 location: "L6"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Типографика_14
+  - community/SVG_defs_hatch/xhatch/dots_patterns
 ---
 
 # Шрифт Alegreya (--serif/--hand, .voice/.hand)
@@ -20,4 +20,4 @@ tags:
 - [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - `conceptually_related_to` [INFERRED]
 - [[Сходство одинаковое оформление — одинаковая роль]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Типографика_14
+#graphify/code #graphify/INFERRED #community/SVG_defs_hatch/xhatch/dots_patterns

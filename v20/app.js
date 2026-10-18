@@ -25,9 +25,18 @@
     root.classList.toggle('port', PORT); root.classList.toggle('tab', TAB); sizes.clear();
   }
   fit();
-  addEventListener('resize', () => { fit(); tick(); });
   $$('.sc').forEach((s) => s.style.setProperty('--len', s.dataset.len));
-  if (!reduce) { let b = 0; setInterval(() => { root.classList.remove('boil0', 'boil1', 'boil2'); root.classList.add('boil' + (b = (b + 1) % 3)); }, 140); }
+  const COARSE = matchMedia('(pointer: coarse)').matches;
+  if (COARSE) root.classList.add('coarse');
+  // на телефонах и планшетах «дрожание» линий выключено: SVG-фильтр каждые 140 мс перерисовывает весь экран и тормозит прокрутку
+  if (!reduce && !COARSE) { let b = 0; setInterval(() => { root.classList.remove('boil0', 'boil1', 'boil2'); root.classList.add('boil' + (b = (b + 1) % 3)); }, 140); }
+  // на телефоне адресная строка при прокрутке меняет высоту окна — не пересчитываем раскладку из-за этого
+  let lastW = innerWidth, lastH = innerHeight;
+  addEventListener('resize', () => {
+    const w = innerWidth, h = innerHeight;
+    if (COARSE && w === lastW && Math.abs(h - lastH) < 160) return;
+    lastW = w; lastH = h; fit(); tick();
+  });
 
   /* ── помощники ── */
   function put(el, x, y, s = 1, r = 0, o) {

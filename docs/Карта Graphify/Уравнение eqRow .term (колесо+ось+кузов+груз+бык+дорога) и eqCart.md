@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "SVG defs: hatch/xhatch/dots patterns"
+community: "re"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SVG_defs_hatch/xhatch/dots_patterns
+  - community/re
 ---
 
 # Уравнение #eqRow .term (колесо+ось+кузов+груз+бык+дорога) и #eqCart
@@ -17,4 +17,4 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[Рабочая память и чанкинг]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns
+#graphify/code #graphify/EXTRACTED #community/re

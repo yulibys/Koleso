@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "SVG defs: hatch/xhatch/dots patterns"
+community: "re"
 location: "L3"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SVG_defs_hatch/xhatch/dots_patterns
+  - community/re
 ---
 
 # SVG defs: hatch/xhatch/dots patterns
@@ -18,4 +18,4 @@ tags:
 - [[tRunner — бегущий человек (template)]] - `shares_data_with` [INFERRED]
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SVG_defs_hatch/xhatch/dots_patterns
+#graphify/code #graphify/INFERRED #community/re

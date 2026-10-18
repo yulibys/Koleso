@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Первый экран и внимание (1.6)"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Первый_экран_и_внимание_16
 ---
 
 # .flick/.scratch/.silent — немое кино
@@ -15,4 +15,4 @@ tags:
 - [[Контроль медиа пауза движения и звука]] - `rationale_for` [INFERRED]
 - [[Немое кино .flick + .scratch (+ .silent рамка)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

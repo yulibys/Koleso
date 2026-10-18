@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Первый экран и внимание (1.6)"
 location: "L429"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Первый_экран_и_внимание_16
 ---
 
 # Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)
@@ -20,4 +20,4 @@ tags:
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `implements` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

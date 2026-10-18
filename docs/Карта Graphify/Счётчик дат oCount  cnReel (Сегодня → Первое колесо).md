@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Первый экран и внимание (1.6)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Первый_экран_и_внимание_16
 ---
 
 # Счётчик дат #oCount / #cnReel (Сегодня → Первое колесо)
@@ -21,4 +21,4 @@ tags:
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 - [[Фактологический проход имена, даты, подписи, цитаты, числа]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

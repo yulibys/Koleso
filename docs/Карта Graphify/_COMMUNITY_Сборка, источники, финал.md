@@ -1,43 +1,39 @@
 ---
 type: community
-cohesion: 0.14
-members: 28
+cohesion: 0.17
+members: 24
 ---
 
 # Сборка, источники, финал
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[dot-s1()]] - code - app.js
-- [[dot-s2()]] - code - app.js
-- [[dot-s3()]] - code - app.js
-- [[dot-s4()]] - code - app.js
-- [[dot-s5()]] - code - app.js
-- [[dot-s6()]] - code - app.js
-- [[dot-s7()]] - code - app.js
-- [[dot-s8()]] - code - app.js
-- [[S]] - code - app.js
-- [[app.js]] - code - app.js
-- [[cancelEnding()]] - code - app.js
-- [[cover()]] - code - app.js
-- [[coverSeq()]] - code - app.js
-- [[fit()]] - code - app.js
-- [[labUpd()]] - code - app.js
-- [[loop()_1]] - code - app.js
-- [[morph()]] - code - app.js
-- [[nextCover()]] - code - app.js
-- [[put()]] - code - app.js
-- [[restore()]] - code - app.js
-- [[rewindToS1()]] - code - app.js
-- [[ringAt()]] - code - app.js
-- [[sayL()]] - code - app.js
-- [[scrollAnim()]] - code - app.js
-- [[spin()]] - code - app.js
-- [[startEnding()]] - code - app.js
-- [[textOut()]] - code - app.js
-- [[tick()]] - code - app.js
+- [[birds()]] - code - src/scenery.js
+- [[bush()]] - code - src/scenery.js
+- [[cloud()]] - code - src/scenery.js
+- [[day()]] - code - src/scenery.js
+- [[fence()]] - code - src/scenery.js
+- [[forest()]] - code - src/scenery.js
+- [[grass()]] - code - src/scenery.js
+- [[hay()]] - code - src/scenery.js
+- [[hero()]] - code - src/scenery.js
+- [[hill()]] - code - src/scenery.js
+- [[house()]] - code - src/scenery.js
+- [[hut()]] - code - src/scenery.js
+- [[lab()]] - code - src/scenery.js
+- [[later()]] - code - src/scenery.js
+- [[milestone()]] - code - src/scenery.js
+- [[mill()]] - code - src/scenery.js
+- [[oak()]] - code - src/scenery.js
+- [[parade()]] - code - src/scenery.js
+- [[poplar()]] - code - src/scenery.js
+- [[road()]] - code - src/scenery.js
+- [[scenery.js]] - code - src/scenery.js
+- [[stone()]] - code - src/scenery.js
+- [[sun()]] - code - src/scenery.js
+- [[wave()]] - code - src/scenery.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,3 +41,15 @@ members: 28
 TABLE source_file, type FROM #community/Сборка_источники_финал
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Журнал решений]]
+- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+
+## Top bridge nodes
+- [[scenery.js]] - degree 25, connects to 2 communities
+- [[lab()]] - degree 10, connects to 1 community
+- [[hero()]] - degree 7, connects to 1 community
+- [[parade()]] - degree 7, connects to 1 community
+- [[day()]] - degree 5, connects to 1 community

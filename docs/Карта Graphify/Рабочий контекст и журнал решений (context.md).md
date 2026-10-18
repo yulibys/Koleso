@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "document"
-community: "Журнал решений"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Фото_вырезки_права_17
 ---
 
 # Рабочий контекст и журнал решений (context.md)
@@ -44,4 +44,4 @@ tags:
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `references` [EXTRACTED]
 - [[Юлия Бысова (автор)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Журнал_решений
+#graphify/document #graphify/EXTRACTED #community/Фото_вырезки_права_17

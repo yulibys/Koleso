@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Журнал решений"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Фото_вырезки_права_17
 ---
 
 # Плёнка shaders.com: царапины, зерно, мерцание; VHS при перемотке
@@ -16,4 +16,4 @@ tags:
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 - [[Снова чёрно-белое плёнка на всех сценах (v12)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений
+#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17

@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Первый экран и внимание (1.6)"
+community: "Раскадровка и двери (1.3)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Раскадровка_и_двери_13
 ---
 
 # T_ur — Вырезка T_ur (.cut)
@@ -14,4 +14,4 @@ tags:
 - [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - `references` [EXTRACTED]
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/image #graphify/EXTRACTED #community/Раскадровка_и_двери_13

@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Рисунки повозок"
+community: "Типографика (1.4)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Рисунки_повозок
+  - community/Типографика_14
 ---
 
 # layLater()
@@ -18,4 +18,4 @@ tags:
 - [[scene()]] - `shares_data_with` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Рисунки_повозок
+#graphify/code #graphify/INFERRED #community/Типографика_14

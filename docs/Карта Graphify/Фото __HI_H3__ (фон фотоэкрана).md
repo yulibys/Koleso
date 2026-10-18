@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Первый экран и внимание (1.6)"
+community: "Журнал решений"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Журнал_решений
 ---
 
 # Фото __HI_H3__ (фон фотоэкрана)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ps3 — «А потом поехали» (фотоэкран H3)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/image #graphify/EXTRACTED #community/Журнал_решений

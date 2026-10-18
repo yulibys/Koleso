@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Первый экран и внимание (1.6)"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Первый_экран_и_внимание_16
 ---
 
 # #sndBtn — кнопка звука
@@ -18,4 +18,4 @@ tags:
 - [[Контроль медиа пауза движения и звука]] - `rationale_for` [INFERRED]
 - [[Цвет — не единственный признак]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

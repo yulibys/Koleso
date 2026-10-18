@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L528"
+community: "Сетки и модуль (1.5)"
+location: "L571"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Сетки_и_модуль_15
 ---
 
 # restore()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

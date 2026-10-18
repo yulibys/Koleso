@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Раскадровка и двери (1.3)"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Раскадровка_и_двери_13
 ---
 
 # Монтаж колёс #swarm + #rCap/#rText
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13

@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L479"
+community: "Сетки и модуль (1.5)"
+location: "L522"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Сетки_и_модуль_15
 ---
 
 # spin()
@@ -15,4 +15,4 @@ tags:
 - [[app.js]] - `contains` [EXTRACTED]
 - [[startEnding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

@@ -1,20 +1,18 @@
 ---
-source_file: "src/app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L231"
+community: "Пейзажи (scenery.js)"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Пейзажи_sceneryjs
 ---
 
 # sayL()
 
 ## Connections
-- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
-- [[srcapp.js]] - `contains` [EXTRACTED]
-- [[upd()]] - `calls` [EXTRACTED]
-- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
+- [[labUpd()_1]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
