@@ -11,16 +11,18 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const root = document.documentElement;
   const A = window.ART;
-  let H = innerHeight, PORT = false;
+  let H = innerHeight, PORT = false, TAB = false, PS = 0.6;
   const sizes = new Map();
 
   function fit() {
     H = innerHeight;
     const W = innerWidth;
-    const k = W >= H ? Math.min(W / 1440, H / 810) : Math.min(H / 900, W / 760);
+    // портрет (телефон, планшет): не общий масштаб, а своя раскладка в полосе 560 px по центру кадра и с запасом по высоте
+    const k = W >= H ? Math.min(W / 1440, H / 810) : Math.min(W / 560, H / 1150);
     root.style.setProperty('--m', Math.max(0, (W / k - 1440) / 2).toFixed(1));
     root.style.setProperty('--k', k.toFixed(4));
-    PORT = W < H; root.classList.toggle('port', PORT); sizes.clear();
+    PORT = W < H; TAB = PORT && W / k >= 760; PS = TAB ? 0.8 : 0.6;
+    root.classList.toggle('port', PORT); root.classList.toggle('tab', TAB); sizes.clear();
   }
   fit();
   addEventListener('resize', () => { fit(); tick(); });
@@ -36,9 +38,32 @@
   }
   const op = (el, v) => { el.style.opacity = cl(v).toFixed(3); };
   const dr = (el, v) => { el.style.setProperty('--d', cl(v).toFixed(4)); };
-  const sw = (el, v) => { el.style.setProperty('--sw', cl(v).toFixed(4)); };
+  // проявление слева направо; если в надписи несколько строк — по очереди, строка за строкой
+  const sw = (el, v) => {
+    if (!el) return;
+    if (el._ln) { const n = el._ln.length; el._ln.forEach((l, i) => l.style.setProperty('--sw', cl(v * n - i).toFixed(4))); }
+    else el.style.setProperty('--sw', cl(v).toFixed(4));
+  };
+  function splitLines(el) {
+    if ([...el.children].some((c) => c.tagName !== 'BR')) return; // буквы «Колесо» и т. п. не трогаем
+    const parts = el.innerHTML.split(/<br\s*\/?>/i);
+    el.innerHTML = parts.map((p) => p.trim().split(/\s+/).map((w) => `<span class="w">${w}</span>`).join(' ')).join('<br>');
+    const ws = [...el.querySelectorAll('.w')], lines = [];
+    let top = null;
+    ws.forEach((w) => { const t = w.offsetTop; if (top === null || Math.abs(t - top) > 4) { lines.push([]); top = t; } lines[lines.length - 1].push(w.innerHTML); });
+    if (lines.length < 2) { el.innerHTML = parts.join('<br>'); return; }
+    el.innerHTML = lines.map((l) => `<span class="ln"><span class="lt">${l.join(' ')}</span></span>`).join('');
+    el.classList.add('lined');
+    el._ln = [...el.querySelectorAll('.lt')];
+  }
   const ul = (host, v) => { const p = host.querySelector('.ul path'); if (p) p.style.setProperty('--d', cl(v).toFixed(3)); };
-  function cover(el, t) { el.style.transform = `translateY(${(100 * (1 - ez(cl(t)))).toFixed(2)}%)`; }
+  // обложка наезжает снизу плавно: положение догоняет прокрутку с инерцией, без рывков при быстром пролистывании
+  function cover(el, t) {
+    const target = 100 * (1 - ez(cl(t)));
+    const cur = el._cy === undefined ? target : el._cy + (target - el._cy) * 0.14;
+    el._cy = Math.abs(cur - target) < 0.05 ? target : cur;
+    el.style.transform = `translateY(${el._cy.toFixed(2)}%)`;
+  }
   // обложка: наезжает сверху, затем заголовок проявляется слева направо; можно увести вверх с исчезновением
   function coverSeq(el, p, a, b, outA, outB) {
     cover(el, sg(p, a, b));
@@ -63,6 +88,7 @@
   { const st = $('s5st'), u = st.querySelector('.ul'); u.setAttribute('preserveAspectRatio', 'none'); const t = document.createElement('span'); t.id = 's5bt'; t.innerHTML = $('s5b').innerHTML; $('s5b').innerHTML = ''; $('s5b').append(t, u); }
   $$('svg.ul').forEach((s) => { s.setAttribute('preserveAspectRatio', 'none'); const p = s.querySelector('[data-ul]'); if (p) s.setAttribute('viewBox', `-2 -6 ${+p.dataset.ul + 4} 20`); });
   $$('[data-frame]').forEach((p) => { const g = document.createElementNS('http://www.w3.org/2000/svg', 'g'); g.innerHTML = FIG.frame; p.replaceWith(g); });
+  $$('svg.frame').forEach((s) => s.setAttribute('preserveAspectRatio', 'none'));
   $('defs').insertAdjacentHTML('beforeend', VEH.pats + VEH.defs);
 
   const GRASS = [[1161, 719], [744, 767], [72, 645], [180, 843], [1279, 658], [1020, 827], [945, 642], [482, 801], [543, 650], [1308, 808], [296, 693], [225, 719], [726, 852], [442, 843], [1142, 749]];
@@ -104,7 +130,7 @@
   $('s5gr').innerHTML = FIG.s5grass.split('/>').filter((x) => { const m = x.match(/M([\d.]+) ([\d.]+)/); if (!m) return true; const X = +m[1], Y = +m[2]; return !(X > 300 && X < 1150 && Y > 690); }).join('/>');
   { const t = (k, x, y, sc, bx, by) => `<g transform="translate(${x} ${y}) scale(${sc}) translate(${-bx} ${-by})">${FIG[k]}</g>`;
     $('s5far').innerHTML = t('treeL', 120, 579, 1, 128, 586) + t('treeR', 250, 579, 0.6, 1327, 575) + t('treeR', 1330, 579, 1, 1327, 575) + t('treeL', 1200, 579, 0.62, 128, 586); }
-  $('s5soil').innerHTML = A.soil(290, 1150, 600, 64); $('s5soil').setAttribute('transform', 'translate(720 639) scale(1.18) translate(-720 -639)');
+  $('s5soil').innerHTML = A.soil(-520, 1960, 600, 64); $('s5soil').setAttribute('transform', 'translate(0 639) scale(1 1.18) translate(0 -639)'); $('s5far').innerHTML = '';
   // 6
   $('s6arc').innerHTML = A.arcade(1440, 839, 330);
   $('s6mg').innerHTML = A.monk();
@@ -192,7 +218,13 @@
   const SQ = 0.45; // масштаб маленькой белки (≈101 px шириной)
   // колесо: шаг 10 → 11 → 12 → 13
   const RING = [[0.32, 1033, 450, 64], [0.39, 1091, 489, 187], [0.45, 750, 516, 187], [0.52, 720, 544, 218]];
+  // портрет: слово «Колесо» меньше (PS), прыжки белки и первые кольца сжимаются к центру слова
+  const pt = (x, y) => (PORT ? [720 + (x - 720) * PS, 450 + (y - 450) * PS] : [x, y]);
   function ringAt(p) {
+    const R0 = RING.map((q, i) => (PORT && i < 2 ? [q[0], ...pt(q[1], q[2]), q[3] * PS] : q));
+    return ringAt0(p, R0);
+  }
+  function ringAt0(p, RING) {
     if (p <= RING[0][0]) return RING[0].slice(1);
     for (let i = 1; i < RING.length; i++) {
       if (p <= RING[i][0]) { const t = ez(sg(p, RING[i - 1][0], RING[i][0])); return [0, 1, 2].map((k) => lerp(RING[i - 1][k + 1], RING[i][k + 1], t)); }
@@ -203,9 +235,9 @@
   S.s1 = (p) => {
     // слово: маленькое → большое; затем вверх (шаг 12 — top 207, шаг 13 — top 68)
     const ws = lerp(96 / 241, 1, ez(sg(p, 0.03, 0.08)));
-    const top = p < 0.39 ? 318 : p < 0.45 ? lerp(318, 207, ez(sg(p, 0.39, 0.45))) : lerp(207, 68, ez(sg(p, 0.45, 0.52)));
+    const top = p < 0.39 ? 318 : p < 0.45 ? lerp(318, 207, ez(sg(p, 0.39, 0.45))) : lerp(207, TAB ? -30 : 68, ez(sg(p, 0.45, 0.52)));
     const PT = PORT ? 0.62 : 1;
-    word.style.transform = `translateY(${(top - 68).toFixed(1)}px) scale(${(ws).toFixed(4)})`;
+    word.style.transform = `translateY(${(top - 68).toFixed(1)}px) scale(${(ws * (PORT ? PS : 1)).toFixed(4)})`;
     const swp = sg(p, 0.62, 0.67);
     op(word, 1 - swp);
     const cat = $('s1catch'); op(cat, swp > 0 ? 1 : 0); sw(cat, swp);
@@ -226,10 +258,10 @@
     let x, y, s = SQ, o = sg(p, 0.07, 0.1), rr = 0;
     if (p < 0.43) {
       const k = Math.floor((p - hopA) / hopW);
-      if (p < hopA) { [x, y] = HOP[0]; }
+      if (p < hopA) { [x, y] = pt(...HOP[0]); }
       else if (k < HOP.length - 1) {
         const t = ez(sg(p, hopA + k * hopW, hopA + (k + 0.8) * hopW));
-        const a = HOP[k], b = HOP[k + 1];
+        const a = pt(...HOP[k]), b = pt(...HOP[k + 1]);
         x = lerp(a[0], b[0], t); y = lerp(a[1], b[1], t) - Math.sin(Math.PI * t) * (k < 2 ? 40 : 70);
         rr = t > 0 && t < 1 ? lerp(-14, 12, t) : 0;
         if (k === HOP.length - 2) s = lerp(SQ, (r / 220) * 0.9, t);
@@ -240,6 +272,7 @@
       } else sq.classList.remove('alt');
     } else { x = cx; y = cy + r * 0.38; s = (r / 220) * 0.95; sq.classList.toggle('alt', Math.floor(performance.now() / 110) % 2 === 1); }
     o = Math.min(o, 1 - sg(p, 0.47, 0.5));
+    if (PORT && p < hopA + (HOP.length - 1.2) * hopW) s *= PS;
     put(sq, x, y, s, rr, o);
 
     // пейзаж
@@ -262,9 +295,9 @@
     // большая белка выглядывает справа: «о нет((»
     const inn = ez(sg(p, 0.81, 0.84)), out = ez(sg(p, 0.895, 0.92));
     const big = $('s1big');
-    const bt = PORT ? 880 : 1120;
+    const bt = PORT ? (TAB ? 845 : 600) : 1120;
     const bx = out > 0 ? lerp(bt, 1800, out) : lerp(1800, bt, inn);
-    big.style.transform = `translate(${bx.toFixed(1)}px,${(250).toFixed(1)}px) scaleX(${out > 0 ? 1 : -1})`;
+    big.style.transform = `translate(${bx.toFixed(1)}px,${(250).toFixed(1)}px) scale(${PORT ? (TAB ? 1.05 : 0.5) : 1}) scaleX(${out > 0 ? 1 : -1})`;
     big.classList.toggle('alt', ((inn > 0 && inn < 1) || (out > 0 && out < 1)) && Math.floor(performance.now() / 110) % 2 === 1);
     op($('s1oh'), sg(p, 0.84, 0.85) - sg(p, 0.885, 0.895));
   };
@@ -287,7 +320,7 @@
     op($('s2sub'), sg(p, 0.5, 0.53));
     const t1 = ez(sg(p, 0.55, 0.62)), t2 = ez(sg(p, 0.62, 0.69)), t3 = ez(sg(p, 0.69, 0.75));
     tx.style.transform = `translateY(${(lerp(0, -224, t1) + lerp(0, -242, t2)).toFixed(1)}px)`;
-    const wx = lerp(1336, 701, t1), wy = lerp(824, 711, t1) + lerp(0, -223, t2) + lerp(0, -67, t3);
+    const wx = lerp(1336, 701, t1), wy = lerp(824, 711, t1) + lerp(0, -223, t2) + lerp(0, -67, t3) + (TAB ? lerp(150, -70, t3) : 0);
     put($('s2wheel'), wx, wy, 1, -((1336 - wx) / 278) * 57.3 - sg(p, 0.62, 1) * 1500, sg(p, 0.545, 0.56));
     dr($('s2mo'), sg(p, 0.64, 0.7));
     op($('s2where'), sg(p, 0.76, 0.8));
@@ -300,8 +333,8 @@
     op($('s3run'), sg(p, 0.05, 0.08)); op($('s3ulg'), sg(p, 0.05, 0.08));
     const show = sg(p, 0.07, 0.12);
     if (chaseT0 !== null) chase = cl((performance.now() - chaseT0) / 2800);
-    const c = Math.max(ez(sg(p, 0.18, 0.5)), ez(chase));
-    const m0 = PORT ? 430 : 327, w0 = PORT ? 860 : 744;
+    const c = Math.max(sg(p, 0.1, 0.64), ez(chase));
+    const m0 = PORT ? (TAB ? 480 : 540) : 327, w0 = PORT ? 880 : 744;
     const mx = lerp(m0, 1750, c), wx = lerp(w0, 1950, Math.pow(c, 0.85));
     const running = c > 0.001 && c < 0.999;
     const pose = running ? 1 + (Math.floor(performance.now() / 140) % 2) : 0;
@@ -309,9 +342,9 @@
     if (mg.dataset.pose !== String(pose)) { mg.dataset.pose = pose; mg.innerHTML = A.man(pose, 51); }
     put($('s3man'), mx, 776 - 165, 1, 0, show);
     put($('s3wh'), wx, 601, 1, (wx - w0) / 80 * 57.3, show);
-    op($('s3say'), sg(c, 0.12, 0.18) - sg(c, 0.5, 0.56));
-    put($('s3say'), mx + 237, 428, 1, 0);
-    coverSeq($('s3cov'), p, 0.44, 0.52);
+    op($('s3say'), sg(c, 0.08, 0.14) - sg(c, 0.6, 0.66));
+    put($('s3say'), mx + (PORT ? (TAB ? 90 : 150) : 237), PORT ? 380 : 428, PORT ? 0.85 : 1, 0);
+    coverSeq($('s3cov'), p, 0.68, 0.76);
   };
 
   S.s4 = (p) => {
@@ -320,16 +353,16 @@
     op($('s4p1'), sg(p, 0.11, 0.14)); op($('s4p2'), sg(p, 0.14, 0.17));
     // текст уезжает, сверху падает колесо; дальше колесо крутится на месте, а болото уходит вверх — колесо тонет
     const shift = 900 * ez(sg(p, 0.22, 0.36)) + 576 * sg(p, 0.40, 0.60);
-    $('s4top').style.transform = `translateY(${(-shift).toFixed(1)}px)`;
+    $('s4top').style.transform = `translateY(${(-shift - (PORT ? 420 * ez(sg(p, 0.22, 0.36)) : 0)).toFixed(1)}px)`;
     $('s4bog').style.transform = `translateY(${(-shift).toFixed(1)}px)`;
     const fall = ez(sg(p, 0.28, 0.40));
-    const wx = 720, wy = lerp(-320, 450, fall) + shift, ws = 280 / 270;
+    const wx = 720, wy = lerp(-560, 450, fall) + shift, ws = 280 / 270;
     $('s4wh').style.transform = `translate(${(wx - 300).toFixed(1)}px,${(wy - 300 - 900).toFixed(1)}px) rotate(${(p * 1600).toFixed(1)}deg) scale(${ws.toFixed(3)})`;
-    const tagsOut = sg(p, 0.645, 0.66);
+    const tagsOut = sg(p, 0.71, 0.725);
     op($('s4t1'), sg(p, 0.60, 0.62) - tagsOut); op($('s4t2'), sg(p, 0.62, 0.64) - tagsOut);
-    coverSeq($('s4c1'), p, 0.66, 0.70); textOut($('s4c1'), p, 0.76, 0.785);
-    nextCover($('s4c2'), p, 0.785); textOut($('s4c2'), p, 0.86, 0.885);
-    nextCover($('s4c3'), p, 0.885);
+    coverSeq($('s4c1'), p, 0.725, 0.75); textOut($('s4c1'), p, 0.8, 0.82);
+    nextCover($('s4c2'), p, 0.82); textOut($('s4c2'), p, 0.88, 0.9);
+    nextCover($('s4c3'), p, 0.9);
   };
 
   // лаборатория
@@ -353,17 +386,26 @@
     $('s5bt').innerHTML = sayL();
     $$('#parts .part').forEach((x) => x.setAttribute('aria-pressed', String(!!P[x.dataset.p])));
     clearTimeout(awayT);
-    if (go && P.load) awayT = setTimeout(() => cart.classList.add('away'), 1400);
-    else cart.classList.remove('away');
+    cart.classList.remove('away');
   }
-  $$('#parts .part').forEach((x) => x.addEventListener('click', () => { const k = x.dataset.p; P[k] = P[k] ? 0 : 1; labUpd(); }));
+  // если читатель не нажимает кнопки, повозка собирается сама по прокрутке; нажатая кнопка дальше управляется только читателем
+  const touched = {};
+  const AUTO = [['wheel', 0.16], ['axle', 0.23], ['body', 0.30], ['ox', 0.37], ['load', 0.44]];
+  $$('#parts .part').forEach((x) => x.addEventListener('click', () => { const k = x.dataset.p; touched[k] = true; P[k] = P[k] ? 0 : 1; labUpd(); }));
   labUpd();
   S.s5 = (p) => {
     sw($('s5h'), sg(p, 0.02, 0.12));
     op($('s5st'), sg(p, 0.06, 0.09)); ul($('s5st'), sg(p, 0.07, 0.11));
     op($('s5land'), sg(p, 0.08, 0.12)); op(cart, sg(p, 0.08, 0.12)); op($('parts'), sg(p, 0.1, 0.14));
-    $('parts').style.pointerEvents = p > 0.08 && p < 0.6 ? 'auto' : 'none';
-    coverSeq($('s5cov'), p, 0.6, 0.68);
+    $('parts').style.pointerEvents = p > 0.08 && p < 0.74 ? 'auto' : 'none';
+    let ch = false;
+    for (const [k, t] of AUTO) { if (touched[k]) continue; const v = p >= t ? 1 : 0; if (P[k] !== v) { P[k] = v; ch = true; } }
+    if (ch) labUpd();
+    // собранная повозка уезжает только по прокрутке — экран не сменится, пока она не скроется за краем
+    const ready = P.wheel && P.axle && P.body && P.ox && P.load;
+    const rig = cart.querySelector('.rig');
+    if (rig) { rig.style.transition = 'none'; rig.style.transform = ready ? `translateX(${(1500 * sg(p, 0.46, 0.73)).toFixed(1)}px)` : ''; }
+    coverSeq($('s5cov'), p, 0.74, 0.82);
   };
 
   S.s6 = (p) => {
@@ -373,7 +415,7 @@
     const f = sg(p, 0.18, 0.24);
     ['s6bg', 's6m', 's6k', 's6ch'].forEach((id) => op($(id), f));
     const s = 1.55;
-    put($('s6k'), PORT ? 420 : 220, 839 - 145 * s, s, 0); put($('s6m'), PORT ? 1020 : 1220, 839 - 140 * s, s, 0);
+    const s6s = PORT ? (TAB ? 1.4 : 1.15) : s; put($('s6k'), PORT ? (TAB ? 430 : 540) : 220, 839 - 145 * s6s, s6s, 0); put($('s6m'), PORT ? (TAB ? 1010 : 900) : 1220, 839 - 140 * s6s, s6s, 0);
     const win = (a, b) => sg(p, a, a + 0.02) - sg(p, b - 0.02, b);
     const Q = [['колесо — это колесница?', 0.26, 0.36], ['а&nbsp;ось?', 0.38, 0.48], ['а&nbsp;кузов?', 0.50, 0.60]];
     let qi = 0;
@@ -415,10 +457,11 @@
     const t = sg(p, WN[cur][0], WN[cur][1]);
     const vis = sg(t, 0.12, 0.25) - sg(t, 0.82, 0.95);
     op(n, vis); ul(n, vis);
-    { const v = vehs[cur], h = v.el.offsetHeight || 200, bx = Math.min(720 + v.w / 2 - 150, 1000), by = Math.max(612 - h - 70, 300);
+    { const v = vehs[cur], RS = PORT ? (TAB ? 0.85 : 0.6) : 1, h = (v.el.offsetHeight || 200) * RS;
+      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 790) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : 130) : Math.max(612 - h - 70, 300);
       $('s7say').style.transform = `translate(${(bx - 1082).toFixed(0)}px,${(by - 234).toFixed(0)}px)`;
       // реплика гаснет, когда транспорт доезжает до неё
-      const front = (v.px === null ? 0 : v.px) + v.w;
+      const front = 720 + ((v.px === null ? 0 : v.px) + v.w - 720) * RS;
       op($('s7say'), Math.min(sg(t, 0.12, 0.25), 1 - sg(front, bx + 20, bx + 170))); }
     coverSeq($('s7cov'), p, 0.88, 0.93);
   };
@@ -490,7 +533,7 @@
         const ew = $('endw'), t0 = performance.now();
         (function swp(now) { const t = cl((now - t0) / 1700); sw(ew, t); if (t < 1) requestAnimationFrame(swp); })(t0);
         $('s2').hidden = false; s2done = false;
-        for (const k in P) P[k] = 0;
+        for (const k in P) { P[k] = 0; delete touched[k]; }
         labUpd(); chase = 0; chaseT0 = null; s3jump = false; sizes.clear();
         setTimeout(() => { end.classList.add('out'); setTimeout(() => { end.hidden = true; ending = false; tick(); }, 800); }, 5500);
       });
@@ -527,6 +570,7 @@
   addEventListener('beforeunload', () => scrollTo(0, 0));
   function restore() { scrollTo(0, 0); }
   (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
+    $$('.sweep').forEach(splitLines);
     sizes.clear(); restore(); loop();
     // первое слово проявляется слева направо при открытии
     const t0 = performance.now(), w = $('s1word');

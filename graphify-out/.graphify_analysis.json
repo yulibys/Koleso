@@ -708,17 +708,6 @@
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories; peripheral node `Мобильное преобразование — не общий Scale` unexpectedly reaches hub `layout()`"
     },
     {
-      "source": "Вопрос на входе — ответ в финале",
-      "target": "rewind()",
-      "source_files": [
-        "docs/lectures/1.6.txt",
-        "src/app.js"
-      ],
-      "confidence": "INFERRED",
-      "relation": "rationale_for",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
-    },
-    {
       "source": "Гигиена набора: «ёлочки»/„лапки“, тире, минус, ×",
       "target": "prepType()",
       "source_files": [
@@ -741,10 +730,21 @@
       "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
-      "source": "batten()",
+      "source": "Вопрос на входе — ответ в финале",
+      "target": "rewind()",
+      "source_files": [
+        "docs/lectures/1.6.txt",
+        "src/app.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "rationale_for",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
+    },
+    {
+      "source": "wheel()",
       "target": "#wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)",
       "source_files": [
-        "art/wheel.py",
+        "art.js",
         "src/body.html"
       ],
       "confidence": "INFERRED",

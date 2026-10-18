@@ -9,7 +9,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cdf56e5a`
+- Built from commit: `4f09fba0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,14 +47,14 @@
 ## Surprising Connections (you probably didn't know these)
 - `Мобильное преобразование — не общий Scale` --conceptually_related_to--> `layout()`  [INFERRED]
   docs/lectures/1.5.txt → src/app.js
-- `Вопрос на входе — ответ в финале` --rationale_for--> `rewind()`  [INFERRED]
-  docs/lectures/1.6.txt → src/app.js
 - `Гигиена набора: «ёлочки»/„лапки“, тире, минус, ×` --rationale_for--> `prepType()`  [INFERRED]
   docs/lectures/1.4.txt → src/app.js
 - `Неразрывные пробелы — только для смысловых пар` --rationale_for--> `prepType()`  [INFERRED]
   docs/lectures/1.4.txt → src/app.js
-- `batten()` --references--> `#wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)`  [INFERRED]
-  art/wheel.py → src/body.html
+- `Вопрос на входе — ответ в финале` --rationale_for--> `rewind()`  [INFERRED]
+  docs/lectures/1.6.txt → src/app.js
+- `wheel()` --references--> `#wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)`  [INFERRED]
+  art.js → src/body.html
 
 ## Import Cycles
 - None detected.

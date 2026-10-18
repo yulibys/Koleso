@@ -2,7 +2,7 @@
    Координаты элементов — по кадрам 1440×900 из Figma «Колсео». */
 @font-face{font-family:"Dance";src:url(fonts/dance_partner.ttf) format("truetype");font-display:swap}
 :root{
-  --dark:#16130f;--cream:#e9e4d6;--paper:#e9e9d6;--ink:#16130f;--dim:#a49d8c;
+  --dark:#16130f;--cream:#e9e9d6;--paper:#e9e9d6;--ink:#16130f;--dim:#a49d8c;
   --serif:"Alegreya",Georgia,"Times New Roman",serif;--dance:"Dance","Alegreya",Georgia,serif;
   color-scheme:dark;
 }
@@ -423,3 +423,156 @@ html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
 #s6q span{left:22px;top:6px;width:206px;height:94px}
 #s6no span{left:6px;top:6px;width:206px;height:94px}
 .port #s6q{left:900px}.port #s6no{left:330px}
+
+/* v33: многострочные надписи проявляются построчно */
+.sweep.lined{-webkit-mask-image:none;mask-image:none;padding-block:0;margin-block:0}
+.sweep.lined .ln{display:block}
+.sweep.lined .lt{display:inline-block;padding-block:.3em;margin-block:-.3em;-webkit-mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%));mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%))}
+
+/* v38 */
+#s4y{left:673px;top:187px}
+#s8h{top:118px}
+#s6fin{white-space:nowrap}
+
+/* ══ v39: адаптив — телефон и планшет в портрете ══
+   Лекции 1.5 и 1.7: не общий масштаб, а перестройка; смысловые пары остаются вместе,
+   текст переносится, ничего не уходит за край (reflow 320 px). Рабочая полоса кадра: x 460–980. */
+.port .frame path{vector-effect:non-scaling-stroke}
+.port .cover>svg.frame{left:655px;top:1110px;width:530px;height:1080px}
+.port #s2frame{left:455px;top:-90px;width:530px;height:1080px}
+.port .cover .h1{width:500px;font-size:60px;line-height:62px}
+/* 1 */
+.port #s1n1,.port #s1n2{font-size:38px}
+.port #s1n1{left:470px;top:325px}.port #s1n2{left:700px;top:325px}
+.port #s1oh{left:860px;top:400px}
+/* 2 */
+.port .year{font-size:110px;line-height:120px;top:370px}
+.port .era{top:490px}.port #s2ul{top:533px}
+.port .tick{top:345px}
+.port .s2text{left:460px;width:520px}
+.port .s2text h2{font-size:46px;line-height:50px}
+.port .s2text p{left:0;width:520px;font-size:22px;line-height:30px;top:260px}
+.port .s2text p br{display:none}
+/* 3, 5, 7: заголовки по центру полосы */
+.port #s3h,.port #s5h,.port #s7h{left:460px;width:520px;font-size:50px;line-height:56px;text-align:center}
+.port #s3h{top:120px}.port .link{left:460px;width:520px;text-align:center}
+.port #s3ulg{transform:translate(34px,0)}
+/* 4: колонка — заголовок, год, фото с подписью, два абзаца */
+.port #s4h{left:460px;top:-110px;width:520px;font-size:78px;line-height:74px}
+.port #s4y{left:460px;top:50px}
+.port #s4ph{left:460px;top:95px;width:520px}.port #s4ph img{width:520px;height:330px}
+.port #s4p1{left:460px;top:480px;width:520px;font-size:21px;line-height:29px}
+.port #s4p2{left:460px;top:705px;width:520px;font-size:21px;line-height:29px}
+.port #s4t1{left:470px;top:300px}.port #s4t2{left:790px;top:560px}
+/* 5 */
+.port #s5h{top:40px}
+.port .status{left:460px;width:520px;top:180px}
+.port #cart{transform:scale(.62);transform-origin:50% 100%}
+.port .parts{left:460px;width:520px;top:760px;flex-wrap:wrap;justify-content:center;gap:12px}
+.port .part{font-size:28px}
+/* 6 */
+.port #s6h{left:460px;width:520px;font-size:44px;line-height:46px}
+.port #s6q{left:750px;top:250px}.port #s6no{left:460px;top:250px}
+.port #s6fin{width:520px;white-space:normal;font-size:40px;line-height:44px}
+.port #s6fin br{display:none}
+.port #s6ch{transform:scale(.7);transform-origin:720px 839px}
+/* 7 */
+.port #s7h{top:60px}.port .vname{top:180px}
+.port #s7road{transform:scale(.6);transform-origin:720px 612px}
+/* 8 */
+.port #s8h{font-size:84px}
+.port #s8t1{left:460px;width:520px;font-size:48px;line-height:48px;text-align:center}
+.port #s8t2{left:460px;width:520px;text-align:center;top:700px}
+.port #s8arrow{display:none}
+/* конец */
+.port .credits{left:460px;width:520px;flex-wrap:wrap;justify-content:center;gap:16px 36px}
+.port .endcard .src{font-size:12px;padding:0 24px}
+.port .status span{max-width:520px;white-space:normal}
+.port #s7say{left:1082px}
+
+/* ══ v40: планшет в портрете — полоса 820 px (x 310–1130), единая шкала:
+   заголовок 66/72, подзаголовок 30, основной текст 26/36 ══ */
+.port:not(.tab) #s1catch{font-size:145px}
+.tab .cover>svg.frame{left:515px;top:1110px;width:810px;height:1080px}
+.tab #s2frame{left:315px;top:-90px;width:810px;height:1080px}
+.tab .cover .h1{width:700px;font-size:84px;line-height:82px}
+/* 1 */
+.tab #s1n1,.tab #s1n2{font-size:48px}
+.tab #s1n1{left:340px;top:330px}.tab #s1n2{left:700px;top:330px}
+.tab #s1oh{left:930px;top:380px}
+/* 2 */
+.tab .year{font-size:150px;line-height:160px;top:350px}
+.tab .era{top:500px}.tab #s2ul{top:545px}.tab .tick{top:325px}
+.tab .s2text{left:310px;width:820px}
+.tab .s2text h2{font-size:66px;line-height:72px}
+.tab .s2text p{width:820px;font-size:26px;line-height:36px;top:280px}
+/* общие заголовки и подзаголовки */
+.tab #s3h,.tab #s5h,.tab #s7h{left:310px;width:820px;font-size:66px;line-height:72px}
+.tab .link,.tab .status,.tab .vname{left:310px;width:820px;font-size:30px}
+.tab .status span{max-width:820px}
+.tab #s3h{top:110px}.tab .link{top:270px}
+.tab #s3ulg{transform:translate(4px,4px) scale(1.25);transform-origin:720px 318px}
+/* 4: больше воздуха между блоками, абзацы ближе друг к другу */
+.tab #s4h{left:310px;top:-100px;width:820px;font-size:104px;line-height:96px}
+.tab #s4y{left:310px;top:110px;font-size:28px}
+.tab #s4ph{left:310px;top:170px;width:640px}.tab #s4ph img{width:640px;height:410px}
+.tab #s4ph figcaption{font-size:18px}
+.tab #s4p1,.tab #s4p2{left:310px;width:820px;font-size:27px;line-height:37px}
+.tab #s4p1{top:660px}.tab #s4p2{top:830px}
+.tab #s4t1{left:330px;top:300px}.tab #s4t2{left:860px;top:560px}
+/* 5 */
+.tab #s5h{top:30px}.tab .status{top:170px}
+.tab #cart{transform:scale(.9)}
+.tab .parts{left:310px;width:820px;top:780px;gap:16px}
+.tab .part{font-size:34px}
+/* 6: заголовок выше, облачка не заходят на колонны */
+.port #s6h{top:300px}
+.tab #s6h{left:310px;width:820px;font-size:62px;line-height:66px;top:290px}
+.tab #s6q,.port #s6q{top:180px}.tab #s6no,.port #s6no{top:180px}
+.tab #s6q{left:860px}.tab #s6no{left:340px}
+.tab #s6fin{width:760px;font-size:54px;line-height:58px}
+.tab #s6ch{transform:scale(.9)}
+/* 7 */
+.tab #s7h{top:40px}.tab .vname{top:175px}
+.tab #s7road{transform:scale(.85)}
+/* 8 */
+.tab #s8h{font-size:110px}
+.tab #s8t1{left:310px;width:820px;font-size:66px;line-height:66px}
+.tab #s8t2{left:310px;width:820px;font-size:28px}
+.tab .credits{left:310px;width:820px}
+/* Нагасена: заголовок наверху, облачка между ним и колоннами */
+.port #s6h{top:230px}.port #s6q,.port #s6no{top:130px}
+.tab #s6h{top:160px}.tab #s6q,.tab #s6no{top:125px}
+
+/* v41: планшет, правки */
+.tab #s1catch{top:-30px}
+.tab #s1n1{left:350px;top:200px}.tab #s1n2{left:700px;top:200px}
+.tab #s1oh{left:780px;top:330px}
+.tab .s2text p{left:110px;width:600px}
+.tab #s3h{top:50px}
+.tab .link{left:595px;width:auto;top:190px;text-align:left}
+.tab #s3ulg{transform:translate(5px,-82px) scale(1.25);transform-origin:590px 280px}
+.tab #s4h,.tab #s4y,.tab #s4ph,.tab #s4p1,.tab #s4p2{left:370px}
+.tab #s4h{width:700px}.tab #s4ph{width:600px}.tab #s4ph img{width:600px;height:385px}
+.tab #s4p1,.tab #s4p2{width:700px}
+.tab #s4p1{top:640px}.tab #s4p2{top:850px}
+.tab #s5h{top:-20px}.tab .status{top:115px}
+.tab #cart{transform:scale(1.1)}
+.tab #s6bg,.tab #s6k,.tab #s6m{top:130px}
+.tab #s6ch{top:600px}
+.tab #s6q,.tab #s6no{top:255px}
+.tab #s6fin{white-space:nowrap;width:760px}
+.tab #s6fin br{display:inline}
+.tab .vname{top:135px}
+.tab .cover>svg.frame{left:505px;top:1095px;width:830px;height:1110px}
+.tab #s2frame{left:305px;top:-105px;width:830px;height:1110px}
+.tab #s8t2{top:740px}
+.tab #s1n2{left:800px}.tab #s1oh{left:700px;top:300px}
+.tab #s1oh{left:840px;top:380px}
+/* v43: слово «Колесо» не уменьшается шрифтом — только масштабом, чтобы белка и кольцо попадали в буквы */
+.port #s1word{font-size:241px}
+.tab #s1catch{font-size:193px}
+.tab #s2where{top:830px}
+/* v44: в адаптиве строки выравниваются по длине — без одного слова в последней строке */
+.port .s2text p,.port .s2text h2,.port .cover .h1,.port #s6h,.port #s8t1,.port .para{text-wrap:balance}
+.tab .s2text p{left:70px;width:680px}
