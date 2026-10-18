@@ -1,0 +1,419 @@
+/* «Колесо» v20. Тёмный экран и кремовая бумага, рисунки-гравюры, Alegreya + DANCEPARTNER.
+   Координаты элементов — по кадрам 1440×900 из Figma «Колсео». */
+@font-face{font-family:"Dance";src:url(fonts/dance_partner.ttf) format("truetype");font-display:swap}
+:root{
+  --dark:#16130f;--cream:#e9e4d6;--paper:#e9e9d6;--ink:#16130f;--dim:#a49d8c;
+  --serif:"Alegreya",Georgia,"Times New Roman",serif;--dance:"Dance","Alegreya",Georgia,serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--dark)}
+body{margin:0;background:var(--dark);color:var(--cream);font:400 18px/1.45 var(--serif);-webkit-font-smoothing:antialiased;overflow-x:clip}
+h1,h2,p,figure,dl,dd{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.defs{position:absolute}
+html.locked,html.locked body{overflow:hidden}
+body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.07;mix-blend-mode:screen;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 -.2'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* сцена и холст */
+.sc{position:relative;height:calc(var(--len,6) * 100vh);height:calc(var(--len,6) * 100svh)}
+.sc.drop{margin-top:-100vh;margin-top:-100svh}
+.sc[hidden]{display:none}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.dark .stage{background:var(--dark);color:var(--cream)}
+.paper .stage,.cover.paper{background:var(--paper);color:var(--ink)}
+.cv{position:absolute;left:50%;top:50%;width:1440px;height:900px;transform-origin:50% 50%;transform:translate(-50%,-50%) scale(var(--k,1))}
+.cv>*{position:absolute}
+#s1{z-index:1}#s2{z-index:2}#s3{z-index:3}#s4{z-index:4}#s5{z-index:5}#s6{z-index:6}#s7{z-index:7}#s8{z-index:8}
+
+/* линия-гравюра */
+.ill{display:block;overflow:visible;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ill .t{stroke-width:1.3}.ill .th{stroke-width:2.8}
+.ill .hatch{stroke-width:1.2}.ill .spk{stroke-width:1.6}.ill .rim{stroke-width:2.2}
+.ill .fur{stroke-width:1.4}.ill .body{stroke-width:2.2}
+.ill .bg{fill:var(--dark)}
+.ill .fill{fill:currentColor;stroke:none}
+.ill .hf{fill:url(#hatch);stroke:none}.ill .hx{fill:url(#xhatch);stroke:none}.ill .dot{fill:url(#dots);stroke:none}
+.paper .ill .bg,.cover.paper .ill .bg{fill:var(--paper)}
+.paper .ill .hf,.cover.paper .ill .hf{fill:url(#hatchI)}
+.paper .ill .hx,.cover.paper .ill .hx{fill:url(#xhatchI)}
+.ill [class*="f-"]{fill:var(--dark)}
+html.boil0 .boil{filter:url(#boil0)}html.boil1 .boil{filter:url(#boil1)}html.boil2 .boil{filter:url(#boil2)}
+.wipe{clip-path:inset(-40px calc((1 - var(--d,1)) * 100%) -40px -40px)}
+#s2mo.wipe{clip-path:circle(calc(var(--d,1) * 75%) at 50% 50%)}
+.draw{stroke-dasharray:1 1;stroke-dashoffset:calc(1 - var(--d,1))}
+.free{left:0;top:0;transform-origin:50% 50%}
+.land{left:0;top:0;width:1440px;height:900px}
+.frame{left:0;top:0;width:1440px;height:900px;stroke-width:2}
+
+/* проявление слева направо */
+.sweep{-webkit-mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%));mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%))}
+
+/* шрифтовые роли (как в Figma) */
+.dance{font-family:var(--dance);font-weight:400;line-height:1.1;letter-spacing:.01em}
+.word{left:0;width:1440px;text-align:center;font-size:241px;top:68px;height:265px;white-space:nowrap}
+.word span{display:inline-block}
+.h0{font:400 128px/.95 var(--serif);letter-spacing:-.01em}
+.h1{font:400 96px/1.1 var(--serif);text-align:center;text-wrap:balance}
+.h2{font:400 64px/1.2 var(--serif);text-align:center;left:390px;width:660px;text-wrap:balance}
+.small{font:400 24px/1.35 var(--serif)}
+.note{font:400 32px/1 var(--serif)}
+.ul{display:block}
+.note .ul,.era .ul,.link .ul,.status .ul,.vname .ul,.cap8 .ul{position:absolute;left:0;top:100%;width:100%;height:16px;margin-top:6px}
+.cap{font:400 18px/1.2 var(--serif);color:var(--dim)}
+.cap.big{font-size:28px;color:inherit}
+.para{font:400 24px/1.42 var(--serif);width:585px}
+
+/* облачко */
+.bub{position:absolute;display:grid;place-items:center}
+.bub svg{position:absolute;inset:0;width:100%;height:100%;stroke-width:1.6}
+.bub span{position:relative;font:400 24px/1.1 var(--serif);padding:0 18px 22px;white-space:nowrap;text-align:center}
+
+/* обложки, наезжающие сверху (с запасом по высоте для телефона) */
+.cover{left:-200px;top:-1200px;width:1840px;height:3300px;transform:translateY(-100%);display:grid;place-items:center;will-change:transform,opacity}
+.cover>*{grid-area:1/1}
+.cover>svg.frame{position:absolute;left:200px;top:1200px;width:1440px;height:900px}
+.cover .h1{position:relative;width:769px}
+.cover.blk{background:var(--dark)}
+
+/* ── 1 ── */
+#s1word{top:68px}
+#s1catch{opacity:0}
+#s1wheel{width:520px;height:520px}
+#s1sq{width:244px;height:202px}
+.sq .legB,#s1big .legB{opacity:0}
+.sq.alt .legA,#s1big.alt .legA{opacity:0}.sq.alt .legB,#s1big.alt .legB{opacity:1}
+#s1n1{left:260px;top:274px}#s1n2{left:915px;top:274px}
+#s1n1,#s1n2{opacity:0}
+#s1big{width:620px;height:514px}
+#s1big>svg{width:620px;height:514px}
+#s1oh{left:1284px;top:430px;width:132px;height:94px;opacity:0}
+.stickzone{width:440px;height:440px;border-radius:50%;background:none;border:0;cursor:pointer;opacity:0}
+.stickhint{width:520px;height:400px;opacity:0;pointer-events:none;transition:opacity .25s}
+.stickhint span{position:absolute;left:0;top:66px;background:var(--cream);color:var(--ink);font:400 24px/1 var(--serif);padding:20px 26px;white-space:nowrap;z-index:2}
+.stickhint svg{position:absolute;left:250px;top:0;width:420px;height:70px;transform:translate(0,180px) rotate(-63deg);transform-origin:0 50%}
+.stickhint.on{opacity:1}
+
+/* ── 2 ── */
+.count{left:0;width:1440px;top:325px;text-align:center}
+.tick{font:400 24px/1 var(--serif);opacity:0;height:37px}
+.year{font:400 174px/1 var(--serif);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.era{position:relative;display:inline-block;font:400 32px/1 var(--serif);margin-top:14px}
+.s2text{left:373px;width:685px;top:289px;text-align:center;opacity:0}
+.s2text h2{font:400 48px/1.2 var(--serif);text-wrap:balance}
+.s2text p{font:400 20px/1.5 var(--serif);margin-top:24px;opacity:0}
+#s2wheel{width:840px;height:840px}
+#s2where{left:0;width:1440px;top:778px;text-align:center;opacity:0}
+
+/* ── 3 ── */
+#s3h{top:174px}
+.link{left:588px;width:265px;top:280px;text-align:center;background:none;border:0;cursor:pointer;font:400 24px/1 var(--serif);padding:6px 0;position:absolute}
+.link .ul{left:2px;width:200px}
+#s3man{width:220px;height:350px}
+#s3wh{width:180px;height:180px}
+#s3say{width:190px;height:100px;opacity:0}
+
+/* ── 4 ── */
+.s4top{left:0;top:0;width:1440px;height:900px}
+.s4top>*{position:absolute}
+#s4h{left:65px;top:120px;width:761px}
+#s4y{left:683px;top:200px;opacity:0}
+#s4ph{left:65px;top:348px;width:639px;opacity:0}
+#s4ph img{display:block;width:639px;height:417px;object-fit:cover;filter:grayscale(1) contrast(1.05) brightness(.95)}
+#s4ph figcaption{font:400 15px/1.3 var(--serif);color:var(--dim);margin-top:8px}
+#s4p1{left:736px;top:341px;opacity:0}#s4p2{left:736px;top:531px;width:568px;opacity:0}
+.s4bog{left:0;top:900px;width:1440px;height:1476px;overflow:hidden}
+.s4bog>svg:first-child{position:absolute;inset:0;width:1440px;height:1476px}
+#s4wh{width:600px;height:600px}
+.tag{background:var(--cream);color:var(--ink);font:400 24px/1 var(--serif);padding:20px 26px;opacity:0}
+#s4t1{left:172px;top:706px}#s4t2{left:1110px;top:706px}
+
+/* ── 5 ── */
+#s5h{top:125px}
+.status{left:0;width:1440px;top:231px;text-align:center;font:400 24px/1.3 var(--serif);position:absolute}
+.status span{position:relative;display:inline-block}
+.status .ul{left:50%;width:330px;margin-left:-165px}
+#cart{position:absolute;left:270px;top:383px;width:900px;height:256px}
+#cart .p-road,#cart .p-mud{display:none}
+.parts{left:0;width:1440px;top:734px;display:flex;justify-content:center;gap:14px}
+.part{background:var(--cream);color:var(--ink);border:0;padding:20px 24px;font:400 24px/1 var(--serif);cursor:pointer;transition:transform .15s,background .2s,color .2s}
+.part[aria-pressed="true"]{background:var(--dark);color:var(--cream);outline:1.5px solid var(--cream);outline-offset:-1.5px}
+.part:active{transform:translateY(2px)}
+#cart .p{opacity:0;transition:opacity .45s,transform .6s cubic-bezier(.3,1.4,.5,1)}
+#cart.has-wheel .p-wheel,#cart.has-axle .p-axle,#cart.has-body .p-body,#cart.has-load .p-load,#cart.has-ox .p-ox{opacity:1}
+#cart .p-axle{transform:translateY(-6px)}#cart.has-axle .p-axle{transform:none}
+#cart.solo .p-wheel .rollaway{animation:rollaway 3.2s cubic-bezier(.5,0,.6,1) infinite}
+@keyframes rollaway{0%{transform:translateX(0)}70%{transform:translateX(70vw)}70.01%{transform:translateX(-70vw)}100%{transform:translateX(0)}}
+#cart .rig{transition:transform 2.6s cubic-bezier(.5,0,.8,.6)}
+#cart.away .rig{transform:translateX(1500px)}
+#cart .leg path,#cart .arm path{animation:legA .9s ease-in-out infinite;animation-play-state:paused;transform-box:fill-box;transform-origin:50% 0}
+#cart .leg.l2 path,#cart .leg.l3 path{animation-delay:-.45s}
+
+/* ── 6 ── */
+#s6h{top:351px}
+#s6m,#s6k{width:240px;height:300px}
+#s6mc{left:100px;width:240px;text-align:center;top:850px}#s6kc{left:1100px;width:240px;text-align:center;top:850px}
+#s6ch{left:420px;top:470px;width:600px;height:287px}
+#s6name{left:0;width:1440px;text-align:center;top:796px}
+#s6q,#s6no{width:206px;height:104px;opacity:0;top:229px}
+#s6q{left:65px}#s6no{left:1169px}
+#s6q span,#s6no span{padding:0 22px 24px;white-space:normal}
+#s6bg{opacity:0}
+#s6m,#s6k,#s6mc,#s6kc,#s6ch,#s6name{opacity:0}
+#s6end{opacity:0;transform:none}
+#s6fin{position:relative;left:auto;width:795px}
+
+/* ── 7 ── */
+#s7h{top:125px}
+.vname{left:0;width:1440px;text-align:center;top:231px;font:400 24px/1.3 var(--serif)}
+.vname .ul{left:50%;width:110px;margin-left:-55px}
+#s7say{left:1105px;top:226px;width:182px;height:100px}
+#s7say span{white-space:normal;width:150px;font-size:22px;padding:0 10px 22px}
+.road{left:0;top:0;width:1440px;height:900px}
+.veh{position:absolute;left:0;top:612px;transform-origin:0 100%}
+.veh svg{display:block;width:100%;height:auto}
+.veh .leg path,.veh .arm path{animation:legA .9s ease-in-out infinite;animation-play-state:paused;transform-box:fill-box;transform-origin:50% 0}
+.veh .leg.l2 path,.veh .leg.l3 path{animation-delay:-.45s}
+.veh .leg.fast path{animation-duration:.5s}.veh .leg.fast.l2 path,.veh .leg.fast.l3 path{animation-delay:-.25s}
+.veh .leg.r1 path,.veh .leg.r2 path{animation:runA .5s ease-in-out infinite;animation-play-state:paused}.veh .leg.r2 path{animation-delay:-.25s}
+@keyframes legA{0%,100%{transform:rotate(16deg)}50%{transform:rotate(-16deg)}}
+@keyframes runA{0%,100%{transform:rotate(38deg)}50%{transform:rotate(-34deg)}}
+.moving .leg path,.moving .arm path{animation-play-state:running}
+
+/* ── 8 ── */
+#s8h{left:0;width:1440px;top:120px;font-size:96px}
+#s8fig{width:440px;height:440px;left:500px;top:230px}
+.cap8{left:0;width:1440px;text-align:center;top:688px}
+.cap8 .ul{left:50%;width:330px;margin-left:-165px}
+#s8cap{display:block}
+.c2in{position:relative;width:1440px;height:900px}
+.c2in>*{position:absolute}
+#s8wh{left:536px;top:188px;width:367px;height:343px}
+#s8arrow{left:920px;top:256px;width:70px;height:170px}
+#s8t1{left:390px;width:660px;top:560px;line-height:1.05;opacity:0}
+#s8t2{left:0;width:1440px;text-align:center;top:712px;opacity:0}
+
+/* конец и перемотка */
+.endcard{position:fixed;inset:0;z-index:95;background:var(--dark);color:var(--cream);display:grid;place-content:center;justify-items:center;text-align:center;gap:16px;padding:24px;transition:opacity .8s}
+.endcard[hidden]{display:none}
+.endcard.out{opacity:0}
+.endw{font-size:clamp(80px,9vw,128px)}
+.credits{display:flex;gap:clamp(24px,6vw,90px);margin-top:28px;flex-wrap:wrap;justify-content:center}
+.credits dt{font:400 15px/1 var(--serif);color:var(--dim);border-top:1px solid currentColor;padding-top:8px}
+.credits dd{font:400 20px/1.3 var(--serif);margin-top:6px}
+.src{max-width:60ch;font:400 14px/1.4 var(--serif);color:var(--dim);margin-top:30px}
+.src a{color:inherit}
+.rew{position:fixed;inset:0;z-index:94;pointer-events:none;opacity:0;transition:opacity .2s}
+.rew i{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(233,228,214,0) 0 3px,rgba(233,228,214,.12) 3px 4px);animation:streak .12s linear infinite}
+.rew b{position:absolute;right:28px;top:22px;font:700 24px/1 var(--serif);letter-spacing:.2em;color:var(--cream);mix-blend-mode:difference}
+@keyframes streak{to{transform:translateY(4px)}}
+html.rewinding .rew{opacity:1}
+html.rewinding .stage{filter:contrast(1.2) brightness(1.06)}
+
+/* телефон и узкое окно: видимая часть холста — середина шириной 760 */
+.port .word,.port #s1word{font-size:150px}
+.port #s1n1{left:380px}.port #s1n2{left:760px}
+.port .year{font-size:120px}
+.port .h1,.port .cover .h1{font-size:72px;width:680px}
+.port .h2{left:370px;width:700px;font-size:56px}
+.port #s4h{left:370px;top:-250px;width:700px;font-size:96px}
+.port #s4y{left:370px;top:-40px}
+.port #s4ph{left:370px;top:10px;width:700px}.port #s4ph img{width:700px;height:300px}
+.port #s4p1{left:370px;top:420px;width:700px}.port #s4p2{left:370px;top:650px;width:700px}
+.port #s4t1{left:380px}.port #s4t2{left:880px}
+.port #s6mc{left:330px}.port #s6kc{left:870px}
+.port #s6q{left:330px}.port #s6no{left:900px}
+.port #s7say{left:830px}
+.port #s1oh{left:900px}
+
+@media (prefers-reduced-motion:reduce){
+  html.boil0 .boil,html.boil1 .boil,html.boil2 .boil{filter:none}
+  .veh .leg path,.veh .arm path,#cart .leg path{animation:none}
+  .rew i{animation:none}
+}
+
+/* ═══ ТОЧНО ПО FIGMA: шрифт, кегль, интерлиньяж, рамка текста (x, y, ширина) ═══
+   «auto» в Figma = line-height: normal у Alegreya */
+.word,#s1word,#s1catch{line-height:265px;height:265px}
+.stickhint span{top:66px;left:0;font:400 32px/normal var(--serif);padding:10px}
+.stickhint svg{left:262px;top:320px;transform:rotate(-63deg);transform-origin:0 50%;margin:0}
+.note{font:400 48px/normal var(--serif)}
+#s1n1{left:262px;top:274px}#s1n2{left:915px;top:299px}
+#s1oh{left:1284px;top:448px;width:116px;height:57px}
+#s1oh span{font:400 24px/normal var(--serif);padding:0;position:absolute;left:20px;top:9px}
+.note .ul{height:14px;margin-top:-4px}
+
+.count{left:0;top:0;width:1440px;height:900px}
+.count>*{position:absolute}
+.tick{left:660px;top:335px;width:120px;height:auto;text-align:center;font:400 24px/normal var(--serif)}
+.year{left:336px;top:362px;width:769px;text-align:center;font:400 174px/normal var(--serif)}
+.era{left:577px;top:514px;width:286px;text-align:center;font:400 48px/normal var(--serif);margin:0;display:block}
+#s2ul{left:572px;top:557px;width:306px;height:16px}
+.s2text{left:373px;top:289px;width:685px}
+.s2text h2{font:500 64px/64px var(--serif);text-align:center}
+.s2text p{position:absolute;left:50px;top:223px;width:585px;margin:0;font:400 24px/normal var(--serif);text-align:center}
+#s2where{left:607px;top:778px;width:225px;font:400 24px/normal var(--serif)}
+
+#s3h{left:390px;top:174px;width:659px;font:500 64px/normal var(--serif)}
+.link{left:588px;top:280px;width:265px;text-align:left;font:400 24px/normal var(--serif);padding:0}
+.link .ul{left:2px;width:194px;margin-top:-4px}
+#s3say{width:178px;height:77px}
+#s3say span{font:400 24px/normal var(--serif);padding:0;position:absolute;left:17px;top:14px}
+
+.cover .h1{font:400 96px/82px var(--serif);width:769px}
+
+#s4h{left:65px;top:134px;width:761px;font:400 128px/95px var(--serif)}
+#s4y{left:683px;top:199px;font:400 24px/normal var(--serif)}
+#s4p1{left:736px;top:341px;width:585px;font:400 24px/normal var(--serif)}
+#s4p2{left:736px;top:531px;width:568px;font:400 24px/normal var(--serif)}
+.tag{font:400 32px/normal var(--serif);padding:10px}
+#s4t1{left:172px;top:706px}#s4t2{left:1110px;top:706px}
+
+#s5h{left:390px;top:125px;width:659px;font:500 64px/normal var(--serif)}
+.status{left:563px;top:231px;width:auto;text-align:left;white-space:nowrap}
+.status span{display:inline}
+.status .ul{left:0;width:309px;margin-left:0;margin-top:-4px}
+.parts{left:472px;top:734px;width:auto;gap:14px}
+.part{font:400 32px/normal var(--serif);padding:11px 10px}
+
+#s6h{left:400px;top:351px;width:641px;font:400 64px/60px var(--serif)}
+#s6q{left:65px;top:229px;width:206px;height:94px}
+#s6no{left:1169px;top:229px;width:206px;height:94px}
+#s6q span{font:400 24px/28px var(--serif);padding:0;position:absolute;left:36px;top:14px;width:166px;text-align:left;white-space:normal}
+#s6no span{font:400 20px/normal var(--serif);padding:0;position:absolute;left:85px;top:34px}
+#s6name{left:656px;top:803px;width:129px;font:400 28px/normal var(--serif);text-align:center}
+#s6fin{width:795px;font:400 64px/60px var(--serif)}
+
+#s7h{left:390px;top:125px;width:659px;font:500 64px/normal var(--serif)}
+.vname{font:400 24px/normal var(--serif);top:231px}
+.vname .ul{margin-top:-2px}
+#s7say{left:1111px;top:238px;width:165px;height:73px}
+#s7say span{font:400 24px/20px var(--serif);padding:0;position:absolute;left:25px;top:14px;width:124px;text-align:left;white-space:normal}
+
+#s8h{left:0;width:1440px;top:141px;font:400 96px/normal var(--serif)}
+.cap8{top:688px;font:400 24px/normal var(--serif)}
+#s8wh{left:536px;top:188px;width:367px;height:343px}
+#s8arrow{left:925px;top:256px;width:60px;height:160px}
+#s8t1{left:435px;top:576px;width:571px;font:500 64px/53px var(--serif)}
+#s8t2{left:519px;top:695px;width:402px;text-align:left;font:400 24px/normal var(--serif)}
+
+/* конец — тоже холст 1440×900 */
+.endcard{display:block;padding:0}
+.endcard .cv>*{position:absolute;margin:0}
+.endw{left:588px;top:298px;width:264px;text-align:center;font-size:96px;line-height:106px}
+.endsub{left:597px;top:404px;width:247px;text-align:center;font:400 24px/25px var(--serif)}
+.credits{left:386px;top:544px;width:671px;display:flex;justify-content:space-between;gap:0;margin:0}
+.credits>div{width:150px;text-align:center}
+.credits dt{font:400 15px/25px var(--serif);border:0;padding:0}
+.credits dd{font:400 24px/25px var(--serif);margin-top:9px}
+.credits dt::before{content:"";display:block;width:100%;height:1px;background:currentColor;opacity:.6;margin-bottom:6px}
+.src{left:320px;top:800px;width:800px;text-align:center;margin:0}
+
+/* ── v23: векторы из Figma, края экрана, пузыри по кадрам ── */
+.bL{transform:translateX(calc(var(--m,0) * -1px))}.bR{transform:translateX(calc(var(--m,0) * 1px))}
+.cv>svg.land,.cv>svg.ill{overflow:visible}
+.s4bog{overflow:visible}
+#s2ul{left:566px;top:552px;width:320px;height:26px}
+#s2ul path{stroke-width:3}
+#s2mo path{stroke-width:3}
+#s3say{width:256px;height:106px}
+#s3say span{left:91px;top:21px;width:142px;font:400 24px/normal var(--serif);text-align:center}
+#s6q{left:61px;top:225px;width:234px;height:124px}
+#s6no{left:1145px;top:225px;width:234px;height:124px}
+#s6q span{left:40px;top:18px}
+#s6no span{left:109px;top:38px}
+#s7say{left:1082px;top:234px;width:198px;height:110px}
+#s7say span{left:54px;top:20px}
+#s8arrow{left:920px;top:252px;width:70px;height:170px}
+.bub svg{stroke-width:1}
+.land path,.land g{stroke-width:inherit}
+.ill.land{stroke-width:1.2}
+.frame{stroke-width:2}
+#s1big path,#s1sq path{vector-effect:non-scaling-stroke;stroke-width:1.3}
+.sq.alt #s1sqg>g{transform:translateY(-4px)}
+
+/* ── v24: толще линии, кнопки деталей, отступы в болоте ── */
+.ill{stroke-width:2.8}
+.ill .t{stroke-width:1.9}.ill .th{stroke-width:3.4}
+.ill.land{stroke-width:2.4}
+.bub svg{stroke-width:2}
+.frame{stroke-width:3}
+#s2ul path,#s2mo path{stroke-width:4}
+#s1big path,#s1sq path{vector-effect:non-scaling-stroke;stroke-width:2.2}
+#s1big .t,#s1sq .t{stroke-width:1.5}
+.sq.alt #s1sqg>g{transform:none}
+#s4h{top:112px}
+#s4ph{top:392px}
+#s4p1{top:385px}#s4p2{top:575px}
+/* деталь выбрана — плашка залита; не выбрана — только обводка */
+.part{background:transparent;color:var(--cream);outline:2px solid var(--cream);outline-offset:-2px}
+.part[aria-pressed="true"]{background:var(--cream);color:var(--ink);outline:2px solid var(--cream)}
+#s8arrow{display:none}
+
+/* ── v25 ── */
+/* хвостики букв не обрезаются маской проявления */
+.sweep{padding-block:.38em;margin-block:-.38em}
+/* строки по высоте блоков Figma */
+.year{line-height:178px}.era{line-height:50px}
+.cover .h1{line-height:76px}
+/* рамка по центру экрана */
+.cover>svg.frame{top:1179px}
+#s4c2,#s4c3,#s8c2{background:transparent}
+#s4c2 svg.frame,#s4c3 svg.frame,#s8c2 svg.frame{display:none}
+/* подпись статуса — по центру, подчёркнута вся строка */
+.status{left:0;width:1440px;text-align:center}
+.status .ul{left:0;width:100%;margin-left:0}
+/* сцена сборки крупнее */
+#cart{transform:scale(1.18);transform-origin:50% 100%}
+/* Нагасена: реплики выше, ничем не закрыты */
+#s6q,#s6no{top:140px}
+/* перемотка — заметнее */
+.rew i{background:repeating-linear-gradient(0deg,rgba(233,228,214,0) 0 5px,rgba(233,228,214,.2) 5px 7px)}
+.rew b{left:50%;top:50%;right:auto;transform:translate(-50%,-60%);font:700 140px/1 var(--serif);letter-spacing:-.05em;opacity:.85;animation:blink .5s steps(2) infinite}
+.rew em{position:absolute;left:0;right:0;top:calc(50% + 70px);text-align:center;font:400 28px/1 var(--serif);font-style:normal;color:var(--cream);mix-blend-mode:difference}
+@keyframes blink{50%{opacity:.35}}
+html.rewinding .stage{filter:contrast(1.35) brightness(1.1) blur(.4px)}
+/* колесо сансары крутится, пока страница отматывается */
+.spinov{position:fixed;left:50%;top:50%;width:calc(367px * var(--k,1));height:calc(367px * var(--k,1));transform:translate(-50%,calc(-50% - 90px * var(--k,1)));z-index:96;pointer-events:none;opacity:0;transition:opacity .4s;color:var(--cream);mix-blend-mode:difference}
+.spinov.on{opacity:1}
+.spinov svg{width:100%;height:100%;animation:spin 2.2s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* финальная карточка */
+.endcard .src{display:block;position:absolute;left:0;right:0;bottom:28px;margin:0 auto;text-align:center;font-size:13px}
+.credits dd{white-space:nowrap}
+/* v26 */
+.word.sweep,.dance.sweep{padding-block:0;margin-block:0}
+#s1oh{left:1262px;top:430px;width:162px;height:96px}
+#s1oh span{left:0;width:150px;top:16px;text-align:center}
+
+/* v27 */
+.year{top:325px}.era{top:504px}
+#s4t1,#s4t2{top:418px}
+/* реплики по центру облачков */
+#s6q span,#s6no span,#s7say span,#s3say span{display:flex;align-items:center;justify-content:center;text-align:center;white-space:normal;padding:0}
+#s6q span{left:6px;top:6px;width:206px;height:94px;font:400 24px/28px var(--serif)}
+#s6no span{left:22px;top:6px;width:206px;height:94px}
+#s7say span{left:29px;top:4px;width:166px;height:74px;font:400 22px/22px var(--serif)}
+#s3say span{left:74px;top:7px;width:178px;height:77px}
+/* при финальной перемотке значки — под колесом */
+html.spinning .rew b{top:calc(50% + 110px * var(--k,1));transform:translate(-50%,0);font-size:72px}
+html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
+#s1oh{left:1300px;top:350px;width:124px;height:66px}
+#s1oh span{left:14px;top:3px;width:116px;height:58px;display:flex;align-items:center;justify-content:center;padding:0;font:400 24px/1 var(--serif)}
+/* v28 */
+.ill{stroke-width:3.2}
+.ill .t{stroke-width:2.1}
+.ill.land{stroke-width:2.8}
+.bub svg{stroke-width:2.4}
+#s1big path,#s1sq path{stroke-width:2.6}
+#s1big .t,#s1sq .t{stroke-width:1.8}
+#s7say span{line-height:24px}
+#s1oh{left:1236px;top:178px}
+/* v29 */
+#s2frame{top:-21px}
+#s4h{top:120px}#s4ph{top:330px}#s4p1{top:323px}#s4p2{top:513px}
+#s6q span,#s6no span{font:400 24px/28px var(--serif)}
+#s1oh{left:1300px;top:260px}

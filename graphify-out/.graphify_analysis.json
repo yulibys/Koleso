@@ -600,7 +600,7 @@
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Слабый дизайн: материал может изменить замысел`, `Фото __HI_H2__ (фон фотоэкрана)`, `Фото __HI_H3__ (фон фотоэкрана)` to the rest of the system?",
+      "question": "What connects `Слабый дизайн: материал может изменить замысел`, `«Маша» Фёдора Сваровского (разбор финала)`, `Фото __HI_H2__ (фон фотоэкрана)` to the rest of the system?",
       "why": "27 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {

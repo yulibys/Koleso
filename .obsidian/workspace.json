@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Сессии/2026-10-17 Граф, лекции, Obsidian.md",
+                "file": "docs/Анализ по лекциям v19.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-10-17 Граф, лекции, Obsidian"
+              "title": "Анализ по лекциям v19"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Сессии/2026-10-17 Граф, лекции, Obsidian.md",
+                "file": "docs/Анализ по лекциям v19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Сессии/2026-10-17 Граф, лекции, Obsidian.md",
+                "file": "docs/Анализ по лекциям v19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Сессии/2026-10-17 Граф, лекции, Obsidian.md",
+                "file": "docs/Анализ по лекциям v19.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,11 +190,32 @@
   },
   "active": "1be21f4f050e0191",
   "lastOpenFiles": [
-    "graphify-out/2026-10-17/manifest.json",
-    "graphify-out/2026-10-17/graph.json",
+    "fonts/dance_partner.ttf",
+    "fonts",
+    "img/_из_v17/17_ade526.webp",
+    "img/_из_v17/16_59f9d6.webp",
+    "img/_из_v17/15_64df0a.webp",
+    "img/_из_v17/14_edbac2.jpg",
+    "img/_из_v17/13_4cd547.jpg",
+    "img/_из_v17/12_9d35e4.webp",
+    "img/_из_v17/11_816816.webp",
+    "img/_из_v17/10_a37d1e.jpg",
+    "img/_из_v17/09_2b7824.jpg",
+    "img/_из_v17/08_5f5f15.webp",
+    "img/_из_v17",
+    "img",
+    "index.html",
+    "vehicles.js",
+    "fig.js",
+    "art.js",
+    "app.js",
+    "style.css",
+    "index-v17.html",
+    "docs/Концепция v20 — анимации по секциям.md",
+    "docs/Сценарий v18.md",
+    "docs/Анализ по лекциям v19.md",
+    "docs/Сессии/2026-10-17 Граф, лекции, Obsidian.md",
     "graphify-out/2026-10-17/GRAPH_REPORT.md",
-    "graphify-out/2026-10-17",
-    "graphify-out/cache/ast/v0.9.92-s17-g0fcafffe3c00/41e93853a979c5e2659ee49d9475363a8c2cd5542501b08ccde2b83d673de2c7.json",
     "docs/Карта Graphify/Контраст WCAG 2.2 AA 4.51 и 31.md",
     "docs/Карта Graphify/Мастеринг экрана голоса маскируют друг друга.md",
     "docs/Карта Graphify/Выключка влево и ограниченный набор гарнитур.md",
@@ -215,18 +236,6 @@
     "docs/Карта Graphify/Карточка выпуска в восемь строк.md",
     "docs/Карта Graphify/«Саундчек» ослабить самый громкий элемент.md",
     "docs/Карта Graphify/Архивный слепок папка проверенной версии.md",
-    "docs/Карта Graphify/Абзац — монтажная единица, не метроном.md",
-    "docs/Карта Graphify/Прописной набор требует умеренной разрядки.md",
-    "docs/Карта Graphify/Увеличение текста до 200 %.md",
-    "docs/Карта Graphify/Сетка вырастает из строки и материала.md",
-    "docs/lectures/1.7.txt",
-    "docs/lectures/1.6.txt",
-    "docs/lectures/1.5.txt",
-    "docs/lectures/1.4.txt",
-    "docs/Карта Graphify/graph.canvas",
-    "docs/Карта Graphify",
-    "graphify-out/obsidian-export.zip",
-    "docs/Сессии/Журнал сессий.base",
-    "images/icon.png"
+    "docs/Карта Graphify/graph.canvas"
   ]
 }
