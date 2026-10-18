@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Колесо-проводник и гравюра"
 location: "L417"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Раскадровка_и_двери_13
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»
@@ -20,4 +20,4 @@ tags:
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 - [[Право выхода дверь наружу — хороший исход]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра

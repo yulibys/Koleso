@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
 location: "L57"
@@ -12,6 +12,6 @@ tags:
 # splitLines()
 
 ## Connections
-- [[v20app.js]] - `indirect_call` [INFERRED]
+- [[app.js]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/Пейзажи_sceneryjs

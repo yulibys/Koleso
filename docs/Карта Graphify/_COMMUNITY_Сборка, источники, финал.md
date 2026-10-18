@@ -1,39 +1,47 @@
 ---
 type: community
-cohesion: 0.17
-members: 24
+cohesion: 0.12
+members: 32
 ---
 
 # Сборка, источники, финал
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[birds()]] - code - src/scenery.js
-- [[bush()]] - code - src/scenery.js
-- [[cloud()]] - code - src/scenery.js
-- [[day()]] - code - src/scenery.js
-- [[fence()]] - code - src/scenery.js
-- [[forest()]] - code - src/scenery.js
-- [[grass()]] - code - src/scenery.js
-- [[hay()]] - code - src/scenery.js
-- [[hero()]] - code - src/scenery.js
-- [[hill()]] - code - src/scenery.js
-- [[house()]] - code - src/scenery.js
-- [[hut()]] - code - src/scenery.js
-- [[lab()]] - code - src/scenery.js
-- [[later()]] - code - src/scenery.js
-- [[milestone()]] - code - src/scenery.js
-- [[mill()]] - code - src/scenery.js
-- [[oak()]] - code - src/scenery.js
-- [[parade()]] - code - src/scenery.js
-- [[poplar()]] - code - src/scenery.js
-- [[road()]] - code - src/scenery.js
-- [[scenery.js]] - code - src/scenery.js
-- [[stone()]] - code - src/scenery.js
-- [[sun()]] - code - src/scenery.js
-- [[wave()]] - code - src/scenery.js
+- [[dot-s1()]] - code - v20/app.js
+- [[dot-s2()]] - code - v20/app.js
+- [[dot-s3()]] - code - v20/app.js
+- [[dot-s4()]] - code - v20/app.js
+- [[dot-s5()]] - code - v20/app.js
+- [[dot-s6()]] - code - v20/app.js
+- [[dot-s7()]] - code - v20/app.js
+- [[dot-s8()]] - code - v20/app.js
+- [[S]] - code - v20/app.js
+- [[balance()]] - code - v20/app.js
+- [[cancelEnding()]] - code - v20/app.js
+- [[cover()]] - code - v20/app.js
+- [[coverSeq()]] - code - v20/app.js
+- [[fit()]] - code - v20/app.js
+- [[fitUl()]] - code - v20/app.js
+- [[labUpd()]] - code - v20/app.js
+- [[loop()_1]] - code - v20/app.js
+- [[morph()]] - code - v20/app.js
+- [[nextCover()]] - code - v20/app.js
+- [[put()]] - code - v20/app.js
+- [[restore()]] - code - v20/app.js
+- [[rewindToS1()]] - code - v20/app.js
+- [[ringAt()]] - code - v20/app.js
+- [[ringAt0()]] - code - v20/app.js
+- [[sayL()]] - code - v20/app.js
+- [[scrollAnim()]] - code - v20/app.js
+- [[spin()]] - code - v20/app.js
+- [[splitLines()]] - code - v20/app.js
+- [[startEnding()]] - code - v20/app.js
+- [[textOut()]] - code - v20/app.js
+- [[tick()]] - code - v20/app.js
+- [[v20app.js]] - code - v20/app.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,15 +49,3 @@ members: 24
 TABLE source_file, type FROM #community/Сборка_источники_финал
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Журнал решений]]
-- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-
-## Top bridge nodes
-- [[scenery.js]] - degree 25, connects to 2 communities
-- [[lab()]] - degree 10, connects to 1 community
-- [[hero()]] - degree 7, connects to 1 community
-- [[parade()]] - degree 7, connects to 1 community
-- [[day()]] - degree 5, connects to 1 community

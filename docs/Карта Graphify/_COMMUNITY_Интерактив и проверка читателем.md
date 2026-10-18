@@ -1,63 +1,61 @@
 ---
 type: community
-cohesion: 0.06
-members: 48
+cohesion: 0.07
+members: 46
 ---
 
 # Интерактив и проверка читателем
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 48 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 46 nodes
 
 ## Members
-- [[nagSvg — монах и царь, «колесница», «ось нет  кузов нет»]] - code - src/body.html
-- [[sams — «А вы, кажется, попали в колесо сансары»]] - code - src/body.html
-- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
-- [[dot-lab-ground.blade.wind]] - code - src/style.css
-- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
-- [[Reflow ~320 CSS px без потери содержания и горизонтальной прокрутки]] - rationale - docs/lectures/1.7.txt
-- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
-- [[nag — Нагасена и Милинда «колесо — это колесница»]] - code - src/body.html
-- [[nag()]] - code - src/scenery.js
-- [[sayL()]] - code - src/app.js
-- [[upd()]] - code - src/app.js
-- [[Адаптив меняем расположение, сохраняем смысловые связи]] - rationale - docs/lectures/1.7.txt
-- [[Архивный слепок папка проверенной версии]] - rationale - docs/lectures/1.7.txt
-- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
-- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
-- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
-- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
-- [[Диагноз место, устройство, видимое последствие]] - rationale - docs/lectures/1.7.txt
-- [[Журнал решений 5–7 поворотных записей]] - rationale - docs/lectures/1.7.txt
-- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
-- [[Затруднение — наблюдаемыми словами, менять по одному параметру]] - rationale - docs/MAP.md
-- [[ИИ-пайплайн, который можно объяснить]] - rationale - docs/lectures/1.7.txt
-- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
-- [[История ножа как изменился тот, кто выбирает]] - concept - docs/lectures/1.7.txt
-- [[Клавиатура Tab, видимый фокус, выход из интерактива]] - rationale - docs/lectures/1.7.txt
-- [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - code - src/body.html
-- [[Критерий выбора сначала сформулировать сохраняемое отношение, потом стиль]] - rationale - docs/lectures/1.7.txt
-- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - document - docs/MAP.md
-- [[Матрица состояний ✓  △  ×  — для 8–10 сочетаний]] - rationale - docs/lectures/1.7.txt
-- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
-- [[Остранение (Шкловский) мотивированный локальный сбой]] - concept - docs/lectures/1.6.txt
-- [[Открыть ссылки из опубликованной версии, без своего аккаунта]] - rationale - docs/lectures/1.7.txt
-- [[Палимпсест (Женетт) прежний слой объясняет нынешнюю форму]] - concept - docs/lectures/1.7.txt
-- [[Порядок правок поломка → фактыправоссылки → обещание → типографика → украшение]] - rationale - docs/lectures/1.7.txt
-- [[Проба без подсказки чужой читатель проходит эпизод]] - rationale - docs/lectures/1.7.txt
-- [[Проверка на медленной сети Network, Disable cache, троттлинг]] - rationale - docs/lectures/1.7.txt
-- [[Проверять публичную ссылку на реальных устройствах, а не редактор]] - rationale - docs/lectures/1.7.txt
-- [[Редактура сократить абзац примерно на треть]] - rationale - docs/lectures/1.7.txt
-- [[Слабый дизайн материал может изменить замысел]] - concept - docs/lectures/1.7.txt
-- [[Следующей версии нужна причина]] - rationale - docs/lectures/1.7.txt
-- [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - concept - docs/lectures/1.7.txt
-- [[Служебная фраза — ясная инструкция к действию]] - rationale - docs/lectures/1.7.txt
-- [[Сравнивать варианты, меняя один параметр]] - rationale - docs/lectures/1.7.txt
-- [[Сцена Нагасены перенесена в середину, после сборки (v15)]] - rationale - docs/context.md
-- [[Угол проекта колесо само по себе бесполезно]] - rationale - docs/MAP.md
-- [[Фактологический проход имена, даты, подписи, цитаты, числа]] - rationale - docs/lectures/1.7.txt
-- [[Фармакон (Платон, Деррида, Стиглер) ИИ — лекарство и яд]] - concept - docs/lectures/1.7.txt
-- [[Читательская проба think aloud → одна правка]] - rationale - docs/lectures/1.6.txt
+- [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
+- [[root токены (--black, --cream, --paper, --red, --gut)]] - code - src/style.css
+- [[prepType()]] - code - src/app.js
+- [[«Иногда лучше одному» одна семья или суперсемейство]] - rationale - docs/lectures/1.4.txt
+- [[«Иногда лучше одному» одно суперсемейство шрифтов]] - rationale - docs/MAP.md
+- [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
+- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - concept - docs/lectures/1.4.txt
+- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
+- [[Выключка влево для узкой колонки]] - rationale - docs/lectures/1.4.txt
+- [[Выключка влево и ограниченный набор гарнитур]] - rationale - docs/lectures/1.5.txt
+- [[Гигиена набора «ёлочки»„лапки“, тире, минус, ×]] - rationale - docs/lectures/1.4.txt
+- [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
+- [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
+- [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - rationale - docs/lectures/1.4.txt
+- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
+- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
+- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
+- [[Комплектность и технический допуск гарнитуры]] - rationale - docs/lectures/1.4.txt
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
+- [[Настоящий курсив и полужирное, а не синтетика браузера]] - rationale - docs/lectures/1.4.txt
+- [[Насыщенность «через одного» Light+Bold, Regular+Black]] - rationale - docs/lectures/1.4.txt
+- [[Неразрывные пробелы — только для смысловых пар]] - rationale - docs/lectures/1.4.txt
+- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
+- [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
+- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
+- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
+- [[Постоянство цветового кода и редкий акцент]] - rationale - docs/lectures/1.6.txt
+- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
+- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
+- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
+- [[Прописной набор требует умеренной разрядки]] - rationale - docs/lectures/1.4.txt
+- [[Роли — только из раскадровки, имена по функции]] - rationale - docs/lectures/1.4.txt
+- [[Сетка вырастает из строки и материала]] - rationale - docs/lectures/1.5.txt
+- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
+- [[Спецификация ролей, воспроизводимая другим человеком]] - rationale - docs/lectures/1.4.txt
+- [[Строка 50–75 знаков (до 80), width min(100%, 68ch)]] - rationale - docs/lectures/1.4.txt
+- [[Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]] - rationale - docs/MAP.md
+- [[Сходство одинаковое оформление — одинаковая роль]] - rationale - docs/lectures/1.6.txt
+- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
+- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
+- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - rationale - docs/lectures/1.4.txt
+- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
+- [[Шкала интервалов из интерлиньяжа 0.75  1.5  3  6 rem]] - rationale - docs/lectures/1.5.txt
+- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - code - src/style.css
+- [[Шрифт Alegreya SC (--display, .disp)]] - code - src/style.css
+- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,22 +65,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Журнал решений]]
-- 11 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 10 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 6 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 3 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 2 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 2 edges to [[_COMMUNITY_scenery.js]]
-- 2 edges to [[_COMMUNITY_re]]
-- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
+- 7 edges to [[_COMMUNITY_Журнал решений]]
+- 5 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 3 edges to [[_COMMUNITY_scenery.js]]
+- 2 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 2 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
 
 ## Top bridge nodes
-- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - degree 39, connects to 7 communities
-- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 5 communities
-- [[nag — Нагасена и Милинда «колесо — это колесница»]] - degree 12, connects to 3 communities
-- [[Детали повозки parts .part + .lab-say]] - degree 8, connects to 2 communities
-- [[Угол проекта колесо само по себе бесполезно]] - degree 7, connects to 2 communities
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 4 communities
+- [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 2 communities
+- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - degree 7, connects to 2 communities
+- [[prepType()]] - degree 5, connects to 1 community
+- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - degree 4, connects to 1 community

@@ -1,17 +1,17 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
-location: "L534"
+community: "Сборка, источники, финал"
+location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Сборка_источники_финал
 ---
 
 # cancelEnding()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

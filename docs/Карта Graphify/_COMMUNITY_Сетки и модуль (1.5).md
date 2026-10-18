@@ -1,45 +1,54 @@
 ---
 type: community
-cohesion: 0.13
-members: 30
+cohesion: 0.14
+members: 39
 ---
 
 # Сетки и модуль (1.5)
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[dot-s1()]] - code - app.js
-- [[dot-s2()]] - code - app.js
-- [[dot-s3()]] - code - app.js
-- [[dot-s4()]] - code - app.js
-- [[dot-s5()]] - code - app.js
-- [[dot-s6()]] - code - app.js
-- [[dot-s7()]] - code - app.js
-- [[dot-s8()]] - code - app.js
-- [[S]] - code - app.js
-- [[app.js]] - code - app.js
-- [[cancelEnding()]] - code - app.js
-- [[cover()]] - code - app.js
-- [[coverSeq()]] - code - app.js
-- [[fit()]] - code - app.js
-- [[labUpd()]] - code - app.js
-- [[loop()_1]] - code - app.js
-- [[morph()]] - code - app.js
-- [[nextCover()]] - code - app.js
-- [[put()]] - code - app.js
-- [[restore()]] - code - app.js
-- [[rewindToS1()]] - code - app.js
-- [[ringAt()]] - code - app.js
-- [[ringAt0()]] - code - app.js
-- [[sayL()_1]] - code - app.js
-- [[scrollAnim()]] - code - app.js
-- [[spin()]] - code - app.js
-- [[splitLines()]] - code - app.js
-- [[startEnding()]] - code - app.js
-- [[textOut()]] - code - app.js
-- [[tick()]] - code - app.js
+- [[arcade()_1]] - code - v20/art.js
+- [[bez()_1]] - code - v20/art.js
+- [[birds()_2]] - code - v20/art.js
+- [[bog()_1]] - code - v20/art.js
+- [[bubble()_2]] - code - v20/art.js
+- [[chariotParts()_1]] - code - v20/art.js
+- [[clipped()_1]] - code - v20/art.js
+- [[ferris()_1]] - code - v20/art.js
+- [[flower()_1]] - code - v20/art.js
+- [[flowers()_1]] - code - v20/art.js
+- [[frame()_1]] - code - v20/art.js
+- [[gear()_1]] - code - v20/art.js
+- [[grass()_2]] - code - v20/art.js
+- [[grassAt()_1]] - code - v20/art.js
+- [[hill()_2]] - code - v20/art.js
+- [[hut()_2]] - code - v20/art.js
+- [[king()_1]] - code - v20/art.js
+- [[line()_1]] - code - v20/art.js
+- [[man()_1]] - code - v20/art.js
+- [[monk()_1]] - code - v20/art.js
+- [[motion()_1]] - code - v20/art.js
+- [[mountains()_1]] - code - v20/art.js
+- [[mouse()_1]] - code - v20/art.js
+- [[oak()_2]] - code - v20/art.js
+- [[pill()_1]] - code - v20/art.js
+- [[ring()_1]] - code - v20/art.js
+- [[ringPts()_1]] - code - v20/art.js
+- [[seg()_1]] - code - v20/art.js
+- [[shape()_1]] - code - v20/art.js
+- [[soil()_1]] - code - v20/art.js
+- [[squirrel()_1]] - code - v20/art.js
+- [[squirrel2()_1]] - code - v20/art.js
+- [[steering()_1]] - code - v20/art.js
+- [[stick()_1]] - code - v20/art.js
+- [[stone()_2]] - code - v20/art.js
+- [[tuft()_1]] - code - v20/art.js
+- [[underline()_1]] - code - v20/art.js
+- [[v20art.js]] - code - v20/art.js
+- [[wheel()_1]] - code - v20/art.js
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.8.txt"
 type: "rationale"
-community: "scenery.js"
+community: "Типографика (1.4)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sceneryjs
+  - community/Типографика_14
 ---
 
 # Хорошие URI не меняются
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Лекция 1.8. Предзащита и финальная редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sceneryjs
+#graphify/rationale #graphify/EXTRACTED #community/Типографика_14

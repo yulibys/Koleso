@@ -1,20 +1,20 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
-location: "L392"
+community: "Сборка, источники, финал"
+location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Сборка_источники_финал
 ---
 
 # labUpd()
 
 ## Connections
 - [[dot-s5()]] - `calls` [EXTRACTED]
-- [[app.js]] - `contains` [EXTRACTED]
-- [[sayL()_1]] - `calls` [EXTRACTED]
+- [[sayL()]] - `calls` [EXTRACTED]
 - [[startEnding()]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

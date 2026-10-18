@@ -1,18 +1,20 @@
 ---
-source_file: "app.js"
+source_file: "src/app.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
-location: "L382"
+community: "Первый экран и внимание (1.6)"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Первый_экран_и_внимание_16
 ---
 
 # sayL()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
-- [[labUpd()]] - `calls` [EXTRACTED]
+- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
+- [[upd()]] - `calls` [EXTRACTED]
+- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

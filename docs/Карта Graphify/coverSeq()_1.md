@@ -1,8 +1,8 @@
 ---
-source_file: "v20/app.js"
+source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
-location: "L78"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -17,7 +17,7 @@ tags:
 - [[dot-s5()_1]] - `calls` [EXTRACTED]
 - [[dot-s7()_1]] - `calls` [EXTRACTED]
 - [[dot-s8()_1]] - `calls` [EXTRACTED]
+- [[app.js]] - `contains` [EXTRACTED]
 - [[cover()_1]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

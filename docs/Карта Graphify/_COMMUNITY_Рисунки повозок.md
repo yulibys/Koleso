@@ -1,33 +1,39 @@
 ---
 type: community
-cohesion: 0.16
-members: 18
+cohesion: 0.17
+members: 24
 ---
 
 # Рисунки повозок
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
-- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
-- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
-- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
-- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
-- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
-- [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
-- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
-- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
-- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
-- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
-- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
-- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
-- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
-- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
-- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
-- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
+- [[birds()]] - code - src/scenery.js
+- [[bush()]] - code - src/scenery.js
+- [[cloud()]] - code - src/scenery.js
+- [[day()]] - code - src/scenery.js
+- [[fence()]] - code - src/scenery.js
+- [[forest()]] - code - src/scenery.js
+- [[grass()]] - code - src/scenery.js
+- [[hay()]] - code - src/scenery.js
+- [[hero()]] - code - src/scenery.js
+- [[hill()]] - code - src/scenery.js
+- [[house()]] - code - src/scenery.js
+- [[hut()]] - code - src/scenery.js
+- [[lab()]] - code - src/scenery.js
+- [[later()]] - code - src/scenery.js
+- [[milestone()]] - code - src/scenery.js
+- [[mill()]] - code - src/scenery.js
+- [[oak()]] - code - src/scenery.js
+- [[parade()]] - code - src/scenery.js
+- [[poplar()]] - code - src/scenery.js
+- [[road()]] - code - src/scenery.js
+- [[scenery.js]] - code - src/scenery.js
+- [[stone()]] - code - src/scenery.js
+- [[sun()]] - code - src/scenery.js
+- [[wave()]] - code - src/scenery.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,20 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 4 edges to [[_COMMUNITY_fig.js]]
-- 4 edges to [[_COMMUNITY_v20fig.js]]
-- 3 edges to [[_COMMUNITY_Журнал решений]]
-- 3 edges to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
-- 3 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 1 edge to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 4 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 1 edge to [[_COMMUNITY_Журнал решений]]
+- 1 edge to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
 
 ## Top bridge nodes
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 9 communities
-- [[Калибровочный лист менять один параметр и записывать]] - degree 4, connects to 1 community
-- [[Абзац — монтажная единица, не метроном]] - degree 3, connects to 1 community
-- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - degree 3, connects to 1 community
-- [[Отбивка показывает отношение подпись ближе к изображению]] - degree 3, connects to 1 community
+- [[scenery.js]] - degree 25, connects to 2 communities
+- [[lab()]] - degree 10, connects to 1 community
+- [[hero()]] - degree 7, connects to 1 community
+- [[parade()]] - degree 7, connects to 1 community
+- [[day()]] - degree 5, connects to 1 community

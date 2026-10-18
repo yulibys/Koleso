@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Фото, вырезки, права (1.7)"
 location: "L404"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Фото_вырезки_права_17
 ---
 
 # #sams — «А вы, кажется, попали в колесо сансары»
@@ -16,4 +16,4 @@ tags:
 - [[gong()]] - `references` [INFERRED]
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.5.txt"
 type: "rationale"
-community: "Типографика (1.4)"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Фото_вырезки_права_17
 ---
 
 # Мобильное преобразование — не общий Scale
@@ -14,4 +14,4 @@ tags:
 - [[layout()]] - `conceptually_related_to` [INFERRED]
 - [[Лекция 1.5. Модульные системы и сетки]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Типографика_14
+#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17

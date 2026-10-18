@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Фото, вырезки, права (1.7)"
+community: "Журнал решений"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # Одно колесо-проводник с морфингом (по Shopify Editions)
@@ -17,4 +17,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `implements` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/rationale #graphify/INFERRED #community/Журнал_решений

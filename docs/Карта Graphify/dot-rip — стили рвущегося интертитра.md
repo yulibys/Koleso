@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "fig.js"
+community: "Интерактив и проверка читателем"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/figjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # .rip — стили рвущегося интертитра
@@ -16,4 +16,4 @@ tags:
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `implements` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/figjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

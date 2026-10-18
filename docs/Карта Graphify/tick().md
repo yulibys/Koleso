@@ -1,21 +1,21 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
-location: "L567"
+community: "Сборка, источники, финал"
+location: "L597"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Сборка_источники_финал
 ---
 
 # tick()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
 - [[loop()_1]] - `calls` [EXTRACTED]
 - [[rewindToS1()]] - `calls` [EXTRACTED]
 - [[scrollAnim()]] - `calls` [EXTRACTED]
 - [[startEnding()]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

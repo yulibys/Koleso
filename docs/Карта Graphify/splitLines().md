@@ -1,17 +1,17 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Сборка, источники, финал"
 location: "L57"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Сетки_и_модуль_15
+  - community/Сборка_источники_финал
 ---
 
 # splitLines()
 
 ## Connections
-- [[app.js]] - `indirect_call` [INFERRED]
+- [[v20app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Сетки_и_модуль_15
+#graphify/code #graphify/INFERRED #community/Сборка_источники_финал

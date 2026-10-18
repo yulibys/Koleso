@@ -1,75 +1,83 @@
 ---
 type: community
-cohesion: 0.06
-members: 60
+cohesion: 0.05
+members: 68
 ---
 
 # Журнал решений
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 60 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 68 nodes
 
 ## Members
-- [[dot-paper — бумажный фон (find, day)]] - code - src/style.css
-- [[5–9 смысловых зон]] - concept - docs/lectures/1.3.txt
-- [[P3 — Беговая машина Карла Драйса, 1817 (.collage)]] - image - src/body.html
-- [[P4 — Омнибус, Париж, 1928 (.collage)]] - image - src/body.html
-- [[S_flute — Флейта из пещеры Дивье Бабе (.stk)]] - image - src/body.html
-- [[X1 — Пещера Ласко (.collage)]] - image - src/body.html
-- [[X6 — Пахота. Палестина, начало XX века (.collage)]] - image - src/body.html
-- [[clock()]] - code - src/app.js
-- [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - code - src/body.html
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - code - src/body.html
-- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - code - src/body.html
-- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - code - src/body.html
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - code - src/body.html
-- [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - code - src/body.html
-- [[ps2 — «Колесо есть. Ехать не на чем.» (фотоэкран H2)]] - code - src/body.html
-- [[ps3 — «А потом поехали» (фотоэкран H3)]] - code - src/body.html
-- [[ps4 — «Колесо давно с нами» (фотоэкран H4, flip)]] - code - src/body.html
-- [[«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)]] - rationale - docs/context.md
-- [[«Маша» Фёдора Сваровского (разбор финала)]] - concept - docs/lectures/1.3.txt
+- [[dot-cutflash — вспышка склейки]] - code - src/body.html
+- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
+- [[dot-rew-fx — эффект перемотки ◀◀]] - code - src/body.html
+- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - code - src/body.html
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
+- [[steps()]] - code - src/app.js
+- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
+- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
 - [[Авторство как отсечение каждый элемент заново доказывает право остаться]] - rationale - docs/lectures/1.7.txt
-- [[Близость внутреннее меньше внешнего]] - rationale - docs/lectures/1.6.txt
+- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
+- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
+- [[Без 3D всё на SVG, Three.js убран]] - rationale - docs/context.md
+- [[Без курсива и без прописных в длинных фразах]] - rationale - docs/context.md
+- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
 - [[Вертикальный ритм — расстояния во времени скролла]] - concept - docs/lectures/1.5.txt
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - rationale - docs/context.md
-- [[Интертитр «Колесо кажется самым первым изобретением человека»]] - code - src/body.html
-- [[Интертитр «Мы думали, что придумали колесо. А колесо придумало, как нам жить»]] - code - src/body.html
-- [[Интертитр «Пять тысяч лет колесо пролежало в болоте и ни разу никуда не поехало»]] - code - src/body.html
-- [[Интертитры рвутся по неровному краю (по kamidesgnfaith)]] - rationale - docs/context.md
-- [[Испытание сетки крайними случаями]] - rationale - docs/lectures/1.5.txt
+- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
+- [[Вопрос на входе — ответ в финале]] - rationale - docs/lectures/1.6.txt
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
+- [[Дрожащая линия рисунка — line boil (по tiagofragoso.com)]] - rationale - docs/context.md
+- [[Заголовок «Далеко собрались» (после «Колесо пока стоит», v17)]] - rationale - docs/context.md
+- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
+- [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - rationale - docs/context.md
+- [[Звук тише и живее щипковая струна Karplus–Strong (v13)]] - rationale - docs/context.md
+- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
 - [[Карта внимания (партитура страницы)]] - rationale - docs/lectures/1.6.txt
-- [[Карта проекта «Далеко собрались» (MAP.md)]] - document - docs/MAP.md
-- [[Карта соседства]] - concept - docs/lectures/1.3.txt
-- [[Картинка с подписью — одна группа]] - rationale - docs/MAP.md
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - code - src/body.html
-- [[Крупность от детали до дальнего плана, чередовать «через одну»]] - rationale - docs/lectures/1.3.txt
-- [[Лекция 1.3. Архитектура лонгрида структура, раскадровка]] - document - docs/lectures/1.3.txt
-- [[Линейный ствол и боковые двери с содержательным именем]] - rationale - docs/lectures/1.3.txt
-- [[Ма паузу проверяют удалением]] - rationale - docs/lectures/1.3.txt
-- [[Метрическая основа и ритм композиции]] - concept - docs/lectures/1.5.txt
-- [[Монтаж аттракционов (Эйзенштейн)]] - concept - docs/lectures/1.3.txt
+- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
+- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
+- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
+- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
+- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
+- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
+- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
+- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
+- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
+- [[Минимализм пейзажи упрощены до холмов, дороги и дерева (v15)]] - rationale - docs/context.md
+- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
+- [[Набор задаёт отношение к читателю («дом бытия»)]] - concept - docs/lectures/1.4.txt
+- [[Начинать с конкретной ситуации, а не с определений]] - rationale - docs/lectures/1.7.txt
+- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
+- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
+- [[Отвергнуто пиксельный мигающий фон и красные экраны (фидбек 2-10)]] - rationale - docs/context.md
+- [[Отвергнуты Ruslan Display, Old Standard TT, Bad Script и две подборки акцидентных шрифтов]] - rationale - docs/context.md
+- [[Открытая петля «что-то заставило человека изобрести колесо»]] - rationale - docs/context.md
+- [[Память как ответственность (Мец) финал помнит первый экран]] - concept - docs/lectures/1.6.txt
 - [[Пауза должна иметь функцию]] - rationale - docs/lectures/1.6.txt
-- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - code - src/body.html
-- [[Пена (Слотердайк) различимая мембрана между частями]] - rationale - docs/lectures/1.1.txt
-- [[Переход под допросом почему следующий фрагмент здесь]] - rationale - docs/lectures/1.3.txt
-- [[Плотность 1–5 между двумя «пятёрками» — передышка]] - rationale - docs/lectures/1.3.txt
-- [[Повтор с изменением задачи]] - rationale - docs/lectures/1.6.txt
-- [[Повтор с отклонением на третьем (Делёз)]] - concept - docs/lectures/1.5.txt
-- [[Правка соседская дверь к отчёту о люблянском колесе и статье о кувшине из Броночице]] - rationale - docs/MAP.md
+- [[Первый экран — порог и договор обещание, голос, первый шаг]] - rationale - docs/MAP.md
+- [[Первый экран — порог пять функций]] - rationale - docs/lectures/1.6.txt
+- [[Плёнка shaders.com царапины, зерно, мерцание; VHS при перемотке]] - rationale - docs/context.md
+- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
+- [[Правка проверить мерцание и звук по Такеру]] - rationale - docs/MAP.md
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - rationale - docs/MAP.md
-- [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - code - src/body.html
+- [[Приёмы удержания внимания из амоБлога холодный старт, открытая петля, слом ожидания]] - rationale - docs/context.md
+- [[Рабочий контекст и журнал решений (context.md)]] - document - docs/context.md
 - [[Ритм «акцент → пауза → выход»]] - rationale - docs/MAP.md
-- [[Ритм — возвращение групп со сменой масштаба]] - rationale - docs/MAP.md
-- [[Соседская дверь внешняя ссылка к первоисточнику]] - rationale - docs/lectures/1.1.txt
-- [[Ссылка как обещание не «подробнее», а предмет перехода]] - rationale - docs/lectures/1.8.txt
-- [[Текстовая альтернатива функция, а не пиксели]] - rationale - docs/lectures/1.5.txt
-- [[Фото __HI_H2__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фото __HI_H3__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фото __HI_H4__ (фон фотоэкрана)]] - image - src/body.html
-- [[Функция зоны глаголом, а не форматом]] - rationale - docs/lectures/1.3.txt
-- [[Четыре фотоэкрана в духе Kami (v16)]] - rationale - docs/context.md
-- [[Эффект Кулешова значение кадра меняется от соседа]] - concept - docs/lectures/1.3.txt
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
+- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
+- [[Снова чёрно-белое плёнка на всех сценах (v12)]] - rationale - docs/context.md
+- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
+- [[Тёмный медиум (Такер) убрать приём, который ничего не преобразует]] - rationale - docs/lectures/1.1.txt
+- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
+- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
+- [[Финал возвращается к началу]] - rationale - docs/MAP.md
+- [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - rationale - docs/context.md
+- [[Шрифты Alegreya SC + Alegreya, одно суперсемейство (v11)]] - rationale - docs/context.md
+- [[Юлия Бысова (автор)]] - concept - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -79,22 +87,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 20 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 18 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 13 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 11 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 9 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 4 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 4 edges to [[_COMMUNITY_scenery.js]]
-- 3 edges to [[_COMMUNITY_Рисунки повозок]]
-- 2 edges to [[_COMMUNITY_re]]
-- 2 edges to [[_COMMUNITY_fig.js]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 21 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 19 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 15 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 14 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 13 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 7 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 6 edges to [[_COMMUNITY_scenery.js]]
+- 3 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Рисунки повозок]]
 
 ## Top bridge nodes
-- [[Карта проекта «Далеко собрались» (MAP.md)]] - degree 14, connects to 6 communities
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - degree 16, connects to 5 communities
-- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - degree 13, connects to 5 communities
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - degree 10, connects to 5 communities
-- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - degree 9, connects to 5 communities
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 8 communities
+- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - degree 30, connects to 7 communities
+- [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - degree 8, connects to 4 communities
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 4 communities
+- [[Рабочий контекст и журнал решений (context.md)]] - degree 32, connects to 3 communities

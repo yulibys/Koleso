@@ -1,37 +1,39 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Пейзажи (scenery.js)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Пейзажи_sceneryjs
 ---
 
 # app.js
 
 ## Connections
-- [[S]] - `contains` [EXTRACTED]
-- [[cancelEnding()]] - `contains` [EXTRACTED]
-- [[cover()]] - `contains` [EXTRACTED]
-- [[coverSeq()]] - `contains` [EXTRACTED]
-- [[fit()]] - `contains` [EXTRACTED]
-- [[labUpd()]] - `contains` [EXTRACTED]
-- [[loop()_1]] - `contains` [EXTRACTED]
-- [[morph()]] - `contains` [EXTRACTED]
-- [[nextCover()]] - `contains` [EXTRACTED]
-- [[put()]] - `contains` [EXTRACTED]
-- [[restore()]] - `contains` [EXTRACTED]
-- [[rewindToS1()]] - `contains` [EXTRACTED]
-- [[ringAt()]] - `contains` [EXTRACTED]
-- [[ringAt0()]] - `contains` [EXTRACTED]
-- [[sayL()_1]] - `contains` [EXTRACTED]
-- [[scrollAnim()]] - `contains` [EXTRACTED]
-- [[spin()]] - `contains` [EXTRACTED]
-- [[splitLines()]] - `indirect_call` [INFERRED]
-- [[startEnding()]] - `contains` [EXTRACTED]
-- [[textOut()]] - `contains` [EXTRACTED]
-- [[tick()]] - `contains` [EXTRACTED]
+- [[S_1]] - `contains` [EXTRACTED]
+- [[balance()_1]] - `contains` [EXTRACTED]
+- [[cancelEnding()_1]] - `contains` [EXTRACTED]
+- [[cover()_1]] - `contains` [EXTRACTED]
+- [[coverSeq()_1]] - `contains` [EXTRACTED]
+- [[fit()_1]] - `contains` [EXTRACTED]
+- [[fitUl()_1]] - `contains` [EXTRACTED]
+- [[labUpd()_1]] - `contains` [EXTRACTED]
+- [[loop()_2]] - `contains` [EXTRACTED]
+- [[morph()_1]] - `contains` [EXTRACTED]
+- [[nextCover()_1]] - `contains` [EXTRACTED]
+- [[put()_1]] - `contains` [EXTRACTED]
+- [[restore()_1]] - `contains` [EXTRACTED]
+- [[rewindToS1()_1]] - `contains` [EXTRACTED]
+- [[ringAt()_1]] - `contains` [EXTRACTED]
+- [[ringAt0()_1]] - `contains` [EXTRACTED]
+- [[sayL()_2]] - `contains` [EXTRACTED]
+- [[scrollAnim()_1]] - `contains` [EXTRACTED]
+- [[spin()_1]] - `contains` [EXTRACTED]
+- [[splitLines()_1]] - `indirect_call` [INFERRED]
+- [[startEnding()_1]] - `contains` [EXTRACTED]
+- [[textOut()_1]] - `contains` [EXTRACTED]
+- [[tick()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

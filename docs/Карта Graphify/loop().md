@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Типографика (1.4)"
+community: "Фото, вырезки, права (1.7)"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Фото_вырезки_права_17
 ---
 
 # loop()
@@ -17,4 +17,4 @@ tags:
 - [[projector()]] - `calls` [EXTRACTED]
 - [[srcapp.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

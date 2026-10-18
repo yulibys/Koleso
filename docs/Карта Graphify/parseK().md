@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Лекция 1.8. Предзащита и финальная редактура"
+community: "Фото, вырезки, права (1.7)"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Лекция_18_Предзащита_и_финальная_редактура
+  - community/Фото_вырезки_права_17
 ---
 
 # parseK()
@@ -17,4 +17,4 @@ tags:
 - [[scene()]] - `indirect_call` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

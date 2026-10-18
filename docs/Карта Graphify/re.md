@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "v20/vehicles.js"
+community: "Лекция 1.8. Предзащита и финальная редактура"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/v20/vehiclesjs
+  - community/Лекция_18_Предзащита_и_финальная_редактура
 ---
 
 # re
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[update.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/v20/vehiclesjs
+#graphify/concept #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура

@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.11
-members: 46
+cohesion: 0.12
+members: 45
 ---
 
 # Движок сцен и звуки (app.js)
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 45 nodes
 
 ## Members
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
@@ -55,7 +55,6 @@ members: 46
 - [[tuft()]] - code - art.js
 - [[underline()]] - code - art.js
 - [[wheel()]] - code - art.js
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,11 +64,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 2 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_Журнал решений]]
-- 1 edge to [[_COMMUNITY_re]]
+- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 2 edges to [[_COMMUNITY_Журнал решений]]
+- 1 edge to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
 
 ## Top bridge nodes
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 3 communities
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - degree 3, connects to 2 communities
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 4 communities

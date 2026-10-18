@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Фото, вырезки, права (1.7)"
+community: "Журнал решений"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # Звук тише и живее: щипковая струна Karplus–Strong (v13)
@@ -14,4 +14,4 @@ tags:
 - [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - `conceptually_related_to` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений

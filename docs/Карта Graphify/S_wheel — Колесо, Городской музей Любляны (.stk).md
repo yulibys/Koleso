@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Раскадровка и двери (1.3)"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Фото_вырезки_права_17
 ---
 
 # S_wheel — Колесо, Городской музей Любляны (.stk)
@@ -16,4 +16,4 @@ tags:
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/image #graphify/EXTRACTED #community/Фото_вырезки_права_17

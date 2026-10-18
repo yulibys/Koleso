@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "boil0–2 «дрожь линии» filters (feTurbulence)"
+community: "Интерактив и проверка читателем"
 location: "L2"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/boil02_дрожь_линии_filters_feTurbulence
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # :root токены (--black, --cream, --paper, --red, --gut)
@@ -18,4 +18,4 @@ tags:
 - [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - `references` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/boil02_дрожь_линии_filters_feTurbulence
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

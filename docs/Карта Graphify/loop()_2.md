@@ -1,8 +1,8 @@
 ---
-source_file: "v20/app.js"
+source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
-location: "L586"
+location: "L616"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # loop()
 
 ## Connections
+- [[app.js]] - `contains` [EXTRACTED]
 - [[tick()_1]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

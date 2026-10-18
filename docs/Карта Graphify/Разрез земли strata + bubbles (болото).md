@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Типографика (1.4)"
+community: "Фото, вырезки, права (1.7)"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Фото_вырезки_права_17
 ---
 
 # Разрез земли #strata + #bubbles (болото)
@@ -15,4 +15,4 @@ tags:
 - [[bubble()]] - `references` [INFERRED]
 - [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

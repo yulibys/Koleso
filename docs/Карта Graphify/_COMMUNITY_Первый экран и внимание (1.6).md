@@ -1,64 +1,63 @@
 ---
 type: community
 cohesion: 0.06
-members: 49
+members: 48
 ---
 
 # Первый экран и внимание (1.6)
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 49 nodes
+**Members:** 48 nodes
 
 ## Members
-- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
-- [[sndBtn — кнопка звука]] - code - src/body.html
-- [[dot-cn-slot.cn-reel.cn-face — барабан дат]] - code - src/style.css
-- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
-- [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - code - src/style.css
-- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
-- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
-- [[projector()]] - code - src/app.js
-- [[slot()]] - code - src/app.js
-- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
-- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
-- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
-- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
-- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
-- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
-- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
-- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
-- [[Два входа через обещание и через материал]] - rationale - docs/lectures/1.6.txt
-- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
-- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
-- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
-- [[Исключение с условием, а не манера]] - rationale - docs/lectures/1.5.txt
-- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
-- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
-- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
-- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
-- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
-- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
-- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
-- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
-- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
-- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
-- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
-- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
-- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
-- [[Отвергнуто пиксельный мигающий фон и красные экраны (фидбек 2-10)]] - rationale - docs/context.md
-- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
-- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
-- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
-- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
-- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - code - src/body.html
-- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
-- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
-- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
-- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - code - src/body.html
-- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
-- [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - code - src/body.html
-- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
+- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
+- [[tHorse — лошадь (template)]] - code - src/body.html
+- [[tOx — бык (template)]] - code - src/body.html
+- [[tRunner — бегущий человек (template)]] - code - src/body.html
+- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
+- [[dot-lab-ground.blade.wind]] - code - src/style.css
+- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
+- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
+- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
+- [[sayL()_1]] - code - src/app.js
+- [[upd()]] - code - src/app.js
+- [[wood()]] - code - src/app.js
+- [[Архивный слепок папка проверенной версии]] - rationale - docs/lectures/1.7.txt
+- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
+- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
+- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
+- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
+- [[Диагноз место, устройство, видимое последствие]] - rationale - docs/lectures/1.7.txt
+- [[Журнал решений 5–7 поворотных записей]] - rationale - docs/lectures/1.7.txt
+- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
+- [[Затруднение — наблюдаемыми словами, менять по одному параметру]] - rationale - docs/MAP.md
+- [[ИИ-пайплайн, который можно объяснить]] - rationale - docs/lectures/1.7.txt
+- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
+- [[История ножа как изменился тот, кто выбирает]] - concept - docs/lectures/1.7.txt
+- [[Клавиатура Tab, видимый фокус, выход из интерактива]] - rationale - docs/lectures/1.7.txt
+- [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - code - src/body.html
+- [[Критерий выбора сначала сформулировать сохраняемое отношение, потом стиль]] - rationale - docs/lectures/1.7.txt
+- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - document - docs/MAP.md
+- [[Матрица состояний ✓  △  ×  — для 8–10 сочетаний]] - rationale - docs/lectures/1.7.txt
+- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
+- [[Открыть ссылки из опубликованной версии, без своего аккаунта]] - rationale - docs/lectures/1.7.txt
+- [[Палимпсест (Женетт) прежний слой объясняет нынешнюю форму]] - concept - docs/lectures/1.7.txt
+- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
+- [[Порядок правок поломка → фактыправоссылки → обещание → типографика → украшение]] - rationale - docs/lectures/1.7.txt
+- [[Проба без подсказки чужой читатель проходит эпизод]] - rationale - docs/lectures/1.7.txt
+- [[Проверка на медленной сети Network, Disable cache, троттлинг]] - rationale - docs/lectures/1.7.txt
+- [[Проверять публичную ссылку на реальных устройствах, а не редактор]] - rationale - docs/lectures/1.7.txt
+- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
+- [[Редактура сократить абзац примерно на треть]] - rationale - docs/lectures/1.7.txt
+- [[Слабый дизайн материал может изменить замысел]] - concept - docs/lectures/1.7.txt
+- [[Следующей версии нужна причина]] - rationale - docs/lectures/1.7.txt
+- [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - concept - docs/lectures/1.7.txt
+- [[Служебная фраза — ясная инструкция к действию]] - rationale - docs/lectures/1.7.txt
+- [[Сравнивать варианты, меняя один параметр]] - rationale - docs/lectures/1.7.txt
+- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
+- [[Фактологический проход имена, даты, подписи, цитаты, числа]] - rationale - docs/lectures/1.7.txt
+- [[Фармакон (Платон, Деррида, Стиглер) ИИ — лекарство и яд]] - concept - docs/lectures/1.7.txt
+- [[Читательская проба think aloud → одна правка]] - rationale - docs/lectures/1.6.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,22 +67,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Журнал решений]]
-- 16 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 15 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 10 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 5 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 13 edges to [[_COMMUNITY_Журнал решений]]
+- 10 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 5 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 3 edges to [[_COMMUNITY_scenery.js]]
 - 3 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 3 edges to [[_COMMUNITY_Рисунки повозок]]
-- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 2 edges to [[_COMMUNITY_re]]
-- 2 edges to [[_COMMUNITY_fig.js]]
-- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 2 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 1 edge to [[_COMMUNITY_Рисунки повозок]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 
 ## Top bridge nodes
-- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 9 communities
-- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 4 communities
-- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - degree 8, connects to 4 communities
-- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - degree 8, connects to 3 communities
-- [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - degree 9, connects to 2 communities
+- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - degree 39, connects to 7 communities
+- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 5 communities
+- [[Фактологический проход имена, даты, подписи, цитаты, числа]] - degree 5, connects to 2 communities
+- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - degree 5, connects to 2 communities
+- [[SVG defs hatchxhatchdots patterns]] - degree 5, connects to 1 community

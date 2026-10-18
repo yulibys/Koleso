@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Типографика (1.4)"
+community: "Фото, вырезки, права (1.7)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Фото_вырезки_права_17
 ---
 
 # src/app.js
@@ -49,7 +49,7 @@ tags:
 - [[ripFrame()]] - `contains` [EXTRACTED]
 - [[roll()]] - `contains` [EXTRACTED]
 - [[sampleFig()]] - `contains` [EXTRACTED]
-- [[sayL()]] - `contains` [EXTRACTED]
+- [[sayL()_1]] - `contains` [EXTRACTED]
 - [[scene()]] - `contains` [EXTRACTED]
 - [[scribble()]] - `contains` [EXTRACTED]
 - [[send()]] - `contains` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[whoosh()]] - `contains` [EXTRACTED]
 - [[wood()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

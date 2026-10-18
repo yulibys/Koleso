@@ -1,20 +1,18 @@
 ---
-source_file: "src/app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L231"
+community: "Сборка, источники, финал"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сборка_источники_финал
 ---
 
 # sayL()
 
 ## Connections
-- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
-- [[srcapp.js]] - `contains` [EXTRACTED]
-- [[upd()]] - `calls` [EXTRACTED]
-- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
+- [[labUpd()]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

@@ -1,8 +1,8 @@
 ---
-source_file: "v20/app.js"
+source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
-location: "L512"
+location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,9 @@ tags:
 # scrollAnim()
 
 ## Connections
+- [[app.js]] - `contains` [EXTRACTED]
 - [[rewindToS1()_1]] - `calls` [EXTRACTED]
 - [[startEnding()_1]] - `calls` [EXTRACTED]
 - [[tick()_1]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

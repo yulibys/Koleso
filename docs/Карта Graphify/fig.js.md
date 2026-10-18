@@ -1,14 +1,14 @@
 ---
 source_file: "fig.js"
 type: "code"
-community: "vehicles.js"
+community: "SVG defs: hatch/xhatch/dots patterns"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/vehiclesjs
+  - community/SVG_defs_hatch/xhatch/dots_patterns
 ---
 
 # fig.js
 
-#graphify/code #graphify/EXTRACTED #community/vehiclesjs
+#graphify/code #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns

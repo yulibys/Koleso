@@ -674,3 +674,32 @@ html.port:not(.tab) .rew em{line-height:1.2}
 html.port:not(.tab).spinning .rew em{top:calc(50% + 250px * var(--k,1))}
 .port:not(.tab) .para br.ph{display:inline}
 .port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:560px;text-wrap:wrap}
+/* v53 — телефон: крупнее кегль, абзацы во всю ширину фото */
+.port:not(.tab) .para{font-size:32px;line-height:42px;text-align:justify;-webkit-hyphens:auto;hyphens:auto;text-wrap:wrap}
+.port:not(.tab) .para br.ph{display:none}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:530px}
+.port:not(.tab) #s4h{font-size:104px;line-height:96px}
+.port:not(.tab) #s4y{font-size:36px}
+.port:not(.tab) #s4ph figcaption{font-size:20px}
+.port:not(.tab) .s2text h2{font-size:62px;line-height:66px}
+.port:not(.tab) .s2text p{font-size:29px;line-height:40px;top:300px}
+.port:not(.tab) #s2where{font-size:32px}
+.port:not(.tab) .tick{font-size:34px}.port:not(.tab) .era{font-size:60px}
+.port:not(.tab) #s3h,.port:not(.tab) #s5h,.port:not(.tab) #s7h{font-size:80px;line-height:80px}
+.port:not(.tab) .status,.port:not(.tab) .vname{font-size:38px}
+.port:not(.tab) .link{font-size:40px}
+.port:not(.tab) .cap8{font-size:36px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{font-size:46px}
+.port:not(.tab) .tag{font-size:46px}
+.port:not(.tab) #s6h{font-size:60px;line-height:64px}
+.port:not(.tab) #s6fin{font-size:42px;line-height:48px}
+.port:not(.tab) .cover .h1{font-size:80px;line-height:82px}
+.port:not(.tab) #s8h{font-size:112px}
+.port:not(.tab) #s8t1{font-size:74px;line-height:74px}
+.port:not(.tab) #s8t2{font-size:38px;line-height:44px}
+.port:not(.tab) .endsub{font-size:34px;line-height:38px}
+.port:not(.tab) #s7h{font-size:74px;line-height:76px;white-space:nowrap}
+.port:not(.tab) #s8t1{left:440px;width:560px;font-size:70px;line-height:72px}
+.port:not(.tab) #s4h{font-size:100px;line-height:94px}
+.port:not(.tab) #s4h{top:-140px}.port:not(.tab) #s4y{top:58px}.port:not(.tab) #s4ph{top:105px}
+.port:not(.tab) #s4p1{top:525px}.port:not(.tab) #s4p2{top:808px}

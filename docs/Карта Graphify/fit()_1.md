@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
 location: "L17"
@@ -12,6 +12,6 @@ tags:
 # fit()
 
 ## Connections
-- [[v20app.js]] - `contains` [EXTRACTED]
+- [[app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

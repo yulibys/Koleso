@@ -1,74 +1,75 @@
 ---
 type: community
-cohesion: 0.06
-members: 59
+cohesion: 0.07
+members: 60
 ---
 
 # Фото, вырезки, права (1.7)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 59 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 60 nodes
 
 ## Members
-- [[dot-cutflash — вспышка склейки]] - code - src/body.html
-- [[Viewport и скролл пространство превращается в длительность]] - concept - docs/lectures/1.1.txt
-- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - code - src/body.html
-- [[Авторская функция (Фуко) кто говорит первым]] - concept - docs/lectures/1.2.txt
-- [[Апофатический тезис «это не проект о…»]] - rationale - docs/lectures/1.2.txt
-- [[Атрибуция TASL название, автор, источник, лицензия]] - rationale - docs/lectures/1.2.txt
-- [[Без 3D всё на SVG, Three.js убран]] - rationale - docs/context.md
-- [[Без курсива и без прописных в длинных фразах]] - rationale - docs/context.md
-- [[Дрожащая линия рисунка — line boil (по tiagofragoso.com)]] - rationale - docs/context.md
-- [[Заголовок «Далеко собрались» (после «Колесо пока стоит», v17)]] - rationale - docs/context.md
-- [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - rationale - docs/context.md
-- [[Звук тише и живее щипковая струна Karplus–Strong (v13)]] - rationale - docs/context.md
-- [[Кантастория рассказчик перед последовательностью изображений]] - concept - docs/lectures/1.1.txt
-- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
-- [[Карта из 3–5 источников с правами]] - rationale - docs/lectures/1.2.txt
-- [[Карточка необходимости]] - concept - docs/lectures/1.1.txt
-- [[Лекция 1.1. Лонгрид как особый медиум]] - document - docs/lectures/1.1.txt
-- [[Лекция 1.2. Тема, тезис, редакционный угол]] - document - docs/lectures/1.2.txt
-- [[Метод «почему» до материала]] - rationale - docs/lectures/1.2.txt
-- [[Минимализм пейзажи упрощены до холмов, дороги и дерева (v15)]] - rationale - docs/context.md
-- [[Набор задаёт отношение к читателю («дом бытия»)]] - concept - docs/lectures/1.4.txt
-- [[Начинать с конкретной ситуации, а не с определений]] - rationale - docs/lectures/1.7.txt
-- [[Немое кино → цвет после первого разрыва (v11, отменено)]] - rationale - docs/context.md
-- [[Обещание — об опыте или знании, не о «красивом визуале»]] - rationale - docs/lectures/1.6.txt
-- [[Одно главное и одно поддерживающее свойство браузера]] - rationale - docs/lectures/1.1.txt
-- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
-- [[Олег Пащенко (преподаватель)]] - concept - docs/context.md
-- [[Отвергнуты Ruslan Display, Old Standard TT, Bad Script и две подборки акцидентных шрифтов]] - rationale - docs/context.md
-- [[Открытая петля «что-то заставило человека изобрести колесо»]] - rationale - docs/context.md
-- [[Палеонимия (Деррида) что «лонгрид» значит сверх длины]] - concept - docs/lectures/1.2.txt
-- [[Паспорт необходимости]] - concept - docs/lectures/1.2.txt
-- [[Первый экран — порог и договор обещание, голос, первый шаг]] - rationale - docs/MAP.md
-- [[Первый экран — порог пять функций]] - rationale - docs/lectures/1.6.txt
-- [[Плёнка shaders.com царапины, зерно, мерцание; VHS при перемотке]] - rationale - docs/context.md
-- [[Правка проверить мерцание и звук по Такеру]] - rationale - docs/MAP.md
-- [[Правка тезис одной фразой и «это не проект об истории транспорта вообще»]] - rationale - docs/MAP.md
-- [[Приёмы удержания внимания из амоБлога холодный старт, открытая петля, слом ожидания]] - rationale - docs/context.md
-- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - concept - docs/lectures/1.1.txt
-- [[Рабочий контекст и журнал решений (context.md)]] - document - docs/context.md
-- [[Рассказчик больше не говорит «я» (v13)]] - rationale - docs/context.md
-- [[Рассказчик — самоуверенный неудачник, голос интертитров]] - rationale - docs/context.md
-- [[Регламент генеративных инструментов]] - rationale - docs/lectures/1.1.txt
-- [[Редакционный угол «рассматриваю материал через конфликт, чтобы изменение»]] - rationale - docs/lectures/1.2.txt
-- [[Режим жизни поддерживать  заморозить  обновлять  снять]] - rationale - docs/lectures/1.8.txt
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
-- [[Свиток последовательность и жест разворачивания]] - concept - docs/lectures/1.1.txt
-- [[Ситуация чтения вместо аудитории]] - rationale - docs/lectures/1.2.txt
-- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
-- [[Снова чёрно-белое плёнка на всех сценах (v12)]] - rationale - docs/context.md
-- [[Тезис или исследовательский вопрос с достойным возражением]] - rationale - docs/lectures/1.2.txt
-- [[Тема — территория, конструкцию держит тезис]] - concept - docs/lectures/1.2.txt
-- [[Тест необходимости «страница нужна, потому что…», «повод её не делать…»]] - rationale - docs/lectures/1.1.txt
-- [[Тёмный медиум (Такер) убрать приём, который ничего не преобразует]] - rationale - docs/lectures/1.1.txt
-- [[Фабрика вариантов и дом у реки]] - concept - docs/lectures/1.1.txt
-- [[Фото из Викисклада с авторами и лицензиями в подвале]] - rationale - docs/context.md
-- [[Хронотоп (Бахтин) участок со случайной длительностью]] - rationale - docs/lectures/1.1.txt
-- [[Шрифты Alegreya SC + Alegreya, одно суперсемейство (v11)]] - rationale - docs/context.md
-- [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - rationale - docs/context.md
-- [[Юлия Бысова (автор)]] - concept - docs/context.md
+- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - code - src/body.html
+- [[nagSvg — монах и царь, «колесница», «ось нет  кузов нет»]] - code - src/body.html
+- [[sams — «А вы, кажется, попали в колесо сансары»]] - code - src/body.html
+- [[sndBtn — кнопка звука]] - code - src/body.html
+- [[swAxle — ось, прорисовка]] - code - src/body.html
+- [[dot-guide — фиксированное колесо-проводник]] - code - src/style.css
+- [[dot-sc.stick.frame — высокая секция с липким кадром]] - code - src/style.css
+- [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - image - src/body.html
+- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
+- [[air()]] - code - src/app.js
+- [[applyK()]] - code - src/app.js
+- [[bubble()]] - code - src/app.js
+- [[click()]] - code - src/app.js
+- [[clop()]] - code - src/app.js
+- [[env()]] - code - src/app.js
+- [[fin()]] - code - src/app.js
+- [[gesture()]] - code - src/app.js
+- [[gong()]] - code - src/app.js
+- [[guideFrame()]] - code - src/app.js
+- [[init()]] - code - src/app.js
+- [[klaxon()]] - code - src/app.js
+- [[knock()]] - code - src/app.js
+- [[ksPlay()]] - code - src/app.js
+- [[layScenery()]] - code - src/app.js
+- [[layout()]] - code - src/app.js
+- [[layoutKF()]] - code - src/app.js
+- [[loop()]] - code - src/app.js
+- [[mallet()]] - code - src/app.js
+- [[moo()]] - code - src/app.js
+- [[morphD()]] - code - src/app.js
+- [[nz()]] - code - src/app.js
+- [[ok()]] - code - src/app.js
+- [[osc()]] - code - src/app.js
+- [[pairOf()]] - code - src/app.js
+- [[parseK()]] - code - src/app.js
+- [[plank()]] - code - src/app.js
+- [[play()]] - code - src/app.js
+- [[projector()]] - code - src/app.js
+- [[rewind()]] - code - src/app.js
+- [[ripFrame()]] - code - src/app.js
+- [[roll()]] - code - src/app.js
+- [[sampleFig()]] - code - src/app.js
+- [[scene()]] - code - src/app.js
+- [[scribble()]] - code - src/app.js
+- [[send()]] - code - src/app.js
+- [[soft()]] - code - src/app.js
+- [[squeak()]] - code - src/app.js
+- [[srcapp.js]] - code - src/app.js
+- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - code - src/body.html
+- [[tear()]] - code - src/app.js
+- [[whoosh()]] - code - src/app.js
+- [[Интертитр «Колесо кажется самым первым изобретением человека»]] - code - src/body.html
+- [[Интертитр «Мы думали, что придумали колесо. А колесо придумало, как нам жить»]] - code - src/body.html
+- [[Интертитр «Пять тысяч лет колесо пролежало в болоте и ни разу никуда не поехало»]] - code - src/body.html
+- [[Испытание сетки крайними случаями]] - rationale - docs/lectures/1.5.txt
+- [[Мобильное преобразование — не общий Scale]] - rationale - docs/lectures/1.5.txt
+- [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - concept - docs/lectures/1.6.txt
+- [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - rationale - docs/lectures/1.7.txt
+- [[Разрез земли strata + bubbles (болото)]] - code - src/body.html
+- [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - code - src/body.html
 
 ## Live Query (requires Dataview plugin)
 
@@ -78,22 +79,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Журнал решений]]
-- 16 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 11 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 7 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 6 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 4 edges to [[_COMMUNITY_scenery.js]]
-- 3 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 2 edges to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Сборка, источники, финал]]
-- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 19 edges to [[_COMMUNITY_Журнал решений]]
+- 19 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 14 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 6 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 5 edges to [[_COMMUNITY_scenery.js]]
+- 5 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 4 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 3 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 
 ## Top bridge nodes
-- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - degree 30, connects to 7 communities
-- [[Олег Пащенко (преподаватель)]] - degree 9, connects to 6 communities
-- [[Рабочий контекст и журнал решений (context.md)]] - degree 32, connects to 5 communities
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 4 communities
-- [[Правка тезис одной фразой и «это не проект об истории транспорта вообще»]] - degree 7, connects to 3 communities
+- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 7 communities
+- [[srcapp.js]] - degree 49, connects to 5 communities
+- [[ksPlay()]] - degree 11, connects to 3 communities
+- [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - degree 4, connects to 3 communities
+- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - degree 11, connects to 2 communities

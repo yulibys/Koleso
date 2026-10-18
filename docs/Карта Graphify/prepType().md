@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Лекция 1.8. Предзащита и финальная редактура"
+community: "Интерактив и проверка читателем"
 location: "L134"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Лекция_18_Предзащита_и_финальная_редактура
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # prepType()
@@ -18,4 +18,4 @@ tags:
 - [[Неразрывные пробелы — только для смысловых пар]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Лекция_18_Предзащита_и_финальная_редактура
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

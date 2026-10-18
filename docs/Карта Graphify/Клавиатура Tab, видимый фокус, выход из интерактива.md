@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # Клавиатура: Tab, видимый фокус, выход из интерактива
@@ -15,4 +15,4 @@ tags:
 - [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - `rationale_for` [INFERRED]
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/rationale #graphify/INFERRED #community/Первый_экран_и_внимание_16

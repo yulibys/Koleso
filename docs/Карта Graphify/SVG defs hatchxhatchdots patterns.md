@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "re"
+community: "Первый экран и внимание (1.6)"
 location: "L3"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/re
+  - community/Первый_экран_и_внимание_16
 ---
 
 # SVG defs: hatch/xhatch/dots patterns
@@ -18,4 +18,4 @@ tags:
 - [[tRunner — бегущий человек (template)]] - `shares_data_with` [INFERRED]
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/re
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

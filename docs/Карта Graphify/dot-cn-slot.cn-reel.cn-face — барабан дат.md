@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "scenery.js"
 location: "L529"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/sceneryjs
 ---
 
 # .cn-slot/.cn-reel/.cn-face — барабан дат
@@ -15,4 +15,4 @@ tags:
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `implements` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/sceneryjs

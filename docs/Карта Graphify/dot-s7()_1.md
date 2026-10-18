@@ -1,8 +1,8 @@
 ---
-source_file: "v20/app.js"
+source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
-location: "L448"
+location: "L478"
 tags:
   - graphify/code
   - graphify/EXTRACTED

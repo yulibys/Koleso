@@ -1,12 +1,12 @@
 ---
 source_file: "v20/art.js"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Сетки и модуль (1.5)"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Сетки_и_модуль_15
 ---
 
 # seg()
@@ -27,4 +27,4 @@ tags:
 - [[v20art.js]] - `contains` [EXTRACTED]
 - [[wheel()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

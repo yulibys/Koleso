@@ -1,37 +1,39 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
+community: "Сборка, источники, финал"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Сборка_источники_финал
 ---
 
 # v20/app.js
 
 ## Connections
-- [[S_1]] - `contains` [EXTRACTED]
-- [[cancelEnding()_1]] - `contains` [EXTRACTED]
-- [[cover()_1]] - `contains` [EXTRACTED]
-- [[coverSeq()_1]] - `contains` [EXTRACTED]
-- [[fit()_1]] - `contains` [EXTRACTED]
-- [[labUpd()_1]] - `contains` [EXTRACTED]
-- [[loop()_2]] - `contains` [EXTRACTED]
-- [[morph()_1]] - `contains` [EXTRACTED]
-- [[nextCover()_1]] - `contains` [EXTRACTED]
-- [[put()_1]] - `contains` [EXTRACTED]
-- [[restore()_1]] - `contains` [EXTRACTED]
-- [[rewindToS1()_1]] - `contains` [EXTRACTED]
-- [[ringAt()_1]] - `contains` [EXTRACTED]
-- [[ringAt0()_1]] - `contains` [EXTRACTED]
-- [[sayL()_2]] - `contains` [EXTRACTED]
-- [[scrollAnim()_1]] - `contains` [EXTRACTED]
-- [[spin()_1]] - `contains` [EXTRACTED]
-- [[splitLines()_1]] - `indirect_call` [INFERRED]
-- [[startEnding()_1]] - `contains` [EXTRACTED]
-- [[textOut()_1]] - `contains` [EXTRACTED]
-- [[tick()_1]] - `contains` [EXTRACTED]
+- [[S]] - `contains` [EXTRACTED]
+- [[balance()]] - `contains` [EXTRACTED]
+- [[cancelEnding()]] - `contains` [EXTRACTED]
+- [[cover()]] - `contains` [EXTRACTED]
+- [[coverSeq()]] - `contains` [EXTRACTED]
+- [[fit()]] - `contains` [EXTRACTED]
+- [[fitUl()]] - `contains` [EXTRACTED]
+- [[labUpd()]] - `contains` [EXTRACTED]
+- [[loop()_1]] - `contains` [EXTRACTED]
+- [[morph()]] - `contains` [EXTRACTED]
+- [[nextCover()]] - `contains` [EXTRACTED]
+- [[put()]] - `contains` [EXTRACTED]
+- [[restore()]] - `contains` [EXTRACTED]
+- [[rewindToS1()]] - `contains` [EXTRACTED]
+- [[ringAt()]] - `contains` [EXTRACTED]
+- [[ringAt0()]] - `contains` [EXTRACTED]
+- [[sayL()]] - `contains` [EXTRACTED]
+- [[scrollAnim()]] - `contains` [EXTRACTED]
+- [[spin()]] - `contains` [EXTRACTED]
+- [[splitLines()]] - `indirect_call` [INFERRED]
+- [[startEnding()]] - `contains` [EXTRACTED]
+- [[textOut()]] - `contains` [EXTRACTED]
+- [[tick()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

@@ -1,12 +1,12 @@
 ---
 source_file: "update.py"
 type: "code"
-community: "v20/vehicles.js"
+community: "Лекция 1.8. Предзащита и финальная редактура"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v20/vehiclesjs
+  - community/Лекция_18_Предзащита_и_финальная_редактура
 ---
 
 # update.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[re]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v20/vehiclesjs
+#graphify/code #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура
