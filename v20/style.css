@@ -663,3 +663,14 @@ br.ph{display:none}
 .port:not(.tab) #s4p1{top:515px}.port:not(.tab) #s4p2{top:805px}
 .port:not(.tab) #s2ul{top:548px}
 .port:not(.tab) #s8t2{text-wrap:balance;line-height:40px}
+/* v52 — телефон */
+.port:not(.tab) #s3h{top:-10px}.port:not(.tab) .link{top:168px;padding:0}
+.port:not(.tab) #s3say span{font-size:24px;line-height:26px}
+.port:not(.tab) #s7say span{font-size:22px;line-height:24px}
+.port:not(.tab) #s7say{transform-origin:0 100%}
+.port:not(.tab) #s5bt{text-align:center}
+html.port:not(.tab) .rew em br.ph{display:inline}
+html.port:not(.tab) .rew em{line-height:1.2}
+html.port:not(.tab).spinning .rew em{top:calc(50% + 250px * var(--k,1))}
+.port:not(.tab) .para br.ph{display:inline}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:560px;text-wrap:wrap}

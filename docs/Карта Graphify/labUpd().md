@@ -2,7 +2,7 @@
 source_file: "app.js"
 type: "code"
 community: "Сетки и модуль (1.5)"
-location: "L391"
+location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED

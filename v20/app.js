@@ -66,7 +66,27 @@
     el.classList.add('lined');
     el._ln = [...el.querySelectorAll('.lt')];
   }
-  const ul = (host, v) => { const p = host.querySelector('.ul path'); if (p) p.style.setProperty('--d', cl(v).toFixed(3)); };
+  // подчёркивание всегда во всю длину подписи (берём реальную ширину текста, а не заданную заранее)
+  function balance(el, maxW) {
+    el.style.width = maxW + 'px'; const h0 = el.offsetHeight; let lo = maxW * 0.4, hi = maxW;
+    while (hi - lo > 2) { const m = (lo + hi) / 2; el.style.width = m + 'px'; if (el.offsetHeight > h0) lo = m; else hi = m; }
+    el.style.width = Math.ceil(hi) + 'px';
+  }
+  function fitUl(host) {
+    const svg = host.querySelector('svg.ul'); if (!svg) return;
+    if (host.id === 's5st') { const t = $('s5bt'); if (PORT && !TAB) { t.style.display = 'inline-block'; balance(t, 540); } else { t.style.display = ''; t.style.width = ''; } }
+    let par = svg.parentElement; while (par && par !== host && getComputedStyle(par).position === 'static') par = par.parentElement; if (!par) return;
+    const r = document.createRange(), pr = par.getBoundingClientRect(), sc = pr.width / (par.offsetWidth || 1) || 1;
+    let L = Infinity, R = -Infinity;
+    const walk = (n) => { for (const c of n.childNodes) { if (c.nodeType === 3 && c.nodeValue.trim()) { r.selectNodeContents(c); for (const q of r.getClientRects()) { L = Math.min(L, q.left); R = Math.max(R, q.right); } } else if (c.nodeType === 1 && c.tagName.toLowerCase() !== 'svg') walk(c); } };
+    walk(host); if (!(R > L)) return;
+    svg.style.marginLeft = '0'; svg.style.left = ((L - pr.left) / sc).toFixed(1) + 'px'; svg.style.width = ((R - L) / sc).toFixed(1) + 'px';
+  }
+  const ul = (host, v) => {
+    const key = host.textContent + '|' + innerWidth + 'x' + innerHeight + '|' + (document.fonts ? document.fonts.status : '');
+    if (v > 0 && host._fk !== key) { host._fk = key; fitUl(host); }
+    const p = host.querySelector('.ul path'); if (p) p.style.setProperty('--d', cl(v).toFixed(3));
+  };
   // обложка наезжает снизу плавно: положение догоняет прокрутку с инерцией, без рывков при быстром пролистывании
   function cover(el, t) {
     const target = 100 * (1 - ez(cl(t)));
@@ -341,6 +361,16 @@
   S.s3 = (p) => {
     sw($('s3h'), sg(p, 0, 0.1));
     op($('s3run'), sg(p, 0.05, 0.08)); op($('s3ulg'), sg(p, 0.05, 0.08));
+    { // на телефоне подчёркивание со стрелкой подгоняем под длину «побежать за ним»
+      const g = $('s3ulg'), l = $('s3run'), key = innerWidth + 'x' + innerHeight + (document.fonts ? document.fonts.status : '');
+      if (g._fk !== key) { g._fk = key;
+        if (PORT && !TAB) {
+          const r = document.createRange(); r.selectNodeContents(l); const q = r.getBoundingClientRect(), lr = l.getBoundingClientRect(), sc = lr.width / l.offsetWidth;
+          const L = l.offsetLeft + (q.left - lr.left) / sc, R = L + q.width / sc, B = l.offsetTop + (q.bottom - lr.top) / sc;
+          const sx = (R - L + 18) / 191.5, sy = parseFloat(getComputedStyle(l).fontSize) / 24;
+          g.style.transform = `translate(${(L - 589.8 * sx).toFixed(1)}px,${(B + 9 * sy - 316 * sy).toFixed(1)}px) scale(${sx.toFixed(3)},${sy.toFixed(3)})`;
+        } else g.style.transform = '';
+      } }
     const show = sg(p, 0.07, 0.12);
     if (chaseT0 !== null) chase = cl((performance.now() - chaseT0) / 2800);
     const c = Math.max(sg(p, 0.1, 0.64), ez(chase));
@@ -354,7 +384,7 @@
     put($('s3man'), zx(mx), zy(776 - 165), Z, 0, show);
     put($('s3wh'), zx(wx), zy(601), Z, (wx - w0) / 80 * 57.3, show);
     op($('s3say'), sg(c, 0.08, 0.14) - sg(c, 0.6, 0.66));
-    put($('s3say'), PH ? zx(mx) + 85 : mx + (PORT ? (TAB ? 90 : 60) : 237), PH ? 400 : PORT ? 380 : 428, PORT ? 0.85 : 1, 0);
+    put($('s3say'), PH ? zx(mx) + 110 : mx + (PORT ? (TAB ? 90 : 60) : 237), PH ? 390 : PORT ? 380 : 428, PH ? 1.25 : PORT ? 0.85 : 1, 0);
     coverSeq($('s3cov'), p, 0.68, 0.76);
   };
 
@@ -469,8 +499,8 @@
     const vis = sg(t, 0.12, 0.25) - sg(t, 0.82, 0.95);
     op(n, vis); ul(n, vis);
     { const v = vehs[cur], RS = PORT ? (TAB ? 0.85 : 0.74) : 1, h = (v.el.offsetHeight || 200) * RS;
-      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 800) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : -60) : Math.max(612 - h - 70, 300);
-      $('s7say').style.transform = `translate(${(bx - 1082).toFixed(0)}px,${(by - 234).toFixed(0)}px)`;
+      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 735) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : -60) : Math.max(612 - h - 70, 300);
+      $('s7say').style.transform = `translate(${(bx - 1082).toFixed(0)}px,${(by - 234).toFixed(0)}px)` + (PORT && !TAB ? ' scale(1.3)' : '');
       // реплика гаснет, когда транспорт доезжает до неё
       const front = 720 + ((v.px === null ? 0 : v.px) + v.w - 720) * RS;
       op($('s7say'), Math.min(sg(t, 0.12, 0.25), 1 - sg(front, bx + 20, bx + 170))); }
@@ -530,7 +560,7 @@
   }
   let endTimer = null, spinOn = false;
   $('spinw').innerHTML = A.wheel(170, { seed: 93 });
-  function spin(on) { spinOn = on; $('spinov').classList.toggle('on', on); root.classList.toggle('spinning', on); $('rew').querySelector('em').textContent = on ? 'вы возвращаетесь в начало' : 'вернёмся к колесу'; }
+  function spin(on) { spinOn = on; $('spinov').classList.toggle('on', on); root.classList.toggle('spinning', on); $('rew').querySelector('em').innerHTML = on ? 'вы возвращаетесь<br class="ph"> в начало' : 'вернёмся к колесу'; }
   function cancelEnding() { if (endTimer) { clearTimeout(endTimer); endTimer = null; ending = false; } }
   function startEnding() {
     ending = true;
