@@ -581,3 +581,28 @@ html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
 html.coarse .boil{filter:none!important}
 html.coarse.rewinding .stage{filter:none}
 .rew b{font-family:var(--serif);font-variant-emoji:text}
+
+/* ══ v49: телефон — те же правки, что на планшете; рамок на обложках нет ══ */
+.port:not(.tab) .cover>svg.frame,.port:not(.tab) #s2frame{display:none}
+.port:not(.tab) #s1catch{top:20px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{font-size:36px;top:250px}
+.port:not(.tab) #s1n1{left:470px}.port:not(.tab) #s1n2{left:742px}
+.port:not(.tab) #s1oh{left:780px;top:360px}
+.port:not(.tab) .s2text p{left:30px;width:460px}
+.port:not(.tab) #s2where{top:850px;font-size:26px}
+.port:not(.tab) #s3h{top:60px}
+.port:not(.tab) .link{left:610px;width:auto;top:190px;text-align:left}
+.port:not(.tab) #s3ulg{transform:translate(20px,-90px)}
+.port:not(.tab) #s4h,.port:not(.tab) #s4y,.port:not(.tab) #s4ph,.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{left:480px}
+.port:not(.tab) #s4h{width:480px}.port:not(.tab) #s4ph{width:480px}.port:not(.tab) #s4ph img{width:480px;height:305px}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:480px}
+.port:not(.tab) #s4p1{top:470px}.port:not(.tab) #s4p2{top:740px}
+.port:not(.tab) #s5h{top:-10px}.port:not(.tab) .status{top:130px}
+.port:not(.tab) #cart{transform:scale(.75)}
+.port:not(.tab) #s6bg,.port:not(.tab) #s6k,.port:not(.tab) #s6m{top:120px}
+.port:not(.tab) #s6ch{top:590px}
+.port:not(.tab) #s6q,.port:not(.tab) #s6no{top:250px}
+.port:not(.tab) #s6fin{white-space:nowrap;font-size:34px;line-height:40px}
+.port:not(.tab) #s6fin br{display:inline}
+.port:not(.tab) #s7h{top:40px}.port:not(.tab) .vname{top:130px}
+.port:not(.tab) #s8t2{top:730px}

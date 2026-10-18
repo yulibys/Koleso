@@ -245,7 +245,7 @@
   S.s1 = (p) => {
     // слово: маленькое → большое; затем вверх (шаг 12 — top 207, шаг 13 — top 68)
     const ws = lerp(96 / 241, 1, ez(sg(p, 0.03, 0.08)));
-    const top = p < 0.39 ? 318 : p < 0.45 ? lerp(318, 207, ez(sg(p, 0.39, 0.45))) : lerp(207, TAB ? -30 : 68, ez(sg(p, 0.45, 0.52)));
+    const top = p < 0.39 ? 318 : p < 0.45 ? lerp(318, 207, ez(sg(p, 0.39, 0.45))) : lerp(207, TAB ? -30 : PORT ? 20 : 68, ez(sg(p, 0.45, 0.52)));
     const PT = PORT ? 0.62 : 1;
     word.style.transform = `translateY(${(top - 68).toFixed(1)}px) scale(${(ws * (PORT ? PS : 1)).toFixed(4)})`;
     const swp = sg(p, 0.62, 0.67);
@@ -330,7 +330,7 @@
     op($('s2sub'), sg(p, 0.5, 0.53));
     const t1 = ez(sg(p, 0.55, 0.62)), t2 = ez(sg(p, 0.62, 0.69)), t3 = ez(sg(p, 0.69, 0.75));
     tx.style.transform = `translateY(${(lerp(0, -224, t1) + lerp(0, -242, t2)).toFixed(1)}px)`;
-    const wx = lerp(1336, 701, t1), wy = lerp(824, 711, t1) + lerp(0, -223, t2) + lerp(0, -67, t3) + (TAB ? lerp(150, -70, t3) : 0);
+    const wx = lerp(1336, 701, t1), wy = lerp(824, 711, t1) + lerp(0, -223, t2) + lerp(0, -67, t3) + (TAB ? lerp(150, -70, t3) : PORT ? lerp(120, -60, t3) : 0);
     put($('s2wheel'), wx, wy, 1, -((1336 - wx) / 278) * 57.3 - sg(p, 0.62, 1) * 1500, sg(p, 0.545, 0.56));
     dr($('s2mo'), sg(p, 0.64, 0.7));
     op($('s2where'), sg(p, 0.76, 0.8));
@@ -353,7 +353,7 @@
     put($('s3man'), mx, 776 - 165, 1, 0, show);
     put($('s3wh'), wx, 601, 1, (wx - w0) / 80 * 57.3, show);
     op($('s3say'), sg(c, 0.08, 0.14) - sg(c, 0.6, 0.66));
-    put($('s3say'), mx + (PORT ? (TAB ? 90 : 150) : 237), PORT ? 380 : 428, PORT ? 0.85 : 1, 0);
+    put($('s3say'), mx + (PORT ? (TAB ? 90 : 60) : 237), PORT ? 380 : 428, PORT ? 0.85 : 1, 0);
     coverSeq($('s3cov'), p, 0.68, 0.76);
   };
 
@@ -468,7 +468,7 @@
     const vis = sg(t, 0.12, 0.25) - sg(t, 0.82, 0.95);
     op(n, vis); ul(n, vis);
     { const v = vehs[cur], RS = PORT ? (TAB ? 0.85 : 0.6) : 1, h = (v.el.offsetHeight || 200) * RS;
-      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 790) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : 130) : Math.max(612 - h - 70, 300);
+      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 790) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : 70) : Math.max(612 - h - 70, 300);
       $('s7say').style.transform = `translate(${(bx - 1082).toFixed(0)}px,${(by - 234).toFixed(0)}px)`;
       // реплика гаснет, когда транспорт доезжает до неё
       const front = 720 + ((v.px === null ? 0 : v.px) + v.w - 720) * RS;
