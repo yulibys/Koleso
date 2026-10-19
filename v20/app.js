@@ -27,7 +27,7 @@
   fit();
   const COARSE = matchMedia('(pointer: coarse)').matches;
   // на сенсорных экранах прокрутка «легче» — растягиваем секции, чтобы сцены шли медленнее
-  $$('.sc').forEach((s) => s.style.setProperty('--len', (s.dataset.len * (COARSE ? 1.45 : 1)).toFixed(2)));
+  $$('.sc').forEach((s) => s.style.setProperty('--len', (s.dataset.len * (COARSE ? 1.3 : 1)).toFixed(2)));
   if (COARSE) root.classList.add('coarse');
   // на телефонах и планшетах «дрожание» линий выключено: SVG-фильтр каждые 140 мс перерисовывает весь экран и тормозит прокрутку
   if (!reduce && !COARSE) { let b = 0; setInterval(() => { root.classList.remove('boil0', 'boil1', 'boil2'); root.classList.add('boil' + (b = (b + 1) % 3)); }, 140); }
@@ -131,13 +131,14 @@
   $('s1disc').innerHTML = W1.disc; $('s1spk').innerHTML = W1.spokes; $('s1rim').innerHTML = W1.rim;
   $('s1sqg').innerHTML = A.squirrel2();
   $('s1bigsq').innerHTML = A.squirrel2();
+  $('rewsqg').innerHTML = A.squirrel2();
   $('s1ohg').innerHTML = FIG.s1oh;
   $('s1stick').innerHTML = A.stick(400);
   // 2
   $('s2rot').innerHTML = A.wheel(278, { seed: 51 });
   $('s2mo').innerHTML = (() => {
     const arc = (R, a0, a1) => { const r = (d) => d * Math.PI / 180, p = (d) => `${(R * Math.cos(r(d))).toFixed(1)} ${(R * Math.sin(r(d))).toFixed(1)}`; return `<path d="M${p(a0)}A${R} ${R} 0 0 1 ${p(a1)}"/>`; };
-    return [[318, 150, 182], [318, 196, 214], [352, 160, 198], [386, 172, 188], [318, -12, 22], [318, 34, 50], [352, -22, 14], [386, -6, 8]].map((v) => arc(...v)).join('');
+    return [[318, 150, 182], [318, 196, 214], [352, 160, 198], [318, -12, 22], [318, 34, 50], [352, -22, 14]].map((v) => arc(...v)).join('');
   })();
   $('s2ulp').innerHTML = FIG.s2ul;
   // 3
@@ -168,12 +169,15 @@
   const CH = A.chariotParts();
   $('s6wheel').innerHTML = CH.wheel; $('s6axle').innerHTML = CH.axle; $('s6body').innerHTML = CH.body; $('s6pole').innerHTML = CH.pole;
   // 7
-  $('s7tr').innerHTML = FIG.s7trees;
   $('s7gr').innerHTML = FIG.s7grass;
   { const t = (k, x, y, sc, bx, by) => `<g transform="translate(${x} ${y}) scale(${sc}) translate(${-bx} ${-by})">${FIG[k]}</g>`;
-    $('s7far').innerHTML = '<g opacity=".5" transform="translate(0 579) scale(1 .42) translate(0 -627)">' + FIG.s1mL + FIG.s1mR + '</g>' + t('treeR', 420, 579, 0.5, 1327, 575) + t('treeL', 1010, 579, 0.45, 128, 586) + A.birds(560, 250, 3, 13) + A.birds(900, 200, 2, 17); }
+    void t; // горы и деревья убраны — смене транспорта ничто не мешает; только птицы по небу
+    const BW = [[40, 120], [170, 300], [300, 90], [95, 430], [380, 230], [520, 60], [610, 330], [880, 300], [960, 70], [1080, 210], [1200, 90], [1290, 330], [1395, 170], [1350, 440], [230, 520], [1180, 500], [740, 40]];
+    const BP = [[470, 150], [640, 300], [820, 120], [960, 260], [520, 420], [900, 440], [720, 470], [990, 520]];
+    $('s7far').innerHTML = '<g class="bd-wide">' + BW.map(([x, y], i) => A.birds(x, y, 1, 11 + i * 7)).join('') + '</g><g class="bd-port">' + BP.map(([x, y], i) => A.birds(x, y, 1, 13 + i * 5)).join('') + '</g>'; }
   $('s7sayg').innerHTML = FIG.s7say;
-  $('s6qg').innerHTML = FIG.s6no; $('s6nog').innerHTML = FIG.s6q;
+  $('s6qg').innerHTML = FIG.s6q; $('s6nog').innerHTML = FIG.s6no;
+  $('s6q').querySelector('svg').setAttribute('viewBox', '61 225 234 124'); $('s6no').querySelector('svg').setAttribute('viewBox', '1145 225 234 124');
   $('s8arrowg').innerHTML = FIG.s8arrow;
   const VW = [[0, 940, 880], [1, 860, 700], [2, 560, 420], [3, 940, 830]];
   const vehs = VW.map(([i, w, vw]) => {
@@ -185,6 +189,7 @@
     $('s7road').appendChild(d);
     return { el: d, w, vw, spins: $$('.spin', d).map((g) => ({ g, cx: +g.dataset.cx, cy: +g.dataset.cy, r: +g.dataset.r })), px: null };
   });
+  const VNAME2 = [['', 'опять она'], ['', 'спицы всё те&nbsp;же'], ['', 'педалей<br>всё ещё нет'], ['', 'он снова<br>уехал без&nbsp;вас']];
   const VNAME = [['Телега', 'медленно,<br>зато верно'], ['Колесница', 'со&nbsp;спицами'], ['Дрезина', 'педалей<br>ещё нет'], ['Автобус', 'он сейчас<br>уедет без&nbsp;вас']];
   // 8
   // финал: одни и те же 12 линий перестраиваются из одного колеса в другое
@@ -241,13 +246,13 @@
 
   /* ── сцены ── */
   const S = {};
-  let hint = false, s2done = false, ending = false, chase = 0, chaseT0 = null;
+  let s1covT = null, lap = 0, hint = false, s2done = false, ending = false, chase = 0, chaseT0 = null;
   const word = $('s1word'), letters = $$('span', word);
   // центры белки на шагах 2–9 из Figma (группа 101×74), затем — внутрь последней «о»
   const HOP = [[111, 29], [76, 128], [229, 204], [399, 303], [562, 342], [729, 347], [831, 378], [988, 346], [1033, 450]];
   const SQ = 0.45; // масштаб маленькой белки (≈101 px шириной)
   // колесо: шаг 10 → 11 → 12 → 13
-  const RING = [[0.32, 1033, 450, 64], [0.39, 1091, 489, 187], [0.45, 750, 516, 187], [0.52, 720, 544, 218]];
+  const RING = [[0.335, 1042.2, 450, 62.6], [0.39, 1091, 489, 187], [0.45, 750, 516, 187], [0.52, 720, 544, 218]];
   // портрет: слово «Колесо» меньше (PS), прыжки белки и первые кольца сжимаются к центру слова
   const pt = (x, y) => (PORT ? [720 + (x - 720) * PS, 450 + (y - 450) * PS] : [x, y]);
   function ringAt(p) {
@@ -268,10 +273,10 @@
     const top = p < 0.39 ? 318 : p < 0.45 ? lerp(318, 207, ez(sg(p, 0.39, 0.45))) : lerp(207, TAB ? -30 : PORT ? 20 : 68, ez(sg(p, 0.45, 0.52)));
     const PT = PORT ? 0.62 : 1;
     word.style.transform = `translateY(${(top - 68).toFixed(1)}px) scale(${(ws * (PORT ? PS : 1)).toFixed(4)})`;
-    const swp = sg(p, 0.62, 0.67);
-    op(word, 1 - swp);
+    const swp = sg(p, 0.64, 0.68);
+    op(word, 1 - sg(p, 0.6, 0.635));
     const cat = $('s1catch'); op(cat, swp > 0 ? 1 : 0); sw(cat, swp);
-    letters[5].style.opacity = (1 - sg(p, 0.31, 0.33) + sg(p, 0.35, 0.39)).toFixed(3);
+    letters[5].style.opacity = (1 - sg(p, 0.31, 0.335) + sg(p, 0.35, 0.39)).toFixed(3);
 
     // колесо
     const [cx0, cy, r] = ringAt(p);
@@ -279,7 +284,7 @@
     const rx = roll < 0.23 ? lerp(720, 876, roll / 0.23) : roll < 0.46 ? lerp(876, 1001, (roll - 0.23) / 0.23) : lerp(1001, 1760, ez((roll - 0.46) / 0.54) * 0.5 + ((roll - 0.46) / 0.54) * 0.5);
     const cx = p < 0.67 ? (PORT ? lerp(cx0, 720, 0) : cx0) : rx;
     const rot = p * 1800 + ((cx - 720) / 218) * 57.3;
-    put($('s1wheel'), cx, cy, r / 220, rot, sg(p, 0.315, 0.33));
+    put($('s1wheel'), cx, cy, r / 220, rot, sg(p, 0.31, 0.335));
     op($('s1disc'), sg(p, 0.46, 0.52)); op($('s1spk'), sg(p, 0.47, 0.53));
 
     // белка
@@ -312,11 +317,11 @@
 
     // палка в колесо
     const zone = $('s1stickzone'), hn = $('s1hint');
-    const live = p > 0.67 && p < 0.76;
-    zone.style.pointerEvents = live ? 'auto' : 'none';
+    zone.style.pointerEvents = 'none';
     put(zone, cx, cy, 1, 0);
-    hn.classList.toggle('on', live && hint);
-    hn.style.transform = `translate(${(cx - 102).toFixed(1)}px,${(387).toFixed(1)}px)`;
+    // подсказка появляется сама, по скроллу, когда колесо уже покатилось
+    hn.classList.toggle('on', p > 0.695 && p < 0.765);
+    hn.style.transform = PORT && !TAB ? 'translate(470px,300px)' : `translate(${(cx - 102).toFixed(1)}px,${(387).toFixed(1)}px)`;
 
     // не успели / оно укатилось
     const n1 = sg(p, 0.77, 0.79), n2 = sg(p, 0.79, 0.81);
@@ -330,8 +335,20 @@
     big.style.transform = `translate(${bx.toFixed(1)}px,${(250).toFixed(1)}px) scale(${PORT ? (TAB ? 1.05 : 0.5) : 1}) scaleX(${out > 0 ? 1 : -1})`;
     big.classList.toggle('alt', ((inn > 0 && inn < 1) || (out > 0 && out < 1)) && Math.floor(performance.now() / 110) % 2 === 1);
     op($('s1oh'), sg(p, 0.84, 0.85) - sg(p, 0.885, 0.895));
+    // после перемотки от счётчика — заставка «Попробуй всё-таки догнать колесо»
+    { const cv = $('s1cov'), on = s2done && p > 0.9;
+      cv.style.transform = on ? 'none' : 'translateY(100%)';
+      sw($('s1covt'), on && s1covT !== null ? cl((performance.now() - s1covT) / 1400) : on ? 1 : 0); }
   };
 
+  // прыжки белки по слову проходят быстрее: участок 0.07–0.31 занимает на 40% меньше прокрутки
+  { const f = S.s1, A0 = 0.07, A1 = 0.31, K = 0.6;
+    S.s1 = (q) => {
+      const L = parseFloat(getComputedStyle($('s1')).getPropertyValue('--len')) || 11.85, Lo = L * 13 / 11.85;
+      const R = L - 1, Ro = Lo - 1, x = q * R, a = A0 * Ro, b = (A1 - A0) * Ro * K;
+      const p = x < a ? x / Ro : x < a + b ? A0 + (x - a) / b * (A1 - A0) : A1 + (x - a - b) / Ro;
+      f(Math.min(1, p));
+    }; }
   S.s2 = (p) => {
     const c = ez(sg(p, 0.05, 0.28));
     const i = Math.round(c * 5175);
@@ -364,12 +381,12 @@
     { // на телефоне подчёркивание со стрелкой подгоняем под длину «побежать за ним»
       const g = $('s3ulg'), l = $('s3run'), key = innerWidth + 'x' + innerHeight + (document.fonts ? document.fonts.status : '');
       if (g._fk !== key) { g._fk = key;
-        if (PORT && !TAB) {
+        {
           const r = document.createRange(); r.selectNodeContents(l); const q = r.getBoundingClientRect(), lr = l.getBoundingClientRect(), sc = lr.width / l.offsetWidth;
           const L = l.offsetLeft + (q.left - lr.left) / sc, R = L + q.width / sc, B = l.offsetTop + (q.bottom - lr.top) / sc;
-          const sx = (R - L + 18) / 191.5, sy = parseFloat(getComputedStyle(l).fontSize) / 24;
-          g.style.transform = `translate(${(L - 589.8 * sx).toFixed(1)}px,${(B + 9 * sy - 316 * sy).toFixed(1)}px) scale(${sx.toFixed(3)},${sy.toFixed(3)})`;
-        } else g.style.transform = '';
+          const sx = (R - L + 6) / 191.5, sy = parseFloat(getComputedStyle(l).fontSize) / 24;
+          g.style.transform = `translate(${(L - 589.8 * sx).toFixed(1)}px,${(B + 2 * sy - 316 * sy).toFixed(1)}px) scale(${sx.toFixed(3)},${sy.toFixed(3)})`;
+        }
       } }
     const show = sg(p, 0.07, 0.12);
     if (chaseT0 !== null) chase = cl((performance.now() - chaseT0) / 2800);
@@ -410,13 +427,13 @@
   const P = { wheel: 0, axle: 0, body: 0, load: 0, ox: 0 };
   const cart = $('cart');
   function sayL() {
-    if (!Object.values(P).some(Boolean)) return 'Начните с&nbsp;колеса. С&nbsp;чего же ещё?';
+    if (!Object.values(P).some(Boolean)) return lap ? 'Снова с&nbsp;колеса. Порядок вы уже знаете' : 'Начните с&nbsp;колеса. С&nbsp;чего же ещё?';
     if (!P.wheel) return 'Без колеса её можно только тащить. Кряхтя.';
-    if (!P.axle) return 'держаться не&nbsp;за&nbsp;что&nbsp;— оси нет';
+    if (!P.axle) return 'Держаться не&nbsp;за&nbsp;что&nbsp;— оси нет';
     if (!P.body) return 'Колёса крутятся, а&nbsp;груз лежит на&nbsp;земле';
     if (!P.ox) return 'Тянуть некому. Самим впрягаться?';
     if (!P.load) return 'Везём воздух. Очень разумно.';
-    return 'Готово. Теперь быка надо кормить, а&nbsp;ось&nbsp;— смазывать';
+    return lap ? 'Готово. Быка по-прежнему надо кормить' : 'Готово. Теперь быка надо кормить, а&nbsp;ось&nbsp;— смазывать';
   }
   let awayT = null;
   function labUpd() {
@@ -431,6 +448,8 @@
   }
   // если читатель не нажимает кнопки, повозка собирается сама по прокрутке; нажатая кнопка дальше управляется только читателем
   const touched = {};
+  const EXP6P = { s6wheel: [-150, -440], s6axle: [140, -470], s6body: [-90, -640], s6pole: [-60, -540] };
+  const EXP6 = { s6wheel: [-300, -90], s6axle: [160, 30], s6body: [-170, -230], s6pole: [330, -190] };
   const AUTO = [['wheel', 0.16], ['axle', 0.23], ['body', 0.30], ['ox', 0.37], ['load', 0.44]];
   $$('#parts .part').forEach((x) => x.addEventListener('click', () => { const k = x.dataset.p; touched[k] = true; P[k] = P[k] ? 0 : 1; labUpd(); }));
   labUpd();
@@ -444,6 +463,7 @@
     if (ch) labUpd();
     // собранная повозка уезжает только по прокрутке — экран не сменится, пока она не скроется за краем
     const ready = P.wheel && P.axle && P.body && P.ox && P.load;
+    if (ready && Object.keys(touched).length && p < 0.44) shortcut($('s5'), p, 0.46);
     const rig = cart.querySelector('.rig');
     if (rig) { rig.style.transition = 'none'; rig.style.transform = ready ? `translateX(${(1500 * sg(p, 0.46, 0.73)).toFixed(1)}px)` : ''; }
     coverSeq($('s5cov'), p, 0.74, 0.82);
@@ -452,27 +472,32 @@
   S.s6 = (p) => {
     const h = $('s6h');
     sw(h, sg(p, 0.02, 0.13));
-    h.style.transform = `translateY(${lerp(0, -256, ez(sg(p, 0.13, 0.18))).toFixed(1)}px)`;
-    const f = sg(p, 0.18, 0.24);
-    ['s6bg', 's6m', 's6k', 's6ch'].forEach((id) => op($(id), f));
+    { const t = ez(sg(p, 0.13, 0.2)); h.style.transform = `translateY(${lerp(0, -520, t).toFixed(1)}px)`; h.style.opacity = (1 - sg(p, 0.14, 0.19)).toFixed(3); }
+    const f = sg(p, 0.17, 0.21);
+    op($('s6ch'), f); ['s6bg', 's6m', 's6k'].forEach((id) => op($(id), sg(p, 0.33, 0.42)));
     const s = 1.55;
-    const s6s = PORT ? (TAB ? 1.4 : 1.15) : s; put($('s6k'), PORT ? (TAB ? 430 : 540) : 220, 839 - 145 * s6s, s6s, 0); put($('s6m'), PORT ? (TAB ? 1010 : 900) : 1220, 839 - 140 * s6s, s6s, 0);
+    const s6s = PORT ? (TAB ? 1.4 : 1.15) : s; put($('s6m'), PORT ? (TAB ? 430 : 540) : 220, 839 - 140 * s6s, s6s, 0); put($('s6k'), PORT ? (TAB ? 1010 : 900) : 1220, 839 - 145 * s6s, s6s, 0);
     const win = (a, b) => sg(p, a, a + 0.02) - sg(p, b - 0.02, b);
-    const Q = [['колесо — это колесница?', 0.26, 0.36], ['а&nbsp;ось?', 0.38, 0.48], ['а&nbsp;кузов?', 0.50, 0.60]];
+    // сцена появляется с колесницей, разобранной на части, и вопросом внизу; по скроллу части собираются, потом диалог
+    { const ex = 1 - ez(sg(p, 0.29, 0.41));
+      const E = PORT && !TAB ? EXP6P : EXP6;
+      for (const id in E) $(id).style.translate = `${(E[id][0] * ex).toFixed(1)}px ${(E[id][1] * ex).toFixed(1)}px`;
+      op($('s6name'), sg(p, 0.2, 0.23) - sg(p, 0.29, 0.32)); ul($('s6name'), sg(p, 0.22, 0.26)); }
+    const Q = [['колесо — это колесница?', 0.5, 0.58], ['а&nbsp;ось?', 0.6, 0.68], ['а&nbsp;кузов?', 0.7, 0.78]];
     let qi = 0;
     Q.forEach((q, i) => { if (p >= q[1]) qi = i; });
     const qt = $('s6qt');
     if (qt.dataset.i !== String(qi)) { qt.dataset.i = qi; qt.innerHTML = Q[qi][0]; }
     op($('s6q'), win(Q[qi][1], Q[qi][2]));
-    op($('s6no'), Math.max(win(0.30, 0.36), win(0.42, 0.48), win(0.54, 0.60)));
-    const w = ez(sg(p, 0.32, 0.38)), ax = ez(sg(p, 0.44, 0.5)), bd = ez(sg(p, 0.56, 0.62));
+    op($('s6no'), Math.max(win(0.53, 0.58), win(0.63, 0.68), win(0.73, 0.78)));
+    const w = ez(sg(p, 0.54, 0.59)), ax = ez(sg(p, 0.64, 0.69)), bd = ez(sg(p, 0.74, 0.79));
     $('s6wheel').style.transform = `translateX(${(-700 * w).toFixed(1)}px)`;
     const spin = $('s6wheel').querySelector('.spin');
     spin.style.transform = `rotate(${(-w * 700).toFixed(1)}deg)`;
     $('s6axle').style.transform = `translateY(${(400 * ax).toFixed(1)}px)`;
     $('s6body').style.transform = $('s6pole').style.transform = `translateX(${(900 * bd).toFixed(1)}px)`;
-    op($('s6end'), sg(p, 0.68, 0.72));
-    sw($('s6fin'), sg(p, 0.73, 0.85));
+    op($('s6end'), sg(p, 0.82, 0.85));
+    sw($('s6fin'), sg(p, 0.86, 0.95));
   };
 
   S.s7 = (p) => {
@@ -494,12 +519,12 @@
       if (i === 3) { const rn = v.el.querySelector('g[transform^="translate(-110"]'); if (rn) rn.setAttribute('transform', `translate(${(-110 - 260 * t).toFixed(1)} 132)`); }
     });
     const n = $('s7n');
-    if (n.dataset.i !== String(cur)) { n.dataset.i = cur; n.firstChild.nodeValue = VNAME[cur][0]; $('s7c').innerHTML = VNAME[cur][1]; }
+    if (n.dataset.i !== String(cur)) { n.dataset.i = cur; n.firstChild.nodeValue = VNAME[cur][0]; $('s7c').innerHTML = (lap ? VNAME2 : VNAME)[cur][1]; }
     const t = sg(p, WN[cur][0], WN[cur][1]);
     const vis = sg(t, 0.12, 0.25) - sg(t, 0.82, 0.95);
     op(n, vis); ul(n, vis);
     { const v = vehs[cur], RS = PORT ? (TAB ? 0.85 : 0.74) : 1, h = (v.el.offsetHeight || 200) * RS;
-      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 735) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 60 : -60) : Math.max(612 - h - 70, 300);
+      const bx = PORT ? Math.min(720 + v.w * RS / 2 - 120, TAB ? 930 : 735) : Math.min(720 + v.w / 2 - 150, 1000), by = PORT ? 612 - h - (TAB ? 110 : -10) : Math.max(612 - h - 150, 250);
       $('s7say').style.transform = `translate(${(bx - 1082).toFixed(0)}px,${(by - 234).toFixed(0)}px)` + (PORT && !TAB ? ' scale(1.3)' : '');
       // реплика гаснет, когда транспорт доезжает до неё
       const front = 720 + ((v.px === null ? 0 : v.px) + v.w - 720) * RS;
@@ -520,7 +545,7 @@
     let k = 0;
     for (let i = 0; i < 6; i++) if (p >= B[i] - 0.0125) k = i;
     const n10 = turns % 10, n100 = turns % 100, wrd = n10 >= 2 && n10 <= 4 && (n100 < 12 || n100 > 14) ? 'раза' : 'раз';
-    const cap = k === 4 ? `а это колесо вы прокрутили ${turns.toLocaleString('ru-RU')} ${wrd}` : CAPS[k];
+    const cap = k === 0 && lap ? 'то самое, узнали?' : k === 4 ? `а это колесо вы прокрутили ${turns.toLocaleString('ru-RU')} ${wrd}` : CAPS[k];
     const capEl = $('s8cap');
     if (capEl.firstChild.nodeValue !== cap) capEl.firstChild.nodeValue = cap;
     const ct = (p - (B[k] - 0.0125)) / 0.07;
@@ -530,12 +555,12 @@
     const up = ez(sg(p, 0.64, 0.68));
     op($('s8wh'), spinOn ? 0 : 1);
     $('s8wh').style.transform = `translateY(${(90 * (1 - up)).toFixed(1)}px) rotate(${(sg(p, 0.63, 1) * 1440 + (ending ? performance.now() / 6 : 0)).toFixed(1)}deg)`;
-    const outT = sg(p, 0.82, 0.86);
+    const outT = sg(p, 0.84, 0.87);
     const t1 = $('s8t1');
     op(t1, (p > 0.66 ? 1 : 0) - outT); sw(t1, sg(p, 0.66, 0.74));
     op($('s8t2'), sg(p, 0.72, 0.76) - outT);
     op($('s8arrow'), 0);
-    if (p > 0.95 && !ending) startEnding();
+    if (p > 0.88 && !ending) startEnding();
   };
 
   /* ── перемотки ── */
@@ -548,37 +573,53 @@
       const t = cl((now - t0) / dur);
       const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
       scrollTo(0, from + (to - from) * e);
+      $('rewsq').classList.toggle('alt', Math.floor(now / 110) % 2 === 1);
       tick();
       if (t < 1) requestAnimationFrame(step);
       else { root.classList.remove('rewinding', 'locked'); done && done(); }
     })(t0);
   }
   const posIn = (sec, p) => sec.offsetTop + p * (sec.offsetHeight - H);
+  function rewTxt(t) { $('rewt').innerHTML = t; }
   function rewindToS1() {
     $('live').textContent = 'Перемотка назад';
-    scrollAnim(posIn($('s1'), 0.95), 4200, () => { $('s2').hidden = true; sizes.clear(); $('live').textContent = ''; tick(); });
+    rewTxt(lap ? 'а у&nbsp;тебя опять колесо убежало' : 'а у&nbsp;тебя же колесо убежало');
+    scrollAnim(posIn($('s1'), 0.95), 1500, () => { $('s2').hidden = true; sizes.clear(); $('live').textContent = ''; s1covT = performance.now(); tick(); });
   }
   let endTimer = null, spinOn = false;
+  function applyLap() {
+    const T = (id, t) => { const e = $(id); if (e && e.firstChild) e.firstChild.nodeValue = t; };
+    T('s1catch', 'Ещё раз!'); T('s1n1', 'опять!'); T('s1n2', 'как и в тот раз');
+    $('s1oh').querySelector('span').textContent = 'опять?!';
+    $('s2where').textContent = 'вы ведь знаете, где оно?';
+    $('s3run').textContent = 'побежать ещё раз';
+    $('s3say').querySelector('span').textContent = 'в тот раз почти';
+    $('s6nt').textContent = 'И снова: что такое колесница?';
+    $('s8t2').textContent = 'И снова всё повторяется';
+    [$('s1n1'), $('s1n2'), $('s6name')].forEach((e) => { e._fk = null; }); $('s3ulg')._fk = null;
+  }
   $('spinw').innerHTML = A.wheel(170, { seed: 93 });
-  function spin(on) { spinOn = on; $('spinov').classList.toggle('on', on); root.classList.toggle('spinning', on); $('rew').querySelector('em').innerHTML = on ? 'вы возвращаетесь<br class="ph"> в начало' : 'вернёмся к колесу'; }
+  function spin(on) { spinOn = on; $('spinov').classList.toggle('on', on); root.classList.toggle('spinning', on); if (on) rewTxt(lap ? 'и опять в&nbsp;начало' : 'снова в&nbsp;начало'); }
   function cancelEnding() { if (endTimer) { clearTimeout(endTimer); endTimer = null; ending = false; } }
   function startEnding() {
     ending = true;
     endTimer = setTimeout(() => {
       endTimer = null;
       spin(true);
-      scrollAnim(0, 5200, () => {
+      scrollAnim(0, 1500, () => {
         spin(false);
+        $('endsub').innerHTML = lap ? 'и снова здесь.<br>колесо не&nbsp;остановить' : 'вы вернулись туда, откуда начали.<br>теперь тебя запомнили, проверь сам';
+        lap++; applyLap();
         const end = $('end');
         end.hidden = false; end.classList.remove('out');
         const ew = $('endw'), t0 = performance.now();
         (function swp(now) { const t = cl((now - t0) / 1700); sw(ew, t); if (t < 1) requestAnimationFrame(swp); })(t0);
-        $('s2').hidden = false; s2done = false;
+        $('s2').hidden = false; s2done = false; s1covT = null;
         for (const k in P) { P[k] = 0; delete touched[k]; }
-        labUpd(); chase = 0; chaseT0 = null; s3jump = false; sizes.clear();
+        labUpd(); chase = 0; chaseT0 = null; s3jump = false; unshort($('s3')); unshort($('s5')); sizes.clear();
         setTimeout(() => { end.classList.add('out'); setTimeout(() => { end.hidden = true; ending = false; tick(); }, 800); }, 5500);
       });
-    }, 1800);
+    }, 500);
   }
   addEventListener('wheel', (e) => { if (endTimer && e.deltaY < 0) cancelEnding(); }, { passive: true });
   addEventListener('keydown', (e) => { if (e.key === 'Escape') cancelEnding(); });
@@ -592,10 +633,21 @@
   zone.addEventListener('click', () => { hint = !hint; });
   zone.addEventListener('focus', () => { hint = true; });
   zone.addEventListener('blur', () => { hint = false; });
-  $('s3run').addEventListener('click', () => { if (chaseT0 === null) chaseT0 = performance.now(); });
+  $('s3run').tabIndex = -1;
 
   /* ── главный цикл ── */
   const secs = $$('.sc');
+  // если читатель собрал повозку кнопками или нажал «побежать за ним», остаток сцены не тянется:
+  // секция укорачивается так, чтобы до ухода осталось столько же прокрутки, сколько в варианте «по скроллу»
+  function shortcut(sec, p0, to) {
+    if (sec._map || p0 >= to) return;
+    const r = sec.getBoundingClientRect(), Hs = r.height, scrolled = -r.top, rangeOld = Hs - H;
+    if (scrolled <= 0) return;
+    const R2 = scrolled + (1 - to) * rangeOld, len = parseFloat(getComputedStyle(sec).getPropertyValue('--len')) || +sec.dataset.len;
+    sec._map = { a: scrolled / R2, p0, to, len0: len };
+    sec.style.setProperty('--len', (len * (R2 + H) / Hs).toFixed(3));
+  }
+  function unshort(sec) { if (sec._map) { sec.style.setProperty('--len', sec._map.len0); sec._map = null; } }
   function tick() {
     for (const sec of secs) {
       if (sec.hidden) continue;
@@ -603,7 +655,8 @@
       if (r.top > H || r.bottom < 0) continue;
       const stage = sec.firstElementChild;
       
-      const target = cl(-r.top / (r.height - H));
+      let target = cl(-r.top / (r.height - H));
+      if (sec._map) { const m = sec._map; target = target < m.a ? target / m.a * m.p0 : m.to + (target - m.a) / (1 - m.a) * (1 - m.to); }
       // на телефоне и планшете прогресс догоняет прокрутку плавно, без рывков от резкого свайпа
       let p = target;
       if (COARSE && !root.classList.contains('rewinding')) {
@@ -623,9 +676,10 @@
   (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
     $$('.sweep').forEach(splitLines);
     sizes.clear(); restore(); loop();
+    requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove('boot')));
     // первое слово проявляется слева направо при открытии
     const t0 = performance.now(), w = $('s1word');
-    (function swp(now) { const t = cl((now - t0) / 1900); if (scrollY < 10) sw(w, t); else sw(w, 1); if (t < 1) requestAnimationFrame(swp); })(t0);
+    void t0; sw(w, 1); w.classList.add('in');
   });
   window.__tick = tick;
 })();

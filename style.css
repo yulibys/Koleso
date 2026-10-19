@@ -1,6 +1,6 @@
 /* «Колесо» v20. Тёмный экран и кремовая бумага, рисунки-гравюры, Alegreya + DANCEPARTNER.
    Координаты элементов — по кадрам 1440×900 из Figma «Колсео». */
-@font-face{font-family:"Dance";src:url(fonts/dance_partner.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Dance";src:url(fonts/dance_partner_fix.ttf) format("truetype");font-display:block}
 :root{
   --dark:#16130f;--cream:#e9e9d6;--paper:#e9e9d6;--ink:#16130f;--dim:#a49d8c;
   --serif:"Alegreya",Georgia,"Times New Roman",serif;--dance:"Dance","Alegreya",Georgia,serif;
@@ -703,3 +703,146 @@ html.port:not(.tab).spinning .rew em{top:calc(50% + 250px * var(--k,1))}
 .port:not(.tab) #s4h{font-size:100px;line-height:94px}
 .port:not(.tab) #s4h{top:-140px}.port:not(.tab) #s4y{top:58px}.port:not(.tab) #s4ph{top:105px}
 .port:not(.tab) #s4p1{top:525px}.port:not(.tab) #s4p2{top:808px}
+/* v55 — фидбек Пащенко */
+/* сборка → разборка: остаётся название целого */
+#s5name{left:0;width:1440px;text-align:center;top:300px;font:400 64px/1 var(--serif);opacity:0;pointer-events:none}
+#s5name span{position:relative}
+#s5name .ul{position:absolute;left:50%;top:100%;width:200px;height:16px;margin-top:10px}
+#s5name{display:block}
+#cart .p{transition:opacity .45s,transform .6s cubic-bezier(.3,1.4,.5,1)}
+.port #s5name{top:330px}.port:not(.tab) #s5name{top:330px;font-size:78px}
+/* Нагасена слева спрашивает, царь справа отвечает; подводка уходит в маленькую строку */
+#s6h{transform-origin:50% 0}
+#s6q{left:61px}#s6no{left:1145px}
+#s6q span{left:6px;top:6px;width:206px;height:94px}
+#s6no span{left:22px;top:6px;width:206px;height:94px}
+#s6q,#s6no{top:205px;transform:scale(1.3)}
+#s6q{transform-origin:0 100%}#s6no{transform-origin:100% 100%}
+#s6q span,#s6no span{font-size:25px;line-height:28px}
+.port #s6q{left:460px}.port #s6no{left:750px}
+.tab #s6q{left:330px}.tab #s6no{left:870px}
+.port:not(.tab) #s6q,.port:not(.tab) #s6no{transform:scale(1.12)}
+/* перемотка: явно сказано, что она идёт сама */
+.rew small{position:absolute;left:16px;right:16px;bottom:calc(70px * var(--k,1) + env(safe-area-inset-bottom,0px));text-align:center;font:400 max(17px,calc(26px * var(--k,1)))/1.3 var(--serif);color:var(--cream);mix-blend-mode:difference;opacity:.9}
+.rew em br.ph{display:none}
+#s5name{top:231px}.port #s5name{top:180px}.port:not(.tab) #s5name{top:150px}.tab #s5name{top:130px}
+#s6q svg,#s6no svg{transform:scaleX(-1)}
+#s6q span{left:22px}#s6no span{left:6px}
+#s5name{top:222px}
+#s5name{top:205px}.port #s5name{top:180px}.port:not(.tab) #s5name{top:150px}.tab #s5name{top:130px}
+#s5name{top:150px;font-size:72px}.port #s5name{top:60px}.port:not(.tab) #s5name{top:20px;font-size:86px}.tab #s5name{top:40px}
+.endsub{left:400px;width:640px}.port .endsub{left:440px;width:560px}.port:not(.tab) .endsub{font-size:30px;line-height:34px;text-wrap:balance}
+/* перемотка снова тёмно-серая: под полосами тёмная вуаль, сцены лишь просвечивают */
+.rew{background:rgba(22,19,15,.86)}
+/* v57 */
+html.boot .stage>.cv,html.boot .endcard{visibility:hidden}
+/* колесница распадается, остаётся имя */
+#s6name{left:0;width:1440px;text-align:center;top:405px;font:400 44px/1 var(--serif);opacity:0;pointer-events:none}
+#s6name span{position:relative}
+#s6name .ul{position:absolute;left:50%;top:100%;width:200px;height:16px;margin-top:8px}
+.port #s6name{top:520px;font-size:48px}.port:not(.tab) #s6name{top:560px;font-size:52px}.tab #s6name{top:520px}
+/* перемотка: темнее, по бокам заметки от рассказчика */
+.rew{background:rgba(22,19,15,.94)}
+.rew small{display:none}
+.rewn{position:absolute;top:50%;font:400 max(20px,calc(30px * var(--k,1)))/1.2 var(--serif);color:var(--cream);white-space:nowrap}
+.rewn svg{position:absolute;left:0;top:100%;width:100%;height:14px;margin-top:4px;overflow:visible}
+.rewn path{--d:1;stroke:var(--cream);stroke-width:2;fill:none}
+#rewl{left:7%;transform:translateY(-50%) rotate(-3deg)}
+#rewr{right:7%;transform:translateY(-50%) rotate(2deg)}
+html.port .rewn{white-space:normal;max-width:44%}
+html.port #rewl{top:16%;left:8%}
+html.port #rewr{top:auto;bottom:12%;right:8%;text-align:right}
+#s6name{top:370px}
+/* v58: подпись под разобранной колесницей */
+#s6name{top:785px;font-size:24px;line-height:1.2}
+#s6name .ul{margin-top:6px;height:14px}
+.port #s6name{top:930px;font-size:30px}.port:not(.tab) #s6name{top:975px;font-size:34px}.tab #s6name{top:950px}
+/* v59 */
+.bd-port{display:none}.port .bd-port{display:inline}.port .bd-wide{display:none}
+/* перемотка: треугольники выше, «вернёмся к колесу» по центру, ниже две строки с подчёркиванием */
+.rew b{transform:translate(-50%,-125%)}
+.rew em{top:calc(50% - 6px);font-size:max(26px,calc(34px * var(--k,1)))}
+.rewn,#rewl,#rewr{left:50%;right:auto;top:auto;bottom:auto;transform:translateX(-50%);text-align:center;white-space:nowrap;max-width:none;font:400 max(19px,calc(26px * var(--k,1)))/1.2 var(--serif)}
+#rewl{top:calc(50% + max(60px,calc(80px * var(--k,1))))}
+#rewr{top:calc(50% + max(104px,calc(130px * var(--k,1))))}
+html.port .rewn,html.port #rewl,html.port #rewr{white-space:nowrap;max-width:none;text-align:center;left:50%;right:auto;bottom:auto}
+html.port #rewl{top:calc(50% + 70px)}html.port #rewr{top:calc(50% + 112px)}
+/* финальная перемотка: колесо сверху, под ним треугольники и надписи */
+html.spinning .rew b{transform:translate(-50%,0)}
+html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
+html.spinning #rewl{top:calc(50% + 190px * var(--k,1) + max(54px,calc(70px * var(--k,1))))}
+html.spinning #rewr{top:calc(50% + 190px * var(--k,1) + max(96px,calc(118px * var(--k,1))))}
+html.port:not(.tab).spinning .rew em{top:calc(50% + 230px * var(--k,1))}
+html.port:not(.tab).spinning #rewl{top:calc(50% + 230px * var(--k,1) + 56px)}
+html.port:not(.tab).spinning #rewr{top:calc(50% + 230px * var(--k,1) + 96px)}
+.rew em br.ph{display:none!important}
+/* v60 */
+/* вступление: слово проявляется мягко, без «срезанного» края */
+#s1word{filter:opacity(0)}
+#s1word.in{animation:wordIn 1.1s ease forwards}
+@keyframes wordIn{to{filter:opacity(1)}}
+/* перемотка: темнее; треугольники выше и ближе; две строки тем же кеглем, что и «вернёмся к колесу» */
+.rew{background:rgba(22,19,15,.97)}
+.rew b{transform:translate(-50%,-150%);letter-spacing:-.32em;padding-right:.32em}
+.rew em{top:calc(50% - 40px);font-size:max(26px,calc(36px * var(--k,1)));line-height:1.2}
+.rewn,#rewl,#rewr{font-size:max(26px,calc(36px * var(--k,1)))}
+#rewl{top:calc(50% + max(60px,calc(70px * var(--k,1))))}
+#rewr{top:calc(50% + max(104px,calc(124px * var(--k,1))))}
+html.port #rewl{top:calc(50% + 60px)}html.port #rewr{top:calc(50% + 104px)}
+/* финальная: колесо, треугольники и «снова в начало» выше */
+.spinov{transform:translate(-50%,calc(-50% - 190px * var(--k,1)))}
+html.spinning .rew b{top:calc(50% - 10px * var(--k,1));transform:translate(-50%,0)}
+html.spinning .rew em{top:calc(50% + 80px * var(--k,1))}
+html.spinning #rewl{top:calc(50% + 80px * var(--k,1) + max(76px,calc(100px * var(--k,1))))}
+html.spinning #rewr{top:calc(50% + 80px * var(--k,1) + max(120px,calc(154px * var(--k,1))))}
+html.port:not(.tab).spinning .rew em{top:calc(50% + 80px * var(--k,1))}
+html.port:not(.tab).spinning #rewl{top:calc(50% + 80px * var(--k,1) + 70px)}
+html.port:not(.tab).spinning #rewr{top:calc(50% + 80px * var(--k,1) + 114px)}
+/* вопрос про колесницу — в центре кадра */
+#s6name{top:410px;font-size:30px}
+.port #s6name{top:470px;font-size:34px}.port:not(.tab) #s6name{top:470px;font-size:38px}.tab #s6name{top:470px}
+/* облачко монаха: плотнее строки, текст чуть выше */
+#s6q span{line-height:22px;top:0}
+.port:not(.tab) #s6q span{line-height:26px}
+.port:not(.tab) #s6name{top:620px}
+.port:not(.tab) #s6name{top:760px}
+/* v61: выравнивание по ширине, как в Figma (Justified) */
+#s2sub{text-align:justify;text-align-last:justify}
+.para{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+#s6h,#s6h .lt{text-align:justify;text-align-last:justify}
+#s6h.lined .lt{display:block}
+.port:not(.tab) .s2text p{left:-5px;width:530px;font-size:28px}
+/* v62: перемотка — бегущая белка и фраза с подчёркиванием */
+.spinov{display:none!important}
+#rewsq{position:absolute;left:50%;top:50%;width:max(220px,calc(300px * var(--k,1)));height:auto;aspect-ratio:244/202;transform:translate(-50%,-90%);color:var(--cream);stroke:var(--cream);overflow:visible}
+.rew em,html.spinning .rew em,html.port:not(.tab).spinning .rew em{left:50%;right:auto;top:calc(50% + max(24px,calc(40px * var(--k,1))));transform:translateX(-50%);display:inline-block;white-space:nowrap;font:400 max(24px,calc(34px * var(--k,1)))/1.2 var(--serif);color:var(--cream);mix-blend-mode:normal}
+.rew em .ul{position:absolute;left:0;top:100%;width:100%;height:16px;margin-top:8px;overflow:visible}
+.rew em .ul path{--d:1;stroke:var(--cream);stroke-width:2.4;fill:none}
+/* заставка после первой перемотки */
+#s1cov{z-index:5}
+#s1covt{white-space:nowrap}.port:not(.tab) #s1covt{font-size:62px;line-height:66px}
+/* v63 */
+.para{text-align:left;-webkit-hyphens:manual;hyphens:manual}
+.port:not(.tab) .para{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+#s6h.lined .lt{padding-block:0;margin-block:0}
+#s6h{line-height:60px}.port #s6h{line-height:1.05}
+#s6q,#s6no{top:120px}
+#s6q{left:230px}#s6no{left:975px}
+.port #s6q{left:470px}.port #s6no{left:740px}
+.port:not(.tab) #s6q,.port:not(.tab) #s6no{top:170px}
+.tab #s6q,.tab #s6no{top:170px}.tab #s6q{left:400px}.tab #s6no{left:800px}
+#s8t2{left:420px;width:600px;text-align:center}
+.port #s8t2{left:440px;width:560px}.tab #s8t2{left:310px;width:820px}
+.port:not(.tab) #s6q{left:445px}.port:not(.tab) #s6no{left:760px}
+.word span,#s1word span{padding:0 .08em;margin:0 -.08em}
+.word,#s1word,#s1catch,.dance{text-rendering:geometricPrecision}
+/* v64 */
+#s3run{pointer-events:none;cursor:default}
+#s3ulg>*:not(:first-child){display:none}
+#s2where{white-space:nowrap}
+/* v65: буквы — обычные строчные элементы без собственных рамок, ничего не обрезается */
+.word span,#s1word span{display:inline;padding:0;margin:0}
+#s1word{filter:none;color:transparent}
+#s1word.in{animation:wordIn2 1.1s ease forwards}
+@keyframes wordIn2{from{color:transparent}to{color:var(--cream)}}
+#s3run,.port #s3run,.port:not(.tab) #s3run,.tab #s3run{left:0;width:1440px;text-align:center}
