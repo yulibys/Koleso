@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Движок сцен и звуки (app.js)"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # sayL()
@@ -17,4 +17,4 @@ tags:
 - [[upd()]] - `calls` [EXTRACTED]
 - [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

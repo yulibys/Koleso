@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.12
-members: 32
+cohesion: 0.11
+members: 36
 ---
 
 # Сборка, источники, финал
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 36 nodes
 
 ## Members
 - [[dot-s1()]] - code - v20/app.js
@@ -19,6 +19,7 @@ members: 32
 - [[dot-s7()]] - code - v20/app.js
 - [[dot-s8()]] - code - v20/app.js
 - [[S]] - code - v20/app.js
+- [[applyLap()]] - code - v20/app.js
 - [[balance()]] - code - v20/app.js
 - [[cancelEnding()]] - code - v20/app.js
 - [[cover()]] - code - v20/app.js
@@ -31,16 +32,19 @@ members: 32
 - [[nextCover()]] - code - v20/app.js
 - [[put()]] - code - v20/app.js
 - [[restore()]] - code - v20/app.js
+- [[rewTxt()]] - code - v20/app.js
 - [[rewindToS1()]] - code - v20/app.js
 - [[ringAt()]] - code - v20/app.js
 - [[ringAt0()]] - code - v20/app.js
 - [[sayL()]] - code - v20/app.js
 - [[scrollAnim()]] - code - v20/app.js
+- [[shortcut()]] - code - v20/app.js
 - [[spin()]] - code - v20/app.js
 - [[splitLines()]] - code - v20/app.js
 - [[startEnding()]] - code - v20/app.js
 - [[textOut()]] - code - v20/app.js
 - [[tick()]] - code - v20/app.js
+- [[unshort()]] - code - v20/app.js
 - [[v20app.js]] - code - v20/app.js
 
 ## Live Query (requires Dataview plugin)

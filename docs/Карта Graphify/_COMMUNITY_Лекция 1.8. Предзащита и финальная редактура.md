@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # Лекция 1.8. Предзащита и финальная редактура
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[re]] - concept
-- [[update.py]] - code - update.py
+- [[boil0–2 «дрожь линии» filters (feTurbulence)]] - code - src/body.html
 
 ## Live Query (requires Dataview plugin)
 

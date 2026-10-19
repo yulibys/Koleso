@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Движок сцен и звуки (app.js)"
+community: "Раскадровка и двери (1.3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Раскадровка_и_двери_13
 ---
 
 # math
@@ -14,4 +14,4 @@ tags:
 - [[batten()]] - `calls` [EXTRACTED]
 - [[wheel()]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/concept #graphify/EXTRACTED #community/Раскадровка_и_двери_13

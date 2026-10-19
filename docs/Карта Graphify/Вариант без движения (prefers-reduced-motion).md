@@ -1,11 +1,11 @@
 ---
 source_file: "docs/MAP.md"
 type: "rationale"
-community: "Журнал решений"
+community: "Интерактив и проверка читателем"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # Вариант без движения (prefers-reduced-motion)
@@ -15,4 +15,4 @@ tags:
 - [[Лекция 1.6. Управление вниманием первый экран, паузы]] - `references` [EXTRACTED]
 - [[Уменьшение движения и неподвижная версия]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Журнал_решений
+#graphify/rationale #graphify/INFERRED #community/Интерактив_и_проверка_читателем

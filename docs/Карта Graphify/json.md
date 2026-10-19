@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Раскадровка и двери (1.3)"
+community: "Первый экран и внимание (1.6)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Первый_экран_и_внимание_16
 ---
 
 # json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gc.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/concept #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

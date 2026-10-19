@@ -2,7 +2,7 @@
 source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
-location: "L437"
+location: "L456"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,5 +15,6 @@ tags:
 - [[S_1]] - `method` [EXTRACTED]
 - [[coverSeq()_1]] - `calls` [EXTRACTED]
 - [[labUpd()_1]] - `calls` [EXTRACTED]
+- [[shortcut()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

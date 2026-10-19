@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Журнал решений"
+community: "Фото, вырезки, права (1.7)"
 location: "L117"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/Фото_вырезки_права_17
 ---
 
 # .rew-fx — эффект перемотки ◀◀
@@ -16,4 +16,4 @@ tags:
 - [[rewind()]] - `references` [INFERRED]
 - [[Память как ответственность (Мец) финал помнит первый экран]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Журнал_решений
+#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17

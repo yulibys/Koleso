@@ -1,11 +1,11 @@
 ---
 source_file: "docs/MAP.md"
 type: "document"
-community: "Типографика (1.4)"
+community: "Журнал решений"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # Карта проекта «Далеко собрались?» (MAP.md)
@@ -26,4 +26,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `references` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Типографика_14
+#graphify/document #graphify/EXTRACTED #community/Журнал_решений

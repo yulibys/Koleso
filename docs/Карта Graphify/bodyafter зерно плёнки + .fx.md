@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "scenery.js"
+community: "Интерактив и проверка читателем"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sceneryjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # body::after зерно плёнки + .fx
@@ -15,4 +15,4 @@ tags:
 - [[fx canvas (пыльзерно поверх страницы)]] - `implements` [EXTRACTED]
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

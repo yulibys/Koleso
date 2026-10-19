@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Типографика (1.4)"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Типографика_14
 ---
 
 # later — «Колесо придумали позже флейты» (лента изобретений)
@@ -28,4 +28,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `rationale_for` [EXTRACTED]
 - [[Ритм «акцент → пауза → выход»]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

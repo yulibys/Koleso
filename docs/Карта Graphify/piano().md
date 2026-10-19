@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "scenery.js"
+community: "Интерактив и проверка читателем"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sceneryjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # piano()
@@ -16,4 +16,4 @@ tags:
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

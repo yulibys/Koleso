@@ -1,61 +1,64 @@
 ---
 type: community
-cohesion: 0.07
-members: 46
+cohesion: 0.06
+members: 49
 ---
 
 # Интерактив и проверка читателем
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 49 nodes
 
 ## Members
-- [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
-- [[root токены (--black, --cream, --paper, --red, --gut)]] - code - src/style.css
-- [[prepType()]] - code - src/app.js
-- [[«Иногда лучше одному» одна семья или суперсемейство]] - rationale - docs/lectures/1.4.txt
-- [[«Иногда лучше одному» одно суперсемейство шрифтов]] - rationale - docs/MAP.md
-- [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
-- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - concept - docs/lectures/1.4.txt
-- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
-- [[Выключка влево для узкой колонки]] - rationale - docs/lectures/1.4.txt
-- [[Выключка влево и ограниченный набор гарнитур]] - rationale - docs/lectures/1.5.txt
-- [[Гигиена набора «ёлочки»„лапки“, тире, минус, ×]] - rationale - docs/lectures/1.4.txt
-- [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
-- [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
-- [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - rationale - docs/lectures/1.4.txt
-- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
-- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
-- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
-- [[Комплектность и технический допуск гарнитуры]] - rationale - docs/lectures/1.4.txt
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
-- [[Настоящий курсив и полужирное, а не синтетика браузера]] - rationale - docs/lectures/1.4.txt
-- [[Насыщенность «через одного» Light+Bold, Regular+Black]] - rationale - docs/lectures/1.4.txt
-- [[Неразрывные пробелы — только для смысловых пар]] - rationale - docs/lectures/1.4.txt
-- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
-- [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
-- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
-- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
-- [[Постоянство цветового кода и редкий акцент]] - rationale - docs/lectures/1.6.txt
-- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
-- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
-- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
-- [[Прописной набор требует умеренной разрядки]] - rationale - docs/lectures/1.4.txt
-- [[Роли — только из раскадровки, имена по функции]] - rationale - docs/lectures/1.4.txt
-- [[Сетка вырастает из строки и материала]] - rationale - docs/lectures/1.5.txt
-- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
-- [[Спецификация ролей, воспроизводимая другим человеком]] - rationale - docs/lectures/1.4.txt
-- [[Строка 50–75 знаков (до 80), width min(100%, 68ch)]] - rationale - docs/lectures/1.4.txt
-- [[Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]] - rationale - docs/MAP.md
-- [[Сходство одинаковое оформление — одинаковая роль]] - rationale - docs/lectures/1.6.txt
-- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
-- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
-- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - rationale - docs/lectures/1.4.txt
-- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
-- [[Шкала интервалов из интерлиньяжа 0.75  1.5  3  6 rem]] - rationale - docs/lectures/1.5.txt
-- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - code - src/style.css
-- [[Шрифт Alegreya SC (--display, .disp)]] - code - src/style.css
-- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
+- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
+- [[sndBtn — кнопка звука]] - code - src/body.html
+- [[dot-cn-slot.cn-reel.cn-face — барабан дат]] - code - src/style.css
+- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
+- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
+- [[piano()]] - code - src/app.js
+- [[slot()]] - code - src/app.js
+- [[steps()]] - code - src/app.js
+- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
+- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
+- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
+- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
+- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
+- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
+- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
+- [[Два входа через обещание и через материал]] - rationale - docs/lectures/1.6.txt
+- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
+- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
+- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
+- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
+- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
+- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
+- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
+- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
+- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
+- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
+- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
+- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
+- [[Начинать с конкретной ситуации, а не с определений]] - rationale - docs/lectures/1.7.txt
+- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
+- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
+- [[Первый экран — порог и договор обещание, голос, первый шаг]] - rationale - docs/MAP.md
+- [[Первый экран — порог пять функций]] - rationale - docs/lectures/1.6.txt
+- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
+- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
+- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - code - src/body.html
+- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
+- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
+- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
+- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
+- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
+- [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - code - src/body.html
+- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,18 +68,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Журнал решений]]
-- 5 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 3 edges to [[_COMMUNITY_scenery.js]]
-- 2 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 2 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 16 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 16 edges to [[_COMMUNITY_Журнал решений]]
+- 15 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 12 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 7 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 7 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
 
 ## Top bridge nodes
-- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 4 communities
-- [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 2 communities
-- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - degree 7, connects to 2 communities
-- [[prepType()]] - degree 5, connects to 1 community
-- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - degree 4, connects to 1 community
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 6 communities
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 4 communities
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - degree 8, connects to 4 communities
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - degree 7, connects to 3 communities
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - degree 8, connects to 2 communities

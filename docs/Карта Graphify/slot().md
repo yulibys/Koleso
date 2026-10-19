@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "scenery.js"
+community: "Интерактив и проверка читателем"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sceneryjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # slot()
@@ -17,4 +17,4 @@ tags:
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `references` [INFERRED]
 - [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/sceneryjs
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

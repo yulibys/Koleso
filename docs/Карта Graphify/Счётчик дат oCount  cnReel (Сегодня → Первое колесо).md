@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "scenery.js"
+community: "Интерактив и проверка читателем"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sceneryjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # Счётчик дат #oCount / #cnReel (Сегодня → Первое колесо)
@@ -21,4 +21,4 @@ tags:
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 - [[Фактологический проход имена, даты, подписи, цитаты, числа]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/sceneryjs
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

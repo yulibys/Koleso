@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Фото, вырезки, права (1.7)"
 location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Фото_вырезки_права_17
 ---
 
 # #creditsCard — титры «Конец»
@@ -18,4 +18,4 @@ tags:
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [INFERRED]
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17

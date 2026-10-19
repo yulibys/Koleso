@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Интерактив и проверка читателем"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # #sndBtn — кнопка звука
@@ -18,4 +18,4 @@ tags:
 - [[Контроль медиа пауза движения и звука]] - `rationale_for` [INFERRED]
 - [[Цвет — не единственный признак]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

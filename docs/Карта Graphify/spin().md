@@ -2,7 +2,7 @@
 source_file: "v20/app.js"
 type: "code"
 community: "Сборка, источники, финал"
-location: "L563"
+location: "L602"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # spin()
 
 ## Connections
+- [[rewTxt()]] - `calls` [EXTRACTED]
 - [[startEnding()]] - `calls` [EXTRACTED]
 - [[v20app.js]] - `contains` [EXTRACTED]
 

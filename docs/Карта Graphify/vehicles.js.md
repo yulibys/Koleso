@@ -1,14 +1,14 @@
 ---
 source_file: "vehicles.js"
 type: "code"
-community: "v20/fig.js"
+community: "fig.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v20/figjs
+  - community/figjs
 ---
 
 # vehicles.js
 
-#graphify/code #graphify/EXTRACTED #community/v20/figjs
+#graphify/code #graphify/EXTRACTED #community/figjs

@@ -846,3 +846,6 @@ html.port:not(.tab).spinning #rewr{top:calc(50% + 80px * var(--k,1) + 114px)}
 #s1word.in{animation:wordIn2 1.1s ease forwards}
 @keyframes wordIn2{from{color:transparent}to{color:var(--cream)}}
 #s3run,.port #s3run,.port:not(.tab) #s3run,.tab #s3run{left:0;width:1440px;text-align:center}
+#s6h.lined .lt{padding-block:.3em;margin-block:-.3em}
+#s6h.lined .lt{padding:.12em 0 .35em;margin:-.12em 0 -.35em}#s6h.lined .ln+.ln .lt{margin-top:0;padding-top:0}
+#s6h.lined .lt,#s6h.lined .ln+.ln .lt{padding:0 0 .35em;margin:0 0 -.35em}

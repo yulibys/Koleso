@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.1.txt"
 type: "concept"
-community: "Типографика (1.4)"
+community: "Журнал решений"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # Viewport и скролл: пространство превращается в длительность
@@ -18,4 +18,4 @@ tags:
 - [[Хронотоп (Бахтин) участок со случайной длительностью]] - `conceptually_related_to` [EXTRACTED]
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Типографика_14
+#graphify/concept #graphify/EXTRACTED #community/Журнал_решений

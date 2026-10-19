@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "scenery.js"
+community: "Интерактив и проверка читателем"
 location: "L529"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sceneryjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # .cn-slot/.cn-reel/.cn-face — барабан дат
@@ -15,4 +15,4 @@ tags:
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `implements` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

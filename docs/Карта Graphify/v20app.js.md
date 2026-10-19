@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[S]] - `contains` [EXTRACTED]
+- [[applyLap()]] - `contains` [EXTRACTED]
 - [[balance()]] - `contains` [EXTRACTED]
 - [[cancelEnding()]] - `contains` [EXTRACTED]
 - [[cover()]] - `contains` [EXTRACTED]
@@ -25,15 +26,18 @@ tags:
 - [[nextCover()]] - `contains` [EXTRACTED]
 - [[put()]] - `contains` [EXTRACTED]
 - [[restore()]] - `contains` [EXTRACTED]
+- [[rewTxt()]] - `contains` [EXTRACTED]
 - [[rewindToS1()]] - `contains` [EXTRACTED]
 - [[ringAt()]] - `contains` [EXTRACTED]
 - [[ringAt0()]] - `contains` [EXTRACTED]
 - [[sayL()]] - `contains` [EXTRACTED]
 - [[scrollAnim()]] - `contains` [EXTRACTED]
+- [[shortcut()]] - `contains` [EXTRACTED]
 - [[spin()]] - `contains` [EXTRACTED]
 - [[splitLines()]] - `indirect_call` [INFERRED]
 - [[startEnding()]] - `contains` [EXTRACTED]
 - [[textOut()]] - `contains` [EXTRACTED]
 - [[tick()]] - `contains` [EXTRACTED]
+- [[unshort()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

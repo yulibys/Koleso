@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Журнал решений"
+community: "Интерактив и проверка читателем"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # open2 — «Ловите! Как теперь его догнать?» (Побегу за ним / Возьму другое)
@@ -23,4 +23,4 @@ tags:
 - [[Немое кино .flick + .scratch (+ .silent рамка)]] - `references` [EXTRACTED]
 - [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

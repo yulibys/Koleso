@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.5.txt"
 type: "rationale"
-community: "Журнал решений"
+community: "Интерактив и проверка читателем"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # Контраст WCAG 2.2 AA: 4.5:1 и 3:1
@@ -16,4 +16,4 @@ tags:
 - [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - `rationale_for` [INFERRED]
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Журнал_решений
+#graphify/rationale #graphify/INFERRED #community/Интерактив_и_проверка_читателем

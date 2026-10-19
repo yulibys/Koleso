@@ -1,60 +1,62 @@
 ---
 type: community
-cohesion: 0.08
-members: 45
+cohesion: 0.07
+members: 47
 ---
 
 # Колесо-проводник и гравюра
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 45 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 47 nodes
 
 ## Members
-- [[creditsCard — титры «Конец»]] - code - src/body.html
-- [[dot-credits-card.foot — титры и подвал]] - code - src/style.css
-- [[dot-paper — бумажный фон (find, day)]] - code - src/style.css
-- [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - code - src/style.css
-- [[5–9 смысловых зон]] - concept - docs/lectures/1.3.txt
-- [[b10.sh]] - code - b10.sh
-- [[b10.sh script]] - code - b10.sh
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - code - src/body.html
-- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - code - src/body.html
-- [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - code - src/body.html
-- [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - code - src/body.html
-- [[ps2 — «Колесо есть. Ехать не на чем.» (фотоэкран H2)]] - code - src/body.html
-- [[ps3 — «А потом поехали» (фотоэкран H3)]] - code - src/body.html
-- [[ps4 — «Колесо давно с нами» (фотоэкран H4, flip)]] - code - src/body.html
-- [[«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)]] - rationale - docs/context.md
-- [[«Маша» Фёдора Сваровского (разбор финала)]] - concept - docs/lectures/1.3.txt
-- [[Бегущая лента поговорок .tape («Не подмажешь — не поедешь…»)]] - code - src/body.html
-- [[Интертитры рвутся по неровному краю (по kamidesgnfaith)]] - rationale - docs/context.md
-- [[Исключение с условием, а не манера]] - rationale - docs/lectures/1.5.txt
-- [[Карта соседства]] - concept - docs/lectures/1.3.txt
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
-- [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - rationale - docs/lectures/1.7.txt
-- [[Крупность от детали до дальнего плана, чередовать «через одну»]] - rationale - docs/lectures/1.3.txt
-- [[Лекция 1.3. Архитектура лонгрида структура, раскадровка]] - document - docs/lectures/1.3.txt
-- [[Линейный ствол и боковые двери с содержательным именем]] - rationale - docs/lectures/1.3.txt
-- [[Ма паузу проверяют удалением]] - rationale - docs/lectures/1.3.txt
-- [[Метрическая основа и ритм композиции]] - concept - docs/lectures/1.5.txt
-- [[Монтаж аттракционов (Эйзенштейн)]] - concept - docs/lectures/1.3.txt
-- [[Пена (Слотердайк) различимая мембрана между частями]] - rationale - docs/lectures/1.1.txt
-- [[Переход под допросом почему следующий фрагмент здесь]] - rationale - docs/lectures/1.3.txt
-- [[Плотность 1–5 между двумя «пятёрками» — передышка]] - rationale - docs/lectures/1.3.txt
-- [[Повтор с изменением задачи]] - rationale - docs/lectures/1.6.txt
-- [[Повтор с отклонением на третьем (Делёз)]] - concept - docs/lectures/1.5.txt
-- [[Правка соседская дверь к отчёту о люблянском колесе и статье о кувшине из Броночице]] - rationale - docs/MAP.md
-- [[Право выхода дверь наружу — хороший исход]] - rationale - docs/lectures/1.6.txt
-- [[Ритм — возвращение групп со сменой масштаба]] - rationale - docs/MAP.md
-- [[Соседская дверь внешняя ссылка к первоисточнику]] - rationale - docs/lectures/1.1.txt
-- [[Ссылка как обещание не «подробнее», а предмет перехода]] - rationale - docs/lectures/1.8.txt
-- [[Фото __HI_H2__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фото __HI_H3__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фото __HI_H4__ (фон фотоэкрана)]] - image - src/body.html
-- [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - code - src/body.html
-- [[Функция зоны глаголом, а не форматом]] - rationale - docs/lectures/1.3.txt
-- [[Четыре фотоэкрана в духе Kami (v16)]] - rationale - docs/context.md
-- [[Эффект Кулешова значение кадра меняется от соседа]] - concept - docs/lectures/1.3.txt
+- [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
+- [[root токены (--black, --cream, --paper, --red, --gut)]] - code - src/style.css
+- [[parseK()]] - code - src/app.js
+- [[prepType()]] - code - src/app.js
+- [[«Иногда лучше одному» одна семья или суперсемейство]] - rationale - docs/lectures/1.4.txt
+- [[«Иногда лучше одному» одно суперсемейство шрифтов]] - rationale - docs/MAP.md
+- [[Абзац — монтажная единица, не метроном]] - concept - docs/lectures/1.4.txt
+- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - concept - docs/lectures/1.4.txt
+- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
+- [[Выключка влево для узкой колонки]] - rationale - docs/lectures/1.4.txt
+- [[Выключка влево и ограниченный набор гарнитур]] - rationale - docs/lectures/1.5.txt
+- [[Гигиена набора «ёлочки»„лапки“, тире, минус, ×]] - rationale - docs/lectures/1.4.txt
+- [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
+- [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
+- [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - rationale - docs/lectures/1.4.txt
+- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
+- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
+- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
+- [[Комплектность и технический допуск гарнитуры]] - rationale - docs/lectures/1.4.txt
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
+- [[Настоящий курсив и полужирное, а не синтетика браузера]] - rationale - docs/lectures/1.4.txt
+- [[Насыщенность «через одного» Light+Bold, Regular+Black]] - rationale - docs/lectures/1.4.txt
+- [[Неразрывные пробелы — только для смысловых пар]] - rationale - docs/lectures/1.4.txt
+- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
+- [[Отбивка показывает отношение подпись ближе к изображению]] - rationale - docs/lectures/1.4.txt
+- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
+- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
+- [[Постоянство цветового кода и редкий акцент]] - rationale - docs/lectures/1.6.txt
+- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
+- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
+- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
+- [[Прописной набор требует умеренной разрядки]] - rationale - docs/lectures/1.4.txt
+- [[Роли — только из раскадровки, имена по функции]] - rationale - docs/lectures/1.4.txt
+- [[Сетка вырастает из строки и материала]] - rationale - docs/lectures/1.5.txt
+- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
+- [[Спецификация ролей, воспроизводимая другим человеком]] - rationale - docs/lectures/1.4.txt
+- [[Строка 50–75 знаков (до 80), width min(100%, 68ch)]] - rationale - docs/lectures/1.4.txt
+- [[Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]] - rationale - docs/MAP.md
+- [[Сходство одинаковое оформление — одинаковая роль]] - rationale - docs/lectures/1.6.txt
+- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
+- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
+- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - rationale - docs/lectures/1.4.txt
+- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
+- [[Шкала интервалов из интерлиньяжа 0.75  1.5  3  6 rem]] - rationale - docs/lectures/1.5.txt
+- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - code - src/style.css
+- [[Шрифт Alegreya SC (--display, .disp)]] - code - src/style.css
+- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -64,19 +66,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Журнал решений]]
-- 14 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 14 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
-- 12 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 5 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 4 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 2 edges to [[_COMMUNITY_scenery.js]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 7 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 7 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 5 edges to [[_COMMUNITY_Типографика (1.4)]]
+- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 4 edges to [[_COMMUNITY_Журнал решений]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 
 ## Top bridge nodes
-- [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - degree 16, connects to 5 communities
-- [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - degree 13, connects to 3 communities
-- [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - degree 10, connects to 3 communities
-- [[ps3 — «А потом поехали» (фотоэкран H3)]] - degree 8, connects to 3 communities
-- [[Ма паузу проверяют удалением]] - degree 7, connects to 3 communities
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 3 communities
+- [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 3 communities
+- [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - degree 7, connects to 2 communities
+- [[parseK()]] - degree 4, connects to 2 communities
+- [[prepType()]] - degree 5, connects to 1 community

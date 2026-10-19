@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Типографика (1.4)"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Типографика_14
 ---
 
 # ps3 — «А потом поехали» (фотоэкран H3)
@@ -21,4 +21,4 @@ tags:
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `implements` [EXTRACTED]
 - [[Четыре фотоэкрана в духе Kami (v16)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

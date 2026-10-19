@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Журнал решений"
+community: "Интерактив и проверка читателем"
 location: "L429"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)
@@ -20,4 +20,4 @@ tags:
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `implements` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Журнал_решений
+#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем

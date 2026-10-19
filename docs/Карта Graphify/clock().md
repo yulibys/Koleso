@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Типографика (1.4)"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Типографика_14
 ---
 
 # clock()
@@ -15,4 +15,4 @@ tags:
 - [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - `references` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

@@ -2,7 +2,7 @@
 source_file: "v20/app.js"
 type: "code"
 community: "Сборка, источники, финал"
-location: "L599"
+location: "L651"
 tags:
   - graphify/code
   - graphify/EXTRACTED

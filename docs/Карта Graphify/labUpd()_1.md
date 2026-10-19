@@ -2,7 +2,7 @@
 source_file: "app.js"
 type: "code"
 community: "Пейзажи (scenery.js)"
-location: "L422"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,0 +1,18 @@
+---
+source_file: "v20/app.js"
+type: "code"
+community: "Сборка, источники, финал"
+location: "L642"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Сборка_источники_финал
+---
+
+# shortcut()
+
+## Connections
+- [[dot-s5()]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

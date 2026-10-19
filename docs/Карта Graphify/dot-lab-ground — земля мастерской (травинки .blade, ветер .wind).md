@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Движок сцен и звуки (app.js)"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # .lab-ground — земля мастерской (травинки .blade, ветер .wind)
@@ -15,4 +15,4 @@ tags:
 - [[dot-lab-ground.blade.wind]] - `implements` [EXTRACTED]
 - [[lab — «Соберите свою повозку» (интерактив)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

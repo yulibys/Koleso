@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Раскадровка и двери (1.3)"
+community: "Первый экран и внимание (1.6)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Раскадровка_и_двери_13
+  - community/Первый_экран_и_внимание_16
 ---
 
 # Reflow: ~320 CSS px без потери содержания и горизонтальной прокрутки
@@ -15,4 +15,4 @@ tags:
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 - [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Раскадровка_и_двери_13
+#graphify/rationale #graphify/INFERRED #community/Первый_экран_и_внимание_16

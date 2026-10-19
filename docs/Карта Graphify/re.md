@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Лекция 1.8. Предзащита и финальная редактура"
+community: "Рисунки повозок"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Лекция_18_Предзащита_и_финальная_редактура
+  - community/Рисунки_повозок
 ---
 
 # re
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[update.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура
+#graphify/concept #graphify/EXTRACTED #community/Рисунки_повозок

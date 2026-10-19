@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Движок сцен и звуки (app.js)"
 location: "L262"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # Детали повозки #parts .part + .lab-say
@@ -21,4 +21,4 @@ tags:
 - [[Без hover и обязательного перетаскивания]] - `rationale_for` [INFERRED]
 - [[Клавиатура Tab, видимый фокус, выход из интерактива]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

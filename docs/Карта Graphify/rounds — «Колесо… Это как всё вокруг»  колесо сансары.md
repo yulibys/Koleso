@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Фото, вырезки, права (1.7)"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Фото_вырезки_права_17
 ---
 
 # rounds — «Колесо… Это как всё вокруг» / колесо сансары
@@ -29,4 +29,4 @@ tags:
 - [[Финал возвращается к началу]] - `rationale_for` [EXTRACTED]
 - [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

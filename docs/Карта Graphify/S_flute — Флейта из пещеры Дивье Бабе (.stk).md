@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Раскадровка и двери (1.3)"
+community: "Первый экран и внимание (1.6)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Первый_экран_и_внимание_16
 ---
 
 # S_flute — Флейта из пещеры Дивье Бабе (.stk)
@@ -14,4 +14,4 @@ tags:
 - [[later — «Колесо придумали позже флейты» (лента изобретений)]] - `references` [EXTRACTED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/image #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

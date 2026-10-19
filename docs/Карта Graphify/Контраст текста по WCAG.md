@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.6.txt"
 type: "rationale"
-community: "Журнал решений"
+community: "Интерактив и проверка читателем"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # Контраст текста по WCAG
@@ -15,4 +15,4 @@ tags:
 - [[Мелкий текст — не на пёстрый фон]] - `conceptually_related_to` [INFERRED]
 - [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Журнал_решений
+#graphify/rationale #graphify/INFERRED #community/Интерактив_и_проверка_читателем

@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Колесо-проводник и гравюра"
 location: "L134"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # prepType()
@@ -18,4 +18,4 @@ tags:
 - [[Неразрывные пробелы — только для смысловых пар]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра

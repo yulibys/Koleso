@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.12
-members: 32
+cohesion: 0.11
+members: 36
 ---
 
 # Пейзажи (scenery.js)
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 36 nodes
 
 ## Members
 - [[dot-s1()_1]] - code - app.js
@@ -20,6 +20,7 @@ members: 32
 - [[dot-s8()_1]] - code - app.js
 - [[S_1]] - code - app.js
 - [[app.js]] - code - app.js
+- [[applyLap()_1]] - code - app.js
 - [[balance()_1]] - code - app.js
 - [[cancelEnding()_1]] - code - app.js
 - [[cover()_1]] - code - app.js
@@ -32,16 +33,19 @@ members: 32
 - [[nextCover()_1]] - code - app.js
 - [[put()_1]] - code - app.js
 - [[restore()_1]] - code - app.js
+- [[rewTxt()_1]] - code - app.js
 - [[rewindToS1()_1]] - code - app.js
 - [[ringAt()_1]] - code - app.js
 - [[ringAt0()_1]] - code - app.js
 - [[sayL()_2]] - code - app.js
 - [[scrollAnim()_1]] - code - app.js
+- [[shortcut()_1]] - code - app.js
 - [[spin()_1]] - code - app.js
 - [[splitLines()_1]] - code - app.js
 - [[startEnding()_1]] - code - app.js
 - [[textOut()_1]] - code - app.js
 - [[tick()_1]] - code - app.js
+- [[unshort()_1]] - code - app.js
 
 ## Live Query (requires Dataview plugin)
 

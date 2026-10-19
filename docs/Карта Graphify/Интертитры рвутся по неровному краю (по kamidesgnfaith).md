@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Колесо-проводник и гравюра"
+community: "Типографика (1.4)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Типографика_14
 ---
 
 # Интертитры рвутся по неровному краю (по kamidesgn/faith)
@@ -17,4 +17,4 @@ tags:
 - [[Пена (Слотердайк) различимая мембрана между частями]] - `conceptually_related_to` [INFERRED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/rationale #graphify/EXTRACTED #community/Типографика_14

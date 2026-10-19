@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Движок сцен и звуки (app.js)"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # upd()
@@ -15,4 +15,4 @@ tags:
 - [[sayL()_1]] - `calls` [EXTRACTED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

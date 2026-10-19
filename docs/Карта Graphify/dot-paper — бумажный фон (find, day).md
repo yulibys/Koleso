@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Типографика (1.4)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Типографика_14
 ---
 
 # .paper — бумажный фон (find, day)
@@ -15,4 +15,4 @@ tags:
 - [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - `implements` [EXTRACTED]
 - [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

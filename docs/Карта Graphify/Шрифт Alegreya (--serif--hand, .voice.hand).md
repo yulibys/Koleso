@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Колесо-проводник и гравюра"
 location: "L6"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Шрифт Alegreya (--serif/--hand, .voice/.hand)
@@ -20,4 +20,4 @@ tags:
 - [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - `conceptually_related_to` [INFERRED]
 - [[Сходство одинаковое оформление — одинаковая роль]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра

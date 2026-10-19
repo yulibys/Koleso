@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[S_1]] - `contains` [EXTRACTED]
+- [[applyLap()_1]] - `contains` [EXTRACTED]
 - [[balance()_1]] - `contains` [EXTRACTED]
 - [[cancelEnding()_1]] - `contains` [EXTRACTED]
 - [[cover()_1]] - `contains` [EXTRACTED]
@@ -25,15 +26,18 @@ tags:
 - [[nextCover()_1]] - `contains` [EXTRACTED]
 - [[put()_1]] - `contains` [EXTRACTED]
 - [[restore()_1]] - `contains` [EXTRACTED]
+- [[rewTxt()_1]] - `contains` [EXTRACTED]
 - [[rewindToS1()_1]] - `contains` [EXTRACTED]
 - [[ringAt()_1]] - `contains` [EXTRACTED]
 - [[ringAt0()_1]] - `contains` [EXTRACTED]
 - [[sayL()_2]] - `contains` [EXTRACTED]
 - [[scrollAnim()_1]] - `contains` [EXTRACTED]
+- [[shortcut()_1]] - `contains` [EXTRACTED]
 - [[spin()_1]] - `contains` [EXTRACTED]
 - [[splitLines()_1]] - `indirect_call` [INFERRED]
 - [[startEnding()_1]] - `contains` [EXTRACTED]
 - [[textOut()_1]] - `contains` [EXTRACTED]
 - [[tick()_1]] - `contains` [EXTRACTED]
+- [[unshort()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

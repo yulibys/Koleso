@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Первый экран и внимание (1.6)"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Первый_экран_и_внимание_16
 ---
 
 # .sc/.stick/.frame — высокая секция с липким кадром
@@ -21,4 +21,4 @@ tags:
 - [[Смысловой порядок при складывании колонок]] - `rationale_for` [INFERRED]
 - [[Уменьшение движения и неподвижная версия]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

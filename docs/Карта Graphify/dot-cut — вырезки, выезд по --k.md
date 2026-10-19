@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Первый экран и внимание (1.6)"
 location: "L474"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Раскадровка_и_двери_13
+  - community/Первый_экран_и_внимание_16
 ---
 
 # .cut — вырезки, выезд по --k
@@ -16,4 +16,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 - [[Общая судьба совместное движение собирает группу]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
