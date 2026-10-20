@@ -275,6 +275,7 @@
     word.style.transform = `translateY(${(top - 68).toFixed(1)}px) scale(${(ws * (PORT ? PS : 1)).toFixed(4)})`;
     const swp = sg(p, 0.64, 0.68);
     op(word, 1 - sg(p, 0.6, 0.635));
+    { const bk = $('s1back'), v = lap ? 1 - sg(p, 0.07, 0.1) : 0; op(bk, v); ul(bk, lap ? sg(p, 0.005, 0.03) : 0); }
     const cat = $('s1catch'); op(cat, swp > 0 ? 1 : 0); sw(cat, swp);
     letters[5].style.opacity = (1 - sg(p, 0.31, 0.335) + sg(p, 0.35, 0.39)).toFixed(3);
 
@@ -483,21 +484,21 @@
       const E = PORT && !TAB ? EXP6P : EXP6;
       for (const id in E) $(id).style.translate = `${(E[id][0] * ex).toFixed(1)}px ${(E[id][1] * ex).toFixed(1)}px`;
       op($('s6name'), sg(p, 0.2, 0.23) - sg(p, 0.29, 0.32)); ul($('s6name'), sg(p, 0.22, 0.26)); }
-    const Q = [['колесо — это колесница?', 0.5, 0.58], ['а&nbsp;ось?', 0.6, 0.68], ['а&nbsp;кузов?', 0.7, 0.78]];
+    const Q = [['колесо — это колесница?', 0.46, 0.58], ['а&nbsp;ось?', 0.6, 0.71], ['а&nbsp;кузов?', 0.73, 0.84]];
     let qi = 0;
     Q.forEach((q, i) => { if (p >= q[1]) qi = i; });
     const qt = $('s6qt');
     if (qt.dataset.i !== String(qi)) { qt.dataset.i = qi; qt.innerHTML = Q[qi][0]; }
     op($('s6q'), win(Q[qi][1], Q[qi][2]));
-    op($('s6no'), Math.max(win(0.53, 0.58), win(0.63, 0.68), win(0.73, 0.78)));
-    const w = ez(sg(p, 0.54, 0.59)), ax = ez(sg(p, 0.64, 0.69)), bd = ez(sg(p, 0.74, 0.79));
+    op($('s6no'), Math.max(win(0.515, 0.58), win(0.65, 0.71), win(0.78, 0.84)));
+    const w = ez(sg(p, 0.545, 0.585)), ax = ez(sg(p, 0.675, 0.715)), bd = ez(sg(p, 0.805, 0.845));
     $('s6wheel').style.transform = `translateX(${(-700 * w).toFixed(1)}px)`;
     const spin = $('s6wheel').querySelector('.spin');
     spin.style.transform = `rotate(${(-w * 700).toFixed(1)}deg)`;
     $('s6axle').style.transform = `translateY(${(400 * ax).toFixed(1)}px)`;
     $('s6body').style.transform = $('s6pole').style.transform = `translateX(${(900 * bd).toFixed(1)}px)`;
-    op($('s6end'), sg(p, 0.82, 0.85));
-    sw($('s6fin'), sg(p, 0.86, 0.95));
+    op($('s6end'), sg(p, 0.86, 0.89));
+    sw($('s6fin'), sg(p, 0.895, 0.97));
   };
 
   S.s7 = (p) => {
@@ -589,14 +590,14 @@
   let endTimer = null, spinOn = false;
   function applyLap() {
     const T = (id, t) => { const e = $(id); if (e && e.firstChild) e.firstChild.nodeValue = t; };
-    T('s1catch', 'Ещё раз!'); T('s1n1', 'опять!'); T('s1n2', 'как и в тот раз');
+    T('s1catch', 'Еще раз!'); T('s1n1', 'теперь вы знаете,'); T('s1n2', 'куда оно укатится');
     $('s1oh').querySelector('span').textContent = 'опять?!';
     $('s2where').textContent = 'вы ведь знаете, где оно?';
     $('s3run').textContent = 'побежать ещё раз';
     $('s3say').querySelector('span').textContent = 'в тот раз почти';
     $('s6nt').textContent = 'И снова: что такое колесница?';
     $('s8t2').textContent = 'И снова всё повторяется';
-    [$('s1n1'), $('s1n2'), $('s6name')].forEach((e) => { e._fk = null; }); $('s3ulg')._fk = null;
+    [$('s1n1'), $('s1n2'), $('s6name'), $('s1back')].forEach((e) => { e._fk = null; }); $('s3ulg')._fk = null;
   }
   $('spinw').innerHTML = A.wheel(170, { seed: 93 });
   function spin(on) { spinOn = on; $('spinov').classList.toggle('on', on); root.classList.toggle('spinning', on); if (on) rewTxt(lap ? 'и опять в&nbsp;начало' : 'снова в&nbsp;начало'); }
@@ -608,7 +609,7 @@
       spin(true);
       scrollAnim(0, 1500, () => {
         spin(false);
-        $('endsub').innerHTML = lap ? 'и снова здесь.<br>колесо не&nbsp;остановить' : 'вы вернулись туда, откуда начали.<br>теперь тебя запомнили, проверь сам';
+        $('endsub').innerHTML = lap ? 'Круг снова замкнулся.<br>Листайте дальше — посмотрим, что изменится' : 'Круг замкнулся.<br>Листайте дальше — кое-что изменилось';
         lap++; applyLap();
         const end = $('end');
         end.hidden = false; end.classList.remove('out');
@@ -617,7 +618,12 @@
         $('s2').hidden = false; s2done = false; s1covT = null;
         for (const k in P) { P[k] = 0; delete touched[k]; }
         labUpd(); chase = 0; chaseT0 = null; s3jump = false; unshort($('s3')); unshort($('s5')); sizes.clear();
-        setTimeout(() => { end.classList.add('out'); setTimeout(() => { end.hidden = true; ending = false; tick(); }, 800); }, 5500);
+        // титры не исчезают сами: подсказка остаётся, пока читатель не продолжит листать
+        const t1 = performance.now();
+        const go = (e) => { if (performance.now() - t1 < 1200) return; if (e && e.type === 'keydown' && !['ArrowDown', 'PageDown', ' ', 'Spacebar'].includes(e.key)) return;
+          ['wheel', 'touchmove', 'keydown'].forEach((t) => removeEventListener(t, go));
+          end.classList.add('out'); setTimeout(() => { end.hidden = true; ending = false; tick(); }, 800); };
+        ['wheel', 'touchmove', 'keydown'].forEach((t) => addEventListener(t, go, { passive: true }));
       });
     }, 500);
   }

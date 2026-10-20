@@ -849,3 +849,14 @@ html.port:not(.tab).spinning #rewr{top:calc(50% + 80px * var(--k,1) + 114px)}
 #s6h.lined .lt{padding-block:.3em;margin-block:-.3em}
 #s6h.lined .lt{padding:.12em 0 .35em;margin:-.12em 0 -.35em}#s6h.lined .ln+.ln .lt{margin-top:0;padding-top:0}
 #s6h.lined .lt,#s6h.lined .ln+.ln .lt{padding:0 0 .35em;margin:0 0 -.35em}
+/* v69: подсказка на границе кругов, своё мгновение для второго круга */
+#s1back{left:50%;top:520px;transform:translateX(-50%);white-space:nowrap;opacity:0}
+.port #s1back{top:560px}
+.endw{left:420px;width:600px;white-space:nowrap}
+.endsub{left:370px;width:700px;top:410px;font-size:30px;line-height:38px}
+.port .endsub{left:440px;width:560px}.port:not(.tab) .endsub{font-size:32px;line-height:40px}
+#s1n1,#s1n2{white-space:nowrap}
+#s1n2{left:860px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{left:470px}.port:not(.tab) #s1n2{top:320px}
+.tab #s1n2{left:720px}
+#s1catch{word-spacing:-.3em}
