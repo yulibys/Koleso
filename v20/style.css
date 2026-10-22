@@ -1,9 +1,12 @@
 /* «Колесо» v20. Тёмный экран и кремовая бумага, рисунки-гравюры, Alegreya + DANCEPARTNER.
    Координаты элементов — по кадрам 1440×900 из Figma «Колсео». */
 @font-face{font-family:"Dance";src:url(fonts/dance_partner_fix.ttf) format("truetype");font-display:block}
+@font-face{font-family:"Desyatiy";src:url(fonts/desyatiy_regular.ttf) format("truetype");font-weight:400;font-display:block}
+@font-face{font-family:"Desyatiy";src:url(fonts/desyatiy_light.ttf) format("truetype");font-weight:300;font-display:block}
+@font-face{font-family:"Desyatiy";src:url(fonts/desyatiy_bold.ttf) format("truetype");font-weight:700;font-display:block}
 :root{
-  --dark:#16130f;--cream:#e9e9d6;--paper:#e9e9d6;--ink:#16130f;--dim:#a49d8c;
-  --serif:"Alegreya",Georgia,"Times New Roman",serif;--dance:"Dance","Alegreya",Georgia,serif;
+  --dark:#16130f;--cream:#d4c8a7;--paper:#d4c8a7;--ink:#16130f;--dim:#a49d8c;
+  --serif:"Alegreya",Georgia,"Times New Roman",serif;--dance:"Desyatiy","Dance","Alegreya",Georgia,serif;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -207,7 +210,7 @@ html.boil0 .boil{filter:url(#boil0)}html.boil1 .boil{filter:url(#boil1)}html.boi
 .src{max-width:60ch;font:400 14px/1.4 var(--serif);color:var(--dim);margin-top:30px}
 .src a{color:inherit}
 .rew{position:fixed;inset:0;z-index:94;pointer-events:none;opacity:0;transition:opacity .2s}
-.rew i{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(233,228,214,0) 0 3px,rgba(233,228,214,.12) 3px 4px);animation:streak .12s linear infinite}
+.rew i{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(212,200,167,0) 0 3px,rgba(212,200,167,.12) 3px 4px);animation:streak .12s linear infinite}
 .rew b{position:absolute;right:28px;top:22px;font:700 24px/1 var(--serif);letter-spacing:.2em;color:var(--cream);mix-blend-mode:difference}
 @keyframes streak{to{transform:translateY(4px)}}
 html.rewinding .rew{opacity:1}
@@ -371,7 +374,7 @@ html.rewinding .stage{filter:contrast(1.2) brightness(1.06)}
 /* Нагасена: реплики выше, ничем не закрыты */
 #s6q,#s6no{top:140px}
 /* перемотка — заметнее */
-.rew i{background:repeating-linear-gradient(0deg,rgba(233,228,214,0) 0 5px,rgba(233,228,214,.2) 5px 7px)}
+.rew i{background:repeating-linear-gradient(0deg,rgba(212,200,167,0) 0 5px,rgba(212,200,167,.2) 5px 7px)}
 .rew b{left:50%;top:50%;right:auto;transform:translate(-50%,-60%);font:700 140px/1 var(--serif);letter-spacing:-.05em;opacity:.85;animation:blink .5s steps(2) infinite}
 .rew em{position:absolute;left:0;right:0;top:calc(50% + 70px);text-align:center;font:400 28px/1 var(--serif);font-style:normal;color:var(--cream);mix-blend-mode:difference}
 @keyframes blink{50%{opacity:.35}}
@@ -860,3 +863,139 @@ html.port:not(.tab).spinning #rewr{top:calc(50% + 80px * var(--k,1) + 114px)}
 .port:not(.tab) #s1n1,.port:not(.tab) #s1n2{left:470px}.port:not(.tab) #s1n2{top:320px}
 .tab #s1n2{left:720px}
 #s1catch{word-spacing:-.3em}
+
+/* v71: Desyatiy, фон #D4C8A7, буквы «Колесо» выкатываются из углов */
+.stickhint span,.tag{background:var(--paper)}
+.part[aria-pressed="true"]{background:var(--paper);outline-color:var(--paper)}
+#s1word span{display:inline-block;padding:0;margin:0;will-change:transform}
+#s1word.roll{filter:none;color:var(--cream);animation:none}
+/* v71: Desyatiy шире DANCEPARTNER — на телефоне чуть меньше, чтобы слова не упирались в край */
+html.port:not(.tab) #s1word{font-size:208px}
+html.port:not(.tab) #s1catch{font-size:122px}
+html.tab #s1catch{font-size:170px}
+/* v74: Desyatiy Light; интертитры как плёнка кинолектория — спокойнее: редкие царапины, зерно, полукруглая тень по краям */
+.dance,#s1word,#s1catch,.endw{font-weight:300}
+.cover.paper::after,#s2 .stage::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:5;mix-blend-mode:multiply;
+  background-image:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='10' preserveAspectRatio='none'%3E%3Cg fill='%2316130f'%3E%3Crect x='212' width='1.1' height='10' opacity='.26'/%3E%3Crect x='933' width='1.4' height='10' opacity='.22'/%3E%3Crect x='1290' width='.8' height='10' opacity='.16'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='520'%3E%3Cg fill='%2316130f'%3E%3Ccircle cx='60' cy='80' r='1.4' opacity='.38'/%3E%3Ccircle cx='470' cy='300' r='1.8' opacity='.3'/%3E%3Ccircle cx='300' cy='450' r='1.1' opacity='.32'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .05 0 0 0 .8 -.38'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+   radial-gradient(ellipse 820px 560px at 50% 50%,rgba(22,19,15,0) 62%,rgba(22,19,15,.28) 100%);
+  background-size:1440px 100%,640px 520px,220px 220px,100% 100%;
+  background-repeat:repeat-x,repeat,repeat,no-repeat;background-position:center;
+  animation:filmA 1s steps(1) infinite,filmF .35s steps(1) infinite}
+@keyframes filmA{
+  0%{background-position:calc(50% + 0px) 0,0 0,0 0,center}
+  33%{background-position:calc(50% - 220px) 0,-200px 120px,-40px 70px,center}
+  66%{background-position:calc(50% + 160px) 0,150px -90px,60px -30px,center}}
+@keyframes filmF{0%{opacity:.97}50%{opacity:.86}}
+/* v74: склейка на монтажном стыке тёмное → светлое */
+#splice{position:fixed;inset:0;pointer-events:none;z-index:94;opacity:0}
+#splice::before{content:'';position:absolute;inset:0;background:#16130f;opacity:.45}
+#splice i{position:absolute;left:0;right:0;top:var(--y,40%);height:4px;background:#16130f;opacity:1}
+html.splicing #splice{animation:spliceFlash .3s steps(1) forwards}
+html.splicing .sc .stage{animation:spliceJump .28s steps(1)}
+@keyframes spliceFlash{0%{opacity:.3}30%{opacity:0}55%{opacity:.15}80%,100%{opacity:0}}
+@keyframes spliceJump{0%{transform:translateY(-8px)}30%{transform:translateY(4px)}60%{transform:translateY(-2px)}100%{transform:none}}
+/* v74: «учёный у доски» на фото находки — указки и подписи от руки */
+#s4ph{position:absolute}
+#s4note{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+#s4note path{fill:none;stroke:var(--cream);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .9s ease}
+#s4note text{fill:var(--cream);font:italic 400 58px var(--serif);opacity:0;transition:opacity .5s ease}
+#s4note.on path{stroke-dashoffset:0}
+#s4note.on text{opacity:1}
+#s4note.on .d2{transition-delay:.7s}#s4note.on .d3{transition-delay:1.4s}
+#s4note.on text.d1{transition-delay:.6s}#s4note.on text.d2{transition-delay:1.3s}#s4note.on text.d3{transition-delay:2s}
+@media (prefers-reduced-motion:reduce){.cover.paper::after,#s2 .stage::after{animation:none}html.splicing #splice,html.splicing .sc .stage{animation:none}#s4note path,#s4note text{transition:none}}
+/* v75: счётчик лет — механический барабанный счётчик, цифры прокручиваются */
+#s2year{display:inline-flex;align-items:flex-end}
+#s2year .od{display:inline-block;height:.86em;overflow:hidden;position:relative;vertical-align:-.04em;-webkit-mask-image:linear-gradient(transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(transparent 0,#000 14%,#000 86%,transparent 100%)}
+#s2year .od b{display:block;font-weight:inherit;will-change:transform}
+#s2year .od b i{display:block;height:.86em;line-height:.86em;font-style:normal;text-align:center}
+/* v78: плёнка вернулась и чуть плотнее, полукруглая тень явнее */
+.cover.paper::after,#s2 .stage::after{
+  background-image:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='10' preserveAspectRatio='none'%3E%3Cg fill='%2316130f'%3E%3Crect x='212' width='1.2' height='10' opacity='.34'/%3E%3Crect x='640' width='.9' height='10' opacity='.18'/%3E%3Crect x='933' width='1.5' height='10' opacity='.3'/%3E%3Crect x='1290' width='.9' height='10' opacity='.22'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='520'%3E%3Cg fill='%2316130f'%3E%3Ccircle cx='60' cy='80' r='1.5' opacity='.5'/%3E%3Ccircle cx='470' cy='300' r='2' opacity='.42'/%3E%3Ccircle cx='300' cy='450' r='1.2' opacity='.44'/%3E%3Ccircle cx='560' cy='60' r='1' opacity='.4'/%3E%3Cpath d='M180 250q6 -4 11 1' stroke='%2316130f' stroke-width='1' fill='none' opacity='.35'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .05 0 0 0 .9 -.34'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+   radial-gradient(ellipse 780px 530px at 50% 50%,rgba(22,19,15,0) 56%,rgba(22,19,15,.42) 100%);
+  background-size:1440px 100%,640px 520px,220px 220px,100% 100%;
+  background-repeat:repeat-x,repeat,repeat,no-repeat;background-position:center;
+  animation:filmA 1s steps(1) infinite,filmF .35s steps(1) infinite}
+@keyframes filmF{0%{opacity:1}50%{opacity:.86}}
+/* v78: колесо-курсор (только мышь) */
+html.wcur,html.wcur *{cursor:none!important}
+#wcur{position:fixed;left:0;top:0;width:36px;height:36px;margin:-18px 0 0 -18px;pointer-events:none;z-index:200;opacity:0;transition:opacity .2s}
+#wcur.on{opacity:1}
+#wcur svg{display:block;width:100%;height:100%;overflow:visible;transition:transform .18s cubic-bezier(.3,1.5,.5,1)}
+#wcur.hot svg{transform:scale(1.45)}
+#wcur.down svg{transform:scale(.8)}
+#wcur .halo{stroke:var(--cream);stroke-width:4.2;fill:none;stroke-linecap:round;opacity:.9}
+#wcur .ink{stroke:var(--dark);stroke-width:1.7;fill:none;stroke-linecap:round}
+#wcur .hub{fill:var(--dark)}
+/* v78: колёса смазываются на быстрой прокрутке */
+#s2wheel,#s4wh,#s8wh{transition:filter .25s}
+html.whirl #s2wheel,html.whirl #s4wh,html.whirl #s8wh{filter:blur(1.6px)}
+/* v78: интертитр встаёт в кадровое окно */
+.cover.paper p.gate{animation:gate .6s steps(1) 1}
+@keyframes gate{0%{translate:0 -10px;opacity:.55}12%{translate:2px 5px;opacity:1}24%{translate:-1px -4px;opacity:.8}36%{translate:1px 3px;opacity:1}50%{translate:0 -2px;opacity:.9}66%{translate:0 1px}82%,100%{translate:0 0;opacity:1}}
+@media (prefers-reduced-motion:reduce){.cover.paper::after,#s2 .stage::after{animation:none}.cover.paper p.gate{animation:none}html.whirl #s2wheel,html.whirl #s4wh,html.whirl #s8wh{filter:none}}
+
+/* v79: курсор — рисованная мышка в стиле иллюстраций; нос = точка указателя */
+#wcur{width:52px;height:36px;margin:0;transform-origin:0 0}
+#wcur svg{width:52px;height:36px;margin:-16px 0 0 -2px;transform-origin:2px 16px}
+#wcur.hot svg{transform:scale(1.25) rotate(-8deg)}
+#wcur.down svg{transform:scale(.85)}
+#wcur .halo{stroke-width:4.4}
+#wcur .ink{stroke-width:1.5;stroke-linejoin:round}
+#wcur .fr{animation:mBoil .24s steps(1) infinite}
+#wcur .f1{animation-delay:-.12s}
+@keyframes mBoil{0%{opacity:1}50%{opacity:0}}
+#wcur .ft.b{opacity:0}
+#wcur.run .ft.a{animation:mStep .16s steps(1) infinite}
+#wcur.run .ft.b{animation:mStep .16s steps(1) infinite reverse}
+@keyframes mStep{0%{opacity:1}50%{opacity:0}}
+#wcur.run .ms{animation:mBob .16s steps(1) infinite}
+@keyframes mBob{0%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+#wcur{mix-blend-mode:difference}
+#wcur .ink{stroke:#d4c8a7}
+#wcur .hub{fill:#d4c8a7}
+/* v79: пыль за колесом */
+#s3dust{position:absolute;left:0;top:0;width:1440px;height:900px;pointer-events:none;overflow:visible}
+#s3dust path{stroke-width:1.5;vector-effect:non-scaling-stroke}
+/* v79: колея-прогресс */
+#rut{position:fixed;left:0;right:0;bottom:env(safe-area-inset-bottom,0px);height:22px;pointer-events:none;z-index:150;mix-blend-mode:difference;opacity:0;transition:opacity .4s}
+#rut.on{opacity:.85}
+#rut svg{display:block;overflow:visible}
+#rut path,#rut circle{fill:none;stroke:#d4c8a7;stroke-linecap:round}
+#rut .tr{stroke-width:1.1}#rut .tk{stroke-width:1}
+#rut .wh circle{stroke-width:1.4}#rut .wh path{stroke-width:.9}
+/* v79: белочка выглядывает */
+#peek{position:fixed;bottom:0;left:0;pointer-events:none;z-index:120;transform:translateY(105%);color:var(--cream)}
+#peek svg{width:100%;height:100%;overflow:visible}
+@media (prefers-reduced-motion:reduce){#peek{display:none}}
+/* v80: курсор — рисованная стрелка (кончик = точка указателя) */
+#wcur{width:24px;height:34px}
+#wcur svg{width:24px;height:34px;margin:-2px 0 0 -2px;transform-origin:2px 2px}
+#wcur.hot svg{transform:rotate(-12deg) scale(1.15)}
+#wcur.down svg{transform:scale(.82)}
+#wcur .bgf{fill:#16130f;stroke:none}
+#wcur .ink{stroke-width:1.4}
+#wcur .ink.h{stroke-width:.8}
+#wcur.run .ms{animation:none}
+/* v81: стрелка крупнее */
+#wcur{width:34px;height:48px}
+#wcur svg{width:34px;height:48px;margin:-2.8px 0 0 -2.8px;transform-origin:2.8px 2.8px}
+#wcur .ink{stroke-width:1.2}
+/* v82: ирис-шторка в финале */
+#iris{position:fixed;inset:0;z-index:99;pointer-events:none;display:none;--x:50%;--y:50%;--r:2000px}
+#iris.on{display:block}
+#iris::before{content:'';position:absolute;inset:0;background:#16130f;-webkit-mask-image:radial-gradient(circle at var(--x) var(--y),transparent calc(var(--r) - 1px),#000 calc(var(--r) + 1px));mask-image:radial-gradient(circle at var(--x) var(--y),transparent calc(var(--r) - 1px),#000 calc(var(--r) + 1px))}
+#iris svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#iris path{fill:none;stroke:#d4c8a7;stroke-width:1.6;vector-effect:non-scaling-stroke;opacity:.85}
+/* v86: «Ещё раз!» с обычным пробелом; буквы «Колесо» видны и за пределами своего блока, пока катятся с краёв экрана */
+#s1catch{word-spacing:normal}
+#s1word.roll,#s1word.roll *{-webkit-mask-image:none!important;mask-image:none!important}
+/* v88: пузыри в болоте */
+#s4bub{position:absolute;left:0;top:0;width:1440px;height:900px;pointer-events:none;overflow:visible}
+#s4bub path,#s4bub circle.t{stroke-width:1.6;vector-effect:non-scaling-stroke}

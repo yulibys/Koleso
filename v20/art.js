@@ -277,9 +277,10 @@ window.ART = (function () {
     for (let k = 0; k < 4; k++) s += P(ring(lean * 0.6 - 2, -240 + k * 28, 1.6, 0.1, 6), 't');
     // голова и шапка
     const hx = lean + 2, hy = -288;
+    s += `<g class="head" data-hx="${hx}" data-hy="${hy}">`;
     s += shape(ring(hx, hy, 24, 0.8, 22), '', 0);
     s += shape(line([[hx - 26, hy - 14], [hx - 20, hy - 34], [hx + 18, hy - 36], [hx + 26, hy - 14]], 0.6, true), line([[hx, hy - 35], [hx + 18, hy - 36], [hx + 26, hy - 14], [hx, hy - 14]], 0.3, true), 0.7);
-    s += `<circle class="fill" cx="${hx - 8}" cy="${hy + 2}" r="1.8"/><circle class="fill" cx="${hx + 8}" cy="${hy + 2}" r="1.8"/>` + P(line([[hx - 7, hy + 11], [hx, hy + 14], [hx + 7, hy + 11]], 0.3), 't');
+    s += `<g class="eyes"><circle class="fill" cx="${hx - 8}" cy="${hy + 2}" r="1.8"/><circle class="fill" cx="${hx + 8}" cy="${hy + 2}" r="1.8"/></g>` + P(line([[hx - 7, hy + 11], [hx, hy + 14], [hx + 7, hy + 11]], 0.3), 't') + '</g>';
     return s;
   }
   // дуб: курчавая крона с заштрихованной половиной, ствол-брусок

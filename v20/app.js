@@ -40,6 +40,7 @@
   });
 
   /* ── помощники ── */
+  let SPIN = 0;
   function put(el, x, y, s = 1, r = 0, o) {
     let sz = sizes.get(el);
     if (!sz) { const cs = getComputedStyle(el); sz = [parseFloat(cs.width) || 0, parseFloat(cs.height) || 0]; sizes.set(el, sz); }
@@ -253,6 +254,93 @@
   const SQ = 0.45; // масштаб маленькой белки (≈101 px шириной)
   // колесо: шаг 10 → 11 → 12 → 13
   const RING = [[0.335, 1042.2, 450, 62.6], [0.39, 1091, 489, 187], [0.45, 750, 516, 187], [0.52, 720, 544, 218]];
+  // v71: колесо и последняя белка — по настоящей букве «о» (шрифт Desyatiy)
+  function calibrate() {
+    try {
+      const o = letters[5], cs = getComputedStyle(word), fs = parseFloat(cs.fontSize), lh = parseFloat(cs.lineHeight) || 265;
+      const c = document.createElement('canvas').getContext('2d');
+      c.font = `${cs.fontWeight} ${fs}px ${cs.fontFamily}`;
+      const m = c.measureText('о');
+      const A = m.fontBoundingBoxAscent, D = m.fontBoundingBoxDescent;
+      const base = 318 + (lh - (A + D)) / 2 + A;
+      const cx = o.offsetLeft + o.offsetWidth / 2 + (m.actualBoundingBoxRight - m.actualBoundingBoxLeft - m.width) / 2;
+      const cy = base - (m.actualBoundingBoxAscent - m.actualBoundingBoxDescent) / 2;
+      const r = (m.actualBoundingBoxRight + m.actualBoundingBoxLeft) / 2 * 1.04;
+      if (isFinite(cx) && isFinite(cy) && r > 20) { RING[0][1] = cx; RING[0][2] = cy; RING[0][3] = r; HOP[HOP.length - 1] = [cx - 9, cy]; }
+    } catch (e) {}
+  }
+  // v86: «Ловите!» / «Ещё раз!» — по центру экрана по реальному контуру букв, подписи на одной линии под краями слова
+  function alignHead() {
+    try {
+      const el = $('s1catch'), cs = getComputedStyle(el), c = document.createElement('canvas').getContext('2d');
+      c.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+      const txt = el.textContent.trim(), m = c.measureText(txt), fs = parseFloat(cs.fontSize);
+      const inkW = m.actualBoundingBoxRight + m.actualBoundingBoxLeft, shift = m.width / 2 - (m.actualBoundingBoxRight - m.actualBoundingBoxLeft) / 2;
+      el.style.translate = `${shift.toFixed(1)}px 0`;
+      const n1 = $('s1n1'), n2 = $('s1n2');
+      if (PORT) { n1.style.left = n2.style.left = n1.style.top = n2.style.top = ''; return; }
+      const L = 720 - inkW / 2, R = 720 + inkW / 2, top = m.actualBoundingBoxDescent > fs * 0.08 ? 322 : 292;
+      n1.style.left = (L + 6).toFixed(0) + 'px'; n2.style.left = (R - n2.offsetWidth - 6).toFixed(0) + 'px';
+      n1.style.top = n2.style.top = top + 'px';
+    } catch (e) {}
+  }
+  addEventListener('resize', () => setTimeout(alignHead, 60));
+  // v71: буквы «Колесо» выкатываются из разных углов экрана к центру
+  function rollIn(done) {
+    const w = word;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || !w.animate) { w.classList.add('in'); if (done) done(); return; }
+    w.classList.add('roll');
+    const vw = innerWidth, vh = innerHeight, k = w.getBoundingClientRect().width / w.offsetWidth || 1;
+    // v87: буквы катятся по линии, как колёса: К-о-л слева, е-с-о справа, оборот — по пройденному пути, в конце колесо качается и встаёт
+    const rects = letters.map((el) => el.getBoundingClientRect());
+    const half = Math.ceil(letters.length / 2);
+    const DL = Math.max(...rects.slice(0, half).map((b) => b.right)) + 40, DR = vw - Math.min(...rects.slice(half).map((b) => b.left)) + 40;
+    let left = letters.length;
+    letters.forEach((el, i) => {
+      const fromLeft = i < half, sgn = fromLeft ? 1 : -1;
+      const dx = (fromLeft ? -DL : DR) / k, r = el.offsetHeight * 0.33;
+      const turn = (-dx / r) * 57.2958; // качение без проскальзывания
+      const delay = 100;
+      // едут поездом и с разгона врезаются друг в друга в середине слова
+      const a = el.animate([
+        { transform: `translateX(${dx.toFixed(1)}px) rotate(${(-turn).toFixed(0)}deg)`, easing: 'cubic-bezier(.3,.45,.55,1)' },
+        { transform: 'translateX(0) rotate(0deg)' }
+      ], { duration: 1500, delay, fill: 'backwards' });
+      a.onfinish = () => { if (--left === 0) { crash(); if (done) done(); } };
+    });
+  }
+  // удар: импульс расходится от места столкновения (между «л» и «е») к краям слова и затухает
+  function crash() {
+    const half = Math.ceil(letters.length / 2);
+    letters.forEach((el, i) => {
+      const side = i < half ? -1 : 1, dist = i < half ? half - 1 - i : i - half, amp = 44 * Math.pow(0.62, dist), r = el.offsetHeight * 0.33;
+      const R = (x) => (x / r * 57.3).toFixed(1);
+      el.animate([
+        { transform: 'translate(0,0) rotate(0deg) scale(1,1)' },
+        { transform: `translate(${(side * amp * 0.2).toFixed(1)}px,0) rotate(0deg) scale(${(1 - amp * 0.004).toFixed(3)},${(1 + amp * 0.003).toFixed(3)})`, offset: 0.08 },
+        { transform: `translate(${(side * amp).toFixed(1)}px,${(-amp * 0.45).toFixed(1)}px) rotate(${R(side * amp)}deg) scale(1,1)`, offset: 0.3 },
+        { transform: `translate(${(-side * amp * 0.32).toFixed(1)}px,0) rotate(${R(-side * amp * 0.32)}deg)`, offset: 0.55 },
+        { transform: `translate(${(side * amp * 0.1).toFixed(1)}px,0) rotate(${R(side * amp * 0.1)}deg)`, offset: 0.78 },
+        { transform: 'translate(0,0) rotate(0deg) scale(1,1)' }
+      ], { duration: 900, delay: dist * 55, easing: 'ease-out' });
+    });
+  }
+  // белка приземляется на букву — буква проседает под ней и пружинит обратно
+  let landed = -1;
+  function bump(hx, hy, dir) {
+    if (hy < 230 || hy > 480) return;
+    let best = null, bd = 1e9;
+    letters.forEach((el) => { const cx = el.offsetLeft + el.offsetWidth / 2, d = Math.abs(cx - hx); if (d < bd) { bd = d; best = el; } });
+    if (!best || bd > best.offsetWidth * 0.8 || reduce) return;
+    const r = dir * 9;
+    best.animate([
+      { transform: 'translateY(0) rotate(0deg) scale(1,1)' },
+      { transform: `translateY(26px) rotate(${r}deg) scale(1.08,.84)`, offset: 0.18 },
+      { transform: `translateY(-14px) rotate(${(-r * 0.6).toFixed(1)}deg) scale(.96,1.06)`, offset: 0.45 },
+      { transform: `translateY(4px) rotate(${(r * 0.25).toFixed(1)}deg) scale(1,1)`, offset: 0.7 },
+      { transform: 'translateY(0) rotate(0deg) scale(1,1)' }
+    ], { duration: 650, easing: 'ease-out' });
+  }
   // портрет: слово «Колесо» меньше (PS), прыжки белки и первые кольца сжимаются к центру слова
   const pt = (x, y) => (PORT ? [720 + (x - 720) * PS, 450 + (y - 450) * PS] : [x, y]);
   function ringAt(p) {
@@ -269,7 +357,7 @@
 
   S.s1 = (p) => {
     // слово: маленькое → большое; затем вверх (шаг 12 — top 207, шаг 13 — top 68)
-    const ws = lerp(96 / 241, 1, ez(sg(p, 0.03, 0.08)));
+    const ws = 1; // v83: слово сразу крупное — буквы выкатываются уже в полном размере
     const top = p < 0.39 ? 318 : p < 0.45 ? lerp(318, 207, ez(sg(p, 0.39, 0.45))) : lerp(207, TAB ? -30 : PORT ? 20 : 68, ez(sg(p, 0.45, 0.52)));
     const PT = PORT ? 0.62 : 1;
     word.style.transform = `translateY(${(top - 68).toFixed(1)}px) scale(${(ws * (PORT ? PS : 1)).toFixed(4)})`;
@@ -294,13 +382,14 @@
     let x, y, s = SQ, o = sg(p, 0.07, 0.1), rr = 0;
     if (p < 0.43) {
       const k = Math.floor((p - hopA) / hopW);
-      if (p < hopA) { [x, y] = pt(...HOP[0]); }
+      if (p < hopA) { [x, y] = pt(...HOP[0]); landed = -1; }
       else if (k < HOP.length - 1) {
         const t = ez(sg(p, hopA + k * hopW, hopA + (k + 0.8) * hopW));
         const a = pt(...HOP[k]), b = pt(...HOP[k + 1]);
         x = lerp(a[0], b[0], t); y = lerp(a[1], b[1], t) - Math.sin(Math.PI * t) * (k < 2 ? 40 : 70);
         rr = t > 0 && t < 1 ? lerp(-14, 12, t) : 0;
         if (k === HOP.length - 2) s = lerp(SQ, (r / 220) * 0.9, t);
+        { const ld = t >= 1 ? k : k - 1; if (ld > landed && ld >= 0) bump(HOP[ld + 1][0], HOP[ld + 1][1], HOP[ld + 1][0] >= HOP[ld][0] ? 1 : -1); landed = ld; }
       } else { x = cx; y = cy; s = (r / 220) * 0.9; }
       if (p >= hopA + (HOP.length - 1.2) * hopW) { // внутри колеса — бежит
         x = cx; y = cy + r * 0.38; s = (r / 220) * 0.95;
@@ -350,10 +439,26 @@
       const p = x < a ? x / Ro : x < a + b ? A0 + (x - a) / b * (A1 - A0) : A1 + (x - a - b) / Ro;
       f(Math.min(1, p));
     }; }
+  // v75: барабанный счётчик — каждая цифра на своём барабане, старшие доворачиваются при переносе
+  function odo(el, y) {
+    if (!el._od) { el.textContent = ''; el._od = []; for (let k = 0; k < 4; k++) { const s = document.createElement('span'); s.className = 'od'; const b = document.createElement('b'); b.innerHTML = '01234567890'.split('').map((d) => `<i>${d}</i>`).join(''); s.appendChild(b); el.prepend(s); el._od.push({ s, b }); } el.setAttribute('aria-label', ''); }
+    const n = Math.max(1, Math.round(y)), digits = String(n).length;
+    el.setAttribute('aria-label', String(n));
+    for (let k = 0; k < 4; k++) {
+      const { s, b } = el._od[k], d = Math.floor(n / Math.pow(10, k)) % 10;
+      s.style.display = k < digits ? '' : 'none';
+      if (el._od[k].d === d) continue;
+      // быстрые разряды (единицы, десятки) щёлкают, медленные (сотни, тысячи) прокатываются барабаном
+      const prev = el._od[k].d, roll = k >= 2 && prev !== undefined && Math.abs(d - prev) === 1;
+      b.style.transition = roll ? 'transform .32s cubic-bezier(.3,1.4,.5,1)' : 'none';
+      b.style.transform = `translateY(${(-d * 0.86).toFixed(2)}em)`;
+      el._od[k].d = d;
+    }
+  }
   S.s2 = (p) => {
     const c = ez(sg(p, 0.05, 0.28));
     const i = Math.round(c * 5175);
-    $('s2year').textContent = i <= 2025 ? 2026 - i : i - 2025;
+    { const v = c * 5175, yr = v <= 2025 ? 2026 - v : v - 2025; odo($('s2year'), Math.max(1, yr)); }
     const era = $('s2era'), lbl = i === 0 ? 'сегодня' : i <= 2025 ? 'нашей эры' : 'до нашей эры';
     if (era.firstChild.nodeValue !== lbl) era.firstChild.nodeValue = lbl;
     op($('s2tick'), sg(p, 0.29, 0.34) - sg(p, 0.40, 0.44));
@@ -369,13 +474,42 @@
     const t1 = ez(sg(p, 0.55, 0.62)), t2 = ez(sg(p, 0.62, 0.69)), t3 = ez(sg(p, 0.69, 0.75));
     tx.style.transform = `translateY(${(lerp(0, -224, t1) + lerp(0, -242, t2)).toFixed(1)}px)`;
     const wx = lerp(1336, 701, t1), wy = lerp(824, 711, t1) + lerp(0, -223, t2) + lerp(0, -67, t3) + (TAB ? lerp(150, -70, t3) : PORT ? lerp(120, -60, t3) : 0);
-    put($('s2wheel'), wx, wy, 1, -((1336 - wx) / 278) * 57.3 - sg(p, 0.62, 1) * 1500, sg(p, 0.545, 0.56));
+    put($('s2wheel'), wx, wy, 1, -((1336 - wx) / 278) * 57.3 - sg(p, 0.62, 1) * 1500 - SPIN, sg(p, 0.545, 0.56));
     dr($('s2mo'), sg(p, 0.64, 0.7));
     op($('s2where'), sg(p, 0.76, 0.8));
     if (p > 0.9 && !s2done && !ending) { s2done = true; rewindToS1(); }
   };
 
   let s3jump = false;
+  // v79: пыльный след за колесом в погоне — рисованные клубки пыли растут, поднимаются и рассеиваются
+  const DUST = [];
+  let dustX = null;
+  function dust(x, y, wx, Z, show) {
+    const lay = $('s3dust'); if (!lay) return;
+    const now = performance.now();
+    if (dustX === null || show < 0.5) dustX = wx;
+    const dx = wx - dustX;
+    if (Math.abs(dx) > 16 && DUST.length < 40 && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const dir = Math.sign(dx), n = 1 + (Math.random() < 0.5);
+      for (let k = 0; k < n; k++) {
+        const el = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        let d = '';
+        const r0 = 9 + Math.random() * 7, gap = 0.5 + Math.random() * 0.6, st = Math.random() * 6.28;
+        for (let i = 0; i <= 12; i++) { const a = st + (i / 12) * (6.28 - gap), r = r0 * (0.8 + Math.random() * 0.4); d += (i ? 'L' : 'M') + (Math.cos(a) * r).toFixed(1) + ' ' + (Math.sin(a) * r * 0.8).toFixed(1); }
+        el.setAttribute('d', d); el.setAttribute('class', 't');
+        lay.appendChild(el);
+        DUST.push({ el, x: x - dir * (30 + Math.random() * 30) * Z, y: y - Math.random() * 14 * Z, dir, Z, t0: now, life: 1100 + Math.random() * 700, sp: 0.6 + Math.random() * 0.8 });
+      }
+      dustX = wx;
+    }
+    for (let i = DUST.length - 1; i >= 0; i--) {
+      const q = DUST[i], a = (now - q.t0) / q.life;
+      if (a >= 1) { q.el.remove(); DUST.splice(i, 1); continue; }
+      const sc = (0.5 + a * 1.6) * q.Z, xx = q.x - q.dir * a * 50 * q.sp * q.Z, yy = q.y - a * 34 * q.sp * q.Z;
+      q.el.setAttribute('transform', `translate(${xx.toFixed(1)} ${yy.toFixed(1)}) scale(${sc.toFixed(2)})`);
+      q.el.style.opacity = (0.75 * Math.pow(1 - a, 1.4) * show).toFixed(3);
+    }
+  }
   S.s3 = (p) => {
     sw($('s3h'), sg(p, 0, 0.1));
     op($('s3run'), sg(p, 0.05, 0.08)); op($('s3ulg'), sg(p, 0.05, 0.08));
@@ -400,12 +534,66 @@
     if (mg.dataset.pose !== String(pose)) { mg.dataset.pose = pose; mg.innerHTML = A.man(pose, 51); }
     const PH = PORT && !TAB, Z = PH ? 1.35 : 1, zx = (x) => 720 + (x - 720) * Z, zy = (y) => 300 + (y - 300) * Z;
     put($('s3man'), zx(mx), zy(776 - 165), Z, 0, show);
-    put($('s3wh'), zx(wx), zy(601), Z, (wx - w0) / 80 * 57.3, show);
+    put($('s3wh'), zx(wx), zy(601), Z, (wx - w0) / 80 * 57.3 + SPIN, show);
+    dust(zx(wx), zy(601) + 80 * Z, wx, Z, show);
+    if (show > 0) look($('s3man'));
     op($('s3say'), sg(c, 0.08, 0.14) - sg(c, 0.6, 0.66));
     put($('s3say'), PH ? zx(mx) + 110 : mx + (PORT ? (TAB ? 90 : 60) : 237), PH ? 390 : PORT ? 380 : 428, PH ? 1.25 : PORT ? 0.85 : 1, 0);
     coverSeq($('s3cov'), p, 0.68, 0.76);
   };
 
+  // v88: пузыри в болоте — пока колесо тонет, из торфа поднимаются рисованные пузырьки и лопаются
+  const BUB = [];
+  let bubT = null, bubShift = 0, bubAcc = 0;
+  function bubPath(r) {
+    let d = '';
+    for (let i = 0; i <= 10; i++) { const a = i / 10 * 6.2832, rr = r * (0.92 + Math.random() * 0.16); d += (i ? 'L' : 'M') + (Math.cos(a) * rr).toFixed(1) + ' ' + (Math.sin(a) * rr).toFixed(1); }
+    return d + 'Z';
+  }
+  function bubbles(p, shift, wcy) {
+    const lay = $('s4bub'); if (!lay) return;
+    const now = performance.now(), dt = bubT === null ? 16 : Math.min(60, now - bubT); bubT = now;
+    const ds = shift - bubShift; bubShift = shift;
+    const on = p > 0.37 && p < 0.72 && !reduce;
+    if (on) {
+      bubAcc += dt / 1000 * (4 + Math.min(12, Math.abs(ds) * 0.3));
+      while (bubAcc >= 1 && BUB.length < 30) {
+        bubAcc -= 1;
+        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        const r = 8 + Math.random() * 12;
+        g.innerHTML = `<path class="t" d="${bubPath(r)}"/><path class="t" d="M${(-r * 0.5).toFixed(1)} ${(-r * 0.15).toFixed(1)}Q${(-r * 0.45).toFixed(1)} ${(-r * 0.55).toFixed(1)} ${(-r * 0.1).toFixed(1)} ${(-r * 0.6).toFixed(1)}"/>`;
+        lay.appendChild(g);
+        const side = Math.random() < 0.5 ? -1 : 1, near = Math.random() < 0.6;
+        const x = near ? 720 + side * (310 + Math.random() * 140) : 120 + Math.random() * 1200;
+        const y = near ? wcy - 60 + Math.random() * 300 : 420 + Math.random() * 460;
+        BUB.push({ g, x, y, r, t0: now, life: 1300 + Math.random() * 1200, rise: 70 + Math.random() * 130, ph: Math.random() * 6, pop: null });
+      }
+    } else bubAcc = 0;
+    for (let i = BUB.length - 1; i >= 0; i--) {
+      const b = BUB[i];
+      b.y -= ds; // пузырь едет вместе с торфом
+      const a = (now - b.t0) / b.life;
+      if (b.pop === null && (a >= 1 || !on)) {
+        b.pop = now;
+        // лопнул: колечко и брызги
+        let sp = `<circle class="t" r="${b.r.toFixed(1)}"/>`;
+        for (let k = 0; k < 5; k++) { const ang = k / 5 * 6.2832 + Math.random() * 0.5; sp += `<circle class="fill" cx="${(Math.cos(ang) * b.r * 1.4).toFixed(1)}" cy="${(Math.sin(ang) * b.r * 1.4).toFixed(1)}" r="1.3"/>`; }
+        b.g.innerHTML = sp; b.pa = Math.min(1, a);
+      }
+      if (b.pop !== null) {
+        const q = (now - b.pop) / 280;
+        if (q >= 1) { b.g.remove(); BUB.splice(i, 1); continue; }
+        const yy = b.y - b.rise * b.pa;
+        b.g.setAttribute('transform', `translate(${b.x.toFixed(1)} ${yy.toFixed(1)}) scale(${(1 + q * 1.3).toFixed(2)})`);
+        b.g.style.opacity = (0.9 * (1 - q)).toFixed(2);
+        continue;
+      }
+      const e = 1 - Math.pow(1 - a, 1.6), sc = 0.4 + Math.min(1, a * 2.5) * 0.6;
+      const xx = b.x + Math.sin(b.ph + a * 7) * 5, yy = b.y - b.rise * e;
+      b.g.setAttribute('transform', `translate(${xx.toFixed(1)} ${yy.toFixed(1)}) scale(${sc.toFixed(2)},${(sc * (1 + Math.sin(a * 20) * 0.06)).toFixed(2)})`);
+      b.g.style.opacity = Math.min(1, a * 5).toFixed(2);
+    }
+  }
   S.s4 = (p) => {
     sw($('s4h'), sg(p, 0, 0.08));
     op($('s4ph'), sg(p, 0.06, 0.09)); op($('s4y'), sg(p, 0.09, 0.11));
@@ -416,7 +604,8 @@
     $('s4bog').style.transform = `translateY(${(-shift).toFixed(1)}px)`;
     const fall = ez(sg(p, 0.28, 0.40));
     const wx = 720, wy = lerp(-560, 450, fall) + shift, ws = 280 / 270;
-    $('s4wh').style.transform = `translate(${(wx - 300).toFixed(1)}px,${(wy - 300 - 900).toFixed(1)}px) rotate(${(p * 1600).toFixed(1)}deg) scale(${ws.toFixed(3)})`;
+    $('s4wh').style.transform = `translate(${(wx - 300).toFixed(1)}px,${(wy - 300 - 900).toFixed(1)}px) rotate(${(p * 1600 + SPIN).toFixed(1)}deg) scale(${ws.toFixed(3)})`;
+    bubbles(p, shift, wy - shift);
     const tagsOut = sg(p, 0.71, 0.725);
     op($('s4t1'), sg(p, 0.60, 0.62) - tagsOut); op($('s4t2'), sg(p, 0.62, 0.64) - tagsOut);
     coverSeq($('s4c1'), p, 0.725, 0.75); textOut($('s4c1'), p, 0.8, 0.82);
@@ -555,7 +744,7 @@
     $('s8c2').style.transform = p >= 0.59 ? 'none' : 'translateY(100%)';
     const up = ez(sg(p, 0.64, 0.68));
     op($('s8wh'), spinOn ? 0 : 1);
-    $('s8wh').style.transform = `translateY(${(90 * (1 - up)).toFixed(1)}px) rotate(${(sg(p, 0.63, 1) * 1440 + (ending ? performance.now() / 6 : 0)).toFixed(1)}deg)`;
+    $('s8wh').style.transform = `translateY(${(90 * (1 - up) - endZ * 170).toFixed(1)}px) scale(${(1 - endZ * 0.985).toFixed(4)}) rotate(${(sg(p, 0.63, 1) * 1440 + SPIN + (ending ? performance.now() / 6 : 0)).toFixed(1)}deg)`;
     const outT = sg(p, 0.84, 0.87);
     const t1 = $('s8t1');
     op(t1, (p > 0.66 ? 1 : 0) - outT); sw(t1, sg(p, 0.66, 0.74));
@@ -590,8 +779,9 @@
   let endTimer = null, spinOn = false;
   function applyLap() {
     const T = (id, t) => { const e = $(id); if (e && e.firstChild) e.firstChild.nodeValue = t; };
-    T('s1catch', 'Еще раз!'); T('s1n1', 'теперь вы знаете,'); T('s1n2', 'куда оно укатится');
+    T('s1catch', 'Ещё раз!'); T('s1n1', 'теперь вы знаете,'); T('s1n2', 'куда оно укатится');
     $('s1oh').querySelector('span').textContent = 'опять?!';
+    alignHead();
     $('s2where').textContent = 'вы ведь знаете, где оно?';
     $('s3run').textContent = 'побежать ещё раз';
     $('s3say').querySelector('span').textContent = 'в тот раз почти';
@@ -606,8 +796,11 @@
     ending = true;
     endTimer = setTimeout(() => {
       endTimer = null;
+      (reduce ? (f) => f() : irisOut)(() => {
       spin(true);
+      if (!reduce) irisIn(innerWidth / 2, innerHeight / 2, 750);
       scrollAnim(0, 1500, () => {
+        endZ = 0;
         spin(false);
         $('endsub').innerHTML = lap ? 'Круг снова замкнулся.<br>Листайте дальше — посмотрим, что изменится' : 'Круг замкнулся.<br>Листайте дальше — кое-что изменилось';
         lap++; applyLap();
@@ -624,6 +817,7 @@
           ['wheel', 'touchmove', 'keydown'].forEach((t) => removeEventListener(t, go));
           end.classList.add('out'); setTimeout(() => { end.hidden = true; ending = false; tick(); }, 800); };
         ['wheel', 'touchmove', 'keydown'].forEach((t) => addEventListener(t, go, { passive: true }));
+      });
       });
     }, 500);
   }
@@ -674,18 +868,279 @@
       S[sec.id] && S[sec.id](p);
     }
   }
-  function loop() { tick(); requestAnimationFrame(loop); }
+  // v82: человечек в погоне следит за курсором — зрачки и лёгкий поворот головы
+  let MX = null, MY = null;
+  addEventListener('pointermove', (e) => { if (e.pointerType === 'mouse') { MX = e.clientX; MY = e.clientY; } }, { passive: true });
+  function look(svg) {
+    const h = svg.querySelector('.head'); if (!h) return;
+    const eyes = h.querySelector('.eyes'), hx = +h.dataset.hx, hy = +h.dataset.hy;
+    if (MX === null) { h.removeAttribute('transform'); eyes.removeAttribute('transform'); return; }
+    const r = eyes.getBoundingClientRect(), cx = (r.left + r.right) / 2, cy = (r.top + r.bottom) / 2;
+    const dx = MX - cx, dy = MY - cy, d = Math.hypot(dx, dy) || 1, k = Math.min(1, d / 160);
+    eyes.setAttribute('transform', `translate(${(dx / d * 3.2 * k).toFixed(2)} ${(dy / d * 2.6 * k).toFixed(2)})`);
+    const ang = Math.max(-14, Math.min(14, Math.atan2(dy, Math.abs(dx)) * 57.3 * 0.25 * Math.sign(dx || 1)));
+    h.setAttribute('transform', `rotate(${ang.toFixed(1)} ${hx} ${hy + 22})`);
+  }
+  // v82: финал — колесо уходит вглубь, кадр закрывается круглой шторкой (ирисом) и открывается снова
+  let endZ = 0;
+  const IRIS = (() => {
+    const el = document.createElement('div'); el.id = 'iris'; el.setAttribute('aria-hidden', 'true');
+    let d = '';
+    for (let i = 0; i <= 48; i++) { const a = i / 48 * 6.2832, rr = 1 + Math.sin(a * 5 + 1) * 0.008 + Math.sin(a * 11) * 0.005; d += (i ? 'L' : 'M') + (Math.cos(a) * rr).toFixed(4) + ' ' + (Math.sin(a) * rr).toFixed(4); }
+    el.innerHTML = `<svg><path d="${d}Z"/></svg>`;
+    document.body.appendChild(el);
+    return el;
+  })();
+  function irisSet(x, y, r) {
+    IRIS.style.setProperty('--x', x.toFixed(1) + 'px'); IRIS.style.setProperty('--y', y.toFixed(1) + 'px'); IRIS.style.setProperty('--r', Math.max(0, r).toFixed(1) + 'px');
+    IRIS.querySelector('path').setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${Math.max(0.01, r).toFixed(1)})`);
+  }
+  function irisOut(done) {
+    const t0 = performance.now(), w0 = $('s8wh').getBoundingClientRect(), x0 = (w0.left + w0.right) / 2, y0 = (w0.top + w0.bottom) / 2;
+    const D = Math.max(Math.hypot(x0, y0), Math.hypot(innerWidth - x0, y0), Math.hypot(x0, innerHeight - y0), Math.hypot(innerWidth - x0, innerHeight - y0)) + 4;
+    IRIS.classList.add('on');
+    (function st(now) {
+      const t = now - t0, e = cl(t / 1700);
+      endZ = e < 0.5 ? 2 * e * e : 1 - Math.pow(-2 * e + 2, 2) / 2;
+      const w = $('s8wh').getBoundingClientRect(), x = (w.left + w.right) / 2, y = (w.top + w.bottom) / 2;
+      const ir = cl((t - 150) / 1750), ie = ir * ir * (3 - 2 * ir);
+      irisSet(x, y, D * (1 - ie) + 6 * (1 - endZ));
+      if (t < 2150) requestAnimationFrame(st); else done();
+    })(t0);
+  }
+  function irisIn(x, y, dur = 750) {
+    if (x === undefined) { x = innerWidth / 2; y = innerHeight / 2; }
+    const t0 = performance.now(), D = Math.max(Math.hypot(x, y), Math.hypot(innerWidth - x, y), Math.hypot(x, innerHeight - y), Math.hypot(innerWidth - x, innerHeight - y)) + 4;
+    IRIS.classList.add('on'); irisSet(x, y, 0);
+    (function st(now) {
+      const t = cl((now - t0) / dur), e = t * t * (3 - 2 * t);
+      irisSet(x, y, D * e);
+      if (t < 1) requestAnimationFrame(st); else IRIS.classList.remove('on');
+    })(t0);
+  }
+  // кадр сходится в точку и сразу раскрывается — как смена эпизода в немом кино
+  function irisCut(x, y) {
+    const t0 = performance.now(), D = Math.max(Math.hypot(x, y), Math.hypot(innerWidth - x, y), Math.hypot(x, innerHeight - y), Math.hypot(innerWidth - x, innerHeight - y)) + 4;
+    IRIS.classList.add('on');
+    (function st(now) {
+      const t = cl((now - t0) / 420), e = t * t;
+      irisSet(x, y, D * (1 - e));
+      if (t < 1) requestAnimationFrame(st); else setTimeout(() => irisIn(x, y, 1100), 140);
+    })(t0);
+  }
+  // v83: ирис открывает новые главы — притчу о колеснице (s6) и финальное «Колесо» (s8), когда листаешь вниз
+  const IRIS_SEC = { s6: ['s6ch', 0.205], s8: ['s8fig', 0.006] }, irisPrev = {};
+  let irisCool = 0;
+  function irisChapters() {
+    if (reduce || root.classList.contains('rewinding') || root.classList.contains('spinning') || IRIS.classList.contains('on')) return;
+    const now = performance.now();
+    for (const id in IRIS_SEC) {
+      const sec = $(id); if (!sec || sec.hidden || sec._p === undefined) continue;
+      const [el, at] = IRIS_SEC[id], p = sec._p, prev = irisPrev[id];
+      irisPrev[id] = p;
+      const r = sec.getBoundingClientRect();
+      if (prev !== undefined && prev < at && p >= at && p - prev < 0.05 && r.top <= 0 && r.bottom >= innerHeight && now > irisCool) {
+        irisCool = now + 2500;
+        const q = $(el).getBoundingClientRect();
+        const x = q.width ? Math.min(innerWidth - 40, Math.max(40, (q.left + q.right) / 2)) : innerWidth / 2, y = q.height ? Math.min(innerHeight - 40, Math.max(40, (q.top + q.bottom) / 2)) : innerHeight / 2;
+        irisCut(x, y);
+      }
+    }
+  }
+  // v78: инерция колёс — после остановки прокрутки колесо чуть докатывается и качается назад
+  let iy = scrollY, iv = 0, py = scrollY, fastN = 0;
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function inertia() {
+    const y = scrollY;
+    iv = (iv + (y - iy) * 0.08) * 0.82; iy += iv;
+    SPIN = RM ? 0 : Math.max(-140, Math.min(140, (iy - y) * 0.42));
+    const v = Math.abs(y - py); py = y;
+    fastN = v > 38 ? 6 : Math.max(0, fastN - 1);
+    root.classList.toggle('whirl', !RM && fastN > 0);
+  }
+  function loop() { inertia(); tick(); requestAnimationFrame(loop); } // v84: ирис внутри лонгрида убран, остался только в финале
   // при обновлении страницы — всегда с самого начала
   try { history.scrollRestoration = 'manual'; sessionStorage.removeItem('koleso-pos'); } catch (e) {}
   addEventListener('beforeunload', () => scrollTo(0, 0));
   function restore() { scrollTo(0, 0); }
   (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
     $$('.sweep').forEach(splitLines);
-    sizes.clear(); restore(); loop();
+    calibrate(); alignHead(); sizes.clear(); restore(); loop();
     requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove('boot')));
     // первое слово проявляется слева направо при открытии
-    const t0 = performance.now(), w = $('s1word');
-    void t0; sw(w, 1); w.classList.add('in');
+    const w = $('s1word');
+    sw(w, 1); calibrate(); rollIn();
   });
   window.__tick = tick;
+})();
+
+/* v74: склейка на стыках и указки на фото находки */
+(function () {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const root = document.documentElement;
+  const sp = document.createElement('div'); sp.id = 'splice'; sp.setAttribute('aria-hidden', 'true'); sp.innerHTML = '<i></i>'; document.body.appendChild(sp);
+  const targets = [...document.querySelectorAll('.cover.paper'), document.querySelector('#s2 .stage')].filter(Boolean);
+  const seen = new WeakMap();
+  let busy = false, lastY = scrollY, lastT = 0;
+  function splice() {
+    if (performance.now() - lastT < 1500) return; lastT = performance.now();
+    if (reduce || busy || root.classList.contains('rewinding') || root.classList.contains('spinning')) return;
+    busy = true; sp.style.setProperty('--y', (20 + Math.random() * 60).toFixed(0) + '%');
+    root.classList.add('splicing');
+    setTimeout(() => { root.classList.remove('splicing'); busy = false; }, 320);
+  }
+  // указки на фото
+  const fig = document.getElementById('s4ph'), img = fig && fig.querySelector('img');
+  let note = null;
+  if (fig && img) {
+    fig.insertAdjacentHTML('beforeend', `<svg id="s4note" viewBox="0 0 1600 1225" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="d1" pathLength="1" d="M1075 215C1040 210 1010 225 985 250M985 250L1000 222M985 250L1014 247"/>
+      <text class="d1" x="1090" y="232">колесо</text>
+      <path class="d2" pathLength="1" d="M1150 860C1120 820 1100 760 1085 700M1085 700L1078 730M1085 700L1104 723"/>
+      <text class="d2" x="1100" y="925">дубовая ось</text>
+      <path class="d3" pathLength="1" d="M1180 1068C1260 1060 1340 1072 1430 1062"/>
+      <text class="d3" x="1185" y="1040">≈ 5200 лет</text></svg>`);
+    note = document.getElementById('s4note');
+  }
+  function fit() { if (note && img) { note.style.width = img.offsetWidth + 'px'; note.style.height = img.offsetHeight + 'px'; } }
+  addEventListener('resize', fit); fit();
+  const H = () => innerHeight;
+  function watch() {
+    for (const el of targets) {
+      const r = el.getBoundingClientRect();
+      const vis = Math.max(0, Math.min(r.bottom, H()) - Math.max(r.top, 0)) / H();
+      const st = el.closest('.cover') ? parseFloat(getComputedStyle(el).opacity || 1) : 1;
+      const hit = document.elementFromPoint(innerWidth / 2, innerHeight / 2);
+      const top = hit && (el.contains(hit) || (el.closest('#s2') && hit.closest('#s2')));
+      const on = vis > 0.55 && st > 0.5 && !!top;
+      if (on && !seen.get(el) && scrollY > lastY) splice();
+      seen.set(el, on);
+    }
+    lastY = scrollY;
+    if (note) {
+      const o = parseFloat(fig.style.opacity || getComputedStyle(fig).opacity);
+      const r = fig.getBoundingClientRect(), inView = r.top < H() * 0.8 && r.bottom > H() * 0.2;
+      if (o > 0.9 && inView) note.classList.add('on'); else if (o < 0.1 || !inView) note.classList.remove('on');
+    }
+    requestAnimationFrame(watch);
+  }
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => setTimeout(() => { fit(); targets.forEach((el) => { const r = el.getBoundingClientRect(); seen.set(el, Math.max(0, Math.min(r.bottom, H()) - Math.max(r.top, 0)) / H() > 0.55); }); watch(); }, 400));
+
+  /* v78: колесо вместо курсора и интертитр, который встаёт в кадровое окно */
+  (() => {
+    const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!RM && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      // v79: рисованная мышка вместо курсора — кончик носа там, куда указывает мышь
+      const c = document.createElement('div'); c.id = 'wcur'; c.setAttribute('aria-hidden', 'true');
+      // v80: обычная стрелка-курсор, только нарисованная от руки, со штриховкой и дрожащим контуром
+      const ARROW = 'M2 2L2.5 27.2L8.7 21.3L13.2 31.4L17.4 29.5L12.9 19.7L21.2 19.3L2 2';
+      const HATCH = 'M3.6 9.4L6.2 12M3.6 13.6L8.6 18.6M3.6 18L7.2 21.6M3.8 22.4L5.4 24M6 9.2L12.4 15.6M9.8 13.2L14.6 18';
+      const jit = (d, k) => d.replace(/-?\d+(\.\d+)?/g, (m) => (+m + Math.sin(k * 7.3 + m * 3.1) * 0.4).toFixed(2));
+      const mk = (k) => `<g class="fr f${k}"><path class="bgf" d="${k ? jit(ARROW, k) : ARROW}"/><path class="ink" d="${k ? jit(ARROW, k) : ARROW}"/><path class="ink h" d="${k ? jit(HATCH, k) : HATCH}"/></g>`;
+      c.innerHTML = `<svg viewBox="0 0 24 34"><g class="ms">${mk(0)}${mk(1)}</g></svg>`;
+      document.body.appendChild(c); root.classList.add('wcur');
+      let x = -100, y = -100, px = null, face = 1, still = 0;
+      addEventListener('pointermove', (e) => {
+        if (e.pointerType !== 'mouse') return;
+        x = e.clientX; y = e.clientY;
+        if (px !== null && Math.abs(x - px) > 1.5) face = x > px ? -1 : 1;
+        if (px !== null && Math.hypot(x - px, e.movementY || 0) > 0.5) still = 8;
+        px = x; c.classList.add('on');
+        const t = e.target.closest && e.target.closest('a,button,[role="button"],.part,input,label,summary');
+        c.classList.toggle('hot', !!t);
+      }, { passive: true });
+      addEventListener('pointerdown', () => c.classList.add('down'));
+      addEventListener('pointerup', () => c.classList.remove('down'));
+      document.documentElement.addEventListener('mouseleave', () => { c.classList.remove('on'); px = null; });
+      (function fr() {
+        c.style.transform = `translate(${x}px,${y}px)`;
+        still = Math.max(0, still - 1); c.classList.toggle('run', still > 0);
+        requestAnimationFrame(fr);
+      })();
+    }
+    if (!RM) {
+      // интертитр «встаёт в кадровое окно», когда реально выходит на экран (виден, непрозрачен и сверху всех слоёв)
+      const ps = [...document.querySelectorAll('.cover.paper p.h1')];
+      (function gw() {
+        for (const p of ps) {
+          const q = p.getBoundingClientRect(), vis = (Math.min(q.bottom, innerHeight) - Math.max(q.top, 0)) / (q.height || 1);
+          let on = false;
+          if (vis > 0.5 && +getComputedStyle(p.closest('.cover')).opacity > 0.5) {
+            const r = p.closest('.sc').getBoundingClientRect(); on = r.top < innerHeight * 0.5 && r.bottom > innerHeight * 0.5;
+            if (!on) { const t = document.elementFromPoint(Math.min(innerWidth - 2, Math.max(2, (q.left + q.right) / 2)), Math.min(innerHeight - 2, Math.max(2, (q.top + q.bottom) / 2))); on = !!(t && p.closest('.cover').contains(t)); }
+          }
+          if (on && !p._gated) { p._gated = true; p.classList.remove('gate'); void p.offsetWidth; p.classList.add('gate'); }
+          else if (!on && vis <= 0) { p._gated = false; p.classList.remove('gate'); }
+        }
+        requestAnimationFrame(gw);
+      })();
+    }
+
+    // v79: колея внизу экрана вместо полосы прогресса — следы колеса и маленькое колёсико на конце
+    {
+      const r = document.createElement('div'); r.id = 'rut'; r.setAttribute('aria-hidden', 'true');
+      r.innerHTML = '<svg><defs><clipPath id="rutc"><rect height="40" y="-10" width="0"/></clipPath></defs><g clip-path="url(#rutc)"><path class="tr"/><path class="tk"/></g><g class="wh"><circle r="6.5"/><path d="M0 -6.5V6.5M-6.5 0H6.5M-4.6 -4.6L4.6 4.6M-4.6 4.6L4.6 -4.6"/></g></svg>';
+      document.body.appendChild(r);
+      const svg = r.firstChild, rect = r.querySelector('rect'), tr = r.querySelector('.tr'), tk = r.querySelector('.tk'), wh = r.querySelector('.wh');
+      let W = 0;
+      const build = () => {
+        W = innerWidth; svg.setAttribute('viewBox', `0 0 ${W} 22`); svg.setAttribute('width', W); svg.setAttribute('height', 22);
+        let a = 'M0 12', b = 'M0 18', t = '';
+        for (let x = 0; x <= W + 12; x += 12) {
+          const w1 = Math.sin(x * 0.013) * 0.7 + Math.sin(x * 0.051) * 0.35, w2 = Math.sin(x * 0.011 + 2) * 0.7 + Math.sin(x * 0.047) * 0.35;
+          a += `L${x} ${(12 + w1).toFixed(2)}`; b += `L${x} ${(18 + w2).toFixed(2)}`;
+          if (x % 24 === 0) t += `M${x + 3} ${(13.4 + w1).toFixed(1)}L${x + 6} ${(16.6 + w2).toFixed(1)}`;
+        }
+        tr.setAttribute('d', a + b); tk.setAttribute('d', t);
+      };
+      build(); addEventListener('resize', build);
+      (function rf() {
+        const max = document.documentElement.scrollHeight - innerHeight, f = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0, x = f * W;
+        rect.setAttribute('width', x.toFixed(1));
+        wh.setAttribute('transform', `translate(${Math.max(7, Math.min(W - 7, x)).toFixed(1)} 15) rotate(${(x / 6.5 * 57.3 % 360).toFixed(1)})`);
+        r.classList.toggle('on', scrollY > 40);
+        requestAnimationFrame(rf);
+      })();
+    }
+    // v79: белочка из начала иногда выглядывает снизу из-за края экрана
+    if (!RM) {
+      const src = document.getElementById('s1sqg');
+      const pk = document.createElement('div'); pk.id = 'peek'; pk.setAttribute('aria-hidden', 'true');
+      pk.innerHTML = `<svg class="ill" viewBox="-24 -196 244 202"><g>${src ? src.innerHTML : ''}</g></svg>`;
+      document.body.appendChild(pk);
+      const inner = pk.firstChild;
+      const SECS = ['s3', 's4', 's5', 's6', 's7', 's8'], used = new Set();
+      let last = performance.now(), busy = false;
+      addEventListener('scroll', () => { last = performance.now(); }, { passive: true });
+      setInterval(() => {
+        const now = performance.now(), idle = now - last;
+        if (busy || idle < 900 || idle > 6000 || root.classList.contains('rewinding')) return;
+        for (const id of SECS) {
+          if (used.has(id)) continue;
+          const sec = document.getElementById(id); if (!sec || sec.hidden) continue;
+          const q = sec.getBoundingClientRect();
+          if (!(q.top < -innerHeight * 0.3 && q.bottom > innerHeight * 1.3)) continue;
+          const t = document.elementFromPoint(innerWidth / 2, innerHeight - 30);
+          if (!t || !sec.contains(t) || t.closest('.cover.paper')) return;
+          used.add(id);
+          if (Math.random() > 0.7) return;
+          busy = true;
+          const small = innerWidth < 700, w = small ? 120 : 170;
+          pk.style.width = w + 'px'; pk.style.height = (w * 202 / 244) + 'px';
+          pk.style.left = (innerWidth * (0.12 + Math.random() * 0.7) - w / 2).toFixed(0) + 'px';
+          inner.style.transform = Math.random() < 0.5 ? 'scaleX(-1)' : '';
+          const tilt = (Math.random() < 0.5 ? -1 : 1) * (4 + Math.random() * 5);
+          pk.animate([
+            { transform: 'translateY(105%) rotate(0deg)' },
+            { transform: `translateY(10%) rotate(${tilt}deg)`, offset: 0.22 },
+            { transform: `translateY(15%) rotate(${tilt * 0.4}deg)`, offset: 0.38 },
+            { transform: `translateY(9%) rotate(${tilt}deg)`, offset: 0.62 },
+            { transform: 'translateY(105%) rotate(0deg)' }
+          ], { duration: 2600, easing: 'cubic-bezier(.4,0,.3,1)' }).onfinish = () => { busy = false; };
+          return;
+        }
+      }, 300);
+    }
+
+  })();
 })();

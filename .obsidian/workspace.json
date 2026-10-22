@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Анализ по лекциям v19.md",
+                "file": "file:/Users/uliabysova/Documents/zib-zib-synth/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Анализ по лекциям v19"
+              "title": "README"
             }
           }
         ]
@@ -190,6 +190,11 @@
   },
   "active": "1be21f4f050e0191",
   "lastOpenFiles": [
+    "docs/Анализ по лекциям v19.md",
+    "graphify-out/2026-10-20/manifest.json",
+    "graphify-out/2026-10-20/graph.json",
+    "graphify-out/2026-10-20/GRAPH_REPORT.md",
+    "graphify-out/2026-10-20",
     "презентации/koleso_predprosmotr_v5.svg",
     "презентации/koleso_predprosmotr.svg",
     "презентации/koleso_uchebnaya_v3.svg",
@@ -200,7 +205,6 @@
     "презентации/figma-svg/uchebnaya_17_sources.svg",
     "презентации/figma-svg/uchebnaya_16_release.svg",
     "презентации/figma-svg/uchebnaya_15_probe.svg",
-    "презентации/figma-svg/uchebnaya_14_ai.svg",
     "презентации/figma-svg",
     "презентации",
     "graphify-out/cache/ast/v0.9.92-s17-g0fcafffe3c00/0116a07de3c98536567f0731404e9c9bd9a69661f064bc990d0a2c0b09edfb7a.json",
@@ -217,14 +221,11 @@
     "graphify-out/2026-10-19/GRAPH_REPORT.md",
     "graphify-out/2026-10-19",
     "v20/fonts/dance_partner_fix.ttf",
-    "fonts/dance_partner_fix.ttf",
     "docs/fidbeck from teacher/2026-10-18 Пащенко — фидбек на v20 и правки v55.md",
-    "graphify-out/cache/ast/v0.9.92-s17-g0fcafffe3c00/007e6920d6e5985a8be645ea0b3b20120af6250462c1b55e38b4c769dd71ebb0.json",
     "docs/Карта Graphify/fitUl()_1.md",
     "docs/Карта Graphify/balance()_1.md",
     "docs/Карта Graphify/fitUl().md",
     "docs/Карта Graphify/balance().md",
-    "graphify-out/cache/ast/v0.9.92-s17-g0fcafffe3c00/f52e364a3b8b0244c71e43590338aea62db9089b34bcca4f795b3b80012ccdcd.json",
     "docs/Карта Graphify/splitLines()_1.md",
     "docs/Карта Graphify/ringAt0()_1.md",
     "docs/Карта Graphify/splitLines().md",
@@ -235,7 +236,6 @@
     "docs/Карта Graphify/_COMMUNITY_v20vehicles.js.md",
     "docs/Карта Graphify/_COMMUNITY_v20fig.js.md",
     "docs/Карта Graphify/_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence).md",
-    "docs/Карта Graphify/_COMMUNITY_fig.js.md",
     "docs/Карта Graphify/graph.canvas"
   ]
 }
