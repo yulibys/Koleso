@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Журнал решений"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Фото_вырезки_права_17
 ---
 
 # Четыре фотоэкрана в духе Kami (v16)
@@ -18,4 +18,4 @@ tags:
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 - [[Ритм — возвращение групп со сменой масштаба]] - `implements` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Журнал_решений
+#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17

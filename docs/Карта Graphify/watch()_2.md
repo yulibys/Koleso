@@ -1,18 +1,18 @@
 ---
-source_file: "_backup_2026-10-22/v77/app.js"
+source_file: "_backup_2026-10-24/app.js"
 type: "code"
-community: "Раскадровка и двери (1.3)"
-location: "L772"
+community: "Первый экран и внимание (1.6)"
+location: "L1008"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Первый_экран_и_внимание_16
 ---
 
 # watch()
 
 ## Connections
+- [[_backup_2026-10-24app.js]] - `contains` [EXTRACTED]
 - [[splice()_2]] - `calls` [EXTRACTED]
-- [[v77app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

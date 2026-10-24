@@ -1,18 +1,18 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Типографика (1.4)"
-location: "L273"
+community: "Журнал решений"
+location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # alignHead()
 
 ## Connections
 - [[app.js]] - `indirect_call` [INFERRED]
-- [[applyLap()_1]] - `calls` [EXTRACTED]
+- [[applyLap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

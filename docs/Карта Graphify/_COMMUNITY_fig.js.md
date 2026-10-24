@@ -1,29 +1,32 @@
 ---
 type: community
-cohesion: 0.20
-members: 14
+cohesion: 0.17
+members: 17
 ---
 
 # fig.js
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
-- [[dot-lab-ground.blade.wind]] - code - src/style.css
-- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
-- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
-- [[sayL()_1]] - code - src/app.js
-- [[upd()]] - code - src/app.js
-- [[wood()]] - code - src/app.js
-- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
-- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
-- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
-- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
-- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
-- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
-- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
+- [[Алетейя честный режим сокрытия]] - concept - docs/lectures/1.8.txt
+- [[Архивный комплект и запись прохождения]] - rationale - docs/lectures/1.8.txt
+- [[Версия 1.0 новый номер при смене тезиса, структуры, источников]] - rationale - docs/lectures/1.8.txt
+- [[Доска процесса из четырёх фреймов]] - concept - docs/lectures/1.8.txt
+- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
+- [[Карточка выпуска в восемь строк]] - rationale - docs/lectures/1.7.txt
+- [[Критерий готовности рабочей трети (30–40 %)]] - rationale - docs/lectures/1.5.txt
+- [[Лекция 1.8. Предзащита и финальная редактура]] - document - docs/lectures/1.8.txt
+- [[Наблюдение раньше совета]] - rationale - docs/lectures/1.8.txt
+- [[Нигредо распад удобных объяснений]] - concept - docs/lectures/1.8.txt
+- [[Показ по живой ссылке за 230 (20 + 70 + 30 + 30 с)]] - rationale - docs/lectures/1.8.txt
+- [[Правка проверки перед показом и карточка версии 1.0]] - rationale - docs/MAP.md
+- [[Проверка чужими руками чистое окно, телефон, клавиатура, медленная сеть, путь до титров]] - rationale - docs/lectures/1.8.txt
+- [[Публикационный порог версия выдержала названные проверки]] - rationale - docs/lectures/1.7.txt
+- [[Финальный порог публикации]] - concept - docs/lectures/1.8.txt
+- [[Хорошие URI не меняются]] - rationale - docs/lectures/1.8.txt
+- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - rationale - docs/lectures/1.8.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,18 +36,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 4 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 3 edges to [[_COMMUNITY_Журнал решений]]
-- 3 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
-- 2 edges to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 3 edges to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 2 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
 - 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 1 edge to [[_COMMUNITY__backup_2026-10-22vehicles.js]]
+- 1 edge to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
 
 ## Top bridge nodes
-- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 7 communities
-- [[Детали повозки parts .part + .lab-say]] - degree 8, connects to 2 communities
-- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - degree 5, connects to 1 community
-- [[Действие читателя меняет состояние страницы]] - degree 4, connects to 1 community
-- [[sayL()_1]] - degree 4, connects to 1 community
+- [[Лекция 1.8. Предзащита и финальная редактура]] - degree 17, connects to 4 communities
+- [[Правка проверки перед показом и карточка версии 1.0]] - degree 6, connects to 1 community
+- [[Архивный комплект и запись прохождения]] - degree 4, connects to 1 community
+- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - degree 4, connects to 1 community
+- [[Финальный порог публикации]] - degree 4, connects to 1 community

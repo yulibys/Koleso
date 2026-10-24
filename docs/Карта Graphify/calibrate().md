@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Типографика (1.4)"
-location: "L258"
+community: "Журнал решений"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # calibrate()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

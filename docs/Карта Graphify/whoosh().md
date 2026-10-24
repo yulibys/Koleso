@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Сборка, источники, финал"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Сборка_источники_финал
 ---
 
 # whoosh()
@@ -16,4 +16,4 @@ tags:
 - [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - `references` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

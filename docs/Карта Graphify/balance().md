@@ -1,18 +1,18 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L70"
+community: "Журнал решений"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Журнал_решений
 ---
 
 # balance()
 
 ## Connections
-- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
+- [[app.js]] - `contains` [EXTRACTED]
 - [[fitUl()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

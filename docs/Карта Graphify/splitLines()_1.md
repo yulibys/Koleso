@@ -1,8 +1,8 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
 community: "Типографика (1.4)"
-location: "L58"
+location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,6 +12,6 @@ tags:
 # splitLines()
 
 ## Connections
-- [[app.js]] - `indirect_call` [INFERRED]
+- [[v20app.js]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/Типографика_14

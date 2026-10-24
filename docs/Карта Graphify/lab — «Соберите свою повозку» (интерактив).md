@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "fig.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/figjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # lab — «Соберите свою повозку» (интерактив)
@@ -18,7 +18,7 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[lab()]] - `references` [INFERRED]
 - [[nag — Нагасена и Милинда «колесо — это колесница»]] - `references` [EXTRACTED]
-- [[sayL()_1]] - `references` [INFERRED]
+- [[sayL()_2]] - `references` [INFERRED]
 - [[Действие читателя меняет состояние страницы]] - `rationale_for` [EXTRACTED]
 - [[Детали повозки parts .part + .lab-say]] - `references` [EXTRACTED]
 - [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - `rationale_for` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `rationale_for` [EXTRACTED]
 - [[Угол проекта колесо само по себе бесполезно]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/figjs
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

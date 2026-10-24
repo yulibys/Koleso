@@ -1,8 +1,8 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
 community: "Типографика (1.4)"
-location: "L780"
+location: "L854"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # applyLap()
 
 ## Connections
-- [[alignHead()]] - `calls` [EXTRACTED]
-- [[app.js]] - `contains` [EXTRACTED]
+- [[alignHead()_1]] - `calls` [EXTRACTED]
 - [[startEnding()_1]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Типографика_14

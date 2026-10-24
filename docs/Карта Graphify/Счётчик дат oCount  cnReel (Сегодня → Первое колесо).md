@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: ":root токены (--black, --cream, --paper, --red, --gut)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/root_токены_--black_--cream_--paper_--red_--gut
 ---
 
 # Счётчик дат #oCount / #cnReel (Сегодня → Первое колесо)
@@ -21,4 +21,4 @@ tags:
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 - [[Фактологический проход имена, даты, подписи, цитаты, числа]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/INFERRED #community/root_токены_--black_--cream_--paper_--red_--gut

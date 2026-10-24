@@ -1,18 +1,18 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Типографика (1.4)"
-location: "L874"
+community: "Журнал решений"
+location: "L948"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # look()
 
 ## Connections
-- [[dot-s3()_1]] - `calls` [EXTRACTED]
+- [[dot-s3()]] - `calls` [EXTRACTED]
 - [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

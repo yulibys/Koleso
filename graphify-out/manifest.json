@@ -36,16 +36,16 @@
     "semantic_hash": "af1a5f055f17954eb1e62c094f68ca3b"
   },
   "docs/\u041a\u0430\u0440\u0442\u0430 Graphify/.graphify_obsidian_manifest.json": {
-    "mtime": 1792483748.036531,
-    "seen": 1792630309.132143,
-    "ast_hash": "db2c1be5d9dbff731f409447100b7559",
-    "semantic_hash": "db2c1be5d9dbff731f409447100b7559"
+    "mtime": 1792630309.8197951,
+    "seen": 1792820015.587994,
+    "ast_hash": "3ad21ceb85bf97b19a32eb2caacb085a",
+    "semantic_hash": "3ad21ceb85bf97b19a32eb2caacb085a"
   },
   "app.js": {
-    "mtime": 1792630100.2406232,
-    "seen": 1792630309.1320782,
-    "ast_hash": "6ddde734335ed7bedaf6dec35490a7d0",
-    "semantic_hash": "6ddde734335ed7bedaf6dec35490a7d0"
+    "mtime": 1792819910.635929,
+    "seen": 1792820015.5879319,
+    "ast_hash": "bed253c5d4e7a185f4e365cb96354387",
+    "semantic_hash": "bed253c5d4e7a185f4e365cb96354387"
   },
   "art.js": {
     "mtime": 1792625468.2624972,
@@ -66,10 +66,10 @@
     "semantic_hash": "d19058e5255f457b012df1b672dad3a7"
   },
   "v20/app.js": {
-    "mtime": 1792630100.258873,
-    "seen": 1792630309.1322129,
-    "ast_hash": "6ddde734335ed7bedaf6dec35490a7d0",
-    "semantic_hash": "6ddde734335ed7bedaf6dec35490a7d0"
+    "mtime": 1792819910.6533635,
+    "seen": 1792820015.588067,
+    "ast_hash": "bed253c5d4e7a185f4e365cb96354387",
+    "semantic_hash": "bed253c5d4e7a185f4e365cb96354387"
   },
   "v20/art.js": {
     "mtime": 1792625482.4062753,
@@ -118,5 +118,23 @@
     "seen": 1792630309.132077,
     "ast_hash": "f1c9e4efd905648b9994d291ed192746",
     "semantic_hash": "f1c9e4efd905648b9994d291ed192746"
+  },
+  "_backup_2026-10-24/app.js": {
+    "mtime": 1792816605.2069032,
+    "seen": 1792820015.5879302,
+    "ast_hash": "6ddde734335ed7bedaf6dec35490a7d0",
+    "semantic_hash": "6ddde734335ed7bedaf6dec35490a7d0"
+  },
+  "_backup_2026-10-24/art.js": {
+    "mtime": 1792816605.210104,
+    "seen": 1792820015.587931,
+    "ast_hash": "4bd174f246b5a33587dc0b6dfa76e65c",
+    "semantic_hash": "4bd174f246b5a33587dc0b6dfa76e65c"
+  },
+  "_backup_2026-10-24/vehicles.js": {
+    "mtime": 1792816605.2085633,
+    "seen": 1792820015.5879319,
+    "ast_hash": "6cacf085680830ff00305a600c51d365",
+    "semantic_hash": "6cacf085680830ff00305a600c51d365"
   }
 }

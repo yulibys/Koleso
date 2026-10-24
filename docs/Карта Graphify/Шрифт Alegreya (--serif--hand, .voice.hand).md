@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
+community: "v20/vehicles.js"
 location: "L6"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
+  - community/v20/vehiclesjs
 ---
 
 # Шрифт Alegreya (--serif/--hand, .voice/.hand)
@@ -20,4 +20,4 @@ tags:
 - [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - `conceptually_related_to` [INFERRED]
 - [[Сходство одинаковое оформление — одинаковая роль]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_--serif/--hand_voice/hand
+#graphify/code #graphify/INFERRED #community/v20/vehiclesjs

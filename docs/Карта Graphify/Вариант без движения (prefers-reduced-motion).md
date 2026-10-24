@@ -1,11 +1,11 @@
 ---
 source_file: "docs/MAP.md"
 type: "rationale"
-community: "Первый экран и внимание (1.6)"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # Вариант без движения (prefers-reduced-motion)
@@ -15,4 +15,4 @@ tags:
 - [[Лекция 1.6. Управление вниманием первый экран, паузы]] - `references` [EXTRACTED]
 - [[Уменьшение движения и неподвижная версия]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/rationale #graphify/INFERRED #community/boil02_дрожь_линии_filters_feTurbulence

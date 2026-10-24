@@ -1,24 +1,29 @@
 ---
 type: community
-cohesion: 0.33
-members: 9
+cohesion: 0.18
+members: 14
 ---
 
 # Лекция 1.1. Лонгрид как особый медиум
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Viewport и скролл пространство превращается в длительность]] - concept - docs/lectures/1.1.txt
-- [[Лекция 1.1. Лонгрид как особый медиум]] - document - docs/lectures/1.1.txt
-- [[Одно главное и одно поддерживающее свойство браузера]] - rationale - docs/lectures/1.1.txt
-- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - concept - docs/lectures/1.1.txt
-- [[Регламент генеративных инструментов]] - rationale - docs/lectures/1.1.txt
-- [[Режим жизни поддерживать  заморозить  обновлять  снять]] - rationale - docs/lectures/1.8.txt
-- [[Свиток последовательность и жест разворачивания]] - concept - docs/lectures/1.1.txt
-- [[Фабрика вариантов и дом у реки]] - concept - docs/lectures/1.1.txt
-- [[Хронотоп (Бахтин) участок со случайной длительностью]] - rationale - docs/lectures/1.1.txt
+- [[track — лента изобретений (игла, верёвка, флейта, лодка, гончарный круг)]] - code - src/body.html
+- [[S_flute — Флейта из пещеры Дивье Бабе (.stk)]] - image - src/body.html
+- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - code - src/body.html
+- [[layLater()]] - code - src/app.js
+- [[layScenery()]] - code - src/app.js
+- [[layout()]] - code - src/app.js
+- [[layoutKF()]] - code - src/app.js
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
+- [[steps()]] - code - src/app.js
+- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
+- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
+- [[Мобильное преобразование — не общий Scale]] - rationale - docs/lectures/1.5.txt
+- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - code - src/body.html
+- [[Текстовая альтернатива функция, а не пиксели]] - rationale - docs/lectures/1.5.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,17 +33,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_re]]
-- 4 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 3 edges to [[_COMMUNITY_Журнал решений]]
-- 3 edges to [[_COMMUNITY_scenery.js]]
-- 3 edges to [[_COMMUNITY_fig.js]]
-- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
-- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 8 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 7 edges to [[_COMMUNITY_Сборка, источники, финал]]
+- 5 edges to [[_COMMUNITY_scenery.js]]
+- 3 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 3 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 2 edges to [[_COMMUNITY_Рисунки повозок]]
+- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 2 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 1 edge to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
+- 1 edge to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 1 edge to [[_COMMUNITY_re_1]]
 
 ## Top bridge nodes
-- [[Лекция 1.1. Лонгрид как особый медиум]] - degree 17, connects to 5 communities
-- [[Одно главное и одно поддерживающее свойство браузера]] - degree 5, connects to 3 communities
-- [[Хронотоп (Бахтин) участок со случайной длительностью]] - degree 4, connects to 2 communities
-- [[Viewport и скролл пространство превращается в длительность]] - degree 6, connects to 1 community
-- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - degree 5, connects to 1 community
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 5 communities
+- [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - degree 9, connects to 5 communities
+- [[later — «Колесо придумали позже флейты» (лента изобретений)]] - degree 15, connects to 4 communities
+- [[Текстовая альтернатива функция, а не пиксели]] - degree 4, connects to 3 communities
+- [[layoutKF()]] - degree 3, connects to 2 communities

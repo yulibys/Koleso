@@ -1,8 +1,8 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
 community: "Типографика (1.4)"
-location: "L218"
+location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-s8()_1]] - `calls` [EXTRACTED]
-- [[app.js]] - `contains` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Типографика_14

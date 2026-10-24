@@ -1,12 +1,12 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L457"
+community: "Журнал решений"
+location: "L700"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Журнал_решений
 ---
 
 # .s5()
@@ -17,4 +17,4 @@ tags:
 - [[labUpd()]] - `calls` [EXTRACTED]
 - [[shortcut()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

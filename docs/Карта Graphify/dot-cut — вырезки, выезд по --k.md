@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Рисунки повозок"
+community: "scenery.js"
 location: "L474"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Рисунки_повозок
+  - community/sceneryjs
 ---
 
 # .cut — вырезки, выезд по --k
@@ -16,4 +16,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 - [[Общая судьба совместное движение собирает группу]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Рисунки_повозок
+#graphify/code #graphify/INFERRED #community/sceneryjs

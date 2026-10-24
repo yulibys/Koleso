@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "Выпуск и предзащита (1.8)"
+community: "Рисунки повозок"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/Рисунки_повозок
 ---
 
 # hill()
@@ -19,4 +19,4 @@ tags:
 - [[parade()]] - `calls` [EXTRACTED]
 - [[scenery.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок

@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Типографика (1.4)"
-location: "L911"
+community: "Журнал решений"
+location: "L985"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # irisIn()
@@ -15,6 +15,6 @@ tags:
 - [[app.js]] - `contains` [EXTRACTED]
 - [[irisCut()]] - `calls` [EXTRACTED]
 - [[irisSet()]] - `calls` [EXTRACTED]
-- [[startEnding()_1]] - `calls` [EXTRACTED]
+- [[startEnding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

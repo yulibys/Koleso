@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "fig.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/figjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # .lab-ground/.blade/.wind
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/figjs
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

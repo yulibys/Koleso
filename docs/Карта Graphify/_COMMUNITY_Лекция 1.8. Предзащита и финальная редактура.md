@@ -40,22 +40,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Журнал решений]]
-- 4 edges to [[_COMMUNITY_Рисунки повозок]]
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 2 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 1 edge to [[_COMMUNITY_scenery.js]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)]]
-- 1 edge to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
+- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 5 edges to [[_COMMUNITY_scenery.js]]
+- 2 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
+- 2 edges to [[_COMMUNITY_fig.js_1]]
+- 2 edges to [[_COMMUNITY_re]]
+- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 1 edge to [[_COMMUNITY_Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]]
+- 1 edge to [[_COMMUNITY_fig.js]]
 - 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
-- 1 edge to [[_COMMUNITY_re]]
+- 1 edge to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево_1]]
+- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)_1]]
+- 1 edge to [[_COMMUNITY_v20vehicles.js]]
+- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
 
 ## Top bridge nodes
-- [[Лекция 1.5. Модульные системы и сетки]] - degree 42, connects to 13 communities
+- [[Лекция 1.5. Модульные системы и сетки]] - degree 42, connects to 15 communities
 - [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - degree 8, connects to 2 communities
 - [[Увеличение текста до 200% без потери содержания и функций]] - degree 2, connects to 1 community
 - [[dot-collage + data-shape (circleovalarchblobblob2)]] - degree 2, connects to 1 community

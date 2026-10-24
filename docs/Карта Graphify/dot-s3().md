@@ -1,12 +1,12 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L379"
+community: "Журнал решений"
+location: "L566"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Журнал_решений
 ---
 
 # .s3()
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[S]] - `method` [EXTRACTED]
 - [[coverSeq()]] - `calls` [EXTRACTED]
+- [[dust()]] - `calls` [EXTRACTED]
+- [[look()]] - `calls` [EXTRACTED]
 - [[put()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

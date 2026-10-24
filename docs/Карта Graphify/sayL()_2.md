@@ -1,18 +1,20 @@
 ---
-source_file: "app.js"
+source_file: "src/app.js"
 type: "code"
-community: "Типографика (1.4)"
-location: "L619"
+community: "Шрифт Alegreya SC (--display, .disp)"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # sayL()
 
 ## Connections
-- [[app.js]] - `contains` [EXTRACTED]
-- [[labUpd()_1]] - `calls` [EXTRACTED]
+- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
+- [[upd()]] - `calls` [EXTRACTED]
+- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

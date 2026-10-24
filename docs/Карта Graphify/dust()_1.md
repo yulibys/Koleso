@@ -1,18 +1,18 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L487"
+community: "Типографика (1.4)"
+location: "L540"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Типографика_14
 ---
 
 # dust()
 
 ## Connections
-- [[dot-s3()_2]] - `calls` [EXTRACTED]
+- [[dot-s3()_1]] - `calls` [EXTRACTED]
 - [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

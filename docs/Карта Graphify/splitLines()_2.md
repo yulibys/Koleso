@@ -1,17 +1,17 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-24/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # splitLines()
 
 ## Connections
-- [[v20app.js]] - `indirect_call` [INFERRED]
+- [[_backup_2026-10-24app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

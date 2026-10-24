@@ -1,12 +1,12 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L985"
+community: "Типографика (1.4)"
+location: "L1059"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Типографика_14
 ---
 
 # splice()
@@ -15,4 +15,4 @@ tags:
 - [[v20app.js]] - `contains` [EXTRACTED]
 - [[watch()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

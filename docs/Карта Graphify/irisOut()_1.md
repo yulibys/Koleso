@@ -1,12 +1,12 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L898"
+community: "Типографика (1.4)"
+location: "L972"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Типографика_14
 ---
 
 # irisOut()
@@ -15,4 +15,4 @@ tags:
 - [[irisSet()_1]] - `calls` [EXTRACTED]
 - [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # #guide — главное колесо-проводник (морфинг gMorph/gArt/gChalk/gShade)
@@ -43,4 +43,4 @@ tags:
 - [[Повтор с изменением задачи]] - `rationale_for` [INFERRED]
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром

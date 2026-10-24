@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Рисунки повозок"
+community: "v20/fig.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/v20/figjs
 ---
 
 # json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gc.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/concept #graphify/EXTRACTED #community/v20/figjs

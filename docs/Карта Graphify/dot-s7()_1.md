@@ -1,8 +1,8 @@
 ---
-source_file: "app.js"
+source_file: "v20/app.js"
 type: "code"
 community: "Типографика (1.4)"
-location: "L693"
+location: "L766"
 tags:
   - graphify/code
   - graphify/EXTRACTED

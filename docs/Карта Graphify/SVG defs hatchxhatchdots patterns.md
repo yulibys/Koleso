@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
 location: "L3"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
 ---
 
 # SVG defs: hatch/xhatch/dots patterns
@@ -18,4 +18,4 @@ tags:
 - [[tRunner — бегущий человек (template)]] - `shares_data_with` [INFERRED]
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/INFERRED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево

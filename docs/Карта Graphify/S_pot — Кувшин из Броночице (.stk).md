@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Рисунки повозок"
+community: "scenery.js"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/sceneryjs
 ---
 
 # S_pot — Кувшин из Броночице (.stk)
@@ -14,4 +14,4 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/image #graphify/EXTRACTED #community/sceneryjs

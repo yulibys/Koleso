@@ -1,17 +1,17 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L57"
+community: "Журнал решений"
+location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Сборка_источники_финал
+  - community/Журнал_решений
 ---
 
 # splitLines()
 
 ## Connections
-- [[_backup_2026-10-22app.js]] - `indirect_call` [INFERRED]
+- [[app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Сборка_источники_финал
+#graphify/code #graphify/INFERRED #community/Журнал_решений

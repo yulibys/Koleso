@@ -1,12 +1,12 @@
 ---
 source_file: "cut/gc.py"
 type: "code"
-community: "Рисунки повозок"
+community: "v20/fig.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/v20/figjs
 ---
 
 # gc.py
@@ -22,4 +22,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `references` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/code #graphify/EXTRACTED #community/v20/figjs

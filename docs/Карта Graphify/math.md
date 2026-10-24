@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Движок сцен и звуки (app.js)"
+community: "Интерактив и проверка читателем"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # math
@@ -14,4 +14,4 @@ tags:
 - [[batten()]] - `calls` [EXTRACTED]
 - [[wheel()]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/concept #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

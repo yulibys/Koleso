@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L13"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # #wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)
@@ -22,4 +22,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `conceptually_related_to` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром

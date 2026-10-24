@@ -1,61 +1,64 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Типографика (1.4)"
+community: "Журнал решений"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # app.js
 
 ## Connections
-- [[S_1]] - `contains` [EXTRACTED]
+- [[S]] - `contains` [EXTRACTED]
 - [[alignHead()]] - `indirect_call` [INFERRED]
-- [[applyLap()_1]] - `contains` [EXTRACTED]
-- [[balance()_1]] - `contains` [EXTRACTED]
+- [[alignIntro()]] - `indirect_call` [INFERRED]
+- [[applyLap()]] - `contains` [EXTRACTED]
+- [[balance()]] - `contains` [EXTRACTED]
 - [[bubPath()]] - `contains` [EXTRACTED]
 - [[bubbles()]] - `contains` [EXTRACTED]
 - [[bump()]] - `contains` [EXTRACTED]
 - [[calibrate()]] - `contains` [EXTRACTED]
-- [[cancelEnding()_1]] - `contains` [EXTRACTED]
-- [[cover()_1]] - `contains` [EXTRACTED]
-- [[coverSeq()_1]] - `contains` [EXTRACTED]
+- [[cancelEnding()]] - `contains` [EXTRACTED]
+- [[carScene()]] - `contains` [EXTRACTED]
+- [[cover()]] - `contains` [EXTRACTED]
+- [[coverSeq()]] - `contains` [EXTRACTED]
 - [[crash()]] - `contains` [EXTRACTED]
 - [[dust()]] - `contains` [EXTRACTED]
-- [[fit()_1]] - `contains` [EXTRACTED]
-- [[fitUl()_1]] - `contains` [EXTRACTED]
+- [[fit()]] - `contains` [EXTRACTED]
+- [[fitUl()]] - `contains` [EXTRACTED]
 - [[inertia()]] - `contains` [EXTRACTED]
+- [[introCaps()]] - `contains` [EXTRACTED]
 - [[irisChapters()]] - `contains` [EXTRACTED]
 - [[irisCut()]] - `contains` [EXTRACTED]
 - [[irisIn()]] - `contains` [EXTRACTED]
 - [[irisOut()]] - `contains` [EXTRACTED]
 - [[irisSet()]] - `contains` [EXTRACTED]
-- [[labUpd()_1]] - `contains` [EXTRACTED]
+- [[labUpd()]] - `contains` [EXTRACTED]
 - [[look()]] - `contains` [EXTRACTED]
-- [[loop()_2]] - `contains` [EXTRACTED]
-- [[morph()_1]] - `contains` [EXTRACTED]
-- [[nextCover()_1]] - `contains` [EXTRACTED]
+- [[loop()]] - `contains` [EXTRACTED]
+- [[morph()]] - `contains` [EXTRACTED]
+- [[nextCover()]] - `contains` [EXTRACTED]
 - [[odo()]] - `contains` [EXTRACTED]
-- [[put()_1]] - `contains` [EXTRACTED]
-- [[restore()_1]] - `contains` [EXTRACTED]
-- [[rewTxt()_1]] - `contains` [EXTRACTED]
-- [[rewindToS1()_1]] - `contains` [EXTRACTED]
-- [[ringAt()_1]] - `contains` [EXTRACTED]
-- [[ringAt0()_1]] - `contains` [EXTRACTED]
+- [[put()]] - `contains` [EXTRACTED]
+- [[restore()]] - `contains` [EXTRACTED]
+- [[rewTxt()]] - `contains` [EXTRACTED]
+- [[rewindToS1()]] - `contains` [EXTRACTED]
+- [[ringAt()]] - `contains` [EXTRACTED]
+- [[ringAt0()]] - `contains` [EXTRACTED]
 - [[rollIn()]] - `contains` [EXTRACTED]
-- [[sayL()_2]] - `contains` [EXTRACTED]
-- [[scrollAnim()_1]] - `contains` [EXTRACTED]
-- [[shortcut()_1]] - `contains` [EXTRACTED]
-- [[spin()_1]] - `contains` [EXTRACTED]
+- [[sayL()]] - `contains` [EXTRACTED]
+- [[scrollAnim()]] - `contains` [EXTRACTED]
+- [[shortcut()]] - `contains` [EXTRACTED]
+- [[spin()]] - `contains` [EXTRACTED]
 - [[splice()]] - `contains` [EXTRACTED]
-- [[splitLines()_1]] - `indirect_call` [INFERRED]
-- [[startEnding()_1]] - `contains` [EXTRACTED]
-- [[textOut()_1]] - `contains` [EXTRACTED]
-- [[tick()_1]] - `contains` [EXTRACTED]
-- [[unshort()_1]] - `contains` [EXTRACTED]
+- [[splitLines()]] - `indirect_call` [INFERRED]
+- [[startEnding()]] - `contains` [EXTRACTED]
+- [[textOut()]] - `contains` [EXTRACTED]
+- [[tick()]] - `contains` [EXTRACTED]
+- [[unshort()]] - `contains` [EXTRACTED]
 - [[watch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

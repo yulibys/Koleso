@@ -1,11 +1,11 @@
 ---
 source_file: "docs/MAP.md"
 type: "document"
-community: "re"
+community: "nag — Нагасена и Милинда: «колесо — это колесница?»"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/re
+  - community/nag__Нагасена_и_Милинда_колесо__это_колесница
 ---
 
 # Карта проекта «Далеко собрались?» (MAP.md)
@@ -26,4 +26,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `references` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/re
+#graphify/document #graphify/EXTRACTED #community/nag__Нагасена_и_Милинда_колесо__это_колесница

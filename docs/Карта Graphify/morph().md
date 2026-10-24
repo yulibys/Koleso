@@ -1,18 +1,18 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L217"
+community: "Журнал решений"
+location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Журнал_решений
 ---
 
 # morph()
 
 ## Connections
 - [[dot-s8()]] - `calls` [EXTRACTED]
-- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
+- [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

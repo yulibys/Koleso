@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Колесо-проводник и гравюра"
+community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
 ---
 
 # Клавиатура: Tab, видимый фокус, выход из интерактива
@@ -15,4 +15,4 @@ tags:
 - [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - `rationale_for` [INFERRED]
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/rationale #graphify/INFERRED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево

@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: ".sc/.stick/.frame — высокая секция с липким кадром"
+community: "fig.js"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sc/stick/frame__высокая_секция_с_липким_кадром
+  - community/figjs
 ---
 
 # .sc/.stick/.frame — высокая секция с липким кадром
@@ -21,4 +21,4 @@ tags:
 - [[Смысловой порядок при складывании колонок]] - `rationale_for` [INFERRED]
 - [[Уменьшение движения и неподвижная версия]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром
+#graphify/code #graphify/INFERRED #community/figjs

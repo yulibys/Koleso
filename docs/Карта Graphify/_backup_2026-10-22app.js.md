@@ -1,43 +1,43 @@
 ---
 source_file: "_backup_2026-10-22/app.js"
 type: "code"
-community: "Сборка, источники, финал"
+community: "Пейзажи (scenery.js)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Пейзажи_sceneryjs
 ---
 
 # _backup_2026-10-22/app.js
 
 ## Connections
-- [[S]] - `contains` [EXTRACTED]
-- [[applyLap()]] - `contains` [EXTRACTED]
-- [[balance()]] - `contains` [EXTRACTED]
-- [[cancelEnding()]] - `contains` [EXTRACTED]
-- [[cover()]] - `contains` [EXTRACTED]
-- [[coverSeq()]] - `contains` [EXTRACTED]
-- [[fit()]] - `contains` [EXTRACTED]
-- [[fitUl()]] - `contains` [EXTRACTED]
-- [[labUpd()]] - `contains` [EXTRACTED]
-- [[loop()_1]] - `contains` [EXTRACTED]
-- [[morph()]] - `contains` [EXTRACTED]
-- [[nextCover()]] - `contains` [EXTRACTED]
-- [[put()]] - `contains` [EXTRACTED]
-- [[restore()]] - `contains` [EXTRACTED]
-- [[rewTxt()]] - `contains` [EXTRACTED]
-- [[rewindToS1()]] - `contains` [EXTRACTED]
-- [[ringAt()]] - `contains` [EXTRACTED]
-- [[ringAt0()]] - `contains` [EXTRACTED]
-- [[sayL()]] - `contains` [EXTRACTED]
-- [[scrollAnim()]] - `contains` [EXTRACTED]
-- [[shortcut()]] - `contains` [EXTRACTED]
-- [[spin()]] - `contains` [EXTRACTED]
-- [[splitLines()]] - `indirect_call` [INFERRED]
-- [[startEnding()]] - `contains` [EXTRACTED]
-- [[textOut()]] - `contains` [EXTRACTED]
-- [[tick()]] - `contains` [EXTRACTED]
-- [[unshort()]] - `contains` [EXTRACTED]
+- [[S_4]] - `contains` [EXTRACTED]
+- [[applyLap()_4]] - `contains` [EXTRACTED]
+- [[balance()_4]] - `contains` [EXTRACTED]
+- [[cancelEnding()_4]] - `contains` [EXTRACTED]
+- [[cover()_4]] - `contains` [EXTRACTED]
+- [[coverSeq()_4]] - `contains` [EXTRACTED]
+- [[fit()_4]] - `contains` [EXTRACTED]
+- [[fitUl()_4]] - `contains` [EXTRACTED]
+- [[labUpd()_4]] - `contains` [EXTRACTED]
+- [[loop()_5]] - `contains` [EXTRACTED]
+- [[morph()_4]] - `contains` [EXTRACTED]
+- [[nextCover()_4]] - `contains` [EXTRACTED]
+- [[put()_4]] - `contains` [EXTRACTED]
+- [[restore()_4]] - `contains` [EXTRACTED]
+- [[rewTxt()_4]] - `contains` [EXTRACTED]
+- [[rewindToS1()_4]] - `contains` [EXTRACTED]
+- [[ringAt()_4]] - `contains` [EXTRACTED]
+- [[ringAt0()_4]] - `contains` [EXTRACTED]
+- [[sayL()_5]] - `contains` [EXTRACTED]
+- [[scrollAnim()_4]] - `contains` [EXTRACTED]
+- [[shortcut()_4]] - `contains` [EXTRACTED]
+- [[spin()_4]] - `contains` [EXTRACTED]
+- [[splitLines()_4]] - `indirect_call` [INFERRED]
+- [[startEnding()_4]] - `contains` [EXTRACTED]
+- [[textOut()_4]] - `contains` [EXTRACTED]
+- [[tick()_4]] - `contains` [EXTRACTED]
+- [[unshort()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

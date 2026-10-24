@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: ":root токены (--black, --cream, --paper, --red, --gut)"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/root_токены_--black_--cream_--paper_--red_--gut
 ---
 
 # Циферблат дня #daySlot/#dayTicks + #sun + расписание #sched
@@ -15,4 +15,4 @@ tags:
 - [[day — «Этот распорядок никто не придумывал» (день вокруг колеса)]] - `references` [EXTRACTED]
 - [[slot()]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/root_токены_--black_--cream_--paper_--red_--gut

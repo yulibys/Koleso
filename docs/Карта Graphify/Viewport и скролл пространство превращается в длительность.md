@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.1.txt"
 type: "concept"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "_backup_2026-10-22/vehicles.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/_backup_2026-10-22/vehiclesjs
 ---
 
 # Viewport и скролл: пространство превращается в длительность
@@ -18,4 +18,4 @@ tags:
 - [[Хронотоп (Бахтин) участок со случайной длительностью]] - `conceptually_related_to` [EXTRACTED]
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/concept #graphify/EXTRACTED #community/_backup_2026-10-22/vehiclesjs

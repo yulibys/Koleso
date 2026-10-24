@@ -1,56 +1,54 @@
 ---
 type: community
-cohesion: 0.09
-members: 41
+cohesion: 0.14
+members: 39
 ---
 
 # Раскадровка и двери (1.3)
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 41 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[dot-s1()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s2()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s3()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s4()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s5()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s6()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s7()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[dot-s8()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[S_3]] - code - _backup_2026-10-22/v77/app.js
-- [[applyLap()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[balance()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[calibrate()_2]] - code - _backup_2026-10-22/v77/app.js
-- [[cancelEnding()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[cover()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[coverSeq()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[fit()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[fitUl()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[labUpd()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[loop()_4]] - code - _backup_2026-10-22/v77/app.js
-- [[morph()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[nextCover()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[odo()_2]] - code - _backup_2026-10-22/v77/app.js
-- [[put()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[restore()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[rewTxt()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[rewindToS1()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[ringAt()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[ringAt0()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[rollIn()_2]] - code - _backup_2026-10-22/v77/app.js
-- [[sayL()_4]] - code - _backup_2026-10-22/v77/app.js
-- [[scrollAnim()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[shortcut()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[spin()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[splice()_2]] - code - _backup_2026-10-22/v77/app.js
-- [[splitLines()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[startEnding()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[textOut()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[tick()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[unshort()_3]] - code - _backup_2026-10-22/v77/app.js
-- [[v77app.js]] - code - _backup_2026-10-22/v77/app.js
-- [[watch()_2]] - code - _backup_2026-10-22/v77/app.js
+- [[_backup_2026-10-24art.js]] - code - _backup_2026-10-24/art.js
+- [[arcade()_2]] - code - _backup_2026-10-24/art.js
+- [[bez()_2]] - code - _backup_2026-10-24/art.js
+- [[birds()_3]] - code - _backup_2026-10-24/art.js
+- [[bog()_2]] - code - _backup_2026-10-24/art.js
+- [[bubble()_3]] - code - _backup_2026-10-24/art.js
+- [[chariotParts()_2]] - code - _backup_2026-10-24/art.js
+- [[clipped()_2]] - code - _backup_2026-10-24/art.js
+- [[ferris()_2]] - code - _backup_2026-10-24/art.js
+- [[flower()_2]] - code - _backup_2026-10-24/art.js
+- [[flowers()_2]] - code - _backup_2026-10-24/art.js
+- [[frame()_2]] - code - _backup_2026-10-24/art.js
+- [[gear()_2]] - code - _backup_2026-10-24/art.js
+- [[grass()_3]] - code - _backup_2026-10-24/art.js
+- [[grassAt()_2]] - code - _backup_2026-10-24/art.js
+- [[hill()_3]] - code - _backup_2026-10-24/art.js
+- [[hut()_3]] - code - _backup_2026-10-24/art.js
+- [[king()_2]] - code - _backup_2026-10-24/art.js
+- [[line()_2]] - code - _backup_2026-10-24/art.js
+- [[man()_2]] - code - _backup_2026-10-24/art.js
+- [[monk()_2]] - code - _backup_2026-10-24/art.js
+- [[motion()_2]] - code - _backup_2026-10-24/art.js
+- [[mountains()_2]] - code - _backup_2026-10-24/art.js
+- [[mouse()_2]] - code - _backup_2026-10-24/art.js
+- [[oak()_3]] - code - _backup_2026-10-24/art.js
+- [[pill()_2]] - code - _backup_2026-10-24/art.js
+- [[ring()_2]] - code - _backup_2026-10-24/art.js
+- [[ringPts()_2]] - code - _backup_2026-10-24/art.js
+- [[seg()_2]] - code - _backup_2026-10-24/art.js
+- [[shape()_2]] - code - _backup_2026-10-24/art.js
+- [[soil()_2]] - code - _backup_2026-10-24/art.js
+- [[squirrel()_2]] - code - _backup_2026-10-24/art.js
+- [[squirrel2()_2]] - code - _backup_2026-10-24/art.js
+- [[steering()_2]] - code - _backup_2026-10-24/art.js
+- [[stick()_2]] - code - _backup_2026-10-24/art.js
+- [[stone()_3]] - code - _backup_2026-10-24/art.js
+- [[tuft()_2]] - code - _backup_2026-10-24/art.js
+- [[underline()_2]] - code - _backup_2026-10-24/art.js
+- [[wheel()_2]] - code - _backup_2026-10-24/art.js
 
 ## Live Query (requires Dataview plugin)
 

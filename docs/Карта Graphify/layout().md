@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # layout()
@@ -18,4 +18,4 @@ tags:
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Мобильное преобразование — не общий Scale]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

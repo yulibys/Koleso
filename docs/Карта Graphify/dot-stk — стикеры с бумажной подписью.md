@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Рисунки повозок"
+community: "scenery.js"
 location: "L550"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Рисунки_повозок
+  - community/sceneryjs
 ---
 
 # .stk — стикеры с бумажной подписью
@@ -16,4 +16,4 @@ tags:
 - [[Смысловой узел переезжает целиком]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Рисунки_повозок
+#graphify/code #graphify/INFERRED #community/sceneryjs

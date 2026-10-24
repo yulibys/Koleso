@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Журнал решений"
+community: "Фото, вырезки, права (1.7)"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Фото_вырезки_права_17
 ---
 
 # .credits-card/.foot — титры и подвал
@@ -16,4 +16,4 @@ tags:
 - [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - `implements` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

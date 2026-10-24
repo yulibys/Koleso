@@ -1,54 +1,51 @@
 ---
 type: community
-cohesion: 0.14
-members: 39
+cohesion: 0.11
+members: 36
 ---
 
 # Пейзажи (scenery.js)
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 39 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[arcade()_2]] - code - v20/art.js
-- [[bez()_2]] - code - v20/art.js
-- [[birds()_3]] - code - v20/art.js
-- [[bog()_2]] - code - v20/art.js
-- [[bubble()_3]] - code - v20/art.js
-- [[chariotParts()_2]] - code - v20/art.js
-- [[clipped()_2]] - code - v20/art.js
-- [[ferris()_2]] - code - v20/art.js
-- [[flower()_2]] - code - v20/art.js
-- [[flowers()_2]] - code - v20/art.js
-- [[frame()_2]] - code - v20/art.js
-- [[gear()_2]] - code - v20/art.js
-- [[grass()_3]] - code - v20/art.js
-- [[grassAt()_2]] - code - v20/art.js
-- [[hill()_3]] - code - v20/art.js
-- [[hut()_3]] - code - v20/art.js
-- [[king()_2]] - code - v20/art.js
-- [[line()_2]] - code - v20/art.js
-- [[man()_2]] - code - v20/art.js
-- [[monk()_2]] - code - v20/art.js
-- [[motion()_2]] - code - v20/art.js
-- [[mountains()_2]] - code - v20/art.js
-- [[mouse()_2]] - code - v20/art.js
-- [[oak()_3]] - code - v20/art.js
-- [[pill()_2]] - code - v20/art.js
-- [[ring()_2]] - code - v20/art.js
-- [[ringPts()_2]] - code - v20/art.js
-- [[seg()_2]] - code - v20/art.js
-- [[shape()_2]] - code - v20/art.js
-- [[soil()_2]] - code - v20/art.js
-- [[squirrel()_2]] - code - v20/art.js
-- [[squirrel2()_2]] - code - v20/art.js
-- [[steering()_2]] - code - v20/art.js
-- [[stick()_2]] - code - v20/art.js
-- [[stone()_3]] - code - v20/art.js
-- [[tuft()_2]] - code - v20/art.js
-- [[underline()_2]] - code - v20/art.js
-- [[v20art.js]] - code - v20/art.js
-- [[wheel()_2]] - code - v20/art.js
+- [[dot-s1()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s2()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s3()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s4()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s5()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s6()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s7()_4]] - code - _backup_2026-10-22/app.js
+- [[dot-s8()_4]] - code - _backup_2026-10-22/app.js
+- [[S_4]] - code - _backup_2026-10-22/app.js
+- [[_backup_2026-10-22app.js]] - code - _backup_2026-10-22/app.js
+- [[applyLap()_4]] - code - _backup_2026-10-22/app.js
+- [[balance()_4]] - code - _backup_2026-10-22/app.js
+- [[cancelEnding()_4]] - code - _backup_2026-10-22/app.js
+- [[cover()_4]] - code - _backup_2026-10-22/app.js
+- [[coverSeq()_4]] - code - _backup_2026-10-22/app.js
+- [[fit()_4]] - code - _backup_2026-10-22/app.js
+- [[fitUl()_4]] - code - _backup_2026-10-22/app.js
+- [[labUpd()_4]] - code - _backup_2026-10-22/app.js
+- [[loop()_5]] - code - _backup_2026-10-22/app.js
+- [[morph()_4]] - code - _backup_2026-10-22/app.js
+- [[nextCover()_4]] - code - _backup_2026-10-22/app.js
+- [[put()_4]] - code - _backup_2026-10-22/app.js
+- [[restore()_4]] - code - _backup_2026-10-22/app.js
+- [[rewTxt()_4]] - code - _backup_2026-10-22/app.js
+- [[rewindToS1()_4]] - code - _backup_2026-10-22/app.js
+- [[ringAt()_4]] - code - _backup_2026-10-22/app.js
+- [[ringAt0()_4]] - code - _backup_2026-10-22/app.js
+- [[sayL()_5]] - code - _backup_2026-10-22/app.js
+- [[scrollAnim()_4]] - code - _backup_2026-10-22/app.js
+- [[shortcut()_4]] - code - _backup_2026-10-22/app.js
+- [[spin()_4]] - code - _backup_2026-10-22/app.js
+- [[splitLines()_4]] - code - _backup_2026-10-22/app.js
+- [[startEnding()_4]] - code - _backup_2026-10-22/app.js
+- [[textOut()_4]] - code - _backup_2026-10-22/app.js
+- [[tick()_4]] - code - _backup_2026-10-22/app.js
+- [[unshort()_4]] - code - _backup_2026-10-22/app.js
 
 ## Live Query (requires Dataview plugin)
 

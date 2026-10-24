@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # roll()
@@ -15,4 +15,4 @@ tags:
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - `references` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/sc/stick/frame__высокая_секция_с_липким_кадром

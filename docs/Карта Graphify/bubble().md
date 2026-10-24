@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Журнал решений"
+community: "vehicles.js"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/vehiclesjs
 ---
 
 # bubble()
@@ -17,4 +17,4 @@ tags:
 - [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [INFERRED]
 - [[Разрез земли strata + bubbles (болото)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/vehiclesjs

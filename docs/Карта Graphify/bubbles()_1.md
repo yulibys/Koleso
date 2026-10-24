@@ -1,19 +1,19 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L553"
+community: "Типографика (1.4)"
+location: "L606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Типографика_14
 ---
 
 # bubbles()
 
 ## Connections
-- [[dot-s4()_2]] - `calls` [EXTRACTED]
+- [[dot-s4()_1]] - `calls` [EXTRACTED]
 - [[bubPath()_1]] - `calls` [EXTRACTED]
 - [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

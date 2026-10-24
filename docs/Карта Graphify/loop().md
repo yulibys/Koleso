@@ -1,20 +1,19 @@
 ---
-source_file: "src/app.js"
+source_file: "app.js"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
-location: "L357"
+community: "Журнал решений"
+location: "L1035"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # loop()
 
 ## Connections
-- [[applyK()]] - `calls` [EXTRACTED]
-- [[guideFrame()]] - `calls` [EXTRACTED]
-- [[projector()]] - `calls` [EXTRACTED]
-- [[srcapp.js]] - `indirect_call` [INFERRED]
+- [[app.js]] - `contains` [EXTRACTED]
+- [[inertia()]] - `calls` [EXTRACTED]
+- [[tick()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

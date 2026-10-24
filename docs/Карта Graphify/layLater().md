@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Журнал решений"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # layLater()
@@ -18,4 +18,4 @@ tags:
 - [[scene()]] - `shares_data_with` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Журнал_решений
+#graphify/code #graphify/INFERRED #community/Лекция_11_Лонгрид_как_особый_медиум

@@ -1,12 +1,12 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "app.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L43"
+community: "Журнал решений"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Журнал_решений
 ---
 
 # put()
@@ -16,6 +16,6 @@ tags:
 - [[dot-s2()]] - `calls` [EXTRACTED]
 - [[dot-s3()]] - `calls` [EXTRACTED]
 - [[dot-s6()]] - `calls` [EXTRACTED]
-- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
+- [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

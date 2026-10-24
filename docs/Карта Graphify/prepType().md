@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: ".sc/.stick/.frame — высокая секция с липким кадром"
+community: "fig.js"
 location: "L134"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sc/stick/frame__высокая_секция_с_липким_кадром
+  - community/figjs
 ---
 
 # prepType()
@@ -18,4 +18,4 @@ tags:
 - [[Неразрывные пробелы — только для смысловых пар]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром
+#graphify/code #graphify/INFERRED #community/figjs

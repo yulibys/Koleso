@@ -1,21 +1,21 @@
 ---
-source_file: "v20/art.js"
+source_file: "_backup_2026-10-24/art.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
+community: "Раскадровка и двери (1.3)"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Раскадровка_и_двери_13
 ---
 
 # tuft()
 
 ## Connections
+- [[_backup_2026-10-24art.js]] - `contains` [EXTRACTED]
 - [[grass()_3]] - `calls` [EXTRACTED]
 - [[grassAt()_2]] - `calls` [EXTRACTED]
 - [[line()_2]] - `calls` [EXTRACTED]
 - [[soil()_2]] - `calls` [EXTRACTED]
-- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13

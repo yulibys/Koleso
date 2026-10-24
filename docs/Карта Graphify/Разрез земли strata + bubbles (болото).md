@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Журнал решений"
+community: "vehicles.js"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/vehiclesjs
 ---
 
 # Разрез земли #strata + #bubbles (болото)
@@ -15,4 +15,4 @@ tags:
 - [[bubble()]] - `references` [INFERRED]
 - [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Журнал_решений
+#graphify/code #graphify/EXTRACTED #community/vehiclesjs

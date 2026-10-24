@@ -1,12 +1,12 @@
 ---
 source_file: "art.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
+community: "Интерактив и проверка читателем"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # line()
@@ -30,4 +30,4 @@ tags:
 - [[underline()]] - `calls` [EXTRACTED]
 - [[wheel()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

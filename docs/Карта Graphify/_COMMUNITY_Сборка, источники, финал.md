@@ -1,51 +1,40 @@
 ---
 type: community
-cohesion: 0.11
-members: 36
+cohesion: 0.16
+members: 25
 ---
 
 # Сборка, источники, финал
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[dot-s1()]] - code - _backup_2026-10-22/app.js
-- [[dot-s2()]] - code - _backup_2026-10-22/app.js
-- [[dot-s3()]] - code - _backup_2026-10-22/app.js
-- [[dot-s4()]] - code - _backup_2026-10-22/app.js
-- [[dot-s5()]] - code - _backup_2026-10-22/app.js
-- [[dot-s6()]] - code - _backup_2026-10-22/app.js
-- [[dot-s7()]] - code - _backup_2026-10-22/app.js
-- [[dot-s8()]] - code - _backup_2026-10-22/app.js
-- [[S]] - code - _backup_2026-10-22/app.js
-- [[_backup_2026-10-22app.js]] - code - _backup_2026-10-22/app.js
-- [[applyLap()]] - code - _backup_2026-10-22/app.js
-- [[balance()]] - code - _backup_2026-10-22/app.js
-- [[cancelEnding()]] - code - _backup_2026-10-22/app.js
-- [[cover()]] - code - _backup_2026-10-22/app.js
-- [[coverSeq()]] - code - _backup_2026-10-22/app.js
-- [[fit()]] - code - _backup_2026-10-22/app.js
-- [[fitUl()]] - code - _backup_2026-10-22/app.js
-- [[labUpd()]] - code - _backup_2026-10-22/app.js
-- [[loop()_1]] - code - _backup_2026-10-22/app.js
-- [[morph()]] - code - _backup_2026-10-22/app.js
-- [[nextCover()]] - code - _backup_2026-10-22/app.js
-- [[put()]] - code - _backup_2026-10-22/app.js
-- [[restore()]] - code - _backup_2026-10-22/app.js
-- [[rewTxt()]] - code - _backup_2026-10-22/app.js
-- [[rewindToS1()]] - code - _backup_2026-10-22/app.js
-- [[ringAt()]] - code - _backup_2026-10-22/app.js
-- [[ringAt0()]] - code - _backup_2026-10-22/app.js
-- [[sayL()]] - code - _backup_2026-10-22/app.js
-- [[scrollAnim()]] - code - _backup_2026-10-22/app.js
-- [[shortcut()]] - code - _backup_2026-10-22/app.js
-- [[spin()]] - code - _backup_2026-10-22/app.js
-- [[splitLines()]] - code - _backup_2026-10-22/app.js
-- [[startEnding()]] - code - _backup_2026-10-22/app.js
-- [[textOut()]] - code - _backup_2026-10-22/app.js
-- [[tick()]] - code - _backup_2026-10-22/app.js
-- [[unshort()]] - code - _backup_2026-10-22/app.js
+- [[air()]] - code - src/app.js
+- [[applyK()]] - code - src/app.js
+- [[click()]] - code - src/app.js
+- [[clop()]] - code - src/app.js
+- [[env()]] - code - src/app.js
+- [[fin()]] - code - src/app.js
+- [[gesture()]] - code - src/app.js
+- [[init()]] - code - src/app.js
+- [[ksPlay()]] - code - src/app.js
+- [[loop()_1]] - code - src/app.js
+- [[mallet()]] - code - src/app.js
+- [[moo()]] - code - src/app.js
+- [[nz()]] - code - src/app.js
+- [[ok()]] - code - src/app.js
+- [[osc()]] - code - src/app.js
+- [[plank()]] - code - src/app.js
+- [[play()]] - code - src/app.js
+- [[projector()]] - code - src/app.js
+- [[ripFrame()]] - code - src/app.js
+- [[scene()]] - code - src/app.js
+- [[scribble()]] - code - src/app.js
+- [[send()]] - code - src/app.js
+- [[srcapp.js]] - code - src/app.js
+- [[tear()]] - code - src/app.js
+- [[whoosh()]] - code - src/app.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,3 +42,24 @@ members: 36
 TABLE source_file, type FROM #community/Сборка_источники_финал
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 7 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
+- 6 edges to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
+- 6 edges to [[_COMMUNITY_soft]]
+- 5 edges to [[_COMMUNITY_fig.js_1]]
+- 4 edges to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)]]
+- 3 edges to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 3 edges to [[_COMMUNITY_vehicles.js]]
+- 3 edges to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
+- 1 edge to [[_COMMUNITY_scenery.js]]
+- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+
+## Top bridge nodes
+- [[srcapp.js]] - degree 49, connects to 9 communities
+- [[ksPlay()]] - degree 11, connects to 6 communities
+- [[play()]] - degree 9, connects to 3 communities
+- [[scene()]] - degree 9, connects to 3 communities
+- [[fin()]] - degree 5, connects to 2 communities

@@ -1,69 +1,69 @@
 ---
 type: community
-cohesion: 0.05
+cohesion: 0.07
 members: 54
 ---
 
 # Первый экран и внимание (1.6)
 
-**Cohesion:** 0.05 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 54 nodes
 
 ## Members
-- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
-- [[sndBtn — кнопка звука]] - code - src/body.html
-- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
-- [[tHorse — лошадь (template)]] - code - src/body.html
-- [[tOx — бык (template)]] - code - src/body.html
-- [[tRunner — бегущий человек (template)]] - code - src/body.html
-- [[dot-cn-slot.cn-reel.cn-face — барабан дат]] - code - src/style.css
-- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
-- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
-- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
-- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
-- [[piano()]] - code - src/app.js
-- [[slot()]] - code - src/app.js
-- [[steps()]] - code - src/app.js
-- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
-- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
-- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
-- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
-- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
-- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
-- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
-- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
-- [[Два входа через обещание и через материал]] - rationale - docs/lectures/1.6.txt
-- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
-- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
-- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
-- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
-- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
-- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
-- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
-- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
-- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
-- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
-- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
-- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
-- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
-- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
-- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
-- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
-- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
-- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
-- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
-- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
-- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
-- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - code - src/body.html
-- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
-- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
-- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
-- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
-- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
-- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
-- [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - code - src/body.html
-- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
+- [[dot-s1()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s2()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s3()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s4()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s5()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s6()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s7()_2]] - code - _backup_2026-10-24/app.js
+- [[dot-s8()_2]] - code - _backup_2026-10-24/app.js
+- [[S_2]] - code - _backup_2026-10-24/app.js
+- [[_backup_2026-10-24app.js]] - code - _backup_2026-10-24/app.js
+- [[alignHead()_2]] - code - _backup_2026-10-24/app.js
+- [[applyLap()_2]] - code - _backup_2026-10-24/app.js
+- [[balance()_2]] - code - _backup_2026-10-24/app.js
+- [[bubPath()_2]] - code - _backup_2026-10-24/app.js
+- [[bubbles()_2]] - code - _backup_2026-10-24/app.js
+- [[bump()_2]] - code - _backup_2026-10-24/app.js
+- [[calibrate()_2]] - code - _backup_2026-10-24/app.js
+- [[cancelEnding()_2]] - code - _backup_2026-10-24/app.js
+- [[cover()_2]] - code - _backup_2026-10-24/app.js
+- [[coverSeq()_2]] - code - _backup_2026-10-24/app.js
+- [[crash()_2]] - code - _backup_2026-10-24/app.js
+- [[dust()_2]] - code - _backup_2026-10-24/app.js
+- [[fit()_2]] - code - _backup_2026-10-24/app.js
+- [[fitUl()_2]] - code - _backup_2026-10-24/app.js
+- [[inertia()_2]] - code - _backup_2026-10-24/app.js
+- [[irisChapters()_2]] - code - _backup_2026-10-24/app.js
+- [[irisCut()_2]] - code - _backup_2026-10-24/app.js
+- [[irisIn()_2]] - code - _backup_2026-10-24/app.js
+- [[irisOut()_2]] - code - _backup_2026-10-24/app.js
+- [[irisSet()_2]] - code - _backup_2026-10-24/app.js
+- [[labUpd()_2]] - code - _backup_2026-10-24/app.js
+- [[look()_2]] - code - _backup_2026-10-24/app.js
+- [[loop()_3]] - code - _backup_2026-10-24/app.js
+- [[morph()_2]] - code - _backup_2026-10-24/app.js
+- [[nextCover()_2]] - code - _backup_2026-10-24/app.js
+- [[odo()_2]] - code - _backup_2026-10-24/app.js
+- [[put()_2]] - code - _backup_2026-10-24/app.js
+- [[restore()_2]] - code - _backup_2026-10-24/app.js
+- [[rewTxt()_2]] - code - _backup_2026-10-24/app.js
+- [[rewindToS1()_2]] - code - _backup_2026-10-24/app.js
+- [[ringAt()_2]] - code - _backup_2026-10-24/app.js
+- [[ringAt0()_2]] - code - _backup_2026-10-24/app.js
+- [[rollIn()_2]] - code - _backup_2026-10-24/app.js
+- [[sayL()_3]] - code - _backup_2026-10-24/app.js
+- [[scrollAnim()_2]] - code - _backup_2026-10-24/app.js
+- [[shortcut()_2]] - code - _backup_2026-10-24/app.js
+- [[spin()_2]] - code - _backup_2026-10-24/app.js
+- [[splice()_2]] - code - _backup_2026-10-24/app.js
+- [[splitLines()_2]] - code - _backup_2026-10-24/app.js
+- [[startEnding()_2]] - code - _backup_2026-10-24/app.js
+- [[textOut()_2]] - code - _backup_2026-10-24/app.js
+- [[tick()_2]] - code - _backup_2026-10-24/app.js
+- [[unshort()_2]] - code - _backup_2026-10-24/app.js
+- [[watch()_2]] - code - _backup_2026-10-24/app.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -71,28 +71,3 @@ members: 54
 TABLE source_file, type FROM #community/Первый_экран_и_внимание_16
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 17 edges to [[_COMMUNITY_Журнал решений]]
-- 15 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 7 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 7 edges to [[_COMMUNITY_scenery.js]]
-- 7 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 4 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 4 edges to [[_COMMUNITY_fig.js]]
-- 3 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 2 edges to [[_COMMUNITY_Рисунки повозок]]
-- 2 edges to [[_COMMUNITY_re]]
-- 2 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-
-## Top bridge nodes
-- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 12 communities
-- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 4 communities
-- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - degree 8, connects to 4 communities
-- [[Немое кино .flick + .scratch (+ .silent рамка)]] - degree 7, connects to 3 communities
-- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - degree 8, connects to 2 communities

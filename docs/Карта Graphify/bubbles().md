@@ -1,19 +1,19 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Типографика (1.4)"
-location: "L553"
+community: "Журнал решений"
+location: "L606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # bubbles()
 
 ## Connections
-- [[dot-s4()_1]] - `calls` [EXTRACTED]
+- [[dot-s4()]] - `calls` [EXTRACTED]
 - [[app.js]] - `contains` [EXTRACTED]
 - [[bubPath()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

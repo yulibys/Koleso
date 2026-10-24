@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.5.txt"
 type: "rationale"
-community: "Фото, вырезки, права (1.7)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # Мобильное преобразование — не общий Scale
@@ -14,4 +14,4 @@ tags:
 - [[layout()]] - `conceptually_related_to` [INFERRED]
 - [[Лекция 1.5. Модульные системы и сетки]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/rationale #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

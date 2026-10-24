@@ -1,12 +1,12 @@
 ---
 source_file: "v20/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L911"
+community: "Типографика (1.4)"
+location: "L985"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Типографика_14
 ---
 
 # irisIn()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[irisCut()_1]] - `calls` [EXTRACTED]
 - [[irisSet()_1]] - `calls` [EXTRACTED]
-- [[startEnding()_2]] - `calls` [EXTRACTED]
+- [[startEnding()_1]] - `calls` [EXTRACTED]
 - [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

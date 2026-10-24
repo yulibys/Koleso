@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Фото, вырезки, права (1.7)"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # C_ferris — Колесо обозрения (.cut)
@@ -14,4 +14,4 @@ tags:
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [EXTRACTED]
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/image #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

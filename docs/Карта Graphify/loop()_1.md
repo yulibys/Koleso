@@ -1,8 +1,8 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "src/app.js"
 type: "code"
 community: "Сборка, источники, финал"
-location: "L677"
+location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,9 @@ tags:
 # loop()
 
 ## Connections
-- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
-- [[tick()]] - `calls` [EXTRACTED]
+- [[applyK()]] - `calls` [EXTRACTED]
+- [[guideFrame()]] - `calls` [EXTRACTED]
+- [[projector()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

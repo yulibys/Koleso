@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Журнал решений"
+community: "Фото, вырезки, права (1.7)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Фото_вырезки_права_17
 ---
 
 # Фото __HI_H2__ (фон фотоэкрана)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ps2 — «Колесо есть. Ехать не на чем.» (фотоэкран H2)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Журнал_решений
+#graphify/image #graphify/EXTRACTED #community/Фото_вырезки_права_17
