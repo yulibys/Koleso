@@ -314,7 +314,7 @@
   // v97: «что смотрите?» начинается ровно под левым краем «К», «листайте дальше!» кончается под правым краем «о»
   function alignIntro() {
     const i1 = $('s1i1'), i2 = $('s1i2');
-    if (PORT) { i1.style.left = i2.style.left = ''; return; }
+    if (PORT) { i1.style.left = (720 - i1.offsetWidth / 2 - 40).toFixed(0) + 'px'; i2.style.left = (720 - i2.offsetWidth / 2 + 40).toFixed(0) + 'px'; return; } // v106: на телефоне — по центру, лёгкой лесенкой
     try {
       const cs = getComputedStyle(word), c = document.createElement('canvas').getContext('2d');
       c.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
@@ -1031,7 +1031,7 @@
     SPIN = RM ? 0 : Math.max(-140, Math.min(140, (iy - y) * 0.42));
     const v = Math.abs(y - py); py = y;
     fastN = v > 38 ? 6 : Math.max(0, fastN - 1);
-    root.classList.toggle('whirl', !RM && fastN > 0);
+    { const w = !RM && !COARSE && fastN > 0; if (w !== root.classList.contains('whirl')) root.classList.toggle('whirl', w); }
   }
   function loop() { inertia(); tick(); requestAnimationFrame(loop); } // v84: ирис внутри лонгрида убран, остался только в финале
   // при обновлении страницы — всегда с самого начала
@@ -1053,6 +1053,7 @@
 (function () {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const root = document.documentElement;
+  const TOUCH = matchMedia('(pointer: coarse)').matches; // v106: телефоны и планшеты — без лишней работы в каждом кадре
   const sp = document.createElement('div'); sp.id = 'splice'; sp.setAttribute('aria-hidden', 'true'); sp.innerHTML = '<i></i>'; document.body.appendChild(sp);
   const targets = [...document.querySelectorAll('.cover.paper'), document.querySelector('#s2 .stage')].filter(Boolean);
   const seen = new WeakMap();
@@ -1080,8 +1081,10 @@
   function fit() { if (note && img) { note.style.width = img.offsetWidth + 'px'; note.style.height = img.offsetHeight + 'px'; } }
   addEventListener('resize', fit); fit();
   const H = () => innerHeight;
+  let wy = -1;
   function watch() {
-    for (const el of targets) {
+    if (scrollY === wy) { requestAnimationFrame(watch); return; } wy = scrollY;
+    if (!TOUCH) for (const el of targets) {
       const r = el.getBoundingClientRect();
       const vis = Math.max(0, Math.min(r.bottom, H()) - Math.max(r.top, 0)) / H();
       const st = el.closest('.cover') ? parseFloat(getComputedStyle(el).opacity || 1) : 1;
@@ -1133,10 +1136,12 @@
         requestAnimationFrame(fr);
       })();
     }
-    if (!RM) {
+    if (!RM && !TOUCH) {
       // интертитр «встаёт в кадровое окно», когда реально выходит на экран (виден, непрозрачен и сверху всех слоёв)
       const ps = [...document.querySelectorAll('.cover.paper p.h1')];
+      let gy = -1;
       (function gw() {
+        if (scrollY === gy) { requestAnimationFrame(gw); return; } gy = scrollY;
         for (const p of ps) {
           const q = p.getBoundingClientRect(), vis = (Math.min(q.bottom, innerHeight) - Math.max(q.top, 0)) / (q.height || 1);
           let on = false;
@@ -1168,9 +1173,11 @@
         }
         tr.setAttribute('d', a + b); tk.setAttribute('d', t);
       };
-      build(); addEventListener('resize', build);
+      let SH = 0, ry = -1; const sh = () => { SH = document.documentElement.scrollHeight; };
+      build(); sh(); addEventListener('resize', () => { build(); sh(); ry = -1; }); setInterval(sh, 2000);
       (function rf() {
-        const max = document.documentElement.scrollHeight - innerHeight, f = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0, x = f * W;
+        if (scrollY === ry) { requestAnimationFrame(rf); return; } ry = scrollY;
+        const max = SH - innerHeight, f = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0, x = f * W;
         rect.setAttribute('width', x.toFixed(1));
         wh.setAttribute('transform', `translate(${Math.max(12, Math.min(W - 12, x)).toFixed(1)} 22) rotate(${(x / 11 * 57.3 % 360).toFixed(1)})`);
         r.classList.toggle('on', scrollY > 40);

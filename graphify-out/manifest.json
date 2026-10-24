@@ -36,16 +36,16 @@
     "semantic_hash": "af1a5f055f17954eb1e62c094f68ca3b"
   },
   "docs/\u041a\u0430\u0440\u0442\u0430 Graphify/.graphify_obsidian_manifest.json": {
-    "mtime": 1792820016.415082,
-    "seen": 1792820202.552968,
+    "mtime": 1792820203.1716008,
+    "seen": 1792883026.828753,
     "ast_hash": "4eff8d3725e3d2482846031ee81d1753",
     "semantic_hash": "4eff8d3725e3d2482846031ee81d1753"
   },
   "app.js": {
-    "mtime": 1792819910.635929,
-    "seen": 1792820015.5879319,
-    "ast_hash": "bed253c5d4e7a185f4e365cb96354387",
-    "semantic_hash": "bed253c5d4e7a185f4e365cb96354387"
+    "mtime": 1792882285.3646345,
+    "seen": 1792883026.8286982,
+    "ast_hash": "9843db46a2dd4828a716d03c103d3301",
+    "semantic_hash": "9843db46a2dd4828a716d03c103d3301"
   },
   "art.js": {
     "mtime": 1792625468.2624972,
@@ -66,10 +66,10 @@
     "semantic_hash": "d19058e5255f457b012df1b672dad3a7"
   },
   "v20/app.js": {
-    "mtime": 1792819910.6533635,
-    "seen": 1792820015.588067,
-    "ast_hash": "bed253c5d4e7a185f4e365cb96354387",
-    "semantic_hash": "bed253c5d4e7a185f4e365cb96354387"
+    "mtime": 1792882285.3990657,
+    "seen": 1792883026.828821,
+    "ast_hash": "9843db46a2dd4828a716d03c103d3301",
+    "semantic_hash": "9843db46a2dd4828a716d03c103d3301"
   },
   "v20/art.js": {
     "mtime": 1792625482.4062753,

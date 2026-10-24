@@ -1060,3 +1060,17 @@ html:not(.port) #s1n2{top:415px;rotate:-5deg}
 /* сцена финала поднимается над полосой, подпись про шрифт — прямо над ней */
 .endcard .cv{top:calc(50% - var(--wr,0px) / 2)}
 .endcard .src{bottom:calc(var(--wr,0px) / var(--k,1) + 14px)!important}
+/* v106: телефоны и планшеты — плёнка без анимации и без наложения (это перерисовка огромных слоёв каждый кадр),
+   без размытия колёс; полукруглая тень остаётся */
+html.coarse .cover.paper::after,html.coarse #s2 .stage::after{animation:none;mix-blend-mode:normal;background-image:radial-gradient(ellipse 780px 530px at 50% 50%,rgba(22,19,15,0) 56%,rgba(22,19,15,.38) 100%);background-size:100% 100%}
+html.coarse #s2wheel,html.coarse #s4wh,html.coarse #s8wh{transition:none;filter:none}
+html.coarse.splicing #splice,html.coarse.splicing .sc .stage{animation:none}
+/* v106: телефон — «не успели» / «оно укатилось» по центру лёгкой лесенкой с наклоном, как на компьютере */
+html.port:not(.tab) #s1n1{left:590px;top:250px;rotate:4deg}
+html.port:not(.tab) #s1n2{left:620px;top:335px;rotate:-4deg}
+html.port #s1i1,html.port #s1i2{rotate:0deg}
+html.port:not(.tab) #s1i1{top:620px}
+html.port:not(.tab) #s1i2{top:700px}
+html.port:not(.tab) #s1n1{left:540px}
+html.port:not(.tab) #s1n2{left:560px}
+html.port:not(.tab) #s1oh{left:790px;top:430px}
