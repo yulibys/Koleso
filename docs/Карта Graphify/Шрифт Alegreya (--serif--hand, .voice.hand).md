@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "v20/vehicles.js"
+community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
 location: "L6"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/v20/vehiclesjs
+  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
 ---
 
 # Шрифт Alegreya (--serif/--hand, .voice/.hand)
@@ -20,4 +20,4 @@ tags:
 - [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - `conceptually_related_to` [INFERRED]
 - [[Сходство одинаковое оформление — одинаковая роль]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/v20/vehiclesjs
+#graphify/code #graphify/INFERRED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево

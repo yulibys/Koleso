@@ -1,12 +1,12 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app_before_v106.js"
 type: "code"
-community: "Типографика (1.4)"
+community: "Фото, вырезки, права (1.7)"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Фото_вырезки_права_17
 ---
 
 # put()
@@ -16,6 +16,6 @@ tags:
 - [[dot-s2()_1]] - `calls` [EXTRACTED]
 - [[dot-s3()_1]] - `calls` [EXTRACTED]
 - [[dot-s6()_1]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
+- [[app_before_v106.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

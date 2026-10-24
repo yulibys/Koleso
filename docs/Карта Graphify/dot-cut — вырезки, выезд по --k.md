@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "scenery.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L474"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sceneryjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # .cut — вырезки, выезд по --k
@@ -16,4 +16,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 - [[Общая судьба совместное движение собирает группу]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/sceneryjs
+#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp

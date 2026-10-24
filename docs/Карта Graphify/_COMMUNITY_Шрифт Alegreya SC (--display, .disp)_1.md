@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
-- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - concept - docs/lectures/1.4.txt
-- [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
-- [[Прописной набор требует умеренной разрядки]] - rationale - docs/lectures/1.4.txt
-- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - rationale - docs/lectures/1.4.txt
-- [[Шрифт Alegreya SC (--display, .disp)]] - code - src/style.css
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
+- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
+- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
+- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,16 +25,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 4 edges to [[_COMMUNITY_re]]
-- 1 edge to [[_COMMUNITY_fig.js_1]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
-- 1 edge to [[_COMMUNITY_v20vehicles.js]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)_1]]
+- 4 edges to [[_COMMUNITY_Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]]
+- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
+- 3 edges to [[_COMMUNITY_scenery.js]]
+- 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 1 edge to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 
 ## Top bridge nodes
-- [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 5 communities
-- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - degree 4, connects to 2 communities
-- [[Деталь оценивают в размере её будущей работы]] - degree 3, connects to 1 community
-- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - degree 3, connects to 1 community
-- [[Прописной набор требует умеренной разрядки]] - degree 3, connects to 1 community
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 3 communities
+- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 3 communities
+- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - degree 5, connects to 2 communities
+- [[Колесо перерисовано по люблянской находке (v13, v15)]] - degree 3, connects to 2 communities
+- [[Сквозной предмет деревянное колесо с меловой меткой]] - degree 4, connects to 1 community

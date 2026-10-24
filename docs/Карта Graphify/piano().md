@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: ":root токены (--black, --cream, --paper, --red, --gut)"
+community: "_backup_2026-10-22/vehicles.js"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/root_токены_--black_--cream_--paper_--red_--gut
+  - community/_backup_2026-10-22/vehiclesjs
 ---
 
 # piano()
@@ -16,4 +16,4 @@ tags:
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/root_токены_--black_--cream_--paper_--red_--gut
+#graphify/code #graphify/EXTRACTED #community/_backup_2026-10-22/vehiclesjs

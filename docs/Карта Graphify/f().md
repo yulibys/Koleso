@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[batten()]] - `calls` [EXTRACTED]
 - [[knot()]] - `calls` [EXTRACTED]
-- [[wheel()]] - `contains` [EXTRACTED]
+- [[wheel()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # S_flute — Флейта из пещеры Дивье Бабе (.stk)
@@ -14,4 +14,4 @@ tags:
 - [[later — «Колесо придумали позже флейты» (лента изобретений)]] - `references` [EXTRACTED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/image #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

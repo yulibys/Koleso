@@ -1,18 +1,18 @@
 ---
-source_file: "_backup_2026-10-24/app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
-location: "L1008"
+community: "Типографика (1.4)"
+location: "L1085"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Типографика_14
 ---
 
 # watch()
 
 ## Connections
-- [[_backup_2026-10-24app.js]] - `contains` [EXTRACTED]
 - [[splice()_2]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

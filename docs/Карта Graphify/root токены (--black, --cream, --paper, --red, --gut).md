@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: ":root токены (--black, --cream, --paper, --red, --gut)"
+community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
 location: "L2"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/root_токены_--black_--cream_--paper_--red_--gut
+  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
 ---
 
 # :root токены (--black, --cream, --paper, --red, --gut)
@@ -18,4 +18,4 @@ tags:
 - [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - `references` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/root_токены_--black_--cream_--paper_--red_--gut
+#graphify/code #graphify/INFERRED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево

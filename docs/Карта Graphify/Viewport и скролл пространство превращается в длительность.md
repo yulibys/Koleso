@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.1.txt"
 type: "concept"
-community: "_backup_2026-10-22/vehicles.js"
+community: "fig.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_backup_2026-10-22/vehiclesjs
+  - community/figjs
 ---
 
 # Viewport и скролл: пространство превращается в длительность
@@ -18,4 +18,4 @@ tags:
 - [[Хронотоп (Бахтин) участок со случайной длительностью]] - `conceptually_related_to` [EXTRACTED]
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/_backup_2026-10-22/vehiclesjs
+#graphify/concept #graphify/EXTRACTED #community/figjs

@@ -1,17 +1,17 @@
 ---
-source_file: "_backup_2026-10-22/v77/app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
-location: "L57"
+community: "Типографика (1.4)"
+location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Типографика_14
 ---
 
 # splitLines()
 
 ## Connections
-- [[v77app.js]] - `indirect_call` [INFERRED]
+- [[v20app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/INFERRED #community/Типографика_14

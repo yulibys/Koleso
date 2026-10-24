@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "boil0–2 «дрожь линии» filters (feTurbulence)"
+community: "Движок сцен и звуки (app.js)"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/boil02_дрожь_линии_filters_feTurbulence
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # #sndBtn — кнопка звука
@@ -18,4 +18,4 @@ tags:
 - [[Контроль медиа пауза движения и звука]] - `rationale_for` [INFERRED]
 - [[Цвет — не единственный признак]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/boil02_дрожь_линии_filters_feTurbulence
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

@@ -1,37 +1,40 @@
 ---
 type: community
-cohesion: 0.13
-members: 22
+cohesion: 0.14
+members: 25
 ---
 
 # scenery.js
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[dot-cut — вырезки, выезд по --k]] - code - src/style.css
-- [[dot-stk — стикеры с бумажной подписью]] - code - src/style.css
-- [[P3 — Беговая машина Карла Драйса, 1817 (.collage)]] - image - src/body.html
-- [[P4 — Омнибус, Париж, 1928 (.collage)]] - image - src/body.html
-- [[Reflow ~320 CSS px без потери содержания и горизонтальной прокрутки]] - rationale - docs/lectures/1.7.txt
-- [[S_benz — Автомобиль Карла Бенца, 1886 (.stk)]] - image - src/body.html
-- [[S_oxcart — Норвегия, около 1900, повозка (.stk)]] - image - src/body.html
-- [[S_pot — Кувшин из Броночице (.stk)]] - image - src/body.html
-- [[T_ur — Вырезка T_ur (.cut)]] - image - src/body.html
-- [[X1 — Пещера Ласко (.collage)]] - image - src/body.html
-- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
-- [[X6 — Пахота. Палестина, начало XX века (.collage)]] - image - src/body.html
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - code - src/body.html
-- [[Адаптив меняем расположение, сохраняем смысловые связи]] - rationale - docs/lectures/1.7.txt
-- [[Близость внутреннее меньше внешнего]] - rationale - docs/lectures/1.6.txt
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - rationale - docs/context.md
-- [[Картинка с подписью — одна группа]] - rationale - docs/MAP.md
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - code - src/body.html
-- [[Общая судьба совместное движение собирает группу]] - concept - docs/lectures/1.6.txt
-- [[Подпись и изображение — одна группа]] - concept - docs/lectures/1.5.txt
-- [[Смысловой узел переезжает целиком]] - rationale - docs/lectures/1.5.txt
-- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - code - src/body.html
+- [[dot-cutflash — вспышка склейки]] - code - src/body.html
+- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - code - src/body.html
+- [[«5200 лет» заменено на «больше пяти тысяч лет» (датировка музея)]] - rationale - docs/context.md
+- [[Без 3D всё на SVG, Three.js убран]] - rationale - docs/context.md
+- [[Без курсива и без прописных в длинных фразах]] - rationale - docs/context.md
+- [[Дрожащая линия рисунка — line boil (по tiagofragoso.com)]] - rationale - docs/context.md
+- [[Заголовок «Далеко собрались» (после «Колесо пока стоит», v17)]] - rationale - docs/context.md
+- [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - rationale - docs/context.md
+- [[Звук тише и живее щипковая струна Karplus–Strong (v13)]] - rationale - docs/context.md
+- [[Минимализм пейзажи упрощены до холмов, дороги и дерева (v15)]] - rationale - docs/context.md
+- [[Набор задаёт отношение к читателю («дом бытия»)]] - concept - docs/lectures/1.4.txt
+- [[Немое кино → цвет после первого разрыва (v11, отменено)]] - rationale - docs/context.md
+- [[Олег Пащенко (преподаватель)]] - concept - docs/context.md
+- [[Отвергнуто пиксельный мигающий фон и красные экраны (фидбек 2-10)]] - rationale - docs/context.md
+- [[Отвергнуты Ruslan Display, Old Standard TT, Bad Script и две подборки акцидентных шрифтов]] - rationale - docs/context.md
+- [[Открытая петля «что-то заставило человека изобрести колесо»]] - rationale - docs/context.md
+- [[Плёнка shaders.com царапины, зерно, мерцание; VHS при перемотке]] - rationale - docs/context.md
+- [[Правка проверить мерцание и звук по Такеру]] - rationale - docs/MAP.md
+- [[Приёмы удержания внимания из амоБлога холодный старт, открытая петля, слом ожидания]] - rationale - docs/context.md
+- [[Рабочий контекст и журнал решений (context.md)]] - document - docs/context.md
+- [[Снова чёрно-белое плёнка на всех сценах (v12)]] - rationale - docs/context.md
+- [[Тёмный медиум (Такер) убрать приём, который ничего не преобразует]] - rationale - docs/lectures/1.1.txt
+- [[Шрифты Alegreya SC + Alegreya, одно суперсемейство (v11)]] - rationale - docs/context.md
+- [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - rationale - docs/context.md
+- [[Юлия Бысова (автор)]] - concept - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,26 +44,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 5 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 5 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
-- 3 edges to [[_COMMUNITY_vehicles.js]]
+- 11 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 8 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 7 edges to [[_COMMUNITY_fig.js_1]]
+- 4 edges to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 3 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
 - 3 edges to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
-- 2 edges to [[_COMMUNITY_v20fig.js]]
-- 2 edges to [[_COMMUNITY_soft]]
-- 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 2 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 2 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 1 edge to [[_COMMUNITY_Сборка, источники, финал]]
-- 1 edge to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
-- 1 edge to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
+- 3 edges to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)_1]]
+- 2 edges to [[_COMMUNITY_Рисунки повозок]]
+- 2 edges to [[_COMMUNITY_fig.js]]
+- 2 edges to [[_COMMUNITY_Разборчивость знака ≠ удобство длительного чтения]]
+- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
 - 1 edge to [[_COMMUNITY_re]]
+- 1 edge to [[_COMMUNITY_v20vehicles.js]]
+- 1 edge to [[_COMMUNITY__backup_2026-10-22vehicles.js]]
+- 1 edge to [[_COMMUNITY_vehicles.js]]
+- 1 edge to [[_COMMUNITY_Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]]
+- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 1 edge to [[_COMMUNITY_v20fig.js]]
+- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
+- 1 edge to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 1 edge to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
 
 ## Top bridge nodes
-- [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - degree 16, connects to 8 communities
-- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - degree 12, connects to 4 communities
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - degree 6, connects to 4 communities
-- [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - degree 10, connects to 3 communities
-- [[Картинка с подписью — одна группа]] - degree 7, connects to 3 communities
+- [[open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]] - degree 30, connects to 12 communities
+- [[Рабочий контекст и журнал решений (context.md)]] - degree 32, connects to 8 communities
+- [[Олег Пащенко (преподаватель)]] - degree 9, connects to 8 communities
+- [[Правка проверить мерцание и звук по Такеру]] - degree 7, connects to 3 communities
+- [[Открытая петля «что-то заставило человека изобрести колесо»]] - degree 5, connects to 2 communities

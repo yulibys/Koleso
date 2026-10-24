@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # .rip — стили рвущегося интертитра
@@ -16,4 +16,4 @@ tags:
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `implements` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/code #graphify/EXTRACTED #community/boil02_дрожь_линии_filters_feTurbulence

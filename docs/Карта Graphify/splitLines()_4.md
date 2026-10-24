@@ -1,17 +1,17 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "_backup_2026-10-24/app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L57"
+community: "Первый экран и внимание (1.6)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Пейзажи_sceneryjs
+  - community/Первый_экран_и_внимание_16
 ---
 
 # splitLines()
 
 ## Connections
-- [[_backup_2026-10-22app.js]] - `indirect_call` [INFERRED]
+- [[_backup_2026-10-24app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

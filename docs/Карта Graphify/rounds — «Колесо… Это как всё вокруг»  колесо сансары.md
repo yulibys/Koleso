@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # rounds — «Колесо… Это как всё вокруг» / колесо сансары
@@ -29,4 +29,4 @@ tags:
 - [[Финал возвращается к началу]] - `rationale_for` [EXTRACTED]
 - [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand
+#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

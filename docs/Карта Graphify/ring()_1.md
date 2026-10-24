@@ -1,17 +1,18 @@
 ---
-source_file: "_backup_2026-10-22/v77/art.js"
+source_file: "art.js"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Интерактив и проверка читателем"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # ring()
 
 ## Connections
+- [[art.js]] - `contains` [EXTRACTED]
 - [[bog()_1]] - `calls` [EXTRACTED]
 - [[bubble()_2]] - `calls` [EXTRACTED]
 - [[ferris()_1]] - `calls` [EXTRACTED]
@@ -26,7 +27,6 @@ tags:
 - [[soil()_1]] - `calls` [EXTRACTED]
 - [[steering()_1]] - `calls` [EXTRACTED]
 - [[stick()_1]] - `calls` [EXTRACTED]
-- [[v77art.js]] - `contains` [EXTRACTED]
 - [[wheel()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

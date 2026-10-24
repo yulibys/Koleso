@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "SVG defs: hatch/xhatch/dots patterns"
+community: "Рисунки повозок"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/SVG_defs_hatch/xhatch/dots_patterns
+  - community/Рисунки_повозок
 ---
 
 # Проверка на медленной сети: Network, Disable cache, троттлинг
@@ -15,4 +15,4 @@ tags:
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 - [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/SVG_defs_hatch/xhatch/dots_patterns
+#graphify/rationale #graphify/INFERRED #community/Рисунки_повозок

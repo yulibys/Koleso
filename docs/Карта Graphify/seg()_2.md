@@ -1,18 +1,17 @@
 ---
-source_file: "_backup_2026-10-24/art.js"
+source_file: "_backup_2026-10-22/v77/art.js"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Сетки и модуль (1.5)"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Сетки_и_модуль_15
 ---
 
 # seg()
 
 ## Connections
-- [[_backup_2026-10-24art.js]] - `contains` [EXTRACTED]
 - [[bog()_2]] - `calls` [EXTRACTED]
 - [[ferris()_2]] - `calls` [EXTRACTED]
 - [[flower()_2]] - `calls` [EXTRACTED]
@@ -25,6 +24,7 @@ tags:
 - [[squirrel()_2]] - `calls` [EXTRACTED]
 - [[steering()_2]] - `calls` [EXTRACTED]
 - [[stick()_2]] - `calls` [EXTRACTED]
+- [[v77art.js]] - `contains` [EXTRACTED]
 - [[wheel()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15

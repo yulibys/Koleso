@@ -1,20 +1,20 @@
 ---
-source_file: "_backup_2026-10-24/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
-location: "L757"
+community: "Выпуск и предзащита (1.8)"
+location: "L568"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Выпуск_и_предзащита_18
 ---
 
 # scrollAnim()
 
 ## Connections
-- [[_backup_2026-10-24app.js]] - `contains` [EXTRACTED]
+- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
 - [[rewindToS1()_2]] - `calls` [EXTRACTED]
 - [[startEnding()_2]] - `calls` [EXTRACTED]
 - [[tick()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

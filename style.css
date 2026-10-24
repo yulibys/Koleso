@@ -1074,3 +1074,12 @@ html.port:not(.tab) #s1i2{top:700px}
 html.port:not(.tab) #s1n1{left:540px}
 html.port:not(.tab) #s1n2{left:560px}
 html.port:not(.tab) #s1oh{left:790px;top:430px}
+/* v107: телефон — подписи без наклона, по центру одна под другой (left ставит скрипт) */
+html.port #s1n1,html.port #s1n2,html.port #s1i1,html.port #s1i2{rotate:0deg}
+html.port:not(.tab) #s1n1{top:255px}
+html.port:not(.tab) #s1n2{top:330px}
+html.port:not(.tab) #s1i1{top:620px}
+html.port:not(.tab) #s1i2{top:690px}
+html.port:not(.tab) #s1oh{left:770px;top:440px}
+html.port:not(.tab) #s1n1,html.port:not(.tab) #s1n2{rotate:0deg}
+html.port:not(.tab) #s1oh{left:800px;top:385px}

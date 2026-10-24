@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.5.txt"
 type: "rationale"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # Мобильное преобразование — не общий Scale
@@ -14,4 +14,4 @@ tags:
 - [[layout()]] - `conceptually_related_to` [INFERRED]
 - [[Лекция 1.5. Модульные системы и сетки]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/rationale #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

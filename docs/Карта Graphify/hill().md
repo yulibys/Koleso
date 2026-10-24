@@ -1,22 +1,17 @@
 ---
-source_file: "src/scenery.js"
+source_file: "v20/art.js"
 type: "code"
-community: "Рисунки повозок"
-location: "L7"
+community: "Сборка, источники, финал"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/Сборка_источники_финал
 ---
 
 # hill()
 
 ## Connections
-- [[day()]] - `calls` [EXTRACTED]
-- [[hero()]] - `calls` [EXTRACTED]
-- [[lab()]] - `calls` [EXTRACTED]
-- [[later()]] - `calls` [EXTRACTED]
-- [[parade()]] - `calls` [EXTRACTED]
-- [[scenery.js]] - `contains` [EXTRACTED]
+- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

@@ -1,12 +1,12 @@
 ---
 source_file: "cut/gc.py"
 type: "code"
-community: "v20/fig.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v20/figjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # gc.py
@@ -22,4 +22,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `references` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/v20/figjs
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

@@ -1,12 +1,12 @@
 ---
-source_file: "_backup_2026-10-24/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
-location: "L725"
+community: "Выпуск и предзащита (1.8)"
+location: "L536"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Выпуск_и_предзащита_18
 ---
 
 # .s8()
@@ -18,4 +18,4 @@ tags:
 - [[startEnding()_2]] - `calls` [EXTRACTED]
 - [[textOut()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

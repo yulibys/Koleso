@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.50
+members: 5
 ---
 
 # :root токены (--black, --cream, --paper, --red, --gut)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[root токены (--black, --cream, --paper, --red, --gut)]] - code - src/style.css
-- [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
-- [[Постоянство цветового кода и редкий акцент]] - rationale - docs/lectures/1.6.txt
-- [[Роли — только из раскадровки, имена по функции]] - rationale - docs/lectures/1.4.txt
-- [[Спецификация ролей, воспроизводимая другим человеком]] - rationale - docs/lectures/1.4.txt
-- [[Шкала интервалов из интерлиньяжа 0.75  1.5  3  6 rem]] - rationale - docs/lectures/1.5.txt
+- [[Выключка влево для узкой колонки]] - rationale - docs/lectures/1.4.txt
+- [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - rationale - docs/lectures/1.4.txt
+- [[Сетка вырастает из строки и материала]] - rationale - docs/lectures/1.5.txt
+- [[Строка 50–75 знаков (до 80), width min(100%, 68ch)]] - rationale - docs/lectures/1.4.txt
+- [[Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]] - rationale - docs/MAP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,15 +24,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_re]]
-- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 1 edge to [[_COMMUNITY_v20vehicles.js]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)_1]]
+- 4 edges to [[_COMMUNITY_fig.js]]
+- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
 
 ## Top bridge nodes
-- [[root токены (--black, --cream, --paper, --red, --gut)]] - degree 5, connects to 2 communities
-- [[Роли — только из раскадровки, имена по функции]] - degree 3, connects to 1 community
-- [[Спецификация ролей, воспроизводимая другим человеком]] - degree 3, connects to 1 community
-- [[Иерархия сначала различимость одним параметром]] - degree 2, connects to 1 community
-- [[Шкала интервалов из интерлиньяжа 0.75  1.5  3  6 rem]] - degree 2, connects to 1 community
+- [[Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]] - degree 5, connects to 1 community
+- [[Интерлиньяж 1,4–1,65 для основного текста; заголовкам — своё]] - degree 3, connects to 1 community
+- [[Строка 50–75 знаков (до 80), width min(100%, 68ch)]] - degree 3, connects to 1 community
+- [[Выключка влево для узкой колонки]] - degree 2, connects to 1 community
+- [[Сетка вырастает из строки и материала]] - degree 2, connects to 1 community

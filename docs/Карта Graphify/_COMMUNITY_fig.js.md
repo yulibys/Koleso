@@ -1,32 +1,34 @@
 ---
 type: community
-cohesion: 0.17
-members: 17
+cohesion: 0.16
+members: 19
 ---
 
 # fig.js
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Алетейя честный режим сокрытия]] - concept - docs/lectures/1.8.txt
-- [[Архивный комплект и запись прохождения]] - rationale - docs/lectures/1.8.txt
-- [[Версия 1.0 новый номер при смене тезиса, структуры, источников]] - rationale - docs/lectures/1.8.txt
-- [[Доска процесса из четырёх фреймов]] - concept - docs/lectures/1.8.txt
-- [[Карта и калька ответ материалу вместо копии референса]] - concept - docs/lectures/1.8.txt
-- [[Карточка выпуска в восемь строк]] - rationale - docs/lectures/1.7.txt
-- [[Критерий готовности рабочей трети (30–40 %)]] - rationale - docs/lectures/1.5.txt
-- [[Лекция 1.8. Предзащита и финальная редактура]] - document - docs/lectures/1.8.txt
-- [[Наблюдение раньше совета]] - rationale - docs/lectures/1.8.txt
-- [[Нигредо распад удобных объяснений]] - concept - docs/lectures/1.8.txt
-- [[Показ по живой ссылке за 230 (20 + 70 + 30 + 30 с)]] - rationale - docs/lectures/1.8.txt
-- [[Правка проверки перед показом и карточка версии 1.0]] - rationale - docs/MAP.md
-- [[Проверка чужими руками чистое окно, телефон, клавиатура, медленная сеть, путь до титров]] - rationale - docs/lectures/1.8.txt
-- [[Публикационный порог версия выдержала названные проверки]] - rationale - docs/lectures/1.7.txt
-- [[Финальный порог публикации]] - concept - docs/lectures/1.8.txt
-- [[Хорошие URI не меняются]] - rationale - docs/lectures/1.8.txt
-- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - rationale - docs/lectures/1.8.txt
+- [[Висячие строки, хвосты заголовков, оторванные заголовки]] - rationale - docs/lectures/1.4.txt
+- [[Иерархия сначала различимость одним параметром]] - rationale - docs/lectures/1.4.txt
+- [[Калибровочный лист менять один параметр и записывать]] - rationale - docs/lectures/1.4.txt
+- [[Кегль врёт одинаковые 18px — разные тела]] - rationale - docs/lectures/1.4.txt
+- [[Кернинг ≠ трекинг; композицию трекингом не лечить]] - rationale - docs/lectures/1.4.txt
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - document - docs/MAP.md
+- [[Основной текст настраивать раньше обложки, на ≥120 словах]] - rationale - docs/lectures/1.4.txt
+- [[Пара шрифтов единство и контраст одновременно]] - rationale - docs/lectures/1.4.txt
+- [[Пользовательские интервалы не ломают страницу (WCAG Text Spacing)]] - rationale - docs/lectures/1.4.txt
+- [[Приём единого штриха]] - concept - docs/lectures/1.4.txt
+- [[Проба набора колонка 600450 px, 1827 и 1834, телефон 390 px с полями 24]] - rationale - docs/lectures/1.4.txt
+- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - rationale - docs/lectures/1.4.txt
+- [[Роли — только из раскадровки, имена по функции]] - rationale - docs/lectures/1.4.txt
+- [[Система встречается фазами проверять состояния (гиперобъект)]] - concept - docs/lectures/1.4.txt
+- [[Спецификация ролей, воспроизводимая другим человеком]] - rationale - docs/lectures/1.4.txt
+- [[Типографика делает две работы доступ и голос]] - concept - docs/lectures/1.4.txt
+- [[Типографский цвет прищуриться и проверить пятно]] - concept - docs/lectures/1.4.txt
+- [[Три принципа формообразования (Вильберг — Тарбеев)]] - concept - docs/lectures/1.4.txt
+- [[Шрифтовые пары как отношения персонажей]] - concept - docs/lectures/1.4.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,18 +38,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 6 edges to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
+- 4 edges to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 4 edges to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)_1]]
+- 2 edges to [[_COMMUNITY_Рисунки повозок]]
+- 2 edges to [[_COMMUNITY_scenery.js]]
 - 2 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 2 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 1 edge to [[_COMMUNITY__backup_2026-10-22vehicles.js]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
+- 2 edges to [[_COMMUNITY_v20fig.js]]
+- 2 edges to [[_COMMUNITY_v20vehicles.js]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
 
 ## Top bridge nodes
-- [[Лекция 1.8. Предзащита и финальная редактура]] - degree 17, connects to 4 communities
-- [[Правка проверки перед показом и карточка версии 1.0]] - degree 6, connects to 1 community
-- [[Архивный комплект и запись прохождения]] - degree 4, connects to 1 community
-- [[Четыре блока отзыва зачем быть, как проходят, где сопротивляется устройству, за что отвечать]] - degree 4, connects to 1 community
-- [[Финальный порог публикации]] - degree 4, connects to 1 community
+- [[Лекция 1.4. Экранная типографика и выбор шрифта]] - degree 42, connects to 10 communities
+- [[Калибровочный лист менять один параметр и записывать]] - degree 4, connects to 1 community
+- [[Проверка при масштабе 200% (WCAG 2.2 Resize Text)]] - degree 3, connects to 1 community
+- [[Спецификация ролей, воспроизводимая другим человеком]] - degree 3, connects to 1 community

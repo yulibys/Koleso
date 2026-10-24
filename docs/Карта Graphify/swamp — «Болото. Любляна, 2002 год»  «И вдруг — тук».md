@@ -16,7 +16,7 @@ tags:
 - [[swAxle — ось, прорисовка]] - `references` [EXTRACTED]
 - [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - `references` [EXTRACTED]
 - [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - `references` [EXTRACTED]
-- [[bubble()]] - `references` [INFERRED]
+- [[bubble()_1]] - `references` [INFERRED]
 - [[find — «Ему больше пяти тысяч лет, и его нашли в болоте» (паспорт находки 72 см, ясень, дуб)]] - `references` [EXTRACTED]
 - [[knock()]] - `references` [INFERRED]
 - [[ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)]] - `references` [EXTRACTED]

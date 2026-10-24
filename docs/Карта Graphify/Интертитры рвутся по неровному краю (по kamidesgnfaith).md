@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Интертитры рвутся по неровному краю (по kamidesgn/faith)
@@ -17,4 +17,4 @@ tags:
 - [[Пена (Слотердайк) различимая мембрана между частями]] - `conceptually_related_to` [INFERRED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/rationale #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L262"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # Детали повозки #parts .part + .lab-say
@@ -15,10 +15,10 @@ tags:
 - [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - `shares_data_with` [INFERRED]
 - [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - `implements` [EXTRACTED]
 - [[lab — «Соберите свою повозку» (интерактив)]] - `references` [EXTRACTED]
-- [[sayL()_2]] - `references` [INFERRED]
+- [[sayL()_4]] - `references` [INFERRED]
 - [[wood()]] - `references` [INFERRED]
 - [[Аффордансы показать возможность действия]] - `rationale_for` [INFERRED]
 - [[Без hover и обязательного перетаскивания]] - `rationale_for` [INFERRED]
 - [[Клавиатура Tab, видимый фокус, выход из интерактива]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром

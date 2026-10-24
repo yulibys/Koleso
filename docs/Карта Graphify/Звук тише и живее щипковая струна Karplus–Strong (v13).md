@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Выпуск и предзащита (1.8)"
+community: "scenery.js"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/sceneryjs
 ---
 
 # Звук тише и живее: щипковая струна Karplus–Strong (v13)
@@ -14,4 +14,4 @@ tags:
 - [[Звук синтезируется в браузере, включается с первого касания, кнопка вклвыкл]] - `conceptually_related_to` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/rationale #graphify/EXTRACTED #community/sceneryjs

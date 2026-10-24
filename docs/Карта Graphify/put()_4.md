@@ -1,12 +1,12 @@
 ---
-source_file: "_backup_2026-10-22/app.js"
+source_file: "_backup_2026-10-24/app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L43"
+community: "Первый экран и внимание (1.6)"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Первый_экран_и_внимание_16
 ---
 
 # put()
@@ -16,6 +16,6 @@ tags:
 - [[dot-s2()_4]] - `calls` [EXTRACTED]
 - [[dot-s3()_4]] - `calls` [EXTRACTED]
 - [[dot-s6()_4]] - `calls` [EXTRACTED]
-- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
+- [[_backup_2026-10-24app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

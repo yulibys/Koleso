@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # rewind()
@@ -21,4 +21,4 @@ tags:
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Вопрос на входе — ответ в финале]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand
+#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

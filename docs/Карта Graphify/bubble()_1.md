@@ -1,19 +1,20 @@
 ---
-source_file: "art.js"
+source_file: "src/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L226"
+community: "vehicles.js"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/vehiclesjs
 ---
 
 # bubble()
 
 ## Connections
-- [[art.js]] - `contains` [EXTRACTED]
-- [[line()]] - `calls` [EXTRACTED]
-- [[ring()]] - `calls` [EXTRACTED]
+- [[soft()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
+- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [INFERRED]
+- [[Разрез земли strata + bubbles (болото)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/vehiclesjs

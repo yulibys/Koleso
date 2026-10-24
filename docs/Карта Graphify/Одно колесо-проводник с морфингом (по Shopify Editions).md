@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: ".sc/.stick/.frame — высокая секция с липким кадром"
+community: "Шрифт Alegreya SC (--display, .disp)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/sc/stick/frame__высокая_секция_с_липким_кадром
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # Одно колесо-проводник с морфингом (по Shopify Editions)
@@ -17,4 +17,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `implements` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром
+#graphify/rationale #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp

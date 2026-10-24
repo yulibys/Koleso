@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # .pscreen/.ps-photo/.ps-cut/.ps-big — фотоэкраны (.flip)
@@ -16,4 +16,4 @@ tags:
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `implements` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/boil02_дрожь_линии_filters_feTurbulence

@@ -1,21 +1,19 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.50
+members: 4
 ---
 
 # Разборчивость знака ≠ удобство длительного чтения
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
-- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
-- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
-- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
-- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
-- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
+- [[Авторская функция (Фуко) кто говорит первым]] - concept - docs/lectures/1.2.txt
+- [[Кантастория рассказчик перед последовательностью изображений]] - concept - docs/lectures/1.1.txt
+- [[Рассказчик больше не говорит «я» (v13)]] - rationale - docs/context.md
+- [[Рассказчик — самоуверенный неудачник, голос интертитров]] - rationale - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,15 +23,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 1 edge to [[_COMMUNITY_re]]
-- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 1 edge to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
+- 2 edges to [[_COMMUNITY_scenery.js]]
+- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 1 edge to [[_COMMUNITY_fig.js_1]]
+- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
 
 ## Top bridge nodes
-- [[Разборчивость знака ≠ удобство длительного чтения]] - degree 3, connects to 2 communities
-- [[Движение — когда показывает процесс или изменение]] - degree 3, connects to 2 communities
-- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - degree 3, connects to 1 community
-- [[Фото __HI_H1__ (фон фотоэкрана)]] - degree 2, connects to 1 community
+- [[Кантастория рассказчик перед последовательностью изображений]] - degree 3, connects to 2 communities
+- [[Рассказчик больше не говорит «я» (v13)]] - degree 3, connects to 1 community
+- [[Рассказчик — самоуверенный неудачник, голос интертитров]] - degree 3, connects to 1 community
+- [[Авторская функция (Фуко) кто говорит первым]] - degree 2, connects to 1 community

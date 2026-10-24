@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)"
+community: "Движок сцен и звуки (app.js)"
 location: "L429"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)
@@ -20,4 +20,4 @@ tags:
 - [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - `implements` [EXTRACTED]
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

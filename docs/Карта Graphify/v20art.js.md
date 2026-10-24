@@ -1,54 +1,54 @@
 ---
 source_file: "v20/art.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Сборка, источники, финал"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Сборка_источники_финал
 ---
 
 # v20/art.js
 
 ## Connections
-- [[arcade()_3]] - `contains` [EXTRACTED]
-- [[bez()_3]] - `contains` [EXTRACTED]
-- [[birds()_4]] - `contains` [EXTRACTED]
-- [[bog()_3]] - `contains` [EXTRACTED]
-- [[bubble()_4]] - `contains` [EXTRACTED]
-- [[chariotParts()_3]] - `contains` [EXTRACTED]
-- [[clipped()_3]] - `contains` [EXTRACTED]
-- [[ferris()_3]] - `contains` [EXTRACTED]
-- [[flower()_3]] - `contains` [EXTRACTED]
-- [[flowers()_3]] - `contains` [EXTRACTED]
-- [[frame()_3]] - `contains` [EXTRACTED]
-- [[gear()_3]] - `contains` [EXTRACTED]
-- [[grass()_4]] - `contains` [EXTRACTED]
-- [[grassAt()_3]] - `contains` [EXTRACTED]
-- [[hill()_4]] - `contains` [EXTRACTED]
-- [[hut()_4]] - `contains` [EXTRACTED]
-- [[king()_3]] - `contains` [EXTRACTED]
-- [[line()_3]] - `contains` [EXTRACTED]
-- [[man()_3]] - `contains` [EXTRACTED]
-- [[monk()_3]] - `contains` [EXTRACTED]
-- [[motion()_3]] - `contains` [EXTRACTED]
-- [[mountains()_3]] - `contains` [EXTRACTED]
-- [[mouse()_3]] - `contains` [EXTRACTED]
-- [[oak()_4]] - `contains` [EXTRACTED]
-- [[pill()_3]] - `contains` [EXTRACTED]
-- [[ring()_3]] - `contains` [EXTRACTED]
-- [[ringPts()_3]] - `contains` [EXTRACTED]
-- [[seg()_3]] - `contains` [EXTRACTED]
-- [[shape()_3]] - `contains` [EXTRACTED]
-- [[soil()_3]] - `contains` [EXTRACTED]
-- [[squirrel()_3]] - `contains` [EXTRACTED]
-- [[squirrel2()_3]] - `contains` [EXTRACTED]
-- [[steering()_3]] - `contains` [EXTRACTED]
-- [[stick()_3]] - `contains` [EXTRACTED]
-- [[stone()_4]] - `contains` [EXTRACTED]
-- [[tuft()_3]] - `contains` [EXTRACTED]
-- [[underline()_3]] - `contains` [EXTRACTED]
-- [[wheel()_3]] - `contains` [EXTRACTED]
+- [[arcade()]] - `contains` [EXTRACTED]
+- [[bez()]] - `contains` [EXTRACTED]
+- [[birds()]] - `contains` [EXTRACTED]
+- [[bog()]] - `contains` [EXTRACTED]
+- [[bubble()]] - `contains` [EXTRACTED]
+- [[chariotParts()]] - `contains` [EXTRACTED]
+- [[clipped()]] - `contains` [EXTRACTED]
+- [[ferris()]] - `contains` [EXTRACTED]
+- [[flower()]] - `contains` [EXTRACTED]
+- [[flowers()]] - `contains` [EXTRACTED]
+- [[frame()]] - `contains` [EXTRACTED]
+- [[gear()]] - `contains` [EXTRACTED]
+- [[grass()]] - `contains` [EXTRACTED]
+- [[grassAt()]] - `contains` [EXTRACTED]
+- [[hill()]] - `contains` [EXTRACTED]
+- [[hut()]] - `contains` [EXTRACTED]
+- [[king()]] - `contains` [EXTRACTED]
+- [[line()]] - `contains` [EXTRACTED]
+- [[man()]] - `contains` [EXTRACTED]
+- [[monk()]] - `contains` [EXTRACTED]
+- [[motion()]] - `contains` [EXTRACTED]
+- [[mountains()]] - `contains` [EXTRACTED]
+- [[mouse()]] - `contains` [EXTRACTED]
+- [[oak()]] - `contains` [EXTRACTED]
+- [[pill()]] - `contains` [EXTRACTED]
+- [[ring()]] - `contains` [EXTRACTED]
+- [[ringPts()]] - `contains` [EXTRACTED]
+- [[seg()]] - `contains` [EXTRACTED]
+- [[shape()]] - `contains` [EXTRACTED]
+- [[soil()]] - `contains` [EXTRACTED]
+- [[squirrel()]] - `contains` [EXTRACTED]
+- [[squirrel2()]] - `contains` [EXTRACTED]
+- [[steering()]] - `contains` [EXTRACTED]
+- [[stick()]] - `contains` [EXTRACTED]
+- [[stone()]] - `contains` [EXTRACTED]
+- [[tuft()]] - `contains` [EXTRACTED]
+- [[underline()]] - `contains` [EXTRACTED]
+- [[wheel()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

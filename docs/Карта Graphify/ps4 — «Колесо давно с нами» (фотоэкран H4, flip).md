@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # ps4 — «Колесо давно с нами» (фотоэкран H4, flip)
@@ -21,4 +21,4 @@ tags:
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `implements` [EXTRACTED]
 - [[Четыре фотоэкрана в духе Kami (v16)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
+community: "Рисунки повозок"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
+  - community/Рисунки_повозок
 ---
 
 # Клавиатура: Tab, видимый фокус, выход из интерактива
@@ -15,4 +15,4 @@ tags:
 - [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - `rationale_for` [INFERRED]
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
+#graphify/rationale #graphify/INFERRED #community/Рисунки_повозок

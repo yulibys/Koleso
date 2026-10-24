@@ -1,26 +1,29 @@
 ---
 type: community
-cohesion: 0.33
-members: 11
+cohesion: 0.20
+members: 14
 ---
 
 # .sc/.stick/.frame — высокая секция с липким кадром
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - code - src/body.html
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
-- [[guideFrame()]] - code - src/app.js
-- [[morphD()]] - code - src/app.js
-- [[pairOf()]] - code - src/app.js
-- [[roll()]] - code - src/app.js
-- [[sampleFig()]] - code - src/app.js
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
-- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - rationale - docs/context.md
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - rationale - docs/lectures/1.3.txt
-- [[Сквозной предмет деревянное колесо с меловой меткой]] - rationale - docs/context.md
+- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
+- [[dot-lab-ground.blade.wind]] - code - src/style.css
+- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
+- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
+- [[sayL()_4]] - code - src/app.js
+- [[upd()]] - code - src/app.js
+- [[wood()]] - code - src/app.js
+- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
+- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
+- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
+- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
+- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
+- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
+- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,25 +33,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 8 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 4 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 3 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
-- 3 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 2 edges to [[_COMMUNITY_fig.js]]
-- 2 edges to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
+- 5 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 4 edges to [[_COMMUNITY_re]]
+- 4 edges to [[_COMMUNITY_Рисунки повозок]]
+- 4 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 3 edges to [[_COMMUNITY_fig.js_1]]
+- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
 - 1 edge to [[_COMMUNITY_scenery.js]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)]]
-- 1 edge to [[_COMMUNITY_fig.js_1]]
-- 1 edge to [[_COMMUNITY_Разборчивость знака ≠ удобство длительного чтения]]
-- 1 edge to [[_COMMUNITY_re_1]]
-- 1 edge to [[_COMMUNITY_vehicles.js]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
-- 1 edge to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
+- 1 edge to [[_COMMUNITY_Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]]
 
 ## Top bridge nodes
-- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 13 communities
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 2 communities
-- [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - degree 6, connects to 2 communities
-- [[Одно колесо-проводник с морфингом (по Shopify Editions)]] - degree 5, connects to 2 communities
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - degree 3, connects to 2 communities
+- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 6 communities
+- [[Детали повозки parts .part + .lab-say]] - degree 8, connects to 2 communities
+- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - degree 5, connects to 1 community
+- [[Действие читателя меняет состояние страницы]] - degree 4, connects to 1 community
+- [[sayL()_4]] - degree 4, connects to 1 community

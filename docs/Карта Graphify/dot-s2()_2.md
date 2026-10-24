@@ -1,20 +1,19 @@
 ---
-source_file: "_backup_2026-10-24/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
-location: "L458"
+community: "Выпуск и предзащита (1.8)"
+location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Выпуск_и_предзащита_18
 ---
 
 # .s2()
 
 ## Connections
 - [[S_2]] - `method` [EXTRACTED]
-- [[odo()_2]] - `calls` [EXTRACTED]
 - [[put()_2]] - `calls` [EXTRACTED]
 - [[rewindToS1()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

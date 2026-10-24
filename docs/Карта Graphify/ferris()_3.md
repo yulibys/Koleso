@@ -1,20 +1,20 @@
 ---
-source_file: "v20/art.js"
+source_file: "_backup_2026-10-24/art.js"
 type: "code"
-community: "Сетки и модуль (1.5)"
+community: "Пейзажи (scenery.js)"
 location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сетки_и_модуль_15
+  - community/Пейзажи_sceneryjs
 ---
 
 # ferris()
 
 ## Connections
+- [[_backup_2026-10-24art.js]] - `contains` [EXTRACTED]
 - [[line()_3]] - `calls` [EXTRACTED]
 - [[ring()_3]] - `calls` [EXTRACTED]
 - [[seg()_3]] - `calls` [EXTRACTED]
-- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сетки_и_модуль_15
+#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs

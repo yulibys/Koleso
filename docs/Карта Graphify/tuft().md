@@ -1,21 +1,21 @@
 ---
-source_file: "art.js"
+source_file: "v20/art.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Сборка, источники, финал"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сборка_источники_финал
 ---
 
 # tuft()
 
 ## Connections
-- [[art.js]] - `contains` [EXTRACTED]
-- [[grass()_1]] - `calls` [EXTRACTED]
+- [[grass()]] - `calls` [EXTRACTED]
 - [[grassAt()]] - `calls` [EXTRACTED]
 - [[line()]] - `calls` [EXTRACTED]
 - [[soil()]] - `calls` [EXTRACTED]
+- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "fig.js"
+community: "v20/vehicles.js"
 location: "L134"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/figjs
+  - community/v20/vehiclesjs
 ---
 
 # prepType()
@@ -18,4 +18,4 @@ tags:
 - [[Неразрывные пробелы — только для смысловых пар]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/figjs
+#graphify/code #graphify/INFERRED #community/v20/vehiclesjs

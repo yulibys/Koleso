@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[batten()]] - `calls` [EXTRACTED]
-- [[wheel()]] - `imports` [EXTRACTED]
+- [[wheel()_1]] - `imports` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

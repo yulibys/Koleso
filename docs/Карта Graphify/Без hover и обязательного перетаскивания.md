@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # Без hover и обязательного перетаскивания
@@ -14,4 +14,4 @@ tags:
 - [[Детали повозки parts .part + .lab-say]] - `rationale_for` [INFERRED]
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/rationale #graphify/EXTRACTED #community/sc/stick/frame__высокая_секция_с_липким_кадром

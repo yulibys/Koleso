@@ -16,6 +16,6 @@ tags:
 - [[f()]] - `calls` [EXTRACTED]
 - [[math]] - `calls` [EXTRACTED]
 - [[random]] - `calls` [EXTRACTED]
-- [[wheel()]] - `contains` [EXTRACTED]
+- [[wheel()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

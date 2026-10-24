@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.6.txt"
 type: "rationale"
-community: "SVG defs: hatch/xhatch/dots patterns"
+community: "Рисунки повозок"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SVG_defs_hatch/xhatch/dots_patterns
+  - community/Рисунки_повозок
 ---
 
 # Читательская проба think aloud → одна правка
@@ -14,4 +14,4 @@ tags:
 - [[Затруднение — наблюдаемыми словами, менять по одному параметру]] - `conceptually_related_to` [INFERRED]
 - [[Лекция 1.6. Управление вниманием первый экран, паузы]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SVG_defs_hatch/xhatch/dots_patterns
+#graphify/rationale #graphify/EXTRACTED #community/Рисунки_повозок

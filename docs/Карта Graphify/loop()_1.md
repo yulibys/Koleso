@@ -1,20 +1,19 @@
 ---
-source_file: "src/app.js"
+source_file: "_backup_2026-10-22/app_before_v106.js"
 type: "code"
-community: "Сборка, источники, финал"
-location: "L357"
+community: "Фото, вырезки, права (1.7)"
+location: "L1036"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/Фото_вырезки_права_17
 ---
 
 # loop()
 
 ## Connections
-- [[applyK()]] - `calls` [EXTRACTED]
-- [[guideFrame()]] - `calls` [EXTRACTED]
-- [[projector()]] - `calls` [EXTRACTED]
-- [[srcapp.js]] - `indirect_call` [INFERRED]
+- [[app_before_v106.js]] - `contains` [EXTRACTED]
+- [[inertia()_1]] - `calls` [EXTRACTED]
+- [[tick()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17

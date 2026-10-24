@@ -1,17 +1,17 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app_before_v106.js"
 type: "code"
-community: "Типографика (1.4)"
+community: "Фото, вырезки, права (1.7)"
 location: "L315"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Типографика_14
+  - community/Фото_вырезки_права_17
 ---
 
 # alignIntro()
 
 ## Connections
-- [[v20app.js]] - `indirect_call` [INFERRED]
+- [[app_before_v106.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Типографика_14
+#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17

@@ -1,12 +1,12 @@
 ---
-source_file: "_backup_2026-10-22/v77/app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
-location: "L427"
+community: "Типографика (1.4)"
+location: "L566"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Типографика_14
 ---
 
 # .s3()
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[S_3]] - `method` [EXTRACTED]
 - [[coverSeq()_3]] - `calls` [EXTRACTED]
+- [[dust()_2]] - `calls` [EXTRACTED]
+- [[look()_2]] - `calls` [EXTRACTED]
 - [[put()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

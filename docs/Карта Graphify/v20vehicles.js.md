@@ -1,14 +1,14 @@
 ---
 source_file: "v20/vehicles.js"
 type: "code"
-community: "v20/vehicles.js"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v20/vehiclesjs
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # v20/vehicles.js
 
-#graphify/code #graphify/EXTRACTED #community/v20/vehiclesjs
+#graphify/code #graphify/EXTRACTED #community/boil02_дрожь_линии_filters_feTurbulence

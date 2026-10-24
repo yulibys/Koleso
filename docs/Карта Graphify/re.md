@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "re"
+community: "soft"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/re
+  - community/soft
 ---
 
 # re
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[update.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/re
+#graphify/concept #graphify/EXTRACTED #community/soft

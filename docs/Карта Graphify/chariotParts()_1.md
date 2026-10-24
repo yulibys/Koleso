@@ -1,19 +1,19 @@
 ---
-source_file: "_backup_2026-10-22/v77/art.js"
+source_file: "art.js"
 type: "code"
-community: "Колесо-проводник и гравюра"
-location: "L374"
+community: "Интерактив и проверка читателем"
+location: "L375"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # chariotParts()
 
 ## Connections
+- [[art.js]] - `contains` [EXTRACTED]
 - [[shape()_1]] - `calls` [EXTRACTED]
-- [[v77art.js]] - `contains` [EXTRACTED]
 - [[wheel()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

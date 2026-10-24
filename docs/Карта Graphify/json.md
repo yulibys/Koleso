@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "v20/fig.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/v20/figjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gc.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/v20/figjs
+#graphify/concept #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

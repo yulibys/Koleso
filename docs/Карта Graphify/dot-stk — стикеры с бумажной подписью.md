@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "scenery.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L550"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sceneryjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # .stk — стикеры с бумажной подписью
@@ -16,4 +16,4 @@ tags:
 - [[Смысловой узел переезжает целиком]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/sceneryjs
+#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp

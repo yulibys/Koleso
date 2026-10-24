@@ -1,12 +1,12 @@
 ---
 source_file: "cut/gc.py"
 type: "code"
-community: "v20/fig.js"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v20/figjs
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # _sticker()
@@ -17,4 +17,4 @@ tags:
 - [[numpy]] - `calls` [EXTRACTED]
 - [[sticker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v20/figjs
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

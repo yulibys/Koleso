@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
+community: "Движок сцен и звуки (app.js)"
 location: "L3"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # SVG defs: hatch/xhatch/dots patterns
@@ -18,4 +18,4 @@ tags:
 - [[tRunner — бегущий человек (template)]] - `shares_data_with` [INFERRED]
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

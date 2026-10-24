@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # .lab-ground — земля мастерской (травинки .blade, ветер .wind)
@@ -15,4 +15,4 @@ tags:
 - [[dot-lab-ground.blade.wind]] - `implements` [EXTRACTED]
 - [[lab — «Соберите свою повозку» (интерактив)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/code #graphify/EXTRACTED #community/sc/stick/frame__высокая_секция_с_липким_кадром

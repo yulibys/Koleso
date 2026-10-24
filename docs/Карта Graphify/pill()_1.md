@@ -1,19 +1,19 @@
 ---
-source_file: "_backup_2026-10-22/v77/art.js"
+source_file: "art.js"
 type: "code"
-community: "Колесо-проводник и гравюра"
-location: "L348"
+community: "Интерактив и проверка читателем"
+location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # pill()
 
 ## Connections
+- [[art.js]] - `contains` [EXTRACTED]
 - [[ring()_1]] - `calls` [EXTRACTED]
 - [[seg()_1]] - `calls` [EXTRACTED]
-- [[v77art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

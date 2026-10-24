@@ -1,18 +1,20 @@
 ---
-source_file: "_backup_2026-10-22/v77/app.js"
+source_file: "src/app.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
-location: "L478"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # sayL()
 
 ## Connections
-- [[labUpd()_3]] - `calls` [EXTRACTED]
-- [[v77app.js]] - `contains` [EXTRACTED]
+- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
+- [[srcapp.js]] - `contains` [EXTRACTED]
+- [[upd()]] - `calls` [EXTRACTED]
+- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/sc/stick/frame__высокая_секция_с_липким_кадром

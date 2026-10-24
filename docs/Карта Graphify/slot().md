@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: ":root токены (--black, --cream, --paper, --red, --gut)"
+community: "_backup_2026-10-22/vehicles.js"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/root_токены_--black_--cream_--paper_--red_--gut
+  - community/_backup_2026-10-22/vehiclesjs
 ---
 
 # slot()
@@ -17,4 +17,4 @@ tags:
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `references` [INFERRED]
 - [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/root_токены_--black_--cream_--paper_--red_--gut
+#graphify/code #graphify/INFERRED #community/_backup_2026-10-22/vehiclesjs

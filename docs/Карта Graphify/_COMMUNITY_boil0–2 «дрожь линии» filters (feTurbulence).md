@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.31
-members: 9
+cohesion: 0.32
+members: 8
 ---
 
 # boil0–2 «дрожь линии» filters (feTurbulence)
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.32 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[sndBtn — кнопка звука]] - code - src/body.html
-- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
-- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
-- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
-- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
-- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
-- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
-- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
-- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
+- [[dot-pscreen.ps-photo.ps-cut.ps-big — фотоэкраны (.flip)]] - code - src/style.css
+- [[dot-rip — стили рвущегося интертитра]] - code - src/style.css
+- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - concept - docs/lectures/1.4.txt
+- [[Деталь оценивают в размере её будущей работы]] - rationale - docs/lectures/1.4.txt
+- [[Исключение с условием, а не манера]] - rationale - docs/lectures/1.5.txt
+- [[Прописной набор требует умеренной разрядки]] - rationale - docs/lectures/1.4.txt
+- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - rationale - docs/lectures/1.4.txt
+- [[Шрифт Alegreya SC (--display, .disp)]] - code - src/style.css
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,19 +27,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 4 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 3 edges to [[_COMMUNITY_Сборка, источники, финал]]
+- 4 edges to [[_COMMUNITY_fig.js]]
+- 2 edges to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
+- 2 edges to [[_COMMUNITY_re_1]]
+- 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 1 edge to [[_COMMUNITY_v20vehicles.js]]
 - 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 1 edge to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
-- 1 edge to [[_COMMUNITY_fig.js_1]]
-- 1 edge to [[_COMMUNITY_Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]]
+- 1 edge to [[_COMMUNITY__backup_2026-10-22vehicles.js]]
 
 ## Top bridge nodes
-- [[Немое кино .flick + .scratch (+ .silent рамка)]] - degree 7, connects to 5 communities
-- [[Контроль медиа пауза движения и звука]] - degree 6, connects to 2 communities
-- [[Дать остановить движение и звук; статичные состояния без анимации]] - degree 6, connects to 2 communities
-- [[Уменьшение движения и неподвижная версия]] - degree 4, connects to 2 communities
-- [[Звук — только по действию читателя]] - degree 4, connects to 2 communities
+- [[Шрифт Alegreya SC (--display, .disp)]] - degree 10, connects to 4 communities
+- [[Акцидентный (display) и текстовый шрифт — разные назначения]] - degree 4, connects to 2 communities
+- [[Деталь оценивают в размере её будущей работы]] - degree 3, connects to 1 community
+- [[Только настоящая капитель, проверить кириллицу в её комплекте]] - degree 3, connects to 1 community
+- [[Прописной набор требует умеренной разрядки]] - degree 3, connects to 1 community

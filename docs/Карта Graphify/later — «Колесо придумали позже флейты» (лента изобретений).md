@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # later — «Колесо придумали позже флейты» (лента изобретений)
@@ -28,4 +28,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `rationale_for` [EXTRACTED]
 - [[Ритм «акцент → пауза → выход»]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

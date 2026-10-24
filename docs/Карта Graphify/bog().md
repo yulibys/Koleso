@@ -1,22 +1,22 @@
 ---
-source_file: "art.js"
+source_file: "v20/art.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Сборка, источники, финал"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сборка_источники_финал
 ---
 
 # bog()
 
 ## Connections
-- [[art.js]] - `contains` [EXTRACTED]
 - [[line()]] - `calls` [EXTRACTED]
 - [[ring()]] - `calls` [EXTRACTED]
 - [[seg()]] - `calls` [EXTRACTED]
 - [[shape()]] - `calls` [EXTRACTED]
-- [[stone()_1]] - `calls` [EXTRACTED]
+- [[stone()]] - `calls` [EXTRACTED]
+- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

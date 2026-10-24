@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.4.txt"
 type: "concept"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # Акцидентный (display) и текстовый шрифт — разные назначения
@@ -16,4 +16,4 @@ tags:
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `rationale_for` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/concept #graphify/INFERRED #community/boil02_дрожь_линии_filters_feTurbulence

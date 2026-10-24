@@ -1,20 +1,18 @@
 ---
-source_file: "src/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
-community: "Шрифт Alegreya SC (--display, .disp)"
-location: "L231"
+community: "Выпуск и предзащита (1.8)"
+location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/Выпуск_и_предзащита_18
 ---
 
 # sayL()
 
 ## Connections
-- [[lab — «Соберите свою повозку» (интерактив)]] - `references` [INFERRED]
-- [[srcapp.js]] - `contains` [EXTRACTED]
-- [[upd()]] - `calls` [EXTRACTED]
-- [[Детали повозки parts .part + .lab-say]] - `references` [INFERRED]
+- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
+- [[labUpd()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/code #graphify/EXTRACTED #community/Выпуск_и_предзащита_18

@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: ".sc/.stick/.frame — высокая секция с липким кадром"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sc/stick/frame__высокая_секция_с_липким_кадром
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # #wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)
@@ -17,9 +17,9 @@ tags:
 - [[batten()]] - `references` [INFERRED]
 - [[guideFrame()]] - `references` [INFERRED]
 - [[knot()]] - `references` [INFERRED]
-- [[wheel()]] - `references` [INFERRED]
+- [[wheel()_1]] - `references` [INFERRED]
 - [[Колесо перерисовано по люблянской находке (v13, v15)]] - `rationale_for` [EXTRACTED]
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `conceptually_related_to` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром
+#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp

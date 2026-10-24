@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L117"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # .rew-fx — эффект перемотки ◀◀
@@ -16,4 +16,4 @@ tags:
 - [[rewind()]] - `references` [INFERRED]
 - [[Память как ответственность (Мец) финал помнит первый экран]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_--serif/--hand_voice/hand
+#graphify/code #graphify/INFERRED #community/Лекция_11_Лонгрид_как_особый_медиум

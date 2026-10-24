@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Сборка, источники, финал"
+community: "re"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/re
 ---
 
 # ksPlay()
@@ -24,4 +24,4 @@ tags:
 - [[steps()]] - `calls` [EXTRACTED]
 - [[wood()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/re

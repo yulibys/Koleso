@@ -29,7 +29,7 @@
   fit();
   const COARSE = matchMedia('(pointer: coarse)').matches;
   // на сенсорных экранах прокрутка «легче» — растягиваем секции, чтобы сцены шли медленнее
-  $$('.sc').forEach((s) => s.style.setProperty('--len', (s.dataset.len * (COARSE ? 1.3 : 1)).toFixed(2)));
+  $$('.sc').forEach((s) => s.style.setProperty('--len', (s.dataset.len * (COARSE ? 1.9 : 1)).toFixed(2))); /* v107: на телефоне сцены идут медленнее — «тяжелее» листается */
   if (COARSE) root.classList.add('coarse');
   // на телефонах и планшетах «дрожание» линий выключено: SVG-фильтр каждые 140 мс перерисовывает весь экран и тормозит прокрутку
   if (!reduce && !COARSE) { let b = 0; setInterval(() => { root.classList.remove('boil0', 'boil1', 'boil2'); root.classList.add('boil' + (b = (b + 1) % 3)); }, 140); }
@@ -314,7 +314,10 @@
   // v97: «что смотрите?» начинается ровно под левым краем «К», «листайте дальше!» кончается под правым краем «о»
   function alignIntro() {
     const i1 = $('s1i1'), i2 = $('s1i2');
-    if (PORT) { i1.style.left = (720 - i1.offsetWidth / 2 - 40).toFixed(0) + 'px'; i2.style.left = (720 - i2.offsetWidth / 2 + 40).toFixed(0) + 'px'; return; } // v106: на телефоне — по центру, лёгкой лесенкой
+    if (PORT) { // v107: на телефоне все подписи — строго по центру, одна под другой, без лесенки
+      [i1, i2, $('s1n1'), $('s1n2')].forEach((el) => { el.style.left = (720 - el.offsetWidth / 2).toFixed(0) + 'px'; });
+      return;
+    }
     try {
       const cs = getComputedStyle(word), c = document.createElement('canvas').getContext('2d');
       c.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
@@ -936,7 +939,7 @@
       let p = target;
       if (COARSE && !root.classList.contains('rewinding')) {
         const now = performance.now(), dt = Math.min(64, now - (sec._t || now)); sec._t = now;
-        p = sec._p === undefined || r.top > H || r.bottom < 0 ? target : sec._p + (target - sec._p) * (1 - Math.pow(0.86, dt / 16.7));
+        p = sec._p === undefined || r.top > H || r.bottom < 0 ? target : sec._p + (target - sec._p) * (1 - Math.pow(0.9, dt / 16.7)) /* v107: мягче догоняет палец, без рывков */;
         if (Math.abs(target - p) < 0.0005) p = target;
       }
       sec._p = p;

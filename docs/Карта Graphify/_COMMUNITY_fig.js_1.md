@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.25
-members: 9
+cohesion: 0.39
+members: 8
 ---
 
 # fig.js
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.39 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[dot-guide — фиксированное колесо-проводник]] - code - src/style.css
-- [[dot-sc.stick.frame — высокая секция с липким кадром]] - code - src/style.css
-- [[parseK()]] - code - src/app.js
-- [[prepType()]] - code - src/app.js
-- [[Воздух — не привилегия большого монитора]] - rationale - docs/lectures/1.5.txt
-- [[Гигиена набора «ёлочки»„лапки“, тире, минус, ×]] - rationale - docs/lectures/1.4.txt
-- [[Неразрывные пробелы — только для смысловых пар]] - rationale - docs/lectures/1.4.txt
-- [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - rationale - docs/lectures/1.7.txt
-- [[Смысловой порядок при складывании колонок]] - rationale - docs/lectures/1.5.txt
+- [[Viewport и скролл пространство превращается в длительность]] - concept - docs/lectures/1.1.txt
+- [[Лекция 1.1. Лонгрид как особый медиум]] - document - docs/lectures/1.1.txt
+- [[Одно главное и одно поддерживающее свойство браузера]] - rationale - docs/lectures/1.1.txt
+- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - concept - docs/lectures/1.1.txt
+- [[Регламент генеративных инструментов]] - rationale - docs/lectures/1.1.txt
+- [[Свиток последовательность и жест разворачивания]] - concept - docs/lectures/1.1.txt
+- [[Фабрика вариантов и дом у реки]] - concept - docs/lectures/1.1.txt
+- [[Хронотоп (Бахтин) участок со случайной длительностью]] - rationale - docs/lectures/1.1.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,19 +27,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 2 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
-- 2 edges to [[_COMMUNITY_re]]
-- 1 edge to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)_1]]
-- 1 edge to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
-- 1 edge to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
+- 7 edges to [[_COMMUNITY_scenery.js]]
+- 4 edges to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 3 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 1 edge to [[_COMMUNITY_Разборчивость знака ≠ удобство длительного чтения]]
 
 ## Top bridge nodes
-- [[dot-sc.stick.frame — высокая секция с липким кадром]] - degree 8, connects to 3 communities
-- [[prepType()]] - degree 5, connects to 2 communities
-- [[Неразрывные пробелы — только для смысловых пар]] - degree 4, connects to 2 communities
-- [[parseK()]] - degree 4, connects to 1 community
-- [[Гигиена набора «ёлочки»„лапки“, тире, минус, ×]] - degree 3, connects to 1 community
+- [[Лекция 1.1. Лонгрид как особый медиум]] - degree 17, connects to 5 communities
+- [[Одно главное и одно поддерживающее свойство браузера]] - degree 5, connects to 2 communities
+- [[Пять свойств браузера скролл, подстройка, ссылка, отклик, жизнь после публикации]] - degree 5, connects to 2 communities
+- [[Хронотоп (Бахтин) участок со случайной длительностью]] - degree 4, connects to 2 communities
+- [[Viewport и скролл пространство превращается в длительность]] - degree 6, connects to 1 community

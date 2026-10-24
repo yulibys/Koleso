@@ -1,19 +1,20 @@
 ---
-source_file: "_backup_2026-10-24/app.js"
+source_file: "src/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
-location: "L961"
+community: "re"
+location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/re
 ---
 
 # loop()
 
 ## Connections
-- [[_backup_2026-10-24app.js]] - `contains` [EXTRACTED]
-- [[inertia()_2]] - `calls` [EXTRACTED]
-- [[tick()_2]] - `calls` [EXTRACTED]
+- [[applyK()]] - `calls` [EXTRACTED]
+- [[guideFrame()]] - `calls` [EXTRACTED]
+- [[projector()]] - `calls` [EXTRACTED]
+- [[srcapp.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/re

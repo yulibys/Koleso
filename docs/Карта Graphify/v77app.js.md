@@ -1,48 +1,48 @@
 ---
 source_file: "_backup_2026-10-22/v77/app.js"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
+community: "Раскадровка и двери (1.3)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Раскадровка_и_двери_13
 ---
 
 # v77/app.js
 
 ## Connections
-- [[S_3]] - `contains` [EXTRACTED]
-- [[applyLap()_3]] - `contains` [EXTRACTED]
-- [[balance()_3]] - `contains` [EXTRACTED]
-- [[calibrate()_3]] - `contains` [EXTRACTED]
-- [[cancelEnding()_3]] - `contains` [EXTRACTED]
-- [[cover()_3]] - `contains` [EXTRACTED]
-- [[coverSeq()_3]] - `contains` [EXTRACTED]
-- [[fit()_3]] - `contains` [EXTRACTED]
-- [[fitUl()_3]] - `contains` [EXTRACTED]
-- [[labUpd()_3]] - `contains` [EXTRACTED]
-- [[loop()_4]] - `contains` [EXTRACTED]
-- [[morph()_3]] - `contains` [EXTRACTED]
-- [[nextCover()_3]] - `contains` [EXTRACTED]
-- [[odo()_3]] - `contains` [EXTRACTED]
-- [[put()_3]] - `contains` [EXTRACTED]
-- [[restore()_3]] - `contains` [EXTRACTED]
-- [[rewTxt()_3]] - `contains` [EXTRACTED]
-- [[rewindToS1()_3]] - `contains` [EXTRACTED]
-- [[ringAt()_3]] - `contains` [EXTRACTED]
-- [[ringAt0()_3]] - `contains` [EXTRACTED]
-- [[rollIn()_3]] - `contains` [EXTRACTED]
-- [[sayL()_4]] - `contains` [EXTRACTED]
-- [[scrollAnim()_3]] - `contains` [EXTRACTED]
-- [[shortcut()_3]] - `contains` [EXTRACTED]
-- [[spin()_3]] - `contains` [EXTRACTED]
-- [[splice()_3]] - `contains` [EXTRACTED]
-- [[splitLines()_3]] - `indirect_call` [INFERRED]
-- [[startEnding()_3]] - `contains` [EXTRACTED]
-- [[textOut()_3]] - `contains` [EXTRACTED]
-- [[tick()_3]] - `contains` [EXTRACTED]
-- [[unshort()_3]] - `contains` [EXTRACTED]
-- [[watch()_3]] - `contains` [EXTRACTED]
+- [[S_5]] - `contains` [EXTRACTED]
+- [[applyLap()_5]] - `contains` [EXTRACTED]
+- [[balance()_5]] - `contains` [EXTRACTED]
+- [[calibrate()_4]] - `contains` [EXTRACTED]
+- [[cancelEnding()_5]] - `contains` [EXTRACTED]
+- [[cover()_5]] - `contains` [EXTRACTED]
+- [[coverSeq()_5]] - `contains` [EXTRACTED]
+- [[fit()_5]] - `contains` [EXTRACTED]
+- [[fitUl()_5]] - `contains` [EXTRACTED]
+- [[labUpd()_5]] - `contains` [EXTRACTED]
+- [[loop()_6]] - `contains` [EXTRACTED]
+- [[morph()_5]] - `contains` [EXTRACTED]
+- [[nextCover()_5]] - `contains` [EXTRACTED]
+- [[odo()_4]] - `contains` [EXTRACTED]
+- [[put()_5]] - `contains` [EXTRACTED]
+- [[restore()_5]] - `contains` [EXTRACTED]
+- [[rewTxt()_5]] - `contains` [EXTRACTED]
+- [[rewindToS1()_5]] - `contains` [EXTRACTED]
+- [[ringAt()_5]] - `contains` [EXTRACTED]
+- [[ringAt0()_5]] - `contains` [EXTRACTED]
+- [[rollIn()_4]] - `contains` [EXTRACTED]
+- [[sayL()_6]] - `contains` [EXTRACTED]
+- [[scrollAnim()_5]] - `contains` [EXTRACTED]
+- [[shortcut()_5]] - `contains` [EXTRACTED]
+- [[spin()_5]] - `contains` [EXTRACTED]
+- [[splice()_4]] - `contains` [EXTRACTED]
+- [[splitLines()_5]] - `indirect_call` [INFERRED]
+- [[startEnding()_5]] - `contains` [EXTRACTED]
+- [[textOut()_5]] - `contains` [EXTRACTED]
+- [[tick()_5]] - `contains` [EXTRACTED]
+- [[unshort()_5]] - `contains` [EXTRACTED]
+- [[watch()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13

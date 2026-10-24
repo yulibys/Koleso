@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.5.txt"
 type: "rationale"
-community: "Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)"
+community: "Движок сцен и звуки (app.js)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # Контраст WCAG 2.2 AA: 4.5:1 и 3:1
@@ -16,4 +16,4 @@ tags:
 - [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - `rationale_for` [INFERRED]
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки
+#graphify/rationale #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

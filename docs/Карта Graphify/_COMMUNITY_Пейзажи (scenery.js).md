@@ -1,51 +1,54 @@
 ---
 type: community
-cohesion: 0.11
-members: 36
+cohesion: 0.14
+members: 39
 ---
 
 # Пейзажи (scenery.js)
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[dot-s1()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s2()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s3()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s4()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s5()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s6()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s7()_4]] - code - _backup_2026-10-22/app.js
-- [[dot-s8()_4]] - code - _backup_2026-10-22/app.js
-- [[S_4]] - code - _backup_2026-10-22/app.js
-- [[_backup_2026-10-22app.js]] - code - _backup_2026-10-22/app.js
-- [[applyLap()_4]] - code - _backup_2026-10-22/app.js
-- [[balance()_4]] - code - _backup_2026-10-22/app.js
-- [[cancelEnding()_4]] - code - _backup_2026-10-22/app.js
-- [[cover()_4]] - code - _backup_2026-10-22/app.js
-- [[coverSeq()_4]] - code - _backup_2026-10-22/app.js
-- [[fit()_4]] - code - _backup_2026-10-22/app.js
-- [[fitUl()_4]] - code - _backup_2026-10-22/app.js
-- [[labUpd()_4]] - code - _backup_2026-10-22/app.js
-- [[loop()_5]] - code - _backup_2026-10-22/app.js
-- [[morph()_4]] - code - _backup_2026-10-22/app.js
-- [[nextCover()_4]] - code - _backup_2026-10-22/app.js
-- [[put()_4]] - code - _backup_2026-10-22/app.js
-- [[restore()_4]] - code - _backup_2026-10-22/app.js
-- [[rewTxt()_4]] - code - _backup_2026-10-22/app.js
-- [[rewindToS1()_4]] - code - _backup_2026-10-22/app.js
-- [[ringAt()_4]] - code - _backup_2026-10-22/app.js
-- [[ringAt0()_4]] - code - _backup_2026-10-22/app.js
-- [[sayL()_5]] - code - _backup_2026-10-22/app.js
-- [[scrollAnim()_4]] - code - _backup_2026-10-22/app.js
-- [[shortcut()_4]] - code - _backup_2026-10-22/app.js
-- [[spin()_4]] - code - _backup_2026-10-22/app.js
-- [[splitLines()_4]] - code - _backup_2026-10-22/app.js
-- [[startEnding()_4]] - code - _backup_2026-10-22/app.js
-- [[textOut()_4]] - code - _backup_2026-10-22/app.js
-- [[tick()_4]] - code - _backup_2026-10-22/app.js
-- [[unshort()_4]] - code - _backup_2026-10-22/app.js
+- [[_backup_2026-10-24art.js]] - code - _backup_2026-10-24/art.js
+- [[arcade()_3]] - code - _backup_2026-10-24/art.js
+- [[bez()_3]] - code - _backup_2026-10-24/art.js
+- [[birds()_4]] - code - _backup_2026-10-24/art.js
+- [[bog()_3]] - code - _backup_2026-10-24/art.js
+- [[bubble()_4]] - code - _backup_2026-10-24/art.js
+- [[chariotParts()_3]] - code - _backup_2026-10-24/art.js
+- [[clipped()_3]] - code - _backup_2026-10-24/art.js
+- [[ferris()_3]] - code - _backup_2026-10-24/art.js
+- [[flower()_3]] - code - _backup_2026-10-24/art.js
+- [[flowers()_3]] - code - _backup_2026-10-24/art.js
+- [[frame()_3]] - code - _backup_2026-10-24/art.js
+- [[gear()_3]] - code - _backup_2026-10-24/art.js
+- [[grass()_4]] - code - _backup_2026-10-24/art.js
+- [[grassAt()_3]] - code - _backup_2026-10-24/art.js
+- [[hill()_4]] - code - _backup_2026-10-24/art.js
+- [[hut()_4]] - code - _backup_2026-10-24/art.js
+- [[king()_3]] - code - _backup_2026-10-24/art.js
+- [[line()_3]] - code - _backup_2026-10-24/art.js
+- [[man()_3]] - code - _backup_2026-10-24/art.js
+- [[monk()_3]] - code - _backup_2026-10-24/art.js
+- [[motion()_3]] - code - _backup_2026-10-24/art.js
+- [[mountains()_3]] - code - _backup_2026-10-24/art.js
+- [[mouse()_3]] - code - _backup_2026-10-24/art.js
+- [[oak()_4]] - code - _backup_2026-10-24/art.js
+- [[pill()_3]] - code - _backup_2026-10-24/art.js
+- [[ring()_3]] - code - _backup_2026-10-24/art.js
+- [[ringPts()_3]] - code - _backup_2026-10-24/art.js
+- [[seg()_3]] - code - _backup_2026-10-24/art.js
+- [[shape()_3]] - code - _backup_2026-10-24/art.js
+- [[soil()_3]] - code - _backup_2026-10-24/art.js
+- [[squirrel()_3]] - code - _backup_2026-10-24/art.js
+- [[squirrel2()_3]] - code - _backup_2026-10-24/art.js
+- [[steering()_3]] - code - _backup_2026-10-24/art.js
+- [[stick()_3]] - code - _backup_2026-10-24/art.js
+- [[stone()_4]] - code - _backup_2026-10-24/art.js
+- [[tuft()_3]] - code - _backup_2026-10-24/art.js
+- [[underline()_3]] - code - _backup_2026-10-24/art.js
+- [[wheel()_3]] - code - _backup_2026-10-24/art.js
 
 ## Live Query (requires Dataview plugin)
 

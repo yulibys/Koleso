@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Выпуск и предзащита (1.8)"
+community: "scenery.js"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/sceneryjs
 ---
 
 # Плёнка shaders.com: царапины, зерно, мерцание; VHS при перемотке
@@ -16,4 +16,4 @@ tags:
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 - [[Снова чёрно-белое плёнка на всех сценах (v12)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/rationale #graphify/EXTRACTED #community/sceneryjs

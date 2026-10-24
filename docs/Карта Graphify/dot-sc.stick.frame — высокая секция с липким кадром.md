@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "fig.js"
+community: "v20/vehicles.js"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/figjs
+  - community/v20/vehiclesjs
 ---
 
 # .sc/.stick/.frame — высокая секция с липким кадром
@@ -21,4 +21,4 @@ tags:
 - [[Смысловой порядок при складывании колонок]] - `rationale_for` [INFERRED]
 - [[Уменьшение движения и неподвижная версия]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/figjs
+#graphify/code #graphify/INFERRED #community/v20/vehiclesjs

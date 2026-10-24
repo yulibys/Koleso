@@ -1,18 +1,18 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # upd()
 
 ## Connections
-- [[sayL()_2]] - `calls` [EXTRACTED]
+- [[sayL()_4]] - `calls` [EXTRACTED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/code #graphify/EXTRACTED #community/sc/stick/frame__высокая_секция_с_липким_кадром

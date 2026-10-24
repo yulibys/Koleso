@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # steps()
@@ -16,4 +16,4 @@ tags:
 - [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - `references` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

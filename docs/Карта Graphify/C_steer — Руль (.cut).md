@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # C_steer — Руль (.cut)
@@ -14,4 +14,4 @@ tags:
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [EXTRACTED]
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand
+#graphify/image #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

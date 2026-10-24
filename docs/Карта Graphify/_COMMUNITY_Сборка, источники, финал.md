@@ -1,40 +1,54 @@
 ---
 type: community
-cohesion: 0.16
-members: 25
+cohesion: 0.14
+members: 39
 ---
 
 # Сборка, источники, финал
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 25 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[air()]] - code - src/app.js
-- [[applyK()]] - code - src/app.js
-- [[click()]] - code - src/app.js
-- [[clop()]] - code - src/app.js
-- [[env()]] - code - src/app.js
-- [[fin()]] - code - src/app.js
-- [[gesture()]] - code - src/app.js
-- [[init()]] - code - src/app.js
-- [[ksPlay()]] - code - src/app.js
-- [[loop()_1]] - code - src/app.js
-- [[mallet()]] - code - src/app.js
-- [[moo()]] - code - src/app.js
-- [[nz()]] - code - src/app.js
-- [[ok()]] - code - src/app.js
-- [[osc()]] - code - src/app.js
-- [[plank()]] - code - src/app.js
-- [[play()]] - code - src/app.js
-- [[projector()]] - code - src/app.js
-- [[ripFrame()]] - code - src/app.js
-- [[scene()]] - code - src/app.js
-- [[scribble()]] - code - src/app.js
-- [[send()]] - code - src/app.js
-- [[srcapp.js]] - code - src/app.js
-- [[tear()]] - code - src/app.js
-- [[whoosh()]] - code - src/app.js
+- [[arcade()]] - code - v20/art.js
+- [[bez()]] - code - v20/art.js
+- [[birds()]] - code - v20/art.js
+- [[bog()]] - code - v20/art.js
+- [[bubble()]] - code - v20/art.js
+- [[chariotParts()]] - code - v20/art.js
+- [[clipped()]] - code - v20/art.js
+- [[ferris()]] - code - v20/art.js
+- [[flower()]] - code - v20/art.js
+- [[flowers()]] - code - v20/art.js
+- [[frame()]] - code - v20/art.js
+- [[gear()]] - code - v20/art.js
+- [[grass()]] - code - v20/art.js
+- [[grassAt()]] - code - v20/art.js
+- [[hill()]] - code - v20/art.js
+- [[hut()]] - code - v20/art.js
+- [[king()]] - code - v20/art.js
+- [[line()]] - code - v20/art.js
+- [[man()]] - code - v20/art.js
+- [[monk()]] - code - v20/art.js
+- [[motion()]] - code - v20/art.js
+- [[mountains()]] - code - v20/art.js
+- [[mouse()]] - code - v20/art.js
+- [[oak()]] - code - v20/art.js
+- [[pill()]] - code - v20/art.js
+- [[ring()]] - code - v20/art.js
+- [[ringPts()]] - code - v20/art.js
+- [[seg()]] - code - v20/art.js
+- [[shape()]] - code - v20/art.js
+- [[soil()]] - code - v20/art.js
+- [[squirrel()]] - code - v20/art.js
+- [[squirrel2()]] - code - v20/art.js
+- [[steering()]] - code - v20/art.js
+- [[stick()]] - code - v20/art.js
+- [[stone()]] - code - v20/art.js
+- [[tuft()]] - code - v20/art.js
+- [[underline()]] - code - v20/art.js
+- [[v20art.js]] - code - v20/art.js
+- [[wheel()]] - code - v20/art.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,24 +56,3 @@ members: 25
 TABLE source_file, type FROM #community/Сборка_источники_финал
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
-- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 7 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
-- 6 edges to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
-- 6 edges to [[_COMMUNITY_soft]]
-- 5 edges to [[_COMMUNITY_fig.js_1]]
-- 4 edges to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)]]
-- 3 edges to [[_COMMUNITY_boil0–2 «дрожь линии» filters (feTurbulence)]]
-- 3 edges to [[_COMMUNITY_vehicles.js]]
-- 3 edges to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
-- 1 edge to [[_COMMUNITY_scenery.js]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-
-## Top bridge nodes
-- [[srcapp.js]] - degree 49, connects to 9 communities
-- [[ksPlay()]] - degree 11, connects to 6 communities
-- [[play()]] - degree 9, connects to 3 communities
-- [[scene()]] - degree 9, connects to 3 communities
-- [[fin()]] - degree 5, connects to 2 communities

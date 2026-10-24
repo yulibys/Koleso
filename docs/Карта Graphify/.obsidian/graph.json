@@ -314,20 +314,6 @@
         "a": 1,
         "rgb": 5873999
       }
-    },
-    {
-      "query": "tag:#community/v20/vehiclesjs",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/vehiclesjs",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
     }
   ]
 }

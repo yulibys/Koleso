@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: ".sc/.stick/.frame — высокая секция с липким кадром"
+community: "Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/sc/stick/frame__высокая_секция_с_липким_кадром
+  - community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки
 ---
 
 # #guide — главное колесо-проводник (морфинг gMorph/gArt/gChalk/gShade)
@@ -43,4 +43,4 @@ tags:
 - [[Повтор с изменением задачи]] - `rationale_for` [INFERRED]
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром
+#graphify/code #graphify/INFERRED #community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки

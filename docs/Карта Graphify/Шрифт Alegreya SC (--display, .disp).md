@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Шрифт Alegreya SC (--display, .disp)"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_SC_--display_disp
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # Шрифт Alegreya SC (--display, .disp)
@@ -23,4 +23,4 @@ tags:
 - [[Прописной набор требует умеренной разрядки]] - `conceptually_related_to` [INFERRED]
 - [[Только настоящая капитель, проверить кириллицу в её комплекте]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp
+#graphify/code #graphify/EXTRACTED #community/boil02_дрожь_линии_filters_feTurbulence

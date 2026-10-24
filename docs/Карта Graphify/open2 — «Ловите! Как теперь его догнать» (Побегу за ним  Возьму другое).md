@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # open2 — «Ловите! Как теперь его догнать?» (Побегу за ним / Возьму другое)
@@ -23,4 +23,4 @@ tags:
 - [[Немое кино .flick + .scratch (+ .silent рамка)]] - `references` [EXTRACTED]
 - [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

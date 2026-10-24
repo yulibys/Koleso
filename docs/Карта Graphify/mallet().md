@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Сборка, источники, финал"
+community: "re"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/re
 ---
 
 # mallet()
@@ -15,4 +15,4 @@ tags:
 - [[send()]] - `calls` [EXTRACTED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/re

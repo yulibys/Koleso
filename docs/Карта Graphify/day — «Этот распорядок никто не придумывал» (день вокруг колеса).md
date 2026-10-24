@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: ":root токены (--black, --cream, --paper, --red, --gut)"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/root_токены_--black_--cream_--paper_--red_--gut
 ---
 
 # day — «Этот распорядок никто не придумывал» (день вокруг колеса)
@@ -28,4 +28,4 @@ tags:
 - [[Тёмная подложка под текстом поверх рисунков]] - `rationale_for` [INFERRED]
 - [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/root_токены_--black_--cream_--paper_--red_--gut

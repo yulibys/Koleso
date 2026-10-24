@@ -1,19 +1,17 @@
 ---
-source_file: "art.js"
+source_file: "src/scenery.js"
 type: "code"
-community: "Интерактив и проверка читателем"
-location: "L302"
+community: "Лекция 1.8. Предзащита и финальная редактура"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Лекция_18_Предзащита_и_финальная_редактура
 ---
 
 # stone()
 
 ## Connections
-- [[art.js]] - `contains` [EXTRACTED]
-- [[bog()]] - `calls` [EXTRACTED]
-- [[shape()]] - `calls` [EXTRACTED]
+- [[scenery.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура

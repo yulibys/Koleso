@@ -1,19 +1,19 @@
 ---
-source_file: "art.js"
+source_file: "v20/art.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Сборка, источники, финал"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сборка_источники_финал
 ---
 
 # king()
 
 ## Connections
-- [[art.js]] - `contains` [EXTRACTED]
 - [[ring()]] - `calls` [EXTRACTED]
 - [[shape()]] - `calls` [EXTRACTED]
+- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

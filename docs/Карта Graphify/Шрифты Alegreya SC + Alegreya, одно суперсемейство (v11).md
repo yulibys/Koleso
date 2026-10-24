@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Выпуск и предзащита (1.8)"
+community: "scenery.js"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/sceneryjs
 ---
 
 # Шрифты: Alegreya SC + Alegreya, одно суперсемейство (v11)
@@ -16,4 +16,4 @@ tags:
 - [[Отвергнуты Ruslan Display, Old Standard TT, Bad Script и две подборки акцидентных шрифтов]] - `conceptually_related_to` [EXTRACTED]
 - [[Рабочий контекст и журнал решений (context.md)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/rationale #graphify/EXTRACTED #community/sceneryjs

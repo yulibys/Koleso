@@ -12,7 +12,7 @@ tags:
 # Разрез земли #strata + #bubbles (болото)
 
 ## Connections
-- [[bubble()]] - `references` [INFERRED]
+- [[bubble()_1]] - `references` [INFERRED]
 - [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/vehiclesjs

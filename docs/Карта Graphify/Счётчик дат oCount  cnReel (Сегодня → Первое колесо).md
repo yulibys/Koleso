@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: ":root токены (--black, --cream, --paper, --red, --gut)"
+community: "_backup_2026-10-22/vehicles.js"
 location: "L109"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/root_токены_--black_--cream_--paper_--red_--gut
+  - community/_backup_2026-10-22/vehiclesjs
 ---
 
 # Счётчик дат #oCount / #cnReel (Сегодня → Первое колесо)
@@ -21,4 +21,4 @@ tags:
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 - [[Фактологический проход имена, даты, подписи, цитаты, числа]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/root_токены_--black_--cream_--paper_--red_--gut
+#graphify/code #graphify/INFERRED #community/_backup_2026-10-22/vehiclesjs

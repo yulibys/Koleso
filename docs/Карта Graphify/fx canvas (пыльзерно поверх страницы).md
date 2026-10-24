@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Разборчивость знака ≠ удобство длительного чтения"
+community: "Рисунки повозок"
 location: "L90"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Разборчивость_знака__удобство_длительного_чтения
+  - community/Рисунки_повозок
 ---
 
 # #fx canvas (пыль/зерно поверх страницы)
@@ -16,4 +16,4 @@ tags:
 - [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - `rationale_for` [INFERRED]
 - [[Движение — когда показывает процесс или изменение]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Разборчивость_знака__удобство_длительного_чтения
+#graphify/code #graphify/INFERRED #community/Рисунки_повозок

@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # Монтаж колёс #swarm + #rCap/#rText
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_--serif/--hand_voice/hand
+#graphify/code #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

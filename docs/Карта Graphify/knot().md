@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `references` [INFERRED]
 - [[f()]] - `calls` [EXTRACTED]
-- [[wheel()]] - `contains` [EXTRACTED]
+- [[wheel()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

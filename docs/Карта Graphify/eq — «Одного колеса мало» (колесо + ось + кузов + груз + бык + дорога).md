@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Колесо-проводник и гравюра"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)
@@ -29,4 +29,4 @@ tags:
 - [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - `references` [EXTRACTED]
 - [[Эффект Кулешова значение кадра меняется от соседа]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

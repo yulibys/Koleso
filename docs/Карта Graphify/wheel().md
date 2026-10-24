@@ -1,28 +1,22 @@
 ---
-source_file: "art.js"
+source_file: "v20/art.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Сборка, источники, финал"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Сборка_источники_финал
 ---
 
 # wheel()
 
 ## Connections
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - `references` [INFERRED]
-- [[art.js]] - `contains` [EXTRACTED]
-- [[batten()]] - `contains` [EXTRACTED]
 - [[chariotParts()]] - `calls` [EXTRACTED]
 - [[clipped()]] - `calls` [EXTRACTED]
-- [[f()]] - `contains` [EXTRACTED]
-- [[knot()]] - `contains` [EXTRACTED]
 - [[line()]] - `calls` [EXTRACTED]
-- [[math]] - `imports` [EXTRACTED]
-- [[random]] - `imports` [EXTRACTED]
 - [[ring()]] - `calls` [EXTRACTED]
 - [[seg()]] - `calls` [EXTRACTED]
+- [[v20art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

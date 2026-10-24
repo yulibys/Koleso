@@ -1,21 +1,21 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Сборка, источники, финал"
+community: "re"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/re
 ---
 
 # projector()
 
 ## Connections
-- [[loop()_1]] - `calls` [EXTRACTED]
+- [[loop()_3]] - `calls` [EXTRACTED]
 - [[osc()]] - `calls` [EXTRACTED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Немое кино .flick + .scratch (+ .silent рамка)]] - `references` [INFERRED]
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/re

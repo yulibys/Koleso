@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "fig.js"
+community: "v20/vehicles.js"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/figjs
+  - community/v20/vehiclesjs
 ---
 
 # parseK()
@@ -17,4 +17,4 @@ tags:
 - [[scene()]] - `indirect_call` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/figjs
+#graphify/code #graphify/EXTRACTED #community/v20/vehiclesjs

@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.20
-members: 14
+cohesion: 0.17
+members: 15
 ---
 
 # Шрифт Alegreya SC (--display, .disp)
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
-- [[dot-lab-ground.blade.wind]] - code - src/style.css
-- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
-- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
-- [[sayL()_2]] - code - src/app.js
-- [[upd()]] - code - src/app.js
-- [[wood()]] - code - src/app.js
-- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
-- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
-- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
-- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
-- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
-- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
-- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
+- [[dot-cut — вырезки, выезд по --k]] - code - src/style.css
+- [[dot-stk — стикеры с бумажной подписью]] - code - src/style.css
+- [[S_benz — Автомобиль Карла Бенца, 1886 (.stk)]] - image - src/body.html
+- [[S_oxcart — Норвегия, около 1900, повозка (.stk)]] - image - src/body.html
+- [[S_pot — Кувшин из Броночице (.stk)]] - image - src/body.html
+- [[_sticker()]] - code - cut/gc.py
+- [[cv2]] - concept
+- [[gc.py]] - code - cut/gc.py
+- [[json]] - concept
+- [[numpy]] - concept
+- [[pil]] - concept
+- [[sticker()]] - code - cut/gc.py
+- [[sys]] - concept
+- [[Общая судьба совместное движение собирает группу]] - concept - docs/lectures/1.6.txt
+- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - code - src/body.html
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,20 +34,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Сборка, источники, финал]]
-- 3 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
-- 3 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 3 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
-- 3 edges to [[_COMMUNITY__backup_2026-10-22vehicles.js]]
-- 2 edges to [[_COMMUNITY_Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево]]
-- 2 edges to [[_COMMUNITY_re_1]]
+- 3 edges to [[_COMMUNITY_Лекция 1.1. Лонгрид как особый медиум]]
+- 3 edges to [[_COMMUNITY_v20fig.js]]
+- 2 edges to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
 - 1 edge to [[_COMMUNITY_Рисунки повозок]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 1 edge to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
+- 1 edge to [[_COMMUNITY_vehicles.js]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 1 edge to [[_COMMUNITY_Колесо-проводник и гравюра]]
 
 ## Top bridge nodes
-- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 7 communities
-- [[Детали повозки parts .part + .lab-say]] - degree 8, connects to 1 community
-- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - degree 5, connects to 1 community
-- [[Действие читателя меняет состояние страницы]] - degree 4, connects to 1 community
-- [[sayL()_2]] - degree 4, connects to 1 community
+- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - degree 12, connects to 5 communities
+- [[gc.py]] - degree 9, connects to 1 community
+- [[dot-cut — вырезки, выезд по --k]] - degree 3, connects to 1 community
+- [[dot-stk — стикеры с бумажной подписью]] - degree 3, connects to 1 community
+- [[Общая судьба совместное движение собирает группу]] - degree 2, connects to 1 community

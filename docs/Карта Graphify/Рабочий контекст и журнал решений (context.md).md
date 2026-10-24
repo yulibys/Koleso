@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "document"
-community: "Выпуск и предзащита (1.8)"
+community: "scenery.js"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Выпуск_и_предзащита_18
+  - community/sceneryjs
 ---
 
 # Рабочий контекст и журнал решений (context.md)
@@ -44,4 +44,4 @@ tags:
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `references` [EXTRACTED]
 - [[Юлия Бысова (автор)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Выпуск_и_предзащита_18
+#graphify/document #graphify/EXTRACTED #community/sceneryjs

@@ -1,18 +1,19 @@
 ---
-source_file: "_backup_2026-10-22/v77/art.js"
+source_file: "art.js"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Интерактив и проверка читателем"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Интерактив_и_проверка_читателем
 ---
 
 # shape()
 
 ## Connections
 - [[arcade()_1]] - `calls` [EXTRACTED]
+- [[art.js]] - `contains` [EXTRACTED]
 - [[bog()_1]] - `calls` [EXTRACTED]
 - [[chariotParts()_1]] - `calls` [EXTRACTED]
 - [[hut()_2]] - `calls` [EXTRACTED]
@@ -24,6 +25,5 @@ tags:
 - [[squirrel()_1]] - `calls` [EXTRACTED]
 - [[stick()_1]] - `calls` [EXTRACTED]
 - [[stone()_2]] - `calls` [EXTRACTED]
-- [[v77art.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем

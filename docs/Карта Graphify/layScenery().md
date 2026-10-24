@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Лекция 1.1. Лонгрид как особый медиум"
+community: "Шрифт Alegreya (--serif/--hand, .voice/.hand)"
 location: "L126"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Лекция_11_Лонгрид_как_особый_медиум
+  - community/Шрифт_Alegreya_--serif/--hand_voice/hand
 ---
 
 # layScenery()
@@ -16,4 +16,4 @@ tags:
 - [[srcapp.js]] - `contains` [EXTRACTED]
 - [[Пейзажи .scenerydata-kind (herolaternagparadeday)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Лекция_11_Лонгрид_как_особый_медиум
+#graphify/code #graphify/INFERRED #community/Шрифт_Alegreya_--serif/--hand_voice/hand

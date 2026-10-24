@@ -1,18 +1,18 @@
 ---
-source_file: "_backup_2026-10-24/app.js"
+source_file: "v20/app.js"
 type: "code"
-community: "Первый экран и внимание (1.6)"
-location: "L273"
+community: "Типографика (1.4)"
+location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Типографика_14
 ---
 
 # alignHead()
 
 ## Connections
-- [[_backup_2026-10-24app.js]] - `indirect_call` [INFERRED]
-- [[applyLap()_2]] - `calls` [EXTRACTED]
+- [[applyLap()_3]] - `calls` [EXTRACTED]
+- [[v20app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

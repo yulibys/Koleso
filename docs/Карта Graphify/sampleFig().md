@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: ".sc/.stick/.frame — высокая секция с липким кадром"
+community: "Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sc/stick/frame__высокая_секция_с_липким_кадром
+  - community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки
 ---
 
 # sampleFig()
@@ -16,4 +16,4 @@ tags:
 - [[pairOf()]] - `shares_data_with` [EXTRACTED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sc/stick/frame__высокая_секция_с_липким_кадром
+#graphify/code #graphify/EXTRACTED #community/Подложки_под_текст_text-shadow_скримы_тёмное_облако_o-count_radial_бумажные_плашки

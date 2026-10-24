@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Строка 50–75 знаков, интерлиньяж 1,4–1,65, выключка влево"
+community: "Движок сцен и звуки (app.js)"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # Уравнение #eqRow .term (колесо+ось+кузов+груз+бык+дорога) и #eqCart
@@ -17,4 +17,4 @@ tags:
 - [[eq — «Одного колеса мало» (колесо + ось + кузов + груз + бык + дорога)]] - `references` [EXTRACTED]
 - [[Рабочая память и чанкинг]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Строка_5075_знаков_интерлиньяж_14165_выключка_влево
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Сборка, источники, финал"
+community: "re"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Сборка_источники_финал
+  - community/re
 ---
 
 # src/app.js
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[air()]] - `contains` [EXTRACTED]
 - [[applyK()]] - `contains` [EXTRACTED]
-- [[bubble()]] - `contains` [EXTRACTED]
+- [[bubble()_1]] - `contains` [EXTRACTED]
 - [[click()]] - `contains` [EXTRACTED]
 - [[clock()]] - `contains` [EXTRACTED]
 - [[clop()]] - `contains` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[layScenery()]] - `contains` [EXTRACTED]
 - [[layout()]] - `contains` [EXTRACTED]
 - [[layoutKF()]] - `contains` [EXTRACTED]
-- [[loop()_1]] - `indirect_call` [INFERRED]
+- [[loop()_3]] - `indirect_call` [INFERRED]
 - [[mallet()]] - `contains` [EXTRACTED]
 - [[moo()]] - `contains` [EXTRACTED]
 - [[morphD()]] - `contains` [EXTRACTED]
@@ -49,7 +49,7 @@ tags:
 - [[ripFrame()]] - `contains` [EXTRACTED]
 - [[roll()]] - `contains` [EXTRACTED]
 - [[sampleFig()]] - `contains` [EXTRACTED]
-- [[sayL()_2]] - `contains` [EXTRACTED]
+- [[sayL()_4]] - `contains` [EXTRACTED]
 - [[scene()]] - `contains` [EXTRACTED]
 - [[scribble()]] - `contains` [EXTRACTED]
 - [[send()]] - `contains` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[whoosh()]] - `contains` [EXTRACTED]
 - [[wood()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал
+#graphify/code #graphify/EXTRACTED #community/re

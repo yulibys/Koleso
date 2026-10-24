@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "soft"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 location: "L404"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soft
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # #sams — «А вы, кажется, попали в колесо сансары»
@@ -16,4 +16,4 @@ tags:
 - [[gong()]] - `references` [INFERRED]
 - [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soft
+#graphify/code #graphify/INFERRED #community/Лекция_11_Лонгрид_как_особый_медиум
