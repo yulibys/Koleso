@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Журнал решений"
 location: "L417"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»
@@ -20,4 +20,4 @@ tags:
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 - [[Право выхода дверь наружу — хороший исход]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Фото_вырезки_права_17
+#graphify/code #graphify/INFERRED #community/Журнал_решений

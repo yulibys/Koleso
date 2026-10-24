@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Журнал решений"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # swamp — «Болото. Любляна, 2002 год» / «И вдруг — тук»
@@ -24,4 +24,4 @@ tags:
 - [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - `conceptually_related_to` [INFERRED]
 - [[Разрез земли strata + bubbles (болото)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

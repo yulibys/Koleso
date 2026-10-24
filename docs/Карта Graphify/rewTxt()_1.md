@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L584"
+community: "Типографика (1.4)"
+location: "L773"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Типографика_14
 ---
 
 # rewTxt()
@@ -16,4 +16,4 @@ tags:
 - [[rewindToS1()_1]] - `calls` [EXTRACTED]
 - [[spin()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

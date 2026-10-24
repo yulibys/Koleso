@@ -1,12 +1,12 @@
 ---
 source_file: "art/wheel.py"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Движок сцен и звуки (app.js)"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # batten()
@@ -18,4 +18,4 @@ tags:
 - [[random]] - `calls` [EXTRACTED]
 - [[wheel()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

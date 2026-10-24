@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Раскадровка и двери (1.3)"
+community: "Движок сцен и звуки (app.js)"
 location: "L13"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Раскадровка_и_двери_13
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # #wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)
@@ -22,4 +22,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `conceptually_related_to` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs

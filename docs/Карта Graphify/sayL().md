@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
 community: "Сборка, источники, финал"
 location: "L430"
@@ -12,7 +12,7 @@ tags:
 # sayL()
 
 ## Connections
+- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
 - [[labUpd()]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

@@ -1,64 +1,69 @@
 ---
 type: community
-cohesion: 0.06
-members: 49
+cohesion: 0.05
+members: 54
 ---
 
 # Первый экран и внимание (1.6)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 49 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 54 nodes
 
 ## Members
-- [[dot-collage + data-shape (circleovalarchblobblob2)]] - code - src/style.css
-- [[dot-cut — вырезки, выезд по --k]] - code - src/style.css
-- [[dot-guide — фиксированное колесо-проводник]] - code - src/style.css
-- [[dot-sc.stick.frame — высокая секция с липким кадром]] - code - src/style.css
-- [[dot-stk — стикеры с бумажной подписью]] - code - src/style.css
-- [[Reflow 320 CSS px без горизонтальной прокрутки]] - rationale - docs/lectures/1.5.txt
-- [[Reflow ~320 CSS px без потери содержания и горизонтальной прокрутки]] - rationale - docs/lectures/1.7.txt
-- [[S_benz — Автомобиль Карла Бенца, 1886 (.stk)]] - image - src/body.html
-- [[S_flute — Флейта из пещеры Дивье Бабе (.stk)]] - image - src/body.html
-- [[S_oxcart — Норвегия, около 1900, повозка (.stk)]] - image - src/body.html
-- [[S_pot — Кувшин из Броночице (.stk)]] - image - src/body.html
-- [[_sticker()]] - code - cut/gc.py
-- [[cv2]] - concept
-- [[gc.py]] - code - cut/gc.py
-- [[json]] - concept
-- [[numpy]] - concept
-- [[pil]] - concept
-- [[sticker()]] - code - cut/gc.py
-- [[sys]] - concept
-- [[«Так по сетке» — не аргумент]] - rationale - docs/lectures/1.5.txt
-- [[Адаптив меняем расположение, сохраняем смысловые связи]] - rationale - docs/lectures/1.7.txt
-- [[Близость внутреннее меньше внешнего]] - rationale - docs/lectures/1.6.txt
-- [[Воздух — не привилегия большого монитора]] - rationale - docs/lectures/1.5.txt
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - rationale - docs/context.md
-- [[Где кончается элемент padding, border, margin, box-sizing]] - concept - docs/lectures/1.5.txt
-- [[Жёсткая и мягкая сетка]] - concept - docs/lectures/1.5.txt
-- [[Записывать сетку глаголами 4–6 законов]] - rationale - docs/lectures/1.5.txt
-- [[Картинка с подписью — одна группа]] - rationale - docs/MAP.md
-- [[Карточки repeat(auto-fit, minmax(min(100%, 15rem), 1fr))]] - code - docs/lectures/1.5.txt
-- [[Лекция 1.5. Модульные системы и сетки]] - document - docs/MAP.md
-- [[Микромодуль 8 CSS px (полушаг 4)]] - rationale - docs/lectures/1.5.txt
-- [[Общая судьба совместное движение собирает группу]] - concept - docs/lectures/1.6.txt
-- [[Ограничение создаёт возможности (Гибсон)]] - concept - docs/lectures/1.5.txt
-- [[Оптическая поправка — с наблюдаемой причиной]] - rationale - docs/lectures/1.5.txt
-- [[Отступы шагом 8 px; проверка 320 px и масштаба 200%]] - rationale - docs/MAP.md
-- [[Подпись и изображение — одна группа]] - concept - docs/lectures/1.5.txt
-- [[Поломка часто посередине между desktop и mobile]] - rationale - docs/lectures/1.5.txt
-- [[Порядок сборки сетки 6 шагов]] - rationale - docs/lectures/1.5.txt
-- [[Правило вместо координаты (Гуров, «От чертежа к закону»)]] - concept - docs/lectures/1.5.txt
-- [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - rationale - docs/lectures/1.7.txt
-- [[Расчёт 12 колонок 1200  48  24 → 70 px]] - rationale - docs/lectures/1.5.txt
-- [[Смысловой порядок при складывании колонок]] - rationale - docs/lectures/1.5.txt
-- [[Смысловой узел переезжает целиком]] - rationale - docs/lectures/1.5.txt
-- [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - code - src/body.html
-- [[Типы сетки колоночная, модульная, коллажная, комбинированная]] - concept - docs/lectures/1.5.txt
-- [[У каждого нарушения коллажа — опора]] - rationale - docs/lectures/1.5.txt
-- [[Увеличение текста до 200 %]] - rationale - docs/lectures/1.5.txt
-- [[Увеличение текста до 200% без потери содержания и функций]] - rationale - docs/lectures/1.7.txt
-- [[Функция пустоты проверяется удалением]] - rationale - docs/lectures/1.5.txt
+- [[fx canvas (пыльзерно поверх страницы)]] - code - src/body.html
+- [[sndBtn — кнопка звука]] - code - src/body.html
+- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
+- [[tHorse — лошадь (template)]] - code - src/body.html
+- [[tOx — бык (template)]] - code - src/body.html
+- [[tRunner — бегущий человек (template)]] - code - src/body.html
+- [[dot-cn-slot.cn-reel.cn-face — барабан дат]] - code - src/style.css
+- [[dot-flick.scratch.silent — немое кино]] - code - src/style.css
+- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
+- [[bodyafter зерно плёнки + .fx]] - code - src/style.css
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - code - src/body.html
+- [[piano()]] - code - src/app.js
+- [[slot()]] - code - src/app.js
+- [[steps()]] - code - src/app.js
+- [[«Как теперь его догнать» два варианта, нижние реплики убраны (v14)]] - rationale - docs/context.md
+- [[«Саундчек» ослабить самый громкий элемент]] - rationale - docs/lectures/1.6.txt
+- [[Акцент работает относительно окружения]] - concept - docs/lectures/1.6.txt
+- [[Аудит просьб каждой просьбе — ответ]] - rationale - docs/lectures/1.6.txt
+- [[Вариант без движения (prefers-reduced-motion)]] - rationale - docs/MAP.md
+- [[Вес страницы сначала решить, нужен ли тяжёлый медиафайл]] - rationale - docs/lectures/1.7.txt
+- [[Визуальный триггер остановка должна вести в содержание]] - concept - docs/lectures/1.6.txt
+- [[Дать остановить движение и звук; статичные состояния без анимации]] - rationale - docs/lectures/1.7.txt
+- [[Два входа через обещание и через материал]] - rationale - docs/lectures/1.6.txt
+- [[Движение — когда показывает процесс или изменение]] - rationale - docs/lectures/1.6.txt
+- [[Задача зрителя меняет маршрут взгляда]] - concept - docs/lectures/1.6.txt
+- [[Звук — только по действию читателя]] - rationale - docs/MAP.md
+- [[Когда всё громко, роли сближаются]] - rationale - docs/lectures/1.6.txt
+- [[Контраст WCAG 2.2 AA 4.51 и 31]] - rationale - docs/lectures/1.5.txt
+- [[Контраст текста по WCAG]] - rationale - docs/lectures/1.6.txt
+- [[Контроль медиа пауза движения и звука]] - rationale - docs/lectures/1.6.txt
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - document - docs/MAP.md
+- [[Лицо становится главным говорящим]] - concept - docs/lectures/1.6.txt
+- [[Мастеринг экрана голоса маскируют друг друга]] - rationale - docs/lectures/1.6.txt
+- [[Мелкий «высокочастотный» текст не ставить на пёстрый фон]] - rationale - docs/lectures/1.4.txt
+- [[Мелкий текст — не на пёстрый фон]] - rationale - docs/MAP.md
+- [[Мультистабильность продлевает рассматривание]] - concept - docs/lectures/1.6.txt
+- [[Незавершённость держит внимание, но обещанное должно наступить]] - rationale - docs/MAP.md
+- [[Незавершённость обещанное продолжение должно наступить]] - rationale - docs/lectures/1.6.txt
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - code - src/body.html
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - code - src/body.html
+- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
+- [[Подложки под текст (text-shadow скримы, тёмное облако, .o-count radial, бумажные плашки)]] - code - src/style.css
+- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
+- [[Разборчивость знака ≠ удобство длительного чтения]] - concept - docs/lectures/1.4.txt
+- [[Размер изображения — по детали, которую надо увидеть]] - rationale - docs/lectures/1.5.txt
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - code - src/body.html
+- [[Тёмная подложка под текстом поверх рисунков]] - rationale - docs/context.md
+- [[У пустоты есть работа]] - concept - docs/lectures/1.6.txt
+- [[Уменьшение движения и неподвижная версия]] - rationale - docs/lectures/1.6.txt
+- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
+- [[Фото __HI_H1__ (фон фотоэкрана)]] - image - src/body.html
+- [[Цвет — не единственный признак]] - rationale - docs/lectures/1.5.txt
+- [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - code - src/body.html
+- [[Эмоция выделяет, контекст связывает]] - rationale - docs/lectures/1.6.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,16 +73,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 12 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 17 edges to [[_COMMUNITY_Журнал решений]]
+- 15 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
 - 7 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 7 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 5 edges to [[_COMMUNITY_Журнал решений]]
-- 4 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 7 edges to [[_COMMUNITY_scenery.js]]
+- 7 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 4 edges to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
+- 4 edges to [[_COMMUNITY_fig.js]]
+- 3 edges to [[_COMMUNITY_SVG defs hatchxhatchdots patterns]]
+- 2 edges to [[_COMMUNITY_Рисунки повозок]]
+- 2 edges to [[_COMMUNITY_re]]
+- 2 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
+- 1 edge to [[_COMMUNITY_Шрифт Alegreya SC (--display, .disp)]]
+- 1 edge to [[_COMMUNITY_Шрифт Alegreya (--serif--hand, .voice.hand)]]
+- 1 edge to [[_COMMUNITY_root токены (--black, --cream, --paper, --red, --gut)]]
+- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
 
 ## Top bridge nodes
-- [[Лекция 1.5. Модульные системы и сетки]] - degree 42, connects to 5 communities
-- [[dot-sc.stick.frame — высокая секция с липким кадром]] - degree 8, connects to 4 communities
-- [[Вырезанные предметы с бумажным контуром и подписью на бирке (v15, v17)]] - degree 6, connects to 3 communities
-- [[Картинка с подписью — одна группа]] - degree 7, connects to 2 communities
-- [[Адаптив меняем расположение, сохраняем смысловые связи]] - degree 5, connects to 2 communities
+- [[Лекция 1.6. Управление вниманием первый экран, паузы]] - degree 44, connects to 12 communities
+- [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - degree 10, connects to 4 communities
+- [[Паспорт находки .plate  .specs (plateSlot, 72 см, квадратная дырка)]] - degree 8, connects to 4 communities
+- [[Немое кино .flick + .scratch (+ .silent рамка)]] - degree 7, connects to 3 communities
+- [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - degree 8, connects to 2 communities

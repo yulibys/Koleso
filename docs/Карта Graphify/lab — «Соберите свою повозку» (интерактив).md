@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Движок сцен и звуки (app.js)"
+community: "fig.js"
 location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/figjs
 ---
 
 # lab — «Соберите свою повозку» (интерактив)
@@ -31,4 +31,4 @@ tags:
 - [[Правка три тяжёлые зоны подряд (лента → формула → лаборатория)]] - `rationale_for` [EXTRACTED]
 - [[Угол проекта колесо само по себе бесполезно]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/code #graphify/EXTRACTED #community/figjs

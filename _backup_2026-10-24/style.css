@@ -1,0 +1,1001 @@
+/* «Колесо» v20. Тёмный экран и кремовая бумага, рисунки-гравюры, Alegreya + DANCEPARTNER.
+   Координаты элементов — по кадрам 1440×900 из Figma «Колсео». */
+@font-face{font-family:"Dance";src:url(fonts/dance_partner_fix.ttf) format("truetype");font-display:block}
+@font-face{font-family:"Desyatiy";src:url(fonts/desyatiy_regular.ttf) format("truetype");font-weight:400;font-display:block}
+@font-face{font-family:"Desyatiy";src:url(fonts/desyatiy_light.ttf) format("truetype");font-weight:300;font-display:block}
+@font-face{font-family:"Desyatiy";src:url(fonts/desyatiy_bold.ttf) format("truetype");font-weight:700;font-display:block}
+:root{
+  --dark:#16130f;--cream:#d4c8a7;--paper:#d4c8a7;--ink:#16130f;--dim:#a49d8c;
+  --serif:"Alegreya",Georgia,"Times New Roman",serif;--dance:"Desyatiy","Dance","Alegreya",Georgia,serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--dark)}
+body{margin:0;background:var(--dark);color:var(--cream);font:400 18px/1.45 var(--serif);-webkit-font-smoothing:antialiased;overflow-x:clip}
+h1,h2,p,figure,dl,dd{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.defs{position:absolute}
+html.locked{overflow:hidden}
+body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.07;mix-blend-mode:screen;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 -.2'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* сцена и холст */
+.sc{position:relative;height:calc(var(--len,6) * 100vh);height:calc(var(--len,6) * 100svh)}
+.sc.drop{margin-top:-100vh;margin-top:-100svh}
+.sc[hidden]{display:none}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.dark .stage{background:var(--dark);color:var(--cream)}
+.paper .stage,.cover.paper{background:var(--paper);color:var(--ink)}
+.cv{position:absolute;left:50%;top:50%;width:1440px;height:900px;transform-origin:50% 50%;transform:translate(-50%,-50%) scale(var(--k,1))}
+.cv>*{position:absolute}
+#s1{z-index:1}#s2{z-index:2}#s3{z-index:3}#s4{z-index:4}#s5{z-index:5}#s6{z-index:6}#s7{z-index:7}#s8{z-index:8}
+
+/* линия-гравюра */
+.ill{display:block;overflow:visible;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ill .t{stroke-width:1.3}.ill .th{stroke-width:2.8}
+.ill .hatch{stroke-width:1.2}.ill .spk{stroke-width:1.6}.ill .rim{stroke-width:2.2}
+.ill .fur{stroke-width:1.4}.ill .body{stroke-width:2.2}
+.ill .bg{fill:var(--dark)}
+.ill .fill{fill:currentColor;stroke:none}
+.ill .hf{fill:url(#hatch);stroke:none}.ill .hx{fill:url(#xhatch);stroke:none}.ill .dot{fill:url(#dots);stroke:none}
+.paper .ill .bg,.cover.paper .ill .bg{fill:var(--paper)}
+.paper .ill .hf,.cover.paper .ill .hf{fill:url(#hatchI)}
+.paper .ill .hx,.cover.paper .ill .hx{fill:url(#xhatchI)}
+.ill [class*="f-"]{fill:var(--dark)}
+html.boil0 .boil{filter:url(#boil0)}html.boil1 .boil{filter:url(#boil1)}html.boil2 .boil{filter:url(#boil2)}
+.wipe{clip-path:inset(-40px calc((1 - var(--d,1)) * 100%) -40px -40px)}
+#s2mo.wipe{clip-path:circle(calc(var(--d,1) * 75%) at 50% 50%)}
+.draw{stroke-dasharray:1 1;stroke-dashoffset:calc(1 - var(--d,1))}
+.free{left:0;top:0;transform-origin:50% 50%}
+.land{left:0;top:0;width:1440px;height:900px}
+.frame{left:0;top:0;width:1440px;height:900px;stroke-width:2}
+
+/* проявление слева направо */
+.sweep{-webkit-mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%));mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%))}
+
+/* шрифтовые роли (как в Figma) */
+.dance{font-family:var(--dance);font-weight:400;line-height:1.1;letter-spacing:.01em}
+.word{left:0;width:1440px;text-align:center;font-size:241px;top:68px;height:265px;white-space:nowrap}
+.word span{display:inline-block}
+.h0{font:400 128px/.95 var(--serif);letter-spacing:-.01em}
+.h1{font:400 96px/1.1 var(--serif);text-align:center;text-wrap:balance}
+.h2{font:400 64px/1.2 var(--serif);text-align:center;left:390px;width:660px;text-wrap:balance}
+.small{font:400 24px/1.35 var(--serif)}
+.note{font:400 32px/1 var(--serif)}
+.ul{display:block}
+.note .ul,.era .ul,.link .ul,.status .ul,.vname .ul,.cap8 .ul{position:absolute;left:0;top:100%;width:100%;height:16px;margin-top:6px}
+.cap{font:400 18px/1.2 var(--serif);color:var(--dim)}
+.cap.big{font-size:28px;color:inherit}
+.para{font:400 24px/1.42 var(--serif);width:585px}
+
+/* облачко */
+.bub{position:absolute;display:grid;place-items:center}
+.bub svg{position:absolute;inset:0;width:100%;height:100%;stroke-width:1.6}
+.bub span{position:relative;font:400 24px/1.1 var(--serif);padding:0 18px 22px;white-space:nowrap;text-align:center}
+
+/* обложки, наезжающие сверху (с запасом по высоте для телефона) */
+.cover{left:-200px;top:-1200px;width:1840px;height:3300px;transform:translateY(-100%);display:grid;place-items:center;will-change:transform,opacity}
+.cover>*{grid-area:1/1}
+.cover>svg.frame{position:absolute;left:200px;top:1200px;width:1440px;height:900px}
+.cover .h1{position:relative;width:769px}
+.cover.blk{background:var(--dark)}
+
+/* ── 1 ── */
+#s1word{top:68px}
+#s1catch{opacity:0}
+#s1wheel{width:520px;height:520px}
+#s1sq{width:244px;height:202px}
+.sq .legB,#s1big .legB{opacity:0}
+.sq.alt .legA,#s1big.alt .legA{opacity:0}.sq.alt .legB,#s1big.alt .legB{opacity:1}
+#s1n1{left:260px;top:274px}#s1n2{left:915px;top:274px}
+#s1n1,#s1n2{opacity:0}
+#s1big{width:620px;height:514px}
+#s1big>svg{width:620px;height:514px}
+#s1oh{left:1284px;top:430px;width:132px;height:94px;opacity:0}
+.stickzone{width:440px;height:440px;border-radius:50%;background:none;border:0;cursor:pointer;opacity:0}
+.stickhint{width:520px;height:400px;opacity:0;pointer-events:none;transition:opacity .25s}
+.stickhint span{position:absolute;left:0;top:66px;background:var(--cream);color:var(--ink);font:400 24px/1 var(--serif);padding:20px 26px;white-space:nowrap;z-index:2}
+.stickhint svg{position:absolute;left:250px;top:0;width:420px;height:70px;transform:translate(0,180px) rotate(-63deg);transform-origin:0 50%}
+.stickhint.on{opacity:1}
+
+/* ── 2 ── */
+.count{left:0;width:1440px;top:325px;text-align:center}
+.tick{font:400 24px/1 var(--serif);opacity:0;height:37px}
+.year{font:400 174px/1 var(--serif);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.era{position:relative;display:inline-block;font:400 32px/1 var(--serif);margin-top:14px}
+.s2text{left:373px;width:685px;top:289px;text-align:center;opacity:0}
+.s2text h2{font:400 48px/1.2 var(--serif);text-wrap:balance}
+.s2text p{font:400 20px/1.5 var(--serif);margin-top:24px;opacity:0}
+#s2wheel{width:840px;height:840px}
+#s2where{left:0;width:1440px;top:778px;text-align:center;opacity:0}
+
+/* ── 3 ── */
+#s3h{top:174px}
+.link{left:588px;width:265px;top:280px;text-align:center;background:none;border:0;cursor:pointer;font:400 24px/1 var(--serif);padding:6px 0;position:absolute}
+.link .ul{left:2px;width:200px}
+#s3man{width:220px;height:350px}
+#s3wh{width:180px;height:180px}
+#s3say{width:190px;height:100px;opacity:0}
+
+/* ── 4 ── */
+.s4top{left:0;top:0;width:1440px;height:900px}
+.s4top>*{position:absolute}
+#s4h{left:65px;top:120px;width:761px}
+#s4y{left:683px;top:200px;opacity:0}
+#s4ph{left:65px;top:348px;width:639px;opacity:0}
+#s4ph img{display:block;width:639px;height:417px;object-fit:cover;filter:grayscale(1) contrast(1.05) brightness(.95)}
+#s4ph figcaption{font:400 15px/1.3 var(--serif);color:var(--dim);margin-top:8px}
+#s4p1{left:736px;top:341px;opacity:0}#s4p2{left:736px;top:531px;width:568px;opacity:0}
+.s4bog{left:0;top:900px;width:1440px;height:1476px;overflow:hidden}
+.s4bog>svg:first-child{position:absolute;inset:0;width:1440px;height:1476px}
+#s4wh{width:600px;height:600px}
+.tag{background:var(--cream);color:var(--ink);font:400 24px/1 var(--serif);padding:20px 26px;opacity:0}
+#s4t1{left:172px;top:706px}#s4t2{left:1110px;top:706px}
+
+/* ── 5 ── */
+#s5h{top:125px}
+.status{left:0;width:1440px;top:231px;text-align:center;font:400 24px/1.3 var(--serif);position:absolute}
+.status span{position:relative;display:inline-block}
+.status .ul{left:50%;width:330px;margin-left:-165px}
+#cart{position:absolute;left:270px;top:383px;width:900px;height:256px}
+#cart .p-road,#cart .p-mud{display:none}
+.parts{left:0;width:1440px;top:734px;display:flex;justify-content:center;gap:14px}
+.part{background:var(--cream);color:var(--ink);border:0;padding:20px 24px;font:400 24px/1 var(--serif);cursor:pointer;transition:transform .15s,background .2s,color .2s}
+.part[aria-pressed="true"]{background:var(--dark);color:var(--cream);outline:1.5px solid var(--cream);outline-offset:-1.5px}
+.part:active{transform:translateY(2px)}
+#cart .p{opacity:0;transition:opacity .45s,transform .6s cubic-bezier(.3,1.4,.5,1)}
+#cart.has-wheel .p-wheel,#cart.has-axle .p-axle,#cart.has-body .p-body,#cart.has-load .p-load,#cart.has-ox .p-ox{opacity:1}
+#cart .p-axle{transform:translateY(-6px)}#cart.has-axle .p-axle{transform:none}
+#cart.solo .p-wheel .rollaway{animation:rollaway 3.2s cubic-bezier(.5,0,.6,1) infinite}
+@keyframes rollaway{0%{transform:translateX(0)}70%{transform:translateX(70vw)}70.01%{transform:translateX(-70vw)}100%{transform:translateX(0)}}
+#cart .rig{transition:transform 2.6s cubic-bezier(.5,0,.8,.6)}
+#cart.away .rig{transform:translateX(1500px)}
+#cart .leg path,#cart .arm path{animation:legA .9s ease-in-out infinite;animation-play-state:paused;transform-box:fill-box;transform-origin:50% 0}
+#cart .leg.l2 path,#cart .leg.l3 path{animation-delay:-.45s}
+
+/* ── 6 ── */
+#s6h{top:351px}
+#s6m,#s6k{width:240px;height:300px}
+#s6mc{left:100px;width:240px;text-align:center;top:850px}#s6kc{left:1100px;width:240px;text-align:center;top:850px}
+#s6ch{left:420px;top:470px;width:600px;height:287px}
+#s6name{left:0;width:1440px;text-align:center;top:796px}
+#s6q,#s6no{width:206px;height:104px;opacity:0;top:229px}
+#s6q{left:65px}#s6no{left:1169px}
+#s6q span,#s6no span{padding:0 22px 24px;white-space:normal}
+#s6bg{opacity:0}
+#s6m,#s6k,#s6mc,#s6kc,#s6ch,#s6name{opacity:0}
+#s6end{opacity:0;transform:none}
+#s6fin{position:relative;left:auto;width:795px}
+
+/* ── 7 ── */
+#s7h{top:125px}
+.vname{left:0;width:1440px;text-align:center;top:231px;font:400 24px/1.3 var(--serif)}
+.vname .ul{left:50%;width:110px;margin-left:-55px}
+#s7say{left:1105px;top:226px;width:182px;height:100px}
+#s7say span{white-space:normal;width:150px;font-size:22px;padding:0 10px 22px}
+.road{left:0;top:0;width:1440px;height:900px}
+.veh{position:absolute;left:0;top:612px;transform-origin:0 100%}
+.veh svg{display:block;width:100%;height:auto}
+.veh .leg path,.veh .arm path{animation:legA .9s ease-in-out infinite;animation-play-state:paused;transform-box:fill-box;transform-origin:50% 0}
+.veh .leg.l2 path,.veh .leg.l3 path{animation-delay:-.45s}
+.veh .leg.fast path{animation-duration:.5s}.veh .leg.fast.l2 path,.veh .leg.fast.l3 path{animation-delay:-.25s}
+.veh .leg.r1 path,.veh .leg.r2 path{animation:runA .5s ease-in-out infinite;animation-play-state:paused}.veh .leg.r2 path{animation-delay:-.25s}
+@keyframes legA{0%,100%{transform:rotate(16deg)}50%{transform:rotate(-16deg)}}
+@keyframes runA{0%,100%{transform:rotate(38deg)}50%{transform:rotate(-34deg)}}
+.moving .leg path,.moving .arm path{animation-play-state:running}
+
+/* ── 8 ── */
+#s8h{left:0;width:1440px;top:120px;font-size:96px}
+#s8fig{width:440px;height:440px;left:500px;top:230px}
+.cap8{left:0;width:1440px;text-align:center;top:688px}
+.cap8 .ul{left:50%;width:330px;margin-left:-165px}
+#s8cap{display:block}
+.c2in{position:relative;width:1440px;height:900px}
+.c2in>*{position:absolute}
+#s8wh{left:536px;top:188px;width:367px;height:343px}
+#s8arrow{left:920px;top:256px;width:70px;height:170px}
+#s8t1{left:390px;width:660px;top:560px;line-height:1.05;opacity:0}
+#s8t2{left:0;width:1440px;text-align:center;top:712px;opacity:0}
+
+/* конец и перемотка */
+.endcard{position:fixed;inset:0;z-index:95;background:var(--dark);color:var(--cream);display:grid;place-content:center;justify-items:center;text-align:center;gap:16px;padding:24px;transition:opacity .8s}
+.endcard[hidden]{display:none}
+.endcard.out{opacity:0}
+.endw{font-size:clamp(80px,9vw,128px)}
+.credits{display:flex;gap:clamp(24px,6vw,90px);margin-top:28px;flex-wrap:wrap;justify-content:center}
+.credits dt{font:400 15px/1 var(--serif);color:var(--dim);border-top:1px solid currentColor;padding-top:8px}
+.credits dd{font:400 20px/1.3 var(--serif);margin-top:6px}
+.src{max-width:60ch;font:400 14px/1.4 var(--serif);color:var(--dim);margin-top:30px}
+.src a{color:inherit}
+.rew{position:fixed;inset:0;z-index:94;pointer-events:none;opacity:0;transition:opacity .2s}
+.rew i{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(212,200,167,0) 0 3px,rgba(212,200,167,.12) 3px 4px);animation:streak .12s linear infinite}
+.rew b{position:absolute;right:28px;top:22px;font:700 24px/1 var(--serif);letter-spacing:.2em;color:var(--cream);mix-blend-mode:difference}
+@keyframes streak{to{transform:translateY(4px)}}
+html.rewinding .rew{opacity:1}
+html.rewinding .stage{filter:contrast(1.2) brightness(1.06)}
+
+/* телефон и узкое окно: видимая часть холста — середина шириной 760 */
+.port .word,.port #s1word{font-size:150px}
+.port #s1n1{left:380px}.port #s1n2{left:760px}
+.port .year{font-size:120px}
+.port .h1,.port .cover .h1{font-size:72px;width:680px}
+.port .h2{left:370px;width:700px;font-size:56px}
+.port #s4h{left:370px;top:-250px;width:700px;font-size:96px}
+.port #s4y{left:370px;top:-40px}
+.port #s4ph{left:370px;top:10px;width:700px}.port #s4ph img{width:700px;height:300px}
+.port #s4p1{left:370px;top:420px;width:700px}.port #s4p2{left:370px;top:650px;width:700px}
+.port #s4t1{left:380px}.port #s4t2{left:880px}
+.port #s6mc{left:330px}.port #s6kc{left:870px}
+.port #s6q{left:330px}.port #s6no{left:900px}
+.port #s7say{left:830px}
+.port #s1oh{left:900px}
+
+@media (prefers-reduced-motion:reduce){
+  html.boil0 .boil,html.boil1 .boil,html.boil2 .boil{filter:none}
+  .veh .leg path,.veh .arm path,#cart .leg path{animation:none}
+  .rew i{animation:none}
+}
+
+/* ═══ ТОЧНО ПО FIGMA: шрифт, кегль, интерлиньяж, рамка текста (x, y, ширина) ═══
+   «auto» в Figma = line-height: normal у Alegreya */
+.word,#s1word,#s1catch{line-height:265px;height:265px}
+.stickhint span{top:66px;left:0;font:400 32px/normal var(--serif);padding:10px}
+.stickhint svg{left:262px;top:320px;transform:rotate(-63deg);transform-origin:0 50%;margin:0}
+.note{font:400 48px/normal var(--serif)}
+#s1n1{left:262px;top:274px}#s1n2{left:915px;top:299px}
+#s1oh{left:1284px;top:448px;width:116px;height:57px}
+#s1oh span{font:400 24px/normal var(--serif);padding:0;position:absolute;left:20px;top:9px}
+.note .ul{height:14px;margin-top:-4px}
+
+.count{left:0;top:0;width:1440px;height:900px}
+.count>*{position:absolute}
+.tick{left:660px;top:335px;width:120px;height:auto;text-align:center;font:400 24px/normal var(--serif)}
+.year{left:336px;top:362px;width:769px;text-align:center;font:400 174px/normal var(--serif)}
+.era{left:577px;top:514px;width:286px;text-align:center;font:400 48px/normal var(--serif);margin:0;display:block}
+#s2ul{left:572px;top:557px;width:306px;height:16px}
+.s2text{left:373px;top:289px;width:685px}
+.s2text h2{font:500 64px/64px var(--serif);text-align:center}
+.s2text p{position:absolute;left:50px;top:223px;width:585px;margin:0;font:400 24px/normal var(--serif);text-align:center}
+#s2where{left:607px;top:778px;width:225px;font:400 24px/normal var(--serif)}
+
+#s3h{left:390px;top:174px;width:659px;font:500 64px/normal var(--serif)}
+.link{left:588px;top:280px;width:265px;text-align:left;font:400 24px/normal var(--serif);padding:0}
+.link .ul{left:2px;width:194px;margin-top:-4px}
+#s3say{width:178px;height:77px}
+#s3say span{font:400 24px/normal var(--serif);padding:0;position:absolute;left:17px;top:14px}
+
+.cover .h1{font:400 96px/82px var(--serif);width:769px}
+
+#s4h{left:65px;top:134px;width:761px;font:400 128px/95px var(--serif)}
+#s4y{left:683px;top:199px;font:400 24px/normal var(--serif)}
+#s4p1{left:736px;top:341px;width:585px;font:400 24px/normal var(--serif)}
+#s4p2{left:736px;top:531px;width:568px;font:400 24px/normal var(--serif)}
+.tag{font:400 32px/normal var(--serif);padding:10px}
+#s4t1{left:172px;top:706px}#s4t2{left:1110px;top:706px}
+
+#s5h{left:390px;top:125px;width:659px;font:500 64px/normal var(--serif)}
+.status{left:563px;top:231px;width:auto;text-align:left;white-space:nowrap}
+.status span{display:inline}
+.status .ul{left:0;width:309px;margin-left:0;margin-top:-4px}
+.parts{left:472px;top:734px;width:auto;gap:14px}
+.part{font:400 32px/normal var(--serif);padding:11px 10px}
+
+#s6h{left:400px;top:351px;width:641px;font:400 64px/60px var(--serif)}
+#s6q{left:65px;top:229px;width:206px;height:94px}
+#s6no{left:1169px;top:229px;width:206px;height:94px}
+#s6q span{font:400 24px/28px var(--serif);padding:0;position:absolute;left:36px;top:14px;width:166px;text-align:left;white-space:normal}
+#s6no span{font:400 20px/normal var(--serif);padding:0;position:absolute;left:85px;top:34px}
+#s6name{left:656px;top:803px;width:129px;font:400 28px/normal var(--serif);text-align:center}
+#s6fin{width:795px;font:400 64px/60px var(--serif)}
+
+#s7h{left:390px;top:125px;width:659px;font:500 64px/normal var(--serif)}
+.vname{font:400 24px/normal var(--serif);top:231px}
+.vname .ul{margin-top:-2px}
+#s7say{left:1111px;top:238px;width:165px;height:73px}
+#s7say span{font:400 24px/20px var(--serif);padding:0;position:absolute;left:25px;top:14px;width:124px;text-align:left;white-space:normal}
+
+#s8h{left:0;width:1440px;top:141px;font:400 96px/normal var(--serif)}
+.cap8{top:688px;font:400 24px/normal var(--serif)}
+#s8wh{left:536px;top:188px;width:367px;height:343px}
+#s8arrow{left:925px;top:256px;width:60px;height:160px}
+#s8t1{left:435px;top:576px;width:571px;font:500 64px/53px var(--serif)}
+#s8t2{left:519px;top:695px;width:402px;text-align:left;font:400 24px/normal var(--serif)}
+
+/* конец — тоже холст 1440×900 */
+.endcard{display:block;padding:0}
+.endcard .cv>*{position:absolute;margin:0}
+.endw{left:588px;top:298px;width:264px;text-align:center;font-size:96px;line-height:106px}
+.endsub{left:597px;top:404px;width:247px;text-align:center;font:400 24px/25px var(--serif)}
+.credits{left:386px;top:544px;width:671px;display:flex;justify-content:space-between;gap:0;margin:0}
+.credits>div{width:150px;text-align:center}
+.credits dt{font:400 15px/25px var(--serif);border:0;padding:0}
+.credits dd{font:400 24px/25px var(--serif);margin-top:9px}
+.credits dt::before{content:"";display:block;width:100%;height:1px;background:currentColor;opacity:.6;margin-bottom:6px}
+.src{left:320px;top:800px;width:800px;text-align:center;margin:0}
+
+/* ── v23: векторы из Figma, края экрана, пузыри по кадрам ── */
+.bL{transform:translateX(calc(var(--m,0) * -1px))}.bR{transform:translateX(calc(var(--m,0) * 1px))}
+.cv>svg.land,.cv>svg.ill{overflow:visible}
+.s4bog{overflow:visible}
+#s2ul{left:566px;top:552px;width:320px;height:26px}
+#s2ul path{stroke-width:3}
+#s2mo path{stroke-width:3}
+#s3say{width:256px;height:106px}
+#s3say span{left:91px;top:21px;width:142px;font:400 24px/normal var(--serif);text-align:center}
+#s6q{left:61px;top:225px;width:234px;height:124px}
+#s6no{left:1145px;top:225px;width:234px;height:124px}
+#s6q span{left:40px;top:18px}
+#s6no span{left:109px;top:38px}
+#s7say{left:1082px;top:234px;width:198px;height:110px}
+#s7say span{left:54px;top:20px}
+#s8arrow{left:920px;top:252px;width:70px;height:170px}
+.bub svg{stroke-width:1}
+.land path,.land g{stroke-width:inherit}
+.ill.land{stroke-width:1.2}
+.frame{stroke-width:2}
+#s1big path,#s1sq path{vector-effect:non-scaling-stroke;stroke-width:1.3}
+.sq.alt #s1sqg>g{transform:translateY(-4px)}
+
+/* ── v24: толще линии, кнопки деталей, отступы в болоте ── */
+.ill{stroke-width:2.8}
+.ill .t{stroke-width:1.9}.ill .th{stroke-width:3.4}
+.ill.land{stroke-width:2.4}
+.bub svg{stroke-width:2}
+.frame{stroke-width:3}
+#s2ul path,#s2mo path{stroke-width:4}
+#s1big path,#s1sq path{vector-effect:non-scaling-stroke;stroke-width:2.2}
+#s1big .t,#s1sq .t{stroke-width:1.5}
+.sq.alt #s1sqg>g{transform:none}
+#s4h{top:112px}
+#s4ph{top:392px}
+#s4p1{top:385px}#s4p2{top:575px}
+/* деталь выбрана — плашка залита; не выбрана — только обводка */
+.part{background:transparent;color:var(--cream);outline:2px solid var(--cream);outline-offset:-2px}
+.part[aria-pressed="true"]{background:var(--cream);color:var(--ink);outline:2px solid var(--cream)}
+#s8arrow{display:none}
+
+/* ── v25 ── */
+/* хвостики букв не обрезаются маской проявления */
+.sweep{padding-block:.38em;margin-block:-.38em}
+/* строки по высоте блоков Figma */
+.year{line-height:178px}.era{line-height:50px}
+.cover .h1{line-height:76px}
+/* рамка по центру экрана */
+.cover>svg.frame{top:1179px}
+#s4c2,#s4c3,#s8c2{background:transparent}
+#s4c2 svg.frame,#s4c3 svg.frame,#s8c2 svg.frame{display:none}
+/* подпись статуса — по центру, подчёркнута вся строка */
+.status{left:0;width:1440px;text-align:center}
+.status .ul{left:0;width:100%;margin-left:0}
+/* сцена сборки крупнее */
+#cart{transform:scale(1.18);transform-origin:50% 100%}
+/* Нагасена: реплики выше, ничем не закрыты */
+#s6q,#s6no{top:140px}
+/* перемотка — заметнее */
+.rew i{background:repeating-linear-gradient(0deg,rgba(212,200,167,0) 0 5px,rgba(212,200,167,.2) 5px 7px)}
+.rew b{left:50%;top:50%;right:auto;transform:translate(-50%,-60%);font:700 140px/1 var(--serif);letter-spacing:-.05em;opacity:.85;animation:blink .5s steps(2) infinite}
+.rew em{position:absolute;left:0;right:0;top:calc(50% + 70px);text-align:center;font:400 28px/1 var(--serif);font-style:normal;color:var(--cream);mix-blend-mode:difference}
+@keyframes blink{50%{opacity:.35}}
+html.rewinding .stage{filter:contrast(1.35) brightness(1.1) blur(.4px)}
+/* колесо сансары крутится, пока страница отматывается */
+.spinov{position:fixed;left:50%;top:50%;width:calc(367px * var(--k,1));height:calc(367px * var(--k,1));transform:translate(-50%,calc(-50% - 90px * var(--k,1)));z-index:96;pointer-events:none;opacity:0;transition:opacity .4s;color:var(--cream);mix-blend-mode:difference}
+.spinov.on{opacity:1}
+.spinov svg{width:100%;height:100%;animation:spin 2.2s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* финальная карточка */
+.endcard .src{display:block;position:absolute;left:0;right:0;bottom:28px;margin:0 auto;text-align:center;font-size:13px}
+.credits dd{white-space:nowrap}
+/* v26 */
+.word.sweep,.dance.sweep{padding-block:0;margin-block:0}
+#s1oh{left:1262px;top:430px;width:162px;height:96px}
+#s1oh span{left:0;width:150px;top:16px;text-align:center}
+
+/* v27 */
+.year{top:325px}.era{top:504px}
+#s4t1,#s4t2{top:418px}
+/* реплики по центру облачков */
+#s6q span,#s6no span,#s7say span,#s3say span{display:flex;align-items:center;justify-content:center;text-align:center;white-space:normal;padding:0}
+#s6q span{left:6px;top:6px;width:206px;height:94px;font:400 24px/28px var(--serif)}
+#s6no span{left:22px;top:6px;width:206px;height:94px}
+#s7say span{left:29px;top:4px;width:166px;height:74px;font:400 22px/22px var(--serif)}
+#s3say span{left:74px;top:7px;width:178px;height:77px}
+/* при финальной перемотке значки — под колесом */
+html.spinning .rew b{top:calc(50% + 110px * var(--k,1));transform:translate(-50%,0);font-size:72px}
+html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
+#s1oh{left:1300px;top:350px;width:124px;height:66px}
+#s1oh span{left:14px;top:3px;width:116px;height:58px;display:flex;align-items:center;justify-content:center;padding:0;font:400 24px/1 var(--serif)}
+/* v28 */
+.ill{stroke-width:3.2}
+.ill .t{stroke-width:2.1}
+.ill.land{stroke-width:2.8}
+.bub svg{stroke-width:2.4}
+#s1big path,#s1sq path{stroke-width:2.6}
+#s1big .t,#s1sq .t{stroke-width:1.8}
+#s7say span{line-height:24px}
+#s1oh{left:1236px;top:178px}
+/* v29 */
+#s2frame{top:-21px}
+#s4h{top:120px}#s4ph{top:330px}#s4p1{top:323px}#s4p2{top:513px}
+#s6q span,#s6no span{font:400 24px/28px var(--serif)}
+#s1oh{left:1300px;top:260px}
+
+/* v32: вопросы задаёт монах (справа), «нет» отвечает царь (слева) */
+#s6q{left:1145px}#s6no{left:61px}
+#s6q span{left:22px;top:6px;width:206px;height:94px}
+#s6no span{left:6px;top:6px;width:206px;height:94px}
+.port #s6q{left:900px}.port #s6no{left:330px}
+
+/* v33: многострочные надписи проявляются построчно */
+.sweep.lined{-webkit-mask-image:none;mask-image:none;padding-block:0;margin-block:0}
+.sweep.lined .ln{display:block}
+.sweep.lined .lt{display:inline-block;padding-block:.3em;margin-block:-.3em;-webkit-mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%));mask-image:linear-gradient(90deg,#000 calc(var(--sw,1) * 140% - 40%),transparent calc(var(--sw,1) * 140%))}
+
+/* v38 */
+#s4y{left:673px;top:187px}
+#s8h{top:118px}
+#s6fin{white-space:nowrap}
+
+/* ══ v39: адаптив — телефон и планшет в портрете ══
+   Лекции 1.5 и 1.7: не общий масштаб, а перестройка; смысловые пары остаются вместе,
+   текст переносится, ничего не уходит за край (reflow 320 px). Рабочая полоса кадра: x 460–980. */
+.port .frame path{vector-effect:non-scaling-stroke}
+.port .cover>svg.frame{left:655px;top:1110px;width:530px;height:1080px}
+.port #s2frame{left:455px;top:-90px;width:530px;height:1080px}
+.port .cover .h1{width:500px;font-size:60px;line-height:62px}
+/* 1 */
+.port #s1n1,.port #s1n2{font-size:38px}
+.port #s1n1{left:470px;top:325px}.port #s1n2{left:700px;top:325px}
+.port #s1oh{left:860px;top:400px}
+/* 2 */
+.port .year{font-size:110px;line-height:120px;top:370px}
+.port .era{top:490px}.port #s2ul{top:533px}
+.port .tick{top:345px}
+.port .s2text{left:460px;width:520px}
+.port .s2text h2{font-size:46px;line-height:50px}
+.port .s2text p{left:0;width:520px;font-size:22px;line-height:30px;top:260px}
+.port .s2text p br{display:none}
+/* 3, 5, 7: заголовки по центру полосы */
+.port #s3h,.port #s5h,.port #s7h{left:460px;width:520px;font-size:50px;line-height:56px;text-align:center}
+.port #s3h{top:120px}.port .link{left:460px;width:520px;text-align:center}
+.port #s3ulg{transform:translate(34px,0)}
+/* 4: колонка — заголовок, год, фото с подписью, два абзаца */
+.port #s4h{left:460px;top:-110px;width:520px;font-size:78px;line-height:74px}
+.port #s4y{left:460px;top:50px}
+.port #s4ph{left:460px;top:95px;width:520px}.port #s4ph img{width:520px;height:330px}
+.port #s4p1{left:460px;top:480px;width:520px;font-size:21px;line-height:29px}
+.port #s4p2{left:460px;top:705px;width:520px;font-size:21px;line-height:29px}
+.port #s4t1{left:470px;top:300px}.port #s4t2{left:790px;top:560px}
+/* 5 */
+.port #s5h{top:40px}
+.port .status{left:460px;width:520px;top:180px}
+.port #cart{transform:scale(.62);transform-origin:50% 100%}
+.port .parts{left:460px;width:520px;top:760px;flex-wrap:wrap;justify-content:center;gap:12px}
+.port .part{font-size:28px}
+/* 6 */
+.port #s6h{left:460px;width:520px;font-size:44px;line-height:46px}
+.port #s6q{left:750px;top:250px}.port #s6no{left:460px;top:250px}
+.port #s6fin{width:520px;white-space:normal;font-size:40px;line-height:44px}
+.port #s6fin br{display:none}
+.port #s6ch{transform:scale(.7);transform-origin:720px 839px}
+/* 7 */
+.port #s7h{top:60px}.port .vname{top:180px}
+.port #s7road{transform:scale(.6);transform-origin:720px 612px}
+/* 8 */
+.port #s8h{font-size:84px}
+.port #s8t1{left:460px;width:520px;font-size:48px;line-height:48px;text-align:center}
+.port #s8t2{left:460px;width:520px;text-align:center;top:700px}
+.port #s8arrow{display:none}
+/* конец */
+.port .credits{left:460px;width:520px;flex-wrap:wrap;justify-content:center;gap:16px 36px}
+.port .endcard .src{font-size:12px;padding:0 24px}
+.port .status span{max-width:520px;white-space:normal}
+.port #s7say{left:1082px}
+
+/* ══ v40: планшет в портрете — полоса 820 px (x 310–1130), единая шкала:
+   заголовок 66/72, подзаголовок 30, основной текст 26/36 ══ */
+.port:not(.tab) #s1catch{font-size:145px}
+.tab .cover>svg.frame{left:515px;top:1110px;width:810px;height:1080px}
+.tab #s2frame{left:315px;top:-90px;width:810px;height:1080px}
+.tab .cover .h1{width:700px;font-size:84px;line-height:82px}
+/* 1 */
+.tab #s1n1,.tab #s1n2{font-size:48px}
+.tab #s1n1{left:340px;top:330px}.tab #s1n2{left:700px;top:330px}
+.tab #s1oh{left:930px;top:380px}
+/* 2 */
+.tab .year{font-size:150px;line-height:160px;top:350px}
+.tab .era{top:500px}.tab #s2ul{top:545px}.tab .tick{top:325px}
+.tab .s2text{left:310px;width:820px}
+.tab .s2text h2{font-size:66px;line-height:72px}
+.tab .s2text p{width:820px;font-size:26px;line-height:36px;top:280px}
+/* общие заголовки и подзаголовки */
+.tab #s3h,.tab #s5h,.tab #s7h{left:310px;width:820px;font-size:66px;line-height:72px}
+.tab .link,.tab .status,.tab .vname{left:310px;width:820px;font-size:30px}
+.tab .status span{max-width:820px}
+.tab #s3h{top:110px}.tab .link{top:270px}
+.tab #s3ulg{transform:translate(4px,4px) scale(1.25);transform-origin:720px 318px}
+/* 4: больше воздуха между блоками, абзацы ближе друг к другу */
+.tab #s4h{left:310px;top:-100px;width:820px;font-size:104px;line-height:96px}
+.tab #s4y{left:310px;top:110px;font-size:28px}
+.tab #s4ph{left:310px;top:170px;width:640px}.tab #s4ph img{width:640px;height:410px}
+.tab #s4ph figcaption{font-size:18px}
+.tab #s4p1,.tab #s4p2{left:310px;width:820px;font-size:27px;line-height:37px}
+.tab #s4p1{top:660px}.tab #s4p2{top:830px}
+.tab #s4t1{left:330px;top:300px}.tab #s4t2{left:860px;top:560px}
+/* 5 */
+.tab #s5h{top:30px}.tab .status{top:170px}
+.tab #cart{transform:scale(.9)}
+.tab .parts{left:310px;width:820px;top:780px;gap:16px}
+.tab .part{font-size:34px}
+/* 6: заголовок выше, облачка не заходят на колонны */
+.port #s6h{top:300px}
+.tab #s6h{left:310px;width:820px;font-size:62px;line-height:66px;top:290px}
+.tab #s6q,.port #s6q{top:180px}.tab #s6no,.port #s6no{top:180px}
+.tab #s6q{left:860px}.tab #s6no{left:340px}
+.tab #s6fin{width:760px;font-size:54px;line-height:58px}
+.tab #s6ch{transform:scale(.9)}
+/* 7 */
+.tab #s7h{top:40px}.tab .vname{top:175px}
+.tab #s7road{transform:scale(.85)}
+/* 8 */
+.tab #s8h{font-size:110px}
+.tab #s8t1{left:310px;width:820px;font-size:66px;line-height:66px}
+.tab #s8t2{left:310px;width:820px;font-size:28px}
+.tab .credits{left:310px;width:820px}
+/* Нагасена: заголовок наверху, облачка между ним и колоннами */
+.port #s6h{top:230px}.port #s6q,.port #s6no{top:130px}
+.tab #s6h{top:160px}.tab #s6q,.tab #s6no{top:125px}
+
+/* v41: планшет, правки */
+.tab #s1catch{top:-30px}
+.tab #s1n1{left:350px;top:200px}.tab #s1n2{left:700px;top:200px}
+.tab #s1oh{left:780px;top:330px}
+.tab .s2text p{left:110px;width:600px}
+.tab #s3h{top:50px}
+.tab .link{left:595px;width:auto;top:190px;text-align:left}
+.tab #s3ulg{transform:translate(5px,-82px) scale(1.25);transform-origin:590px 280px}
+.tab #s4h,.tab #s4y,.tab #s4ph,.tab #s4p1,.tab #s4p2{left:370px}
+.tab #s4h{width:700px}.tab #s4ph{width:600px}.tab #s4ph img{width:600px;height:385px}
+.tab #s4p1,.tab #s4p2{width:700px}
+.tab #s4p1{top:640px}.tab #s4p2{top:850px}
+.tab #s5h{top:-20px}.tab .status{top:115px}
+.tab #cart{transform:scale(1.1)}
+.tab #s6bg,.tab #s6k,.tab #s6m{top:130px}
+.tab #s6ch{top:600px}
+.tab #s6q,.tab #s6no{top:255px}
+.tab #s6fin{white-space:nowrap;width:760px}
+.tab #s6fin br{display:inline}
+.tab .vname{top:135px}
+.tab .cover>svg.frame{left:505px;top:1095px;width:830px;height:1110px}
+.tab #s2frame{left:305px;top:-105px;width:830px;height:1110px}
+.tab #s8t2{top:740px}
+.tab #s1n2{left:800px}.tab #s1oh{left:700px;top:300px}
+.tab #s1oh{left:840px;top:380px}
+/* v43: слово «Колесо» не уменьшается шрифтом — только масштабом, чтобы белка и кольцо попадали в буквы */
+.port #s1word{font-size:241px}
+.tab #s1catch{font-size:193px}
+.tab #s2where{top:830px}
+/* v44: в адаптиве строки выравниваются по длине — без одного слова в последней строке */
+.port .s2text p,.port .s2text h2,.port .cover .h1,.port #s6h,.port #s8t1,.port .para{text-wrap:balance}
+.tab .s2text p{left:70px;width:680px}
+/* v46: телефоны и планшеты — без тяжёлых эффектов */
+.coarse body::after{display:none}
+html.coarse .boil{filter:none!important}
+html.coarse.rewinding .stage{filter:none}
+.rew b{font-family:var(--serif);font-variant-emoji:text}
+
+/* ══ v49: телефон — те же правки, что на планшете; рамок на обложках нет ══ */
+.port:not(.tab) .cover>svg.frame,.port:not(.tab) #s2frame{display:none}
+.port:not(.tab) #s1catch{top:20px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{font-size:36px;top:250px}
+.port:not(.tab) #s1n1{left:470px}.port:not(.tab) #s1n2{left:742px}
+.port:not(.tab) #s1oh{left:780px;top:360px}
+.port:not(.tab) .s2text p{left:30px;width:460px}
+.port:not(.tab) #s2where{top:850px;font-size:26px}
+.port:not(.tab) #s3h{top:60px}
+.port:not(.tab) .link{left:610px;width:auto;top:190px;text-align:left}
+.port:not(.tab) #s3ulg{transform:translate(20px,-90px)}
+.port:not(.tab) #s4h,.port:not(.tab) #s4y,.port:not(.tab) #s4ph,.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{left:480px}
+.port:not(.tab) #s4h{width:480px}.port:not(.tab) #s4ph{width:480px}.port:not(.tab) #s4ph img{width:480px;height:305px}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:480px}
+.port:not(.tab) #s4p1{top:470px}.port:not(.tab) #s4p2{top:740px}
+.port:not(.tab) #s5h{top:-10px}.port:not(.tab) .status{top:130px}
+.port:not(.tab) #cart{transform:scale(.75)}
+.port:not(.tab) #s6bg,.port:not(.tab) #s6k,.port:not(.tab) #s6m{top:120px}
+.port:not(.tab) #s6ch{top:590px}
+.port:not(.tab) #s6q,.port:not(.tab) #s6no{top:250px}
+.port:not(.tab) #s6fin{white-space:nowrap;font-size:34px;line-height:40px}
+.port:not(.tab) #s6fin br{display:inline}
+.port:not(.tab) #s7h{top:40px}.port:not(.tab) .vname{top:130px}
+.port:not(.tab) #s8t2{top:730px}
+
+/* v50: телефон — крупнее текст; движущиеся элементы на отдельных слоях (меньше перерисовки) */
+.coarse #s1wheel,.coarse #s1sq,.coarse #s1big,.coarse #s2wheel,.coarse #s2text,.coarse #s3man,.coarse #s3wh,.coarse #s3say,
+.coarse #s4top,.coarse #s4bog,.coarse #s4wh,.coarse .cover,.coarse .veh,.coarse #cart .rig,.coarse #s8wh,.coarse #s6wheel,.coarse #s6axle,.coarse #s6body{will-change:transform}
+.port:not(.tab) #s3h,.port:not(.tab) #s5h,.port:not(.tab) #s7h{font-size:58px;line-height:62px}
+.port:not(.tab) .s2text h2{font-size:54px;line-height:58px}
+.port:not(.tab) .s2text p{font-size:28px;line-height:37px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{font-size:42px}
+.port:not(.tab) .link,.port:not(.tab) .status,.port:not(.tab) .vname,.port:not(.tab) .cap8{font-size:30px}
+.port:not(.tab) .tick{font-size:30px}.port:not(.tab) .era{font-size:56px}
+.port:not(.tab) #s4h{font-size:86px;line-height:80px}
+.port:not(.tab) #s4y{font-size:30px}
+.port:not(.tab) #s4ph figcaption{font-size:18px}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{font-size:27px;line-height:37px}
+.port:not(.tab) #s4p2{top:790px}
+.port:not(.tab) .tag{font-size:40px}
+.port:not(.tab) .part{font-size:32px}
+.port:not(.tab) #s6h{font-size:50px;line-height:54px}
+.port:not(.tab) #s6q span,.port:not(.tab) #s6no span,.port:not(.tab) #s7say span,.port:not(.tab) #s3say span,.port:not(.tab) #s1oh span{font-size:30px;line-height:32px}
+.port:not(.tab) #s6fin{font-size:38px;line-height:44px}
+.port:not(.tab) .cover .h1{font-size:68px;line-height:70px}
+.port:not(.tab) #s8h{font-size:96px}
+.port:not(.tab) #s8t1{font-size:56px;line-height:58px}
+.port:not(.tab) #s8t2{font-size:30px;top:750px}
+.port:not(.tab) .endsub{font-size:30px;line-height:34px}
+.port:not(.tab) .credits dd{font-size:26px}.port:not(.tab) .credits dt{font-size:20px}
+.port:not(.tab) #s3h{top:20px}.port:not(.tab) .link{top:240px}.port:not(.tab) #s3ulg{transform:translate(20px,-40px)}
+.port:not(.tab) #s5h{top:-40px}.port:not(.tab) .status{top:160px}
+/* v51 — телефон: крупнее заголовки и рисунки, ровные строки */
+br.ph{display:none}
+.port:not(.tab) #s2sub br{display:none}.port:not(.tab) #s2sub br.ph{display:inline}
+.port:not(.tab) .s2text p{left:-20px;width:560px;font-size:27px;line-height:37px;text-wrap:wrap}
+.port:not(.tab) .era{left:440px;width:560px;white-space:nowrap}
+.port:not(.tab) #s2ul{left:548px;width:344px;top:562px}
+.port:not(.tab) #s3h{top:-10px;font-size:70px;line-height:72px}
+.port:not(.tab) .link{font-size:36px;top:215px;left:590px}
+.port:not(.tab) #s3 .land>path,.port:not(.tab) #s3gr{transform:scale(1.35);transform-origin:720px 300px}
+.port:not(.tab) #s4h,.port:not(.tab) #s4y,.port:not(.tab) #s4ph,.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{left:455px}
+.port:not(.tab) #s4h,.port:not(.tab) #s4ph,.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:530px}
+.port:not(.tab) #s4ph img{width:530px;height:337px}
+.port:not(.tab) .para{text-wrap:pretty;font-size:28px;line-height:38px}
+.port:not(.tab) #s5h,.port:not(.tab) #s7h{font-size:70px;line-height:72px}
+.port:not(.tab) .status,.port:not(.tab) .vname{font-size:34px}
+.port:not(.tab) .parts::after{content:'';flex-basis:100%;order:1}
+.port:not(.tab) .part:nth-child(n+4){order:2}
+.port:not(.tab) .parts{top:880px;row-gap:16px}
+.port:not(.tab) .part{font-size:36px}
+.port:not(.tab) #cart{transform:translateY(110px) scale(.9)}
+.port:not(.tab) #s5land{transform:translateY(110px)}
+.port:not(.tab) #s7h{top:20px}.port:not(.tab) .vname{top:120px}
+.port:not(.tab) #s7road{transform:translateY(130px) scale(.74)}
+.port:not(.tab) #s7 .land{transform:translateY(130px)}
+.port:not(.tab) #s8t1{font-size:66px;line-height:66px}
+.port:not(.tab) #s8t2{font-size:34px}
+.port:not(.tab) #s4p1{top:515px}.port:not(.tab) #s4p2{top:805px}
+.port:not(.tab) #s2ul{top:548px}
+.port:not(.tab) #s8t2{text-wrap:balance;line-height:40px}
+/* v52 — телефон */
+.port:not(.tab) #s3h{top:-10px}.port:not(.tab) .link{top:168px;padding:0}
+.port:not(.tab) #s3say span{font-size:24px;line-height:26px}
+.port:not(.tab) #s7say span{font-size:22px;line-height:24px}
+.port:not(.tab) #s7say{transform-origin:0 100%}
+.port:not(.tab) #s5bt{text-align:center}
+html.port:not(.tab) .rew em br.ph{display:inline}
+html.port:not(.tab) .rew em{line-height:1.2}
+html.port:not(.tab).spinning .rew em{top:calc(50% + 250px * var(--k,1))}
+.port:not(.tab) .para br.ph{display:inline}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:560px;text-wrap:wrap}
+/* v53 — телефон: крупнее кегль, абзацы во всю ширину фото */
+.port:not(.tab) .para{font-size:32px;line-height:42px;text-align:justify;-webkit-hyphens:auto;hyphens:auto;text-wrap:wrap}
+.port:not(.tab) .para br.ph{display:none}
+.port:not(.tab) #s4p1,.port:not(.tab) #s4p2{width:530px}
+.port:not(.tab) #s4h{font-size:104px;line-height:96px}
+.port:not(.tab) #s4y{font-size:36px}
+.port:not(.tab) #s4ph figcaption{font-size:20px}
+.port:not(.tab) .s2text h2{font-size:62px;line-height:66px}
+.port:not(.tab) .s2text p{font-size:29px;line-height:40px;top:300px}
+.port:not(.tab) #s2where{font-size:32px}
+.port:not(.tab) .tick{font-size:34px}.port:not(.tab) .era{font-size:60px}
+.port:not(.tab) #s3h,.port:not(.tab) #s5h,.port:not(.tab) #s7h{font-size:80px;line-height:80px}
+.port:not(.tab) .status,.port:not(.tab) .vname{font-size:38px}
+.port:not(.tab) .link{font-size:40px}
+.port:not(.tab) .cap8{font-size:36px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{font-size:46px}
+.port:not(.tab) .tag{font-size:46px}
+.port:not(.tab) #s6h{font-size:60px;line-height:64px}
+.port:not(.tab) #s6fin{font-size:42px;line-height:48px}
+.port:not(.tab) .cover .h1{font-size:80px;line-height:82px}
+.port:not(.tab) #s8h{font-size:112px}
+.port:not(.tab) #s8t1{font-size:74px;line-height:74px}
+.port:not(.tab) #s8t2{font-size:38px;line-height:44px}
+.port:not(.tab) .endsub{font-size:34px;line-height:38px}
+.port:not(.tab) #s7h{font-size:74px;line-height:76px;white-space:nowrap}
+.port:not(.tab) #s8t1{left:440px;width:560px;font-size:70px;line-height:72px}
+.port:not(.tab) #s4h{font-size:100px;line-height:94px}
+.port:not(.tab) #s4h{top:-140px}.port:not(.tab) #s4y{top:58px}.port:not(.tab) #s4ph{top:105px}
+.port:not(.tab) #s4p1{top:525px}.port:not(.tab) #s4p2{top:808px}
+/* v55 — фидбек Пащенко */
+/* сборка → разборка: остаётся название целого */
+#s5name{left:0;width:1440px;text-align:center;top:300px;font:400 64px/1 var(--serif);opacity:0;pointer-events:none}
+#s5name span{position:relative}
+#s5name .ul{position:absolute;left:50%;top:100%;width:200px;height:16px;margin-top:10px}
+#s5name{display:block}
+#cart .p{transition:opacity .45s,transform .6s cubic-bezier(.3,1.4,.5,1)}
+.port #s5name{top:330px}.port:not(.tab) #s5name{top:330px;font-size:78px}
+/* Нагасена слева спрашивает, царь справа отвечает; подводка уходит в маленькую строку */
+#s6h{transform-origin:50% 0}
+#s6q{left:61px}#s6no{left:1145px}
+#s6q span{left:6px;top:6px;width:206px;height:94px}
+#s6no span{left:22px;top:6px;width:206px;height:94px}
+#s6q,#s6no{top:205px;transform:scale(1.3)}
+#s6q{transform-origin:0 100%}#s6no{transform-origin:100% 100%}
+#s6q span,#s6no span{font-size:25px;line-height:28px}
+.port #s6q{left:460px}.port #s6no{left:750px}
+.tab #s6q{left:330px}.tab #s6no{left:870px}
+.port:not(.tab) #s6q,.port:not(.tab) #s6no{transform:scale(1.12)}
+/* перемотка: явно сказано, что она идёт сама */
+.rew small{position:absolute;left:16px;right:16px;bottom:calc(70px * var(--k,1) + env(safe-area-inset-bottom,0px));text-align:center;font:400 max(17px,calc(26px * var(--k,1)))/1.3 var(--serif);color:var(--cream);mix-blend-mode:difference;opacity:.9}
+.rew em br.ph{display:none}
+#s5name{top:231px}.port #s5name{top:180px}.port:not(.tab) #s5name{top:150px}.tab #s5name{top:130px}
+#s6q svg,#s6no svg{transform:scaleX(-1)}
+#s6q span{left:22px}#s6no span{left:6px}
+#s5name{top:222px}
+#s5name{top:205px}.port #s5name{top:180px}.port:not(.tab) #s5name{top:150px}.tab #s5name{top:130px}
+#s5name{top:150px;font-size:72px}.port #s5name{top:60px}.port:not(.tab) #s5name{top:20px;font-size:86px}.tab #s5name{top:40px}
+.endsub{left:400px;width:640px}.port .endsub{left:440px;width:560px}.port:not(.tab) .endsub{font-size:30px;line-height:34px;text-wrap:balance}
+/* перемотка снова тёмно-серая: под полосами тёмная вуаль, сцены лишь просвечивают */
+.rew{background:rgba(22,19,15,.86)}
+/* v57 */
+html.boot .stage>.cv,html.boot .endcard{visibility:hidden}
+/* колесница распадается, остаётся имя */
+#s6name{left:0;width:1440px;text-align:center;top:405px;font:400 44px/1 var(--serif);opacity:0;pointer-events:none}
+#s6name span{position:relative}
+#s6name .ul{position:absolute;left:50%;top:100%;width:200px;height:16px;margin-top:8px}
+.port #s6name{top:520px;font-size:48px}.port:not(.tab) #s6name{top:560px;font-size:52px}.tab #s6name{top:520px}
+/* перемотка: темнее, по бокам заметки от рассказчика */
+.rew{background:rgba(22,19,15,.94)}
+.rew small{display:none}
+.rewn{position:absolute;top:50%;font:400 max(20px,calc(30px * var(--k,1)))/1.2 var(--serif);color:var(--cream);white-space:nowrap}
+.rewn svg{position:absolute;left:0;top:100%;width:100%;height:14px;margin-top:4px;overflow:visible}
+.rewn path{--d:1;stroke:var(--cream);stroke-width:2;fill:none}
+#rewl{left:7%;transform:translateY(-50%) rotate(-3deg)}
+#rewr{right:7%;transform:translateY(-50%) rotate(2deg)}
+html.port .rewn{white-space:normal;max-width:44%}
+html.port #rewl{top:16%;left:8%}
+html.port #rewr{top:auto;bottom:12%;right:8%;text-align:right}
+#s6name{top:370px}
+/* v58: подпись под разобранной колесницей */
+#s6name{top:785px;font-size:24px;line-height:1.2}
+#s6name .ul{margin-top:6px;height:14px}
+.port #s6name{top:930px;font-size:30px}.port:not(.tab) #s6name{top:975px;font-size:34px}.tab #s6name{top:950px}
+/* v59 */
+.bd-port{display:none}.port .bd-port{display:inline}.port .bd-wide{display:none}
+/* перемотка: треугольники выше, «вернёмся к колесу» по центру, ниже две строки с подчёркиванием */
+.rew b{transform:translate(-50%,-125%)}
+.rew em{top:calc(50% - 6px);font-size:max(26px,calc(34px * var(--k,1)))}
+.rewn,#rewl,#rewr{left:50%;right:auto;top:auto;bottom:auto;transform:translateX(-50%);text-align:center;white-space:nowrap;max-width:none;font:400 max(19px,calc(26px * var(--k,1)))/1.2 var(--serif)}
+#rewl{top:calc(50% + max(60px,calc(80px * var(--k,1))))}
+#rewr{top:calc(50% + max(104px,calc(130px * var(--k,1))))}
+html.port .rewn,html.port #rewl,html.port #rewr{white-space:nowrap;max-width:none;text-align:center;left:50%;right:auto;bottom:auto}
+html.port #rewl{top:calc(50% + 70px)}html.port #rewr{top:calc(50% + 112px)}
+/* финальная перемотка: колесо сверху, под ним треугольники и надписи */
+html.spinning .rew b{transform:translate(-50%,0)}
+html.spinning .rew em{top:calc(50% + 190px * var(--k,1))}
+html.spinning #rewl{top:calc(50% + 190px * var(--k,1) + max(54px,calc(70px * var(--k,1))))}
+html.spinning #rewr{top:calc(50% + 190px * var(--k,1) + max(96px,calc(118px * var(--k,1))))}
+html.port:not(.tab).spinning .rew em{top:calc(50% + 230px * var(--k,1))}
+html.port:not(.tab).spinning #rewl{top:calc(50% + 230px * var(--k,1) + 56px)}
+html.port:not(.tab).spinning #rewr{top:calc(50% + 230px * var(--k,1) + 96px)}
+.rew em br.ph{display:none!important}
+/* v60 */
+/* вступление: слово проявляется мягко, без «срезанного» края */
+#s1word{filter:opacity(0)}
+#s1word.in{animation:wordIn 1.1s ease forwards}
+@keyframes wordIn{to{filter:opacity(1)}}
+/* перемотка: темнее; треугольники выше и ближе; две строки тем же кеглем, что и «вернёмся к колесу» */
+.rew{background:rgba(22,19,15,.97)}
+.rew b{transform:translate(-50%,-150%);letter-spacing:-.32em;padding-right:.32em}
+.rew em{top:calc(50% - 40px);font-size:max(26px,calc(36px * var(--k,1)));line-height:1.2}
+.rewn,#rewl,#rewr{font-size:max(26px,calc(36px * var(--k,1)))}
+#rewl{top:calc(50% + max(60px,calc(70px * var(--k,1))))}
+#rewr{top:calc(50% + max(104px,calc(124px * var(--k,1))))}
+html.port #rewl{top:calc(50% + 60px)}html.port #rewr{top:calc(50% + 104px)}
+/* финальная: колесо, треугольники и «снова в начало» выше */
+.spinov{transform:translate(-50%,calc(-50% - 190px * var(--k,1)))}
+html.spinning .rew b{top:calc(50% - 10px * var(--k,1));transform:translate(-50%,0)}
+html.spinning .rew em{top:calc(50% + 80px * var(--k,1))}
+html.spinning #rewl{top:calc(50% + 80px * var(--k,1) + max(76px,calc(100px * var(--k,1))))}
+html.spinning #rewr{top:calc(50% + 80px * var(--k,1) + max(120px,calc(154px * var(--k,1))))}
+html.port:not(.tab).spinning .rew em{top:calc(50% + 80px * var(--k,1))}
+html.port:not(.tab).spinning #rewl{top:calc(50% + 80px * var(--k,1) + 70px)}
+html.port:not(.tab).spinning #rewr{top:calc(50% + 80px * var(--k,1) + 114px)}
+/* вопрос про колесницу — в центре кадра */
+#s6name{top:410px;font-size:30px}
+.port #s6name{top:470px;font-size:34px}.port:not(.tab) #s6name{top:470px;font-size:38px}.tab #s6name{top:470px}
+/* облачко монаха: плотнее строки, текст чуть выше */
+#s6q span{line-height:22px;top:0}
+.port:not(.tab) #s6q span{line-height:26px}
+.port:not(.tab) #s6name{top:620px}
+.port:not(.tab) #s6name{top:760px}
+/* v61: выравнивание по ширине, как в Figma (Justified) */
+#s2sub{text-align:justify;text-align-last:justify}
+.para{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+#s6h,#s6h .lt{text-align:justify;text-align-last:justify}
+#s6h.lined .lt{display:block}
+.port:not(.tab) .s2text p{left:-5px;width:530px;font-size:28px}
+/* v62: перемотка — бегущая белка и фраза с подчёркиванием */
+.spinov{display:none!important}
+#rewsq{position:absolute;left:50%;top:50%;width:max(220px,calc(300px * var(--k,1)));height:auto;aspect-ratio:244/202;transform:translate(-50%,-90%);color:var(--cream);stroke:var(--cream);overflow:visible}
+.rew em,html.spinning .rew em,html.port:not(.tab).spinning .rew em{left:50%;right:auto;top:calc(50% + max(24px,calc(40px * var(--k,1))));transform:translateX(-50%);display:inline-block;white-space:nowrap;font:400 max(24px,calc(34px * var(--k,1)))/1.2 var(--serif);color:var(--cream);mix-blend-mode:normal}
+.rew em .ul{position:absolute;left:0;top:100%;width:100%;height:16px;margin-top:8px;overflow:visible}
+.rew em .ul path{--d:1;stroke:var(--cream);stroke-width:2.4;fill:none}
+/* заставка после первой перемотки */
+#s1cov{z-index:5}
+#s1covt{white-space:nowrap}.port:not(.tab) #s1covt{font-size:62px;line-height:66px}
+/* v63 */
+.para{text-align:left;-webkit-hyphens:manual;hyphens:manual}
+.port:not(.tab) .para{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+#s6h.lined .lt{padding-block:0;margin-block:0}
+#s6h{line-height:60px}.port #s6h{line-height:1.05}
+#s6q,#s6no{top:120px}
+#s6q{left:230px}#s6no{left:975px}
+.port #s6q{left:470px}.port #s6no{left:740px}
+.port:not(.tab) #s6q,.port:not(.tab) #s6no{top:170px}
+.tab #s6q,.tab #s6no{top:170px}.tab #s6q{left:400px}.tab #s6no{left:800px}
+#s8t2{left:420px;width:600px;text-align:center}
+.port #s8t2{left:440px;width:560px}.tab #s8t2{left:310px;width:820px}
+.port:not(.tab) #s6q{left:445px}.port:not(.tab) #s6no{left:760px}
+.word span,#s1word span{padding:0 .08em;margin:0 -.08em}
+.word,#s1word,#s1catch,.dance{text-rendering:geometricPrecision}
+/* v64 */
+#s3run{pointer-events:none;cursor:default}
+#s3ulg>*:not(:first-child){display:none}
+#s2where{white-space:nowrap}
+/* v65: буквы — обычные строчные элементы без собственных рамок, ничего не обрезается */
+.word span,#s1word span{display:inline;padding:0;margin:0}
+#s1word{filter:none;color:transparent}
+#s1word.in{animation:wordIn2 1.1s ease forwards}
+@keyframes wordIn2{from{color:transparent}to{color:var(--cream)}}
+#s3run,.port #s3run,.port:not(.tab) #s3run,.tab #s3run{left:0;width:1440px;text-align:center}
+#s6h.lined .lt{padding-block:.3em;margin-block:-.3em}
+#s6h.lined .lt{padding:.12em 0 .35em;margin:-.12em 0 -.35em}#s6h.lined .ln+.ln .lt{margin-top:0;padding-top:0}
+#s6h.lined .lt,#s6h.lined .ln+.ln .lt{padding:0 0 .35em;margin:0 0 -.35em}
+/* v69: подсказка на границе кругов, своё мгновение для второго круга */
+#s1back{left:50%;top:520px;transform:translateX(-50%);white-space:nowrap;opacity:0}
+.port #s1back{top:560px}
+.endw{left:420px;width:600px;white-space:nowrap}
+.endsub{left:370px;width:700px;top:410px;font-size:30px;line-height:38px}
+.port .endsub{left:440px;width:560px}.port:not(.tab) .endsub{font-size:32px;line-height:40px}
+#s1n1,#s1n2{white-space:nowrap}
+#s1n2{left:860px}
+.port:not(.tab) #s1n1,.port:not(.tab) #s1n2{left:470px}.port:not(.tab) #s1n2{top:320px}
+.tab #s1n2{left:720px}
+#s1catch{word-spacing:-.3em}
+
+/* v71: Desyatiy, фон #D4C8A7, буквы «Колесо» выкатываются из углов */
+.stickhint span,.tag{background:var(--paper)}
+.part[aria-pressed="true"]{background:var(--paper);outline-color:var(--paper)}
+#s1word span{display:inline-block;padding:0;margin:0;will-change:transform}
+#s1word.roll{filter:none;color:var(--cream);animation:none}
+/* v71: Desyatiy шире DANCEPARTNER — на телефоне чуть меньше, чтобы слова не упирались в край */
+html.port:not(.tab) #s1word{font-size:208px}
+html.port:not(.tab) #s1catch{font-size:122px}
+html.tab #s1catch{font-size:170px}
+/* v74: Desyatiy Light; интертитры как плёнка кинолектория — спокойнее: редкие царапины, зерно, полукруглая тень по краям */
+.dance,#s1word,#s1catch,.endw{font-weight:300}
+.cover.paper::after,#s2 .stage::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:5;mix-blend-mode:multiply;
+  background-image:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='10' preserveAspectRatio='none'%3E%3Cg fill='%2316130f'%3E%3Crect x='212' width='1.1' height='10' opacity='.26'/%3E%3Crect x='933' width='1.4' height='10' opacity='.22'/%3E%3Crect x='1290' width='.8' height='10' opacity='.16'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='520'%3E%3Cg fill='%2316130f'%3E%3Ccircle cx='60' cy='80' r='1.4' opacity='.38'/%3E%3Ccircle cx='470' cy='300' r='1.8' opacity='.3'/%3E%3Ccircle cx='300' cy='450' r='1.1' opacity='.32'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .05 0 0 0 .8 -.38'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+   radial-gradient(ellipse 820px 560px at 50% 50%,rgba(22,19,15,0) 62%,rgba(22,19,15,.28) 100%);
+  background-size:1440px 100%,640px 520px,220px 220px,100% 100%;
+  background-repeat:repeat-x,repeat,repeat,no-repeat;background-position:center;
+  animation:filmA 1s steps(1) infinite,filmF .35s steps(1) infinite}
+@keyframes filmA{
+  0%{background-position:calc(50% + 0px) 0,0 0,0 0,center}
+  33%{background-position:calc(50% - 220px) 0,-200px 120px,-40px 70px,center}
+  66%{background-position:calc(50% + 160px) 0,150px -90px,60px -30px,center}}
+@keyframes filmF{0%{opacity:.97}50%{opacity:.86}}
+/* v74: склейка на монтажном стыке тёмное → светлое */
+#splice{position:fixed;inset:0;pointer-events:none;z-index:94;opacity:0}
+#splice::before{content:'';position:absolute;inset:0;background:#16130f;opacity:.45}
+#splice i{position:absolute;left:0;right:0;top:var(--y,40%);height:4px;background:#16130f;opacity:1}
+html.splicing #splice{animation:spliceFlash .3s steps(1) forwards}
+html.splicing .sc .stage{animation:spliceJump .28s steps(1)}
+@keyframes spliceFlash{0%{opacity:.3}30%{opacity:0}55%{opacity:.15}80%,100%{opacity:0}}
+@keyframes spliceJump{0%{transform:translateY(-8px)}30%{transform:translateY(4px)}60%{transform:translateY(-2px)}100%{transform:none}}
+/* v74: «учёный у доски» на фото находки — указки и подписи от руки */
+#s4ph{position:absolute}
+#s4note{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+#s4note path{fill:none;stroke:var(--cream);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .9s ease}
+#s4note text{fill:var(--cream);font:italic 400 58px var(--serif);opacity:0;transition:opacity .5s ease}
+#s4note.on path{stroke-dashoffset:0}
+#s4note.on text{opacity:1}
+#s4note.on .d2{transition-delay:.7s}#s4note.on .d3{transition-delay:1.4s}
+#s4note.on text.d1{transition-delay:.6s}#s4note.on text.d2{transition-delay:1.3s}#s4note.on text.d3{transition-delay:2s}
+@media (prefers-reduced-motion:reduce){.cover.paper::after,#s2 .stage::after{animation:none}html.splicing #splice,html.splicing .sc .stage{animation:none}#s4note path,#s4note text{transition:none}}
+/* v75: счётчик лет — механический барабанный счётчик, цифры прокручиваются */
+#s2year{display:inline-flex;align-items:flex-end}
+#s2year .od{display:inline-block;height:.86em;overflow:hidden;position:relative;vertical-align:-.04em;-webkit-mask-image:linear-gradient(transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(transparent 0,#000 14%,#000 86%,transparent 100%)}
+#s2year .od b{display:block;font-weight:inherit;will-change:transform}
+#s2year .od b i{display:block;height:.86em;line-height:.86em;font-style:normal;text-align:center}
+/* v78: плёнка вернулась и чуть плотнее, полукруглая тень явнее */
+.cover.paper::after,#s2 .stage::after{
+  background-image:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='10' preserveAspectRatio='none'%3E%3Cg fill='%2316130f'%3E%3Crect x='212' width='1.2' height='10' opacity='.34'/%3E%3Crect x='640' width='.9' height='10' opacity='.18'/%3E%3Crect x='933' width='1.5' height='10' opacity='.3'/%3E%3Crect x='1290' width='.9' height='10' opacity='.22'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='520'%3E%3Cg fill='%2316130f'%3E%3Ccircle cx='60' cy='80' r='1.5' opacity='.5'/%3E%3Ccircle cx='470' cy='300' r='2' opacity='.42'/%3E%3Ccircle cx='300' cy='450' r='1.2' opacity='.44'/%3E%3Ccircle cx='560' cy='60' r='1' opacity='.4'/%3E%3Cpath d='M180 250q6 -4 11 1' stroke='%2316130f' stroke-width='1' fill='none' opacity='.35'/%3E%3C/g%3E%3C/svg%3E"),
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .05 0 0 0 .9 -.34'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+   radial-gradient(ellipse 780px 530px at 50% 50%,rgba(22,19,15,0) 56%,rgba(22,19,15,.42) 100%);
+  background-size:1440px 100%,640px 520px,220px 220px,100% 100%;
+  background-repeat:repeat-x,repeat,repeat,no-repeat;background-position:center;
+  animation:filmA 1s steps(1) infinite,filmF .35s steps(1) infinite}
+@keyframes filmF{0%{opacity:1}50%{opacity:.86}}
+/* v78: колесо-курсор (только мышь) */
+html.wcur,html.wcur *{cursor:none!important}
+#wcur{position:fixed;left:0;top:0;width:36px;height:36px;margin:-18px 0 0 -18px;pointer-events:none;z-index:200;opacity:0;transition:opacity .2s}
+#wcur.on{opacity:1}
+#wcur svg{display:block;width:100%;height:100%;overflow:visible;transition:transform .18s cubic-bezier(.3,1.5,.5,1)}
+#wcur.hot svg{transform:scale(1.45)}
+#wcur.down svg{transform:scale(.8)}
+#wcur .halo{stroke:var(--cream);stroke-width:4.2;fill:none;stroke-linecap:round;opacity:.9}
+#wcur .ink{stroke:var(--dark);stroke-width:1.7;fill:none;stroke-linecap:round}
+#wcur .hub{fill:var(--dark)}
+/* v78: колёса смазываются на быстрой прокрутке */
+#s2wheel,#s4wh,#s8wh{transition:filter .25s}
+html.whirl #s2wheel,html.whirl #s4wh,html.whirl #s8wh{filter:blur(1.6px)}
+/* v78: интертитр встаёт в кадровое окно */
+.cover.paper p.gate{animation:gate .6s steps(1) 1}
+@keyframes gate{0%{translate:0 -10px;opacity:.55}12%{translate:2px 5px;opacity:1}24%{translate:-1px -4px;opacity:.8}36%{translate:1px 3px;opacity:1}50%{translate:0 -2px;opacity:.9}66%{translate:0 1px}82%,100%{translate:0 0;opacity:1}}
+@media (prefers-reduced-motion:reduce){.cover.paper::after,#s2 .stage::after{animation:none}.cover.paper p.gate{animation:none}html.whirl #s2wheel,html.whirl #s4wh,html.whirl #s8wh{filter:none}}
+
+/* v79: курсор — рисованная мышка в стиле иллюстраций; нос = точка указателя */
+#wcur{width:52px;height:36px;margin:0;transform-origin:0 0}
+#wcur svg{width:52px;height:36px;margin:-16px 0 0 -2px;transform-origin:2px 16px}
+#wcur.hot svg{transform:scale(1.25) rotate(-8deg)}
+#wcur.down svg{transform:scale(.85)}
+#wcur .halo{stroke-width:4.4}
+#wcur .ink{stroke-width:1.5;stroke-linejoin:round}
+#wcur .fr{animation:mBoil .24s steps(1) infinite}
+#wcur .f1{animation-delay:-.12s}
+@keyframes mBoil{0%{opacity:1}50%{opacity:0}}
+#wcur .ft.b{opacity:0}
+#wcur.run .ft.a{animation:mStep .16s steps(1) infinite}
+#wcur.run .ft.b{animation:mStep .16s steps(1) infinite reverse}
+@keyframes mStep{0%{opacity:1}50%{opacity:0}}
+#wcur.run .ms{animation:mBob .16s steps(1) infinite}
+@keyframes mBob{0%{transform:translateY(0)}50%{transform:translateY(-1px)}}
+#wcur{mix-blend-mode:difference}
+#wcur .ink{stroke:#d4c8a7}
+#wcur .hub{fill:#d4c8a7}
+/* v79: пыль за колесом */
+#s3dust{position:absolute;left:0;top:0;width:1440px;height:900px;pointer-events:none;overflow:visible}
+#s3dust path{stroke-width:1.5;vector-effect:non-scaling-stroke}
+/* v79: колея-прогресс */
+#rut{position:fixed;left:0;right:0;bottom:env(safe-area-inset-bottom,0px);height:22px;pointer-events:none;z-index:150;mix-blend-mode:difference;opacity:0;transition:opacity .4s}
+#rut.on{opacity:.85}
+#rut svg{display:block;overflow:visible}
+#rut path,#rut circle{fill:none;stroke:#d4c8a7;stroke-linecap:round}
+#rut .tr{stroke-width:1.1}#rut .tk{stroke-width:1}
+#rut .wh circle{stroke-width:1.4}#rut .wh path{stroke-width:.9}
+/* v79: белочка выглядывает */
+#peek{position:fixed;bottom:0;left:0;pointer-events:none;z-index:120;transform:translateY(105%);color:var(--cream)}
+#peek svg{width:100%;height:100%;overflow:visible}
+@media (prefers-reduced-motion:reduce){#peek{display:none}}
+/* v80: курсор — рисованная стрелка (кончик = точка указателя) */
+#wcur{width:24px;height:34px}
+#wcur svg{width:24px;height:34px;margin:-2px 0 0 -2px;transform-origin:2px 2px}
+#wcur.hot svg{transform:rotate(-12deg) scale(1.15)}
+#wcur.down svg{transform:scale(.82)}
+#wcur .bgf{fill:#16130f;stroke:none}
+#wcur .ink{stroke-width:1.4}
+#wcur .ink.h{stroke-width:.8}
+#wcur.run .ms{animation:none}
+/* v81: стрелка крупнее */
+#wcur{width:34px;height:48px}
+#wcur svg{width:34px;height:48px;margin:-2.8px 0 0 -2.8px;transform-origin:2.8px 2.8px}
+#wcur .ink{stroke-width:1.2}
+/* v82: ирис-шторка в финале */
+#iris{position:fixed;inset:0;z-index:99;pointer-events:none;display:none;--x:50%;--y:50%;--r:2000px}
+#iris.on{display:block}
+#iris::before{content:'';position:absolute;inset:0;background:#16130f;-webkit-mask-image:radial-gradient(circle at var(--x) var(--y),transparent calc(var(--r) - 1px),#000 calc(var(--r) + 1px));mask-image:radial-gradient(circle at var(--x) var(--y),transparent calc(var(--r) - 1px),#000 calc(var(--r) + 1px))}
+#iris svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#iris path{fill:none;stroke:#d4c8a7;stroke-width:1.6;vector-effect:non-scaling-stroke;opacity:.85}
+/* v86: «Ещё раз!» с обычным пробелом; буквы «Колесо» видны и за пределами своего блока, пока катятся с краёв экрана */
+#s1catch{word-spacing:normal}
+#s1word.roll,#s1word.roll *{-webkit-mask-image:none!important;mask-image:none!important}
+/* v88: пузыри в болоте */
+#s4bub{position:absolute;left:0;top:0;width:1440px;height:900px;pointer-events:none;overflow:visible}
+#s4bub path,#s4bub circle.t{stroke-width:1.6;vector-effect:non-scaling-stroke}

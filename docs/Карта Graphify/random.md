@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Раскадровка и двери (1.3)"
+community: "Движок сцен и звуки (app.js)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # random
@@ -14,4 +14,4 @@ tags:
 - [[batten()]] - `calls` [EXTRACTED]
 - [[wheel()]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/concept #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Типографика (1.4)"
+community: "Журнал решений"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # Фото __HI_H3__ (фон фотоэкрана)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ps3 — «А потом поехали» (фотоэкран H3)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Типографика_14
+#graphify/image #graphify/EXTRACTED #community/Журнал_решений

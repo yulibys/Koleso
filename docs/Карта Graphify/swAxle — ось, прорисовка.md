@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Фото, вырезки, права (1.7)"
+community: "Журнал решений"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # #swAxle — ось, прорисовка
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

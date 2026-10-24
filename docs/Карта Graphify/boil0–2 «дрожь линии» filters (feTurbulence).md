@@ -1,14 +1,14 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Лекция 1.8. Предзащита и финальная редактура"
+community: "boil0–2 «дрожь линии» filters (feTurbulence)"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Лекция_18_Предзащита_и_финальная_редактура
+  - community/boil02_дрожь_линии_filters_feTurbulence
 ---
 
 # boil0–2 «дрожь линии» filters (feTurbulence)
 
-#graphify/code #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура
+#graphify/code #graphify/EXTRACTED #community/boil02_дрожь_линии_filters_feTurbulence

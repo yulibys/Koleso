@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L440"
+community: "Типографика (1.4)"
+location: "L629"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Типографика_14
 ---
 
 # labUpd()
@@ -17,4 +17,4 @@ tags:
 - [[sayL()_2]] - `calls` [EXTRACTED]
 - [[startEnding()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

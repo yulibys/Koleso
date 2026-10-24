@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.6.txt"
 type: "rationale"
-community: "Движок сцен и звуки (app.js)"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Читательская проба think aloud → одна правка
@@ -14,4 +14,4 @@ tags:
 - [[Затруднение — наблюдаемыми словами, менять по одному параметру]] - `conceptually_related_to` [INFERRED]
 - [[Лекция 1.6. Управление вниманием первый экран, паузы]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs
+#graphify/rationale #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

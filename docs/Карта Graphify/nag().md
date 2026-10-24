@@ -1,12 +1,12 @@
 ---
 source_file: "src/scenery.js"
 type: "code"
-community: "Типографика (1.4)"
+community: "nag — Нагасена и Милинда: «колесо — это колесница?»"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/nag__Нагасена_и_Милинда_колесо__это_колесница
 ---
 
 # nag()
@@ -15,4 +15,4 @@ tags:
 - [[nag — Нагасена и Милинда «колесо — это колесница»]] - `references` [INFERRED]
 - [[scenery.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/nag__Нагасена_и_Милинда_колесо__это_колесница

@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L604"
+community: "Типографика (1.4)"
+location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Типографика_14
 ---
 
 # cancelEnding()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

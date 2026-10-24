@@ -918,7 +918,7 @@ html.splicing .sc .stage{animation:spliceJump .28s steps(1)}
    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='10' preserveAspectRatio='none'%3E%3Cg fill='%2316130f'%3E%3Crect x='212' width='1.2' height='10' opacity='.34'/%3E%3Crect x='640' width='.9' height='10' opacity='.18'/%3E%3Crect x='933' width='1.5' height='10' opacity='.3'/%3E%3Crect x='1290' width='.9' height='10' opacity='.22'/%3E%3C/g%3E%3C/svg%3E"),
    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='520'%3E%3Cg fill='%2316130f'%3E%3Ccircle cx='60' cy='80' r='1.5' opacity='.5'/%3E%3Ccircle cx='470' cy='300' r='2' opacity='.42'/%3E%3Ccircle cx='300' cy='450' r='1.2' opacity='.44'/%3E%3Ccircle cx='560' cy='60' r='1' opacity='.4'/%3E%3Cpath d='M180 250q6 -4 11 1' stroke='%2316130f' stroke-width='1' fill='none' opacity='.35'/%3E%3C/g%3E%3C/svg%3E"),
    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .05 0 0 0 .9 -.34'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
-   radial-gradient(ellipse 780px 530px at 50% 50%,rgba(22,19,15,0) 56%,rgba(22,19,15,.42) 100%);
+   radial-gradient(ellipse calc(780px + var(--m,0) * 1px) calc(530px + var(--v,0) * 0.6px) at 50% 50%,rgba(22,19,15,0) 56%,rgba(22,19,15,.42) 100%);
   background-size:1440px 100%,640px 520px,220px 220px,100% 100%;
   background-repeat:repeat-x,repeat,repeat,no-repeat;background-position:center;
   animation:filmA 1s steps(1) infinite,filmF .35s steps(1) infinite}
@@ -999,3 +999,54 @@ html.whirl #s2wheel,html.whirl #s4wh,html.whirl #s8wh{filter:blur(1.6px)}
 /* v88: пузыри в болоте */
 #s4bub{position:absolute;left:0;top:0;width:1440px;height:900px;pointer-events:none;overflow:visible}
 #s4bub path,#s4bub circle.t{stroke-width:1.6;vector-effect:non-scaling-stroke}
+/* v91: «не успели» / «оно укатилось» — лесенкой под словом, как в макете; появляются по одной по скроллу */
+html:not(.port) #s1n1{left:520px;top:300px;rotate:-2deg}
+html:not(.port) #s1n2{left:640px;top:392px;rotate:-2.5deg}
+/* v91: подписи под «Колесо» на старте — лесенкой, как «не успели / оно укатилось» */
+#s1i1,#s1i2{opacity:0;white-space:nowrap}
+html:not(.port) #s1i1{left:470px;top:610px;rotate:-2deg}
+html:not(.port) #s1i2{left:690px;top:700px;rotate:-2.5deg}
+html.port #s1i1{left:300px;top:640px}
+html.port #s1i2{left:560px;top:730px}
+/* v91: облачко «о нет((» крупнее — тот же кегль, что у всех реплик (24px), но больше воздуха вокруг */
+html:not(.port) #s1oh{left:1236px;top:236px;width:186px;height:99px}
+html:not(.port) #s1oh span{left:20px;top:6px;width:174px;height:86px}
+/* v91: колея-прогресс крупнее */
+#rut{height:34px}
+#rut .tr{stroke-width:1.6}#rut .tk{stroke-width:1.4}
+#rut .wh circle{stroke-width:2}#rut .wh path{stroke-width:1.3}
+/* v92: новое фото находки — уже в зерне и сепии, без обесцвечивания */
+#s4ph img{filter:none}
+/* v92: широкие и высокие экраны — бумага интертитров и фирменная рамка тянутся на весь видимый экран
+   (--m: сколько холста видно слева/справа сверх 1440, --v: сверху/снизу сверх 900; минус — обрезано) */
+html:not(.port) .cover{left:calc(-200px - var(--m,0) * 1px);width:calc(1840px + var(--m,0) * 2px)}
+html:not(.port) .cover>svg.frame{left:200px;top:calc(1179px - var(--v,0) * 1px);width:calc(1440px + var(--m,0) * 2px);height:calc(900px + var(--v,0) * 2px)}
+html:not(.port) #s2frame{left:calc(var(--m,0) * -1px);top:calc(var(--v,0) * -1px);width:calc(1440px + var(--m,0) * 2px);height:calc(900px + var(--v,0) * 2px)}
+/* v92: полукруглая тень интертитров растёт вместе с экраном */
+html:not(.port) .cover.paper::after{background-size:1440px 100%,640px 520px,220px 220px,100% 100%}
+/* v93: подписи разведены к своим сторонам и чуть наклонены к центру, стартовые подняты от низа */
+html:not(.port) #s1n1{left:330px;top:300px;rotate:-3deg}
+html:not(.port) #s1n2{left:830px;top:392px;rotate:3deg}
+html:not(.port) #s1i1{left:300px;top:575px;rotate:-3deg}
+html:not(.port) #s1i2{left:800px;top:650px;rotate:3deg}
+/* v94: «не успели» / «оно укатилось» ближе к центру, но всё ещё лесенкой */
+html:not(.port) #s1n1{left:450px}
+html:not(.port) #s1n2{left:710px}
+/* v95: «не успели» чуть ниже */
+html:not(.port) #s1n1{top:330px}
+/* v96: «не успели» / «оно укатилось» почти друг под другом у центра; стартовые подписи — в одну строку */
+html:not(.port) #s1n1{left:560px}
+html:not(.port) #s1n2{left:620px}
+html:not(.port) #s1i1{left:330px;top:620px}
+html:not(.port) #s1i2{left:790px;top:620px}
+/* v98: «не успели» левее и ниже, «оно укатилось» ниже — между ними больше воздуха */
+html:not(.port) #s1n1{left:505px;top:345px}
+html:not(.port) #s1n2{top:440px}
+/* v99: стартовые подписи ближе к слову «Колесо» */
+html:not(.port) #s1i1,html:not(.port) #s1i2{top:575px}
+/* v100: «не успели» / «оно укатилось» — наклон в обратную сторону */
+html:not(.port) #s1n1{rotate:3deg}
+html:not(.port) #s1n2{rotate:-3deg}
+/* v102: «не успели» / «оно укатилось» чуть выше (расстояние между ними прежнее) и наклон сильнее */
+html:not(.port) #s1n1{top:320px;rotate:5deg}
+html:not(.port) #s1n2{top:415px;rotate:-5deg}

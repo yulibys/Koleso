@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: ":root токены (--black, --cream, --paper, --red, --gut)"
 location: "L2"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/root_токены_--black_--cream_--paper_--red_--gut
 ---
 
 # :root токены (--black, --cream, --paper, --red, --gut)
@@ -18,4 +18,4 @@ tags:
 - [[Шрифт Alegreya (--serif--hand, .voice.hand)]] - `references` [EXTRACTED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/root_токены_--black_--cream_--paper_--red_--gut

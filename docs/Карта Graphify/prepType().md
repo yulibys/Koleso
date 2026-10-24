@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: ".sc/.stick/.frame — высокая секция с липким кадром"
 location: "L134"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/sc/stick/frame__высокая_секция_с_липким_кадром
 ---
 
 # prepType()
@@ -18,4 +18,4 @@ tags:
 - [[Неразрывные пробелы — только для смысловых пар]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/INFERRED #community/sc/stick/frame__высокая_секция_с_липким_кадром

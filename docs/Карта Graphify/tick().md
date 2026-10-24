@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
 community: "Сборка, источники, финал"
 location: "L657"
@@ -12,10 +12,10 @@ tags:
 # tick()
 
 ## Connections
+- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
 - [[loop()_1]] - `calls` [EXTRACTED]
 - [[rewindToS1()]] - `calls` [EXTRACTED]
 - [[scrollAnim()]] - `calls` [EXTRACTED]
 - [[startEnding()]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

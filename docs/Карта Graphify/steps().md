@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # steps()
@@ -16,4 +16,4 @@ tags:
 - [[open2 — «Ловите! Как теперь его догнать» (Побегу за ним  Возьму другое)]] - `references` [INFERRED]
 - [[srcapp.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

@@ -1,61 +1,56 @@
 ---
 type: community
-cohesion: 0.11
-members: 46
+cohesion: 0.09
+members: 41
 ---
 
 # Раскадровка и двери (1.3)
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 41 nodes
 
 ## Members
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
-- [[arcade()]] - code - art.js
-- [[art.js]] - code - art.js
-- [[batten()]] - code - art/wheel.py
-- [[bez()]] - code - art.js
-- [[birds()_1]] - code - art.js
-- [[bog()]] - code - art.js
-- [[bubble()_1]] - code - art.js
-- [[chariotParts()]] - code - art.js
-- [[clipped()]] - code - art.js
-- [[f()]] - code - art/wheel.py
-- [[ferris()]] - code - art.js
-- [[flower()]] - code - art.js
-- [[flowers()]] - code - art.js
-- [[frame()]] - code - art.js
-- [[gear()]] - code - art.js
-- [[grass()_1]] - code - art.js
-- [[grassAt()]] - code - art.js
-- [[hill()_1]] - code - art.js
-- [[hut()_1]] - code - art.js
-- [[king()]] - code - art.js
-- [[knot()]] - code - art/wheel.py
-- [[line()]] - code - art.js
-- [[man()]] - code - art.js
-- [[math]] - concept
-- [[monk()]] - code - art.js
-- [[motion()]] - code - art.js
-- [[mountains()]] - code - art.js
-- [[mouse()]] - code - art.js
-- [[oak()_1]] - code - art.js
-- [[pill()]] - code - art.js
-- [[random]] - concept
-- [[ring()]] - code - art.js
-- [[ringPts()]] - code - art.js
-- [[seg()]] - code - art.js
-- [[shape()]] - code - art.js
-- [[soil()]] - code - art.js
-- [[squirrel()]] - code - art.js
-- [[squirrel2()]] - code - art.js
-- [[steering()]] - code - art.js
-- [[stick()]] - code - art.js
-- [[stone()_1]] - code - art.js
-- [[tuft()]] - code - art.js
-- [[underline()]] - code - art.js
-- [[wheel()]] - code - art.js
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
+- [[dot-s1()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s2()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s3()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s4()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s5()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s6()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s7()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[dot-s8()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[S_3]] - code - _backup_2026-10-22/v77/app.js
+- [[applyLap()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[balance()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[calibrate()_2]] - code - _backup_2026-10-22/v77/app.js
+- [[cancelEnding()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[cover()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[coverSeq()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[fit()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[fitUl()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[labUpd()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[loop()_4]] - code - _backup_2026-10-22/v77/app.js
+- [[morph()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[nextCover()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[odo()_2]] - code - _backup_2026-10-22/v77/app.js
+- [[put()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[restore()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[rewTxt()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[rewindToS1()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[ringAt()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[ringAt0()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[rollIn()_2]] - code - _backup_2026-10-22/v77/app.js
+- [[sayL()_4]] - code - _backup_2026-10-22/v77/app.js
+- [[scrollAnim()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[shortcut()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[spin()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[splice()_2]] - code - _backup_2026-10-22/v77/app.js
+- [[splitLines()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[startEnding()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[textOut()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[tick()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[unshort()_3]] - code - _backup_2026-10-22/v77/app.js
+- [[v77app.js]] - code - _backup_2026-10-22/v77/app.js
+- [[watch()_2]] - code - _backup_2026-10-22/v77/app.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,13 +58,3 @@ members: 46
 TABLE source_file, type FROM #community/Раскадровка_и_двери_13
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Журнал решений]]
-- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 1 edge to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-
-## Top bridge nodes
-- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 3 communities
-- [[Колесо перерисовано по люблянской находке (v13, v15)]] - degree 3, connects to 2 communities

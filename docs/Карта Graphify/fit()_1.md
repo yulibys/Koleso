@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
+community: "Типографика (1.4)"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Типографика_14
 ---
 
 # fit()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

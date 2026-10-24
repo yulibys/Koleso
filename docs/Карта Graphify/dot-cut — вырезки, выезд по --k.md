@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Рисунки повозок"
 location: "L474"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/Рисунки_повозок
 ---
 
 # .cut — вырезки, выезд по --k
@@ -16,4 +16,4 @@ tags:
 - [[Вырезка .cut (предмет выезжает из-за края)]] - `implements` [EXTRACTED]
 - [[Общая судьба совместное движение собирает группу]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/INFERRED #community/Рисунки_повозок

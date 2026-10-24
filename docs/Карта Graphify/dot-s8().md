@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
 community: "Сборка, источники, финал"
 location: "L536"

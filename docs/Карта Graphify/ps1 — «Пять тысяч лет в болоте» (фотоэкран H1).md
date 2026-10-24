@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Типографика (1.4)"
+community: "Журнал решений"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # ps1 — «Пять тысяч лет в болоте» (фотоэкран H1)
@@ -23,4 +23,4 @@ tags:
 - [[Фотоэкран .pscreen (ps-photo, рваный .ps-cut, ps-bigps-small)]] - `implements` [EXTRACTED]
 - [[Четыре фотоэкрана в духе Kami (v16)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

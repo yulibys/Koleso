@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L57"
+community: "Типографика (1.4)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Пейзажи_sceneryjs
+  - community/Типографика_14
 ---
 
 # splitLines()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/INFERRED #community/Типографика_14

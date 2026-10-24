@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
 community: "Сборка, источники, финал"
 location: "L217"
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-s8()]] - `calls` [EXTRACTED]
-- [[v20app.js]] - `contains` [EXTRACTED]
+- [[_backup_2026-10-22app.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Сборка_источники_финал

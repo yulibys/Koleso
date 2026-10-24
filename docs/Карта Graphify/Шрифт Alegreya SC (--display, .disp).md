@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Колесо-проводник и гравюра"
+community: "Шрифт Alegreya SC (--display, .disp)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Колесо-проводник_и_гравюра
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # Шрифт Alegreya SC (--display, .disp)
@@ -23,4 +23,4 @@ tags:
 - [[Прописной набор требует умеренной разрядки]] - `conceptually_related_to` [INFERRED]
 - [[Только настоящая капитель, проверить кириллицу в её комплекте]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра
+#graphify/code #graphify/EXTRACTED #community/Шрифт_Alegreya_SC_--display_disp

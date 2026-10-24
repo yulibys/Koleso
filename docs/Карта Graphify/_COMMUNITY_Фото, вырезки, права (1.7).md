@@ -1,36 +1,29 @@
 ---
 type: community
-cohesion: 0.06
-members: 69
+cohesion: 0.07
+members: 56
 ---
 
 # Фото, вырезки, права (1.7)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 69 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 56 nodes
 
 ## Members
-- [[creditsCard — титры «Конец»]] - code - src/body.html
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - code - src/body.html
 - [[nagSvg — монах и царь, «колесница», «ось нет  кузов нет»]] - code - src/body.html
 - [[sams — «А вы, кажется, попали в колесо сансары»]] - code - src/body.html
-- [[swAxle — ось, прорисовка]] - code - src/body.html
-- [[dot-credits-card.foot — титры и подвал]] - code - src/style.css
 - [[dot-rew-fx — эффект перемотки ◀◀]] - code - src/body.html
 - [[C_dharma — Колесо дхармы (.cut)]] - image - src/body.html
 - [[C_ferris — Колесо обозрения (.cut)]] - image - src/body.html
 - [[C_steer — Руль (.cut)]] - image - src/body.html
-- [[S_wheel — Колесо, Городской музей Любляны (.stk)]] - image - src/body.html
 - [[T_ur — Вырезка T_ur (.cut)]] - image - src/body.html
-- [[X2 — Свайные посёлки на Люблянском болоте (.collage)]] - image - src/body.html
 - [[air()]] - code - src/app.js
 - [[applyK()]] - code - src/app.js
-- [[bubble()]] - code - src/app.js
 - [[click()]] - code - src/app.js
 - [[clop()]] - code - src/app.js
 - [[env()]] - code - src/app.js
 - [[fin()]] - code - src/app.js
-- [[footer.foot — «Готовь сани летом, а телегу зимой», credits, «Наверх»]] - code - src/body.html
 - [[gesture()]] - code - src/app.js
 - [[gong()]] - code - src/app.js
 - [[guideFrame()]] - code - src/app.js
@@ -64,19 +57,13 @@ members: 69
 - [[soft()]] - code - src/app.js
 - [[squeak()]] - code - src/app.js
 - [[srcapp.js]] - code - src/app.js
-- [[swamp — «Болото. Любляна, 2002 год»  «И вдруг — тук»]] - code - src/body.html
 - [[tear()]] - code - src/app.js
 - [[whoosh()]] - code - src/app.js
-- [[Бегущая лента поговорок .tape («Не подмажешь — не поедешь…»)]] - code - src/body.html
 - [[Вопрос на входе — ответ в финале]] - rationale - docs/lectures/1.6.txt
 - [[Вырезка .cut (предмет выезжает из-за края)]] - code - src/body.html
-- [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - rationale - docs/lectures/1.7.txt
 - [[Мобильное преобразование — не общий Scale]] - rationale - docs/lectures/1.5.txt
 - [[Монтаж колёс swarm + rCaprText]] - code - src/body.html
-- [[Насыщенный феномен (Марион) рамка входа и тихое последействие]] - concept - docs/lectures/1.6.txt
 - [[Память как ответственность (Мец) финал помнит первый экран]] - concept - docs/lectures/1.6.txt
-- [[Право выхода дверь наружу — хороший исход]] - rationale - docs/lectures/1.6.txt
-- [[Разрез земли strata + bubbles (болото)]] - code - src/body.html
 - [[Финал возвращается к началу]] - rationale - docs/MAP.md
 - [[Финал по кругу сансара, перемотка к началу, титры (фидбек 13-10)]] - rationale - docs/context.md
 
@@ -88,18 +75,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 16 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 16 edges to [[_COMMUNITY_Журнал решений]]
-- 12 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 7 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
-- 4 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 2 edges to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 31 edges to [[_COMMUNITY_Журнал решений]]
+- 15 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
+- 6 edges to [[_COMMUNITY_Рисунки повозок]]
+- 5 edges to [[_COMMUNITY_dot-sc.stick.frame — высокая секция с липким кадром]]
+- 5 edges to [[_COMMUNITY_fig.js]]
+- 5 edges to [[_COMMUNITY_scenery.js]]
+- 4 edges to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 3 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
+- 3 edges to [[_COMMUNITY_re]]
+- 2 edges to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 2 edges to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
 - 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
+- 1 edge to [[_COMMUNITY_Лекция 1.8. Предзащита и финальная редактура]]
 
 ## Top bridge nodes
-- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 6 communities
+- [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - degree 30, connects to 8 communities
 - [[parade — Парад повозок телега, колесница, дрезина 1817, автобус в 740]] - degree 16, connects to 5 communities
 - [[srcapp.js]] - degree 49, connects to 4 communities
-- [[scene()]] - degree 9, connects to 3 communities
-- [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - degree 16, connects to 2 communities
+- [[rounds — «Колесо… Это как всё вокруг»  колесо сансары]] - degree 16, connects to 4 communities
+- [[ksPlay()]] - degree 11, connects to 2 communities

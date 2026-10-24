@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.7.txt"
 type: "rationale"
-community: "Движок сцен и звуки (app.js)"
+community: "Колесо-проводник и гравюра"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Движок_сцен_и_звуки_appjs
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # Проверка на медленной сети: Network, Disable cache, троттлинг
@@ -15,4 +15,4 @@ tags:
 - [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - `references` [EXTRACTED]
 - [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Движок_сцен_и_звуки_appjs
+#graphify/rationale #graphify/INFERRED #community/Колесо-проводник_и_гравюра

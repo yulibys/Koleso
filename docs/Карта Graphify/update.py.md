@@ -1,12 +1,12 @@
 ---
 source_file: "update.py"
 type: "code"
-community: "Рисунки повозок"
+community: "re"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/re
 ---
 
 # update.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[re]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/code #graphify/EXTRACTED #community/re

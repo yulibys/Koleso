@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Первый экран и внимание (1.6)"
+community: "Рисунки повозок"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Рисунки_повозок
 ---
 
 # S_flute — Флейта из пещеры Дивье Бабе (.stk)
@@ -14,4 +14,4 @@ tags:
 - [[later — «Колесо придумали позже флейты» (лента изобретений)]] - `references` [EXTRACTED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/image #graphify/EXTRACTED #community/Рисунки_повозок

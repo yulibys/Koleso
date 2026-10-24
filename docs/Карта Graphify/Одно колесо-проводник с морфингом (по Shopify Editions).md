@@ -1,11 +1,11 @@
 ---
 source_file: "docs/context.md"
 type: "rationale"
-community: "Журнал решений"
+community: "scenery.js"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Журнал_решений
+  - community/sceneryjs
 ---
 
 # Одно колесо-проводник с морфингом (по Shopify Editions)
@@ -17,4 +17,4 @@ tags:
 - [[Ритурнель мотив трижды, последний раз переосмысляет первый]] - `implements` [INFERRED]
 - [[Сквозной предмет деревянное колесо с меловой меткой]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Журнал_решений
+#graphify/rationale #graphify/INFERRED #community/sceneryjs

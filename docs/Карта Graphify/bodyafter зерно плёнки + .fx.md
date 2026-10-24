@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # body::after зерно плёнки + .fx
@@ -15,4 +15,4 @@ tags:
 - [[fx canvas (пыльзерно поверх страницы)]] - `implements` [EXTRACTED]
 - [[Разборчивость знака ≠ удобство длительного чтения]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16

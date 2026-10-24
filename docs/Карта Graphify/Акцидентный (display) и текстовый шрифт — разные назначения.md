@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.4.txt"
 type: "concept"
-community: "Колесо-проводник и гравюра"
+community: "Шрифт Alegreya SC (--display, .disp)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Колесо-проводник_и_гравюра
+  - community/Шрифт_Alegreya_SC_--display_disp
 ---
 
 # Акцидентный (display) и текстовый шрифт — разные назначения
@@ -16,4 +16,4 @@ tags:
 - [[Рвущийся интертитр .rip (half topbot, sheet, chalk, orn)]] - `rationale_for` [INFERRED]
 - [[Шрифт Alegreya SC (--display, .disp)]] - `rationale_for` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Колесо-проводник_и_гравюра
+#graphify/concept #graphify/INFERRED #community/Шрифт_Alegreya_SC_--display_disp

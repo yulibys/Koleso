@@ -1,5 +1,5 @@
 ---
-source_file: "v20/app.js"
+source_file: "_backup_2026-10-22/app.js"
 type: "code"
 community: "Сборка, источники, финал"
 location: "L57"
@@ -12,6 +12,6 @@ tags:
 # splitLines()
 
 ## Connections
-- [[v20app.js]] - `indirect_call` [INFERRED]
+- [[_backup_2026-10-22app.js]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/Сборка_источники_финал

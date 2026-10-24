@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Рисунки повозок"
 location: "L550"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Первый_экран_и_внимание_16
+  - community/Рисунки_повозок
 ---
 
 # .stk — стикеры с бумажной подписью
@@ -16,4 +16,4 @@ tags:
 - [[Смысловой узел переезжает целиком]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/INFERRED #community/Рисунки_повозок

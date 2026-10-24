@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Типографика (1.4)"
+community: "Журнал решений"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/Журнал_решений
 ---
 
 # day — «Этот распорядок никто не придумывал» (день вокруг колеса)
@@ -28,4 +28,4 @@ tags:
 - [[Тёмная подложка под текстом поверх рисунков]] - `rationale_for` [INFERRED]
 - [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/Журнал_решений

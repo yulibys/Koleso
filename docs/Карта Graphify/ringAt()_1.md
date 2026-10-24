@@ -1,12 +1,12 @@
 ---
 source_file: "app.js"
 type: "code"
-community: "Пейзажи (scenery.js)"
-location: "L258"
+community: "Типографика (1.4)"
+location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Пейзажи_sceneryjs
+  - community/Типографика_14
 ---
 
 # ringAt()
@@ -16,4 +16,4 @@ tags:
 - [[app.js]] - `contains` [EXTRACTED]
 - [[ringAt0()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Пейзажи_sceneryjs
+#graphify/code #graphify/EXTRACTED #community/Типографика_14

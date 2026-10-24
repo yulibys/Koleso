@@ -1,11 +1,11 @@
 ---
 source_file: "src/body.html"
 type: "image"
-community: "Фото, вырезки, права (1.7)"
+community: "Журнал решений"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Фото_вырезки_права_17
+  - community/Журнал_решений
 ---
 
 # S_wheel — Колесо, Городской музей Любляны (.stk)
@@ -16,4 +16,4 @@ tags:
 - [[Кредиты чужих медиа автор, источник, лицензия, изменения]] - `rationale_for` [INFERRED]
 - [[Стикер .stk (вырезанный предмет с бумажной подписью)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Фото_вырезки_права_17
+#graphify/image #graphify/EXTRACTED #community/Журнал_решений

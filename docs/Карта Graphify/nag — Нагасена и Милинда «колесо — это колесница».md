@@ -1,12 +1,12 @@
 ---
 source_file: "src/body.html"
 type: "code"
-community: "Типографика (1.4)"
+community: "nag — Нагасена и Милинда: «колесо — это колесница?»"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Типографика_14
+  - community/nag__Нагасена_и_Милинда_колесо__это_колесница
 ---
 
 # nag — Нагасена и Милинда: «колесо — это колесница?»
@@ -25,4 +25,4 @@ tags:
 - [[Сцена Нагасены перенесена в середину, после сборки (v15)]] - `rationale_for` [EXTRACTED]
 - [[Угол проекта колесо само по себе бесполезно]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Типографика_14
+#graphify/code #graphify/EXTRACTED #community/nag__Нагасена_и_Милинда_колесо__это_колесница

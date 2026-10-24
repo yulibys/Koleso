@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Колесо-проводник и гравюра"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Колесо-проводник_и_гравюра
 ---
 
 # .guide — фиксированное колесо-проводник
@@ -15,4 +15,4 @@ tags:
 - [[guide — главное колесо-проводник (морфинг gMorphgArtgChalkgShade)]] - `implements` [EXTRACTED]
 - [[Проверить первый экран, длинные заголовки, закреплённые элементы]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Колесо-проводник_и_гравюра

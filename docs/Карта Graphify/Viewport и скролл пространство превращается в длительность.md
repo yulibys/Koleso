@@ -1,11 +1,11 @@
 ---
 source_file: "docs/lectures/1.1.txt"
 type: "concept"
-community: "Журнал решений"
+community: "Лекция 1.1. Лонгрид как особый медиум"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Журнал_решений
+  - community/Лекция_11_Лонгрид_как_особый_медиум
 ---
 
 # Viewport и скролл: пространство превращается в длительность
@@ -18,4 +18,4 @@ tags:
 - [[Хронотоп (Бахтин) участок со случайной длительностью]] - `conceptually_related_to` [EXTRACTED]
 - [[Экран дат «Сегодня» прокручивается барабаном в «около 4000 г. до н. э.»]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Журнал_решений
+#graphify/concept #graphify/EXTRACTED #community/Лекция_11_Лонгрид_как_особый_медиум

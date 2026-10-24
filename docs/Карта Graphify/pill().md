@@ -1,12 +1,12 @@
 ---
 source_file: "art.js"
 type: "code"
-community: "Раскадровка и двери (1.3)"
-location: "L348"
+community: "Движок сцен и звуки (app.js)"
+location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Раскадровка_и_двери_13
+  - community/Движок_сцен_и_звуки_appjs
 ---
 
 # pill()
@@ -16,4 +16,4 @@ tags:
 - [[ring()]] - `calls` [EXTRACTED]
 - [[seg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Раскадровка_и_двери_13
+#graphify/code #graphify/EXTRACTED #community/Движок_сцен_и_звуки_appjs

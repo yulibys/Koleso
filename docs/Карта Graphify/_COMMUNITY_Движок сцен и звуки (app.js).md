@@ -1,63 +1,61 @@
 ---
 type: community
-cohesion: 0.06
-members: 48
+cohesion: 0.11
+members: 46
 ---
 
 # Движок сцен и звуки (app.js)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 48 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 46 nodes
 
 ## Members
-- [[tCart — повозка с быком (template, части p-wheelp-axlep-bodyp-loadp-oxp-roadp-mud)]] - code - src/body.html
-- [[tHorse — лошадь (template)]] - code - src/body.html
-- [[tOx — бык (template)]] - code - src/body.html
-- [[tRunner — бегущий человек (template)]] - code - src/body.html
-- [[dot-lab-ground — земля мастерской (травинки .blade, ветер .wind)]] - code - src/body.html
-- [[dot-lab-ground.blade.wind]] - code - src/style.css
-- [[dot-lab.partscart.has- — лаборатория повозки (rigmove, stuck, rollaway)]] - code - src/style.css
-- [[SVG defs hatchxhatchdots patterns]] - code - src/body.html
-- [[lab — «Соберите свою повозку» (интерактив)]] - code - src/body.html
-- [[sayL()_1]] - code - src/app.js
-- [[upd()]] - code - src/app.js
-- [[wood()]] - code - src/app.js
-- [[Архивный слепок папка проверенной версии]] - rationale - docs/lectures/1.7.txt
-- [[Аффордансы показать возможность действия]] - rationale - docs/lectures/1.6.txt
-- [[Без hover и обязательного перетаскивания]] - rationale - docs/lectures/1.7.txt
-- [[Действие читателя меняет состояние страницы]] - rationale - docs/lectures/1.1.txt
-- [[Детали повозки parts .part + .lab-say]] - code - src/body.html
-- [[Диагноз место, устройство, видимое последствие]] - rationale - docs/lectures/1.7.txt
-- [[Журнал решений 5–7 поворотных записей]] - rationale - docs/lectures/1.7.txt
-- [[Законченный эпизод приглашение → действие → наблюдаемый ответ → объяснение]] - rationale - docs/lectures/1.7.txt
-- [[Затруднение — наблюдаемыми словами, менять по одному параметру]] - rationale - docs/MAP.md
-- [[ИИ-пайплайн, который можно объяснить]] - rationale - docs/lectures/1.7.txt
-- [[Интерактив должен менять понимание]] - rationale - docs/lectures/1.6.txt
-- [[История ножа как изменился тот, кто выбирает]] - concept - docs/lectures/1.7.txt
-- [[Клавиатура Tab, видимый фокус, выход из интерактива]] - rationale - docs/lectures/1.7.txt
-- [[Кнопки выбора .o-opt + runner  wheel2  nudge]] - code - src/body.html
-- [[Критерий выбора сначала сформулировать сохраняемое отношение, потом стиль]] - rationale - docs/lectures/1.7.txt
-- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - document - docs/MAP.md
-- [[Матрица состояний ✓  △  ×  — для 8–10 сочетаний]] - rationale - docs/lectures/1.7.txt
-- [[Один законченный эпизод приглашение → действие → видимый ответ → объяснение]] - rationale - docs/MAP.md
-- [[Открыть ссылки из опубликованной версии, без своего аккаунта]] - rationale - docs/lectures/1.7.txt
-- [[Палимпсест (Женетт) прежний слой объясняет нынешнюю форму]] - concept - docs/lectures/1.7.txt
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - code - src/body.html
-- [[Порядок правок поломка → фактыправоссылки → обещание → типографика → украшение]] - rationale - docs/lectures/1.7.txt
-- [[Проба без подсказки чужой читатель проходит эпизод]] - rationale - docs/lectures/1.7.txt
-- [[Проверка на медленной сети Network, Disable cache, троттлинг]] - rationale - docs/lectures/1.7.txt
-- [[Проверять публичную ссылку на реальных устройствах, а не редактор]] - rationale - docs/lectures/1.7.txt
-- [[Рабочая память и чанкинг]] - concept - docs/lectures/1.6.txt
-- [[Редактура сократить абзац примерно на треть]] - rationale - docs/lectures/1.7.txt
-- [[Слабый дизайн материал может изменить замысел]] - concept - docs/lectures/1.7.txt
-- [[Следующей версии нужна причина]] - rationale - docs/lectures/1.7.txt
-- [[Сломанный молоток (Хайдеггер) поломка обнажает зависимость]] - concept - docs/lectures/1.7.txt
-- [[Служебная фраза — ясная инструкция к действию]] - rationale - docs/lectures/1.7.txt
-- [[Сравнивать варианты, меняя один параметр]] - rationale - docs/lectures/1.7.txt
-- [[Уравнение eqRow .term (колесо+ось+кузов+груз+бык+дорога) и eqCart]] - code - src/body.html
-- [[Фактологический проход имена, даты, подписи, цитаты, числа]] - rationale - docs/lectures/1.7.txt
-- [[Фармакон (Платон, Деррида, Стиглер) ИИ — лекарство и яд]] - concept - docs/lectures/1.7.txt
-- [[Читательская проба think aloud → одна правка]] - rationale - docs/lectures/1.6.txt
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - code - src/body.html
+- [[arcade()]] - code - art.js
+- [[art.js]] - code - art.js
+- [[batten()]] - code - art/wheel.py
+- [[bez()]] - code - art.js
+- [[birds()_1]] - code - art.js
+- [[bog()]] - code - art.js
+- [[bubble()_1]] - code - art.js
+- [[chariotParts()]] - code - art.js
+- [[clipped()]] - code - art.js
+- [[f()]] - code - art/wheel.py
+- [[ferris()]] - code - art.js
+- [[flower()]] - code - art.js
+- [[flowers()]] - code - art.js
+- [[frame()]] - code - art.js
+- [[gear()]] - code - art.js
+- [[grass()_1]] - code - art.js
+- [[grassAt()]] - code - art.js
+- [[hill()_1]] - code - art.js
+- [[hut()_1]] - code - art.js
+- [[king()]] - code - art.js
+- [[knot()]] - code - art/wheel.py
+- [[line()]] - code - art.js
+- [[man()]] - code - art.js
+- [[math]] - concept
+- [[monk()]] - code - art.js
+- [[motion()]] - code - art.js
+- [[mountains()]] - code - art.js
+- [[mouse()]] - code - art.js
+- [[oak()_1]] - code - art.js
+- [[pill()]] - code - art.js
+- [[random]] - concept
+- [[ring()]] - code - art.js
+- [[ringPts()]] - code - art.js
+- [[seg()]] - code - art.js
+- [[shape()]] - code - art.js
+- [[soil()]] - code - art.js
+- [[squirrel()]] - code - art.js
+- [[squirrel2()]] - code - art.js
+- [[steering()]] - code - art.js
+- [[stick()]] - code - art.js
+- [[stone()_1]] - code - art.js
+- [[tuft()]] - code - art.js
+- [[underline()]] - code - art.js
+- [[wheel()]] - code - art.js
+- [[Колесо перерисовано по люблянской находке (v13, v15)]] - rationale - docs/context.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,18 +65,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Интерактив и проверка читателем]]
-- 9 edges to [[_COMMUNITY_Журнал решений]]
-- 9 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 7 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
-- 4 edges to [[_COMMUNITY_Первый экран и внимание (1.6)]]
-- 2 edges to [[_COMMUNITY_Колесо-проводник и гравюра]]
-- 1 edge to [[_COMMUNITY_Выпуск и предзащита (1.8)]]
-- 1 edge to [[_COMMUNITY_Раскадровка и двери (1.3)]]
+- 3 edges to [[_COMMUNITY_scenery.js]]
+- 2 edges to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 1 edge to [[_COMMUNITY_Журнал решений]]
+- 1 edge to [[_COMMUNITY_Первый экран и внимание (1.6)]]
 
 ## Top bridge nodes
-- [[Лекция 1.7. Сборка и публикация, адаптив, редактура]] - degree 39, connects to 5 communities
-- [[lab — «Соберите свою повозку» (интерактив)]] - degree 18, connects to 5 communities
-- [[Фактологический проход имена, даты, подписи, цитаты, числа]] - degree 5, connects to 2 communities
-- [[Повозки парада .veh v0–v3 (телега, колесница, дрезина, автобус)]] - degree 5, connects to 2 communities
-- [[SVG defs hatchxhatchdots patterns]] - degree 5, connects to 1 community
+- [[wheelArt — гравюра колеса (SVG defs, штриховка wa-h1)]] - degree 9, connects to 3 communities
+- [[Колесо перерисовано по люблянской находке (v13, v15)]] - degree 3, connects to 2 communities

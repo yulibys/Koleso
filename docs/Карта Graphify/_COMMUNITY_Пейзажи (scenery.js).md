@@ -1,51 +1,54 @@
 ---
 type: community
-cohesion: 0.11
-members: 36
+cohesion: 0.14
+members: 39
 ---
 
 # Пейзажи (scenery.js)
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[dot-s1()_1]] - code - app.js
-- [[dot-s2()_1]] - code - app.js
-- [[dot-s3()_1]] - code - app.js
-- [[dot-s4()_1]] - code - app.js
-- [[dot-s5()_1]] - code - app.js
-- [[dot-s6()_1]] - code - app.js
-- [[dot-s7()_1]] - code - app.js
-- [[dot-s8()_1]] - code - app.js
-- [[S_1]] - code - app.js
-- [[app.js]] - code - app.js
-- [[applyLap()_1]] - code - app.js
-- [[balance()_1]] - code - app.js
-- [[cancelEnding()_1]] - code - app.js
-- [[cover()_1]] - code - app.js
-- [[coverSeq()_1]] - code - app.js
-- [[fit()_1]] - code - app.js
-- [[fitUl()_1]] - code - app.js
-- [[labUpd()_1]] - code - app.js
-- [[loop()_2]] - code - app.js
-- [[morph()_1]] - code - app.js
-- [[nextCover()_1]] - code - app.js
-- [[put()_1]] - code - app.js
-- [[restore()_1]] - code - app.js
-- [[rewTxt()_1]] - code - app.js
-- [[rewindToS1()_1]] - code - app.js
-- [[ringAt()_1]] - code - app.js
-- [[ringAt0()_1]] - code - app.js
-- [[sayL()_2]] - code - app.js
-- [[scrollAnim()_1]] - code - app.js
-- [[shortcut()_1]] - code - app.js
-- [[spin()_1]] - code - app.js
-- [[splitLines()_1]] - code - app.js
-- [[startEnding()_1]] - code - app.js
-- [[textOut()_1]] - code - app.js
-- [[tick()_1]] - code - app.js
-- [[unshort()_1]] - code - app.js
+- [[arcade()_2]] - code - v20/art.js
+- [[bez()_2]] - code - v20/art.js
+- [[birds()_3]] - code - v20/art.js
+- [[bog()_2]] - code - v20/art.js
+- [[bubble()_3]] - code - v20/art.js
+- [[chariotParts()_2]] - code - v20/art.js
+- [[clipped()_2]] - code - v20/art.js
+- [[ferris()_2]] - code - v20/art.js
+- [[flower()_2]] - code - v20/art.js
+- [[flowers()_2]] - code - v20/art.js
+- [[frame()_2]] - code - v20/art.js
+- [[gear()_2]] - code - v20/art.js
+- [[grass()_3]] - code - v20/art.js
+- [[grassAt()_2]] - code - v20/art.js
+- [[hill()_3]] - code - v20/art.js
+- [[hut()_3]] - code - v20/art.js
+- [[king()_2]] - code - v20/art.js
+- [[line()_2]] - code - v20/art.js
+- [[man()_2]] - code - v20/art.js
+- [[monk()_2]] - code - v20/art.js
+- [[motion()_2]] - code - v20/art.js
+- [[mountains()_2]] - code - v20/art.js
+- [[mouse()_2]] - code - v20/art.js
+- [[oak()_3]] - code - v20/art.js
+- [[pill()_2]] - code - v20/art.js
+- [[ring()_2]] - code - v20/art.js
+- [[ringPts()_2]] - code - v20/art.js
+- [[seg()_2]] - code - v20/art.js
+- [[shape()_2]] - code - v20/art.js
+- [[soil()_2]] - code - v20/art.js
+- [[squirrel()_2]] - code - v20/art.js
+- [[squirrel2()_2]] - code - v20/art.js
+- [[steering()_2]] - code - v20/art.js
+- [[stick()_2]] - code - v20/art.js
+- [[stone()_3]] - code - v20/art.js
+- [[tuft()_2]] - code - v20/art.js
+- [[underline()_2]] - code - v20/art.js
+- [[v20art.js]] - code - v20/art.js
+- [[wheel()_2]] - code - v20/art.js
 
 ## Live Query (requires Dataview plugin)
 

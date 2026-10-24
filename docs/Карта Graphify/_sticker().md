@@ -1,12 +1,12 @@
 ---
 source_file: "cut/gc.py"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Рисунки повозок"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Рисунки_повозок
 ---
 
 # _sticker()
@@ -17,4 +17,4 @@ tags:
 - [[numpy]] - `calls` [EXTRACTED]
 - [[sticker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Рисунки_повозок

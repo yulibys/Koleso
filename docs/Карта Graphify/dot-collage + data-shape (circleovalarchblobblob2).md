@@ -1,12 +1,12 @@
 ---
 source_file: "src/style.css"
 type: "code"
-community: "Первый экран и внимание (1.6)"
+community: "Лекция 1.8. Предзащита и финальная редактура"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Первый_экран_и_внимание_16
+  - community/Лекция_18_Предзащита_и_финальная_редактура
 ---
 
 # .collage + data-shape (circle/oval/arch/blob/blob2)
@@ -15,4 +15,4 @@ tags:
 - [[Коллаж .collage (фото в фигурной рамке, data-shape)]] - `implements` [EXTRACTED]
 - [[У каждого нарушения коллажа — опора]] - `rationale_for` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Первый_экран_и_внимание_16
+#graphify/code #graphify/EXTRACTED #community/Лекция_18_Предзащита_и_финальная_редактура

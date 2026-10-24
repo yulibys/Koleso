@@ -1,14 +1,14 @@
 ---
 source_file: "fig.js"
 type: "code"
-community: "scenery.js"
+community: "fig.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sceneryjs
+  - community/figjs
 ---
 
 # fig.js
 
-#graphify/code #graphify/EXTRACTED #community/sceneryjs
+#graphify/code #graphify/EXTRACTED #community/figjs

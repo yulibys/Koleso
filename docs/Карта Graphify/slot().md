@@ -1,12 +1,12 @@
 ---
 source_file: "src/app.js"
 type: "code"
-community: "Интерактив и проверка читателем"
+community: "Первый экран и внимание (1.6)"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Интерактив_и_проверка_читателем
+  - community/Первый_экран_и_внимание_16
 ---
 
 # slot()
@@ -17,4 +17,4 @@ tags:
 - [[Счётчик дат oCount  cnReel (Сегодня → Первое колесо)]] - `references` [INFERRED]
 - [[Циферблат дня daySlotdayTicks + sun + расписание sched]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Интерактив_и_проверка_читателем
+#graphify/code #graphify/INFERRED #community/Первый_экран_и_внимание_16

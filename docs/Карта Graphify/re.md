@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Рисунки повозок"
+community: "re"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Рисунки_повозок
+  - community/re
 ---
 
 # re
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[update.py]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Рисунки_повозок
+#graphify/concept #graphify/EXTRACTED #community/re

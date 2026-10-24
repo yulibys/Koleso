@@ -125,6 +125,111 @@
         "a": 1,
         "rgb": 16752039
       }
+    },
+    {
+      "query": "tag:#community/nag__\u041d\u0430\u0433\u0430\u0441\u0435\u043d\u0430_\u0438_\u041c\u0438\u043b\u0438\u043d\u0434\u0430_\u043a\u043e\u043b\u0435\u0441\u043e__\u044d\u0442\u043e_\u043a\u043e\u043b\u0435\u0441\u043d\u0438\u0446\u0430",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/open__\u0414\u0430\u043b\u0435\u043a\u043e_\u0441\u043e\u0431\u0440\u0430\u043b\u0438\u0441\u044c_/_\u0434\u0430\u0442\u0430_\u0441\u0447\u0451\u0442\u0447\u0438\u043a_17_\u043e\u043a\u0442\u044f\u0431\u0440\u044f_2026__\u043e\u043a\u043e\u043b\u043e_4000_\u0433_\u0434\u043e_\u043d_\u044d",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/\u041b\u0435\u043a\u0446\u0438\u044f_11_\u041b\u043e\u043d\u0433\u0440\u0438\u0434_\u043a\u0430\u043a_\u043e\u0441\u043e\u0431\u044b\u0439_\u043c\u0435\u0434\u0438\u0443\u043c",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/\u0428\u0440\u0438\u0444\u0442_Alegreya_SC_--display_disp",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/\u0428\u0440\u0438\u0444\u0442_Alegreya_--serif/--hand_voice/hand",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/sc/stick/frame__\u0432\u044b\u0441\u043e\u043a\u0430\u044f_\u0441\u0435\u043a\u0446\u0438\u044f_\u0441_\u043b\u0438\u043f\u043a\u0438\u043c_\u043a\u0430\u0434\u0440\u043e\u043c",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/root_\u0442\u043e\u043a\u0435\u043d\u044b_--black_--cream_--paper_--red_--gut",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/\u0421\u0442\u0440\u043e\u043a\u0430_5075_\u0437\u043d\u0430\u043a\u043e\u0432_\u0438\u043d\u0442\u0435\u0440\u043b\u0438\u043d\u044c\u044f\u0436_14165_\u0432\u044b\u043a\u043b\u044e\u0447\u043a\u0430_\u0432\u043b\u0435\u0432\u043e",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/re",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/_backup_2026-10-22/vehiclesjs",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/figjs",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/boil02_\u0434\u0440\u043e\u0436\u044c_\u043b\u0438\u043d\u0438\u0438_filters_feTurbulence",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/v20/figjs",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/v20/vehiclesjs",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/vehiclesjs",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
     }
   ]
 }

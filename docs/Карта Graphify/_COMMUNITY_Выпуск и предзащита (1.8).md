@@ -43,13 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Типографика (1.4)]]
-- 1 edge to [[_COMMUNITY_Журнал решений]]
-- 1 edge to [[_COMMUNITY_Движок сцен и звуки (app.js)]]
+- 3 edges to [[_COMMUNITY_Журнал решений]]
+- 1 edge to [[_COMMUNITY_open — «Далеко собрались»  дата (счётчик 17 октября 2026 → около 4000 г. до н. э.)]]
+- 1 edge to [[_COMMUNITY_fig.js]]
 - 1 edge to [[_COMMUNITY_Фото, вырезки, права (1.7)]]
+- 1 edge to [[_COMMUNITY_nag — Нагасена и Милинда «колесо — это колесница»]]
 
 ## Top bridge nodes
-- [[scenery.js]] - degree 25, connects to 1 community
+- [[scenery.js]] - degree 25, connects to 2 communities
 - [[lab()]] - degree 10, connects to 1 community
 - [[hero()]] - degree 7, connects to 1 community
 - [[parade()]] - degree 7, connects to 1 community
