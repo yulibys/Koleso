@@ -880,6 +880,7 @@
         lap++; applyLap();
         const end = $('end');
         end.hidden = false; end.classList.remove('out');
+        { const wr = end.querySelector('.course-webring'); if (wr) end.style.setProperty('--wr', wr.offsetHeight + 'px'); } // v105: место под веб-ринг
         const ew = $('endw'), t0 = performance.now();
         (function swp(now) { const t = cl((now - t0) / 1700); sw(ew, t); if (t < 1) requestAnimationFrame(swp); })(t0);
         $('s2').hidden = false; s2done = false; s1covT = null;

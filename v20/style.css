@@ -1050,3 +1050,13 @@ html:not(.port) #s1n2{rotate:-3deg}
 /* v102: «не успели» / «оно укатилось» чуть выше (расстояние между ними прежнее) и наклон сильнее */
 html:not(.port) #s1n1{top:320px;rotate:5deg}
 html:not(.port) #s1n2{top:415px;rotate:-5deg}
+/* v105: веб-ринг на экране «Конец?» — спокойная полоса внизу, финал и титры остаются главными */
+.endcard .course-webring{position:absolute;left:0;right:0;bottom:0;z-index:2;margin:0;
+  padding:22px max(24px,calc((100vw - 1120px) / 2)) calc(20px + env(safe-area-inset-bottom,0px));
+  background:var(--dark);color:var(--cream);border-top:1px solid rgba(212,200,167,.4);text-align:left}
+.endcard .course-webring h2{color:var(--cream)}
+.endcard .course-webring__nav a{color:var(--cream);text-decoration-color:rgba(212,200,167,.55)}
+.endcard .course-webring__nav a:hover{text-decoration-color:currentColor}
+/* сцена финала поднимается над полосой, подпись про шрифт — прямо над ней */
+.endcard .cv{top:calc(50% - var(--wr,0px) / 2)}
+.endcard .src{bottom:calc(var(--wr,0px) / var(--k,1) + 14px)!important}

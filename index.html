@@ -185,8 +185,31 @@
     <div><dt>группа</dt><dd>Б25ДЗ09</dd></div>
     <div><dt>преподаватель</dt><dd>Олег Пащенко</dd></div>
   </dl>
-  <p class="src">Шрифт DANCEPARTNER — Александра Арсентьева, Школа дизайна НИУ ВШЭ.</p>
+  <p class="src">Шрифт Desyatiy — Дмитрий Антонов и&nbsp;Blue Curve Designstudio, лицензия SIL Open Font License&nbsp;1.1.</p>
  </div>
+ <!-- v105: веб-ринг курса — после финала и титров, на экране «Конец?» перед вторым кругом -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<style>
+.course-webring { margin-top:64px; padding:24px 0; border-top:1px solid currentColor; font-family:Inter,sans-serif; font-size:16px; line-height:1.5; }
+.course-webring h2 { margin:0 0 16px; font-family:Inter,sans-serif; font-size:20px; font-weight:600; line-height:1.3; }
+.course-webring__nav { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:12px 24px; align-items:start; }
+.course-webring__nav a { display:flex; align-items:center; min-height:44px; padding:10px 0; box-sizing:border-box; color:inherit; text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
+.course-webring__nav a:last-child { justify-content:flex-end; text-align:right; }
+.course-webring__nav a:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+.course-webring--entry .course-webring__nav { grid-template-columns:1fr 1fr; }
+@media (max-width:720px) {
+.course-webring__nav, .course-webring--entry .course-webring__nav { grid-template-columns:1fr; }
+.course-webring__nav a:last-child { justify-content:flex-start; text-align:left; }
+}
+</style>
+<footer class="course-webring">
+<h2>Веб-ринг</h2>
+<nav class="course-webring__nav" aria-label="Веб-ринг проектов">
+<a target="_top" href="https://ksenia-moskalenko.github.io/Bus/" rel="prev">← Автобус — Ксения Москаленко</a>
+<a target="_top" href="https://docs.google.com/spreadsheets/d/1moFgJsWmO2xyTYsfRRvhG63S1ru9MhJKDSAw2pOUqyw/htmlview?gid=93859566&amp;range=A1:E35">Все проекты</a>
+<a target="_top" href="https://dahzqa.github.io/longreadFirst/" rel="next">Феномен уникальности на примере «Маленького принца» — Дарья Асанова →</a>
+</nav>
+</footer>
 </div>
 <div class="rew" id="rew" aria-hidden="true"><i></i><svg class="ill sq" id="rewsq" viewBox="-24 -196 244 202"><g id="rewsqg"></g></svg><em><span id="rewt">а у тебя же колесо убежало</span><svg class="ill ul" viewBox="-4 -4 300 18"><path data-ul="280"/></svg></em></div>
 <div class="spinov" id="spinov" aria-hidden="true"><svg class="ill" viewBox="-200 -200 400 400"><g id="spinw"></g></svg></div>
