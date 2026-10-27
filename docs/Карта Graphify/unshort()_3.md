@@ -2,7 +2,7 @@
 source_file: "v20/app.js"
 type: "code"
 community: "Типографика (1.4)"
-location: "L925"
+location: "L928"
 tags:
   - graphify/code
   - graphify/EXTRACTED

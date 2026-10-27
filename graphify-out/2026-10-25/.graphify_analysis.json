@@ -1080,12 +1080,12 @@
       "degree": 18
     },
     {
-      "id": "art_line",
+      "id": "v20_art_line",
       "label": "line()",
       "degree": 17
     },
     {
-      "id": "backup_2026_10_22_v77_art_line",
+      "id": "art_line",
       "label": "line()",
       "degree": 17
     }

@@ -2,7 +2,7 @@
 source_file: "app.js"
 type: "code"
 community: "Журнал решений"
-location: "L847"
+location: "L850"
 tags:
   - graphify/code
   - graphify/EXTRACTED
