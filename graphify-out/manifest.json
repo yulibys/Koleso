@@ -36,8 +36,8 @@
     "semantic_hash": "af1a5f055f17954eb1e62c094f68ca3b"
   },
   "docs/\u041a\u0430\u0440\u0442\u0430 Graphify/.graphify_obsidian_manifest.json": {
-    "mtime": 1792884074.4872482,
-    "seen": 1792884513.289842,
+    "mtime": 1792884513.9167361,
+    "seen": 1793090563.589994,
     "ast_hash": "003add28a3aeb41eb668adda6656dcf5",
     "semantic_hash": "003add28a3aeb41eb668adda6656dcf5"
   },
@@ -142,5 +142,11 @@
     "seen": 1792884073.704405,
     "ast_hash": "9843db46a2dd4828a716d03c103d3301",
     "semantic_hash": "9843db46a2dd4828a716d03c103d3301"
+  },
+  "\u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u0438/\u043a\u0440\u0435\u0430\u0442\u0438\u04328_\u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0438/labels.json": {
+    "mtime": 1793064186.1896243,
+    "seen": 1793090563.590131,
+    "ast_hash": "a2668c983a0319c2ecf15f22cf3eefe2",
+    "semantic_hash": "a2668c983a0319c2ecf15f22cf3eefe2"
   }
 }
